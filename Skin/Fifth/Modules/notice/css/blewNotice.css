@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-12-30 14:30:25
+ * @version $Id$
+ */
+.noticeContent{
+    width: 16em;
+    display:block;
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+}

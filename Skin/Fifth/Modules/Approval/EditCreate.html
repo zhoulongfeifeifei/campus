@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>审批模板设计</title>
+		<link href="Cform/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+		<link href="Cform/cform/cForm.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/EditCreate.css" />
+	</head>
+
+	<body style="height:800px;">
+		<header class="header-wrap">
+			<div class="header-box">
+				<span><i class="fa fa-th"></i> 审批模板设计</span>
+				<div class="edit">
+
+					<a class="btn btn-green save" href="javascript:;">保存</a>
+					<a class="btn btn-orange publish" href="javascript:;">保存启用</a>
+				</div>
+			</div>
+		</header>
+		<div class="main-wrap">
+			<div class="left-wrap">
+				<h3 class="left-title">自由控件</h3>
+				<ul id="sortable_left" class="list clearfix">
+					<li class="item item-single" data-typeid="0">单行输入框</li>
+					<li class="item item-multi" data-typeid="1">多行输入框</li>
+					<li class="item item-number" data-typeid="2">数字输入框</li>
+					<li class="item item-radio item-radio-close" data-typeid="3">单选框</li>
+					<li class="item item-check item-radio-close" data-typeid="4">多选框</li>
+					<li class="item item-date-multi" data-typeid="5">日期区间</li>
+					<li class="item item-date" data-typeid="6">日期</li>
+					<li class="item item-pic" data-typeid="7">照片</li>
+					<li class="item item-box" data-typeid="8">嵌套框</li>
+				</ul>
+			</div>
+			<div class="mid-wrap-bg"></div>
+			<div class="mid-wrap">
+				<ul class="list"></ul>
+			</div>
+			<div class="right-wrap">
+				<h3 class="r-title">
+                <span name="r-box-1">控件设置</span>
+                <span name="r-box-2" class="active">审批设置</span>
+            </h3>
+				<div class="r-box r-box-1"></div>
+				<div class="r-box r-box-2 active">
+					<div class="r-item r-text">
+						<label class="title">审批名称</label>
+						<div class="r-item-b">
+							<input type="text" data-limit="100" class="input-text" id="Title" />
+						</div>
+					</div>
+					<div class="r-item r-text">
+						<label class="title">审批说明</label>
+						<div class="r-item-b">
+							<textarea class="input-text" id="Remark"></textarea>
+						</div>
+					</div>
+					<div class="r-item r-text">
+						<label class="title">审批类型</label>
+						<div class="r-item-b">
+							<select name=""  id="modelTpye" style="width: 266px;">
+								<option value="0">教师使用</option>
+								<option value="1">家长使用</option>
+							</select>
+						</div>
+					</div>
+					<div class="r-item r-text">
+						<label class="title">图标</label>
+						<div class="r-item-b">
+							<ul class="icons">
+								<li class="icon"><img data-src="images/icon/1.png" src="images/icon/1.png" /></li>
+								<li class="icon"><img data-src="images/icon/2.png" src="images/icon/2.png" /></li>
+								<li class="icon"><img data-src="images/icon/3.png" src="images/icon/3.png" /></li>
+								<li class="icon"><img data-src="images/icon/4.png" src="images/icon/4.png" /></li>
+								<li class="icon"><img data-src="images/icon/5.png" src="images/icon/5.png" /></li>
+								<li class="icon"><img data-src="images/icon/6.png" src="images/icon/6.png" /></li>
+								<li class="icon"><img data-src="images/icon/7.png" src="images/icon/7.png" /></li>
+								<li class="icon"><img data-src="images/icon/8.png" src="images/icon/8.png" /></li>
+								<li class="icon"><img data-src="images/icon/9.png" src="images/icon/9.png" /></li>
+								<li class="icon"><img data-src="images/icon/10.png" src="images/icon/10.png" /></li>
+								<li class="icon"><img data-src="icon/11.png" src="images/icon/11.png" /></li>
+								<li class="icon"><img data-src="images/icon/12.png" src="images/icon/12.png" /></li>
+								<li class="icon"><img data-src="images/icon/13.png" src="images/icon/13.png" /></li>
+								<li class="icon"><img id="UploadBtn" alt="自定义" src="" style="" /></li>
+							</ul>
+
+							<input type="hidden" id="IcoUrl" value="" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hiddenHelper">
+
+			</div>
+		</div>
+		<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+		<script>
+			var $ = jQuery = layui.jquery;
+		</script>
+		<script src="Cform/jquery-ui/jquery-ui.min.js"></script>
+		<script src="Cform/cform/cForm.js"></script>
+		<script src="Cform/common.js"></script>
+		<script src="/Web/Assets/plupload/plupload.full.min.js"></script>
+		<script src="cform/yh.js"></script>
+		<script src="cform/FlashInteractive.js"></script>
+		<script src="cform/lzone.js"></script>
+		<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/EditCreate.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

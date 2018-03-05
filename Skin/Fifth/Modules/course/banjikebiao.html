@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>班级课表</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+    <link rel="stylesheet" href="../../Common/css/FourHeight.css">
+    <link rel="stylesheet" href="css/ClassCourse.css">
+    <style>
+        .layui-table td, .layui-table th{
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <form class="layui-form" id="form1">
+        <!--标题层-->
+        <div class="layui-tab layui-tab-brief">
+            <ul class="layui-tab-title">
+                <!-- <li class="layui-this">学科类型管理</li> -->
+            </ul>  
+        </div>
+        <a href="javascript:daoru()" class="layui-btn layui-btn-small layui-btn-green addnigao">导入</a>
+        <a class="text">注：请选择下拉框里面的数据;否则将保存不成功!</a>
+        <div class="right">
+            <div class="layui-input-inline">
+                <select id="classid" name="classid" lay-filter="classid">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="layui-input-inline">
+                <select id="tablename" name="tableid" lay-filter="tableid">
+                    <option value=""></option>
+                </select>
+            </div>
+            
+        </div>
+        <table class="layui-table">
+            <colgroup>
+                <col width="100">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><sub>课</sub> \ <sup>周</sup></th>
+                    <th>周日</th>
+                    <th>周一</th>
+                    <th>周二</th>
+                    <th>周三</th>
+                    <th>周四</th>
+                    <th>周五</th>
+                    <th>周六</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <a class="layui-btn" style="margin-bottom:20px;" id="save">确认保存</a>
+    </form>
+
+    <form id="form2" class="layui-form" runat="server" style="display: none;">
+        <div class="layui-form-item">
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">选择文件：</label>
+            <div class="layui-input-inline" style="width: 210px">
+                <a class="layui-btn download " download target="_blank">下载模版</a>
+                <input type="file" id="daoru" name="file" class="layui-upload-file" lay-type="file">
+            </div>
+        </div>
+        <input type="hidden" id="filename" />
+    </form>
+
+
+<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+<script>var $ = jQuery = layui.jquery;</script>
+<script src="/Web/Include/tby.js"></script>
+
+<script src="js/banjikebiao.js"></script>
+</body>
+</html>

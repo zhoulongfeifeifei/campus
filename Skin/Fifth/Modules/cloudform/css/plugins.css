@@ -1,0 +1,94 @@
+﻿/*#region Tip*/
+.YhFw_MessagesBox { position: absolute; left: 50%; top: 50%; display: none; z-index: 30000; }
+.YhFw_MessagesBox .wBox { height: 52px; font-weight: bold; font-size: 14px; white-space: nowrap; float: left; }
+.YhFw_MessagesBox .wBox div { float: left; width: 6px; height: 52px; line-height: 48px; background: url(/Images/gb_tip_layer.png) repeat-x left -163px; }
+.YhFw_MessagesBox .wBox .wS { background-position: -6px -2px; }
+.YhFw_MessagesBox .wBox .wLoad { position: relative; }
+.YhFw_MessagesBox .wBox .wC { width: auto; white-space: nowrap; overflow: hidden; color: #5d5d5d; padding: 0 10px; }
+.YhFw_MessagesBox .wBox .wE { background-position: left -2px; }
+.YhFw_MessagesBox .wBox .error { width: 32px; background-position: -19px -110px; }
+.YhFw_MessagesBox .wBox .succcess { width: 32px; background-position: -19px -2px; }
+.YhFw_MessagesBox .wBox .prompt { width: 32px; background-position: -19px -56px; }
+.YhFw_MessagesBox .wBox .loader { width: 20px; }
+.YhFw_MessagesBox .wBox .loader span { width: 16px; height: 16px; display: block; background: url(../images/loading.gif) no-repeat 0px 0px; position: absolute; top: 16px; left: 5px; }
+
+/*#endregion*/
+
+
+.yhFwDialog { position: absolute; top: 100px; left: 100px; padding: 10px; overflow: hidden; }
+.yhFwDialog .yhFwDialogBody { position: relative; overflow: hidden; background: #FFF; z-index: 111; }
+.yhFwDialog .yhFwDialogMargin { background: #b2d1df; filter: alpha(opacity=70); opacity: 0.7; position: absolute; z-index: 1; top: 0px; left: 0px; padding: 10px; }
+.yhFwDialog .yhFwLoadingLay { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.yhFwDialog .yhFwLoadingLay p { margin: 0; padding: 0; position: absolute; top: 50%; left: 50%; width: 16px; height: 16px; }
+.yhFwDialog .yhFwLoadingLay img { position: absolute; left: -50%; top: -50%; }
+.yhFwDialog .yhFwDialogFrame { width: 100%; height: 100%; z-index: 0; }
+.yhFwDialog .yhFwDialogBottoms { font-size: 12px; z-index: 10; position: relative; text-align: right; padding: 5px 0; }
+.yhFwDialog .yhFwDialogBtnClose { }
+
+
+/*#region 弹出框*/
+.qz_dialog_layer { line-height: 15px; z-index: 20000; position: absolute; left: 0; top: 0; }
+.qz_dialog_layer_main { background-color: White; border: solid 1px #6B97C1; color: #545454; position: relative; z-index: 10; }
+.qz_dialog_layer_title { height: 35px; background:#3276b1 /*url(../images/pupop_bg.png) #8baccf repeat-x*/; cursor: move; -moz-user-select: none; -khtml-user-select: none; user-select: none; }
+.qz_dialog_layer_title h3 { line-height: 35px; margin: 0; padding: 0 0 0 10px; float: left; height: 35px; color: #FFF; font-size: 13px; overflow: hidden; }
+.qz_dialog_layer_title .qz_dialog_btn_close { background: url(../images/pupop_bg_1.png) no-repeat 0px -30px; width: 34px; float: right; height: 19px; margin: 0; margin-right: 5px; cursor: pointer; border: 0; font-weight: normal; font-size: 0; }
+.qz_dialog_layer_title .qz_dialog_btn_close_on { background-position: -36px -30px; }
+.qz_dialog_layer_cont { background: #FFF; color: #5f5f5f; overflow: hidden; position:relative;}
+.qz_popup_inner_iframe { overflow: hidden; border: 0; }
+.qz_popup_inner_mask{position:absolute; left:0; top:0; width:100%; height:100%; z-index:111; background:#FFF;}
+.qz_popup_inner_mask img{position:absolute; left:50%; top:50%; margin:-8px 0 0 -8px}
+.qz_popup_hidden_iframe { z-index: 9; position: absolute; width: 100%; height: 100%; left: 0; top: 0; }
+.none { display: none !important; }
+/*#endregion*/
+
+
+
+
+
+
+
+/*#region 播放音乐*/
+.pg_player { width: 25px; height: 22px; display: block; position: relative; }
+.pg_player button { width: 15px; height: 15px; overflow: hidden; margin: 0; padding: 0; border: 0; background-image: url(/images/sprite/sprite.png); background-repeat: no-repeat; line-height: 0; font-size: 0; overflow: hidden; }
+.pgp_inner { display: block; padding-top: 5px; }
+.pgp_btn_play_unchk { background-position: -80px -60px; }
+.pgp_btn_play_onchk { background-position: -80px -60px; }
+.pgp_bar { position: absolute; left: 0; top: 3px; display: block; width: 185px; height: 22px; background: url(/images/sprite/sprite.png) no-repeat; }
+.pgp_bar .pgp_btn_pp { position: absolute; left: 5px; top: 6px; width: 10px; height: 11px; }
+.pgp_bar .pgp_btn_close { position: absolute; left: 167px; top: 5px; background-position: -60px -60px; width: 10px; height: 11px; }
+.pgp_bar .pgp_btn_lrc { position: absolute; left: 148px; top: 6px; background-position: -40px -60px; width: 8px; height: 10px; }
+.pgp_btn_pause { background-position: 0px -60px; }
+.pgp_btn_play { background-position: -20px -60px; }
+.pgp_title_ctn { position: absolute; left: 24px; top: 4px; width: 111px; padding: 0 2px; height: 15px; line-height: 15px; }
+.pgp_title { width: 111px; height: 15px; overflow: hidden; white-space: nowrap; display: block; }
+.pgp_title span { padding-right: 0; }
+.pgp_list { position: absolute; left: 0; top: 22px; width: 163px; padding: 5px 10px 5px 10px; background-color: #fff; display: block; z-index: 100; border: solid 1px #b8b8b8; border-top: none; text-align: left; }
+.pgp_list h2 { font-size: 12px; line-height: 20px; margin: 0; padding: 0; border: none; color: #747474; font-weight: normal; }
+.pgp_list p { border: solid 1px #e1e4eb; padding: 1px; background: #fff; height: 24px; overflow: hidden; margin-bottom: 5px; }
+.pgp_list a { background: #e6ecf6; color: #494846; height: 24px; line-height: 24px; display: block; padding: 0 10px; white-space: nowrap; }
+.pgp_list a:hover, .pgp_list a.On { color: #fff; background: #93c5ed; }
+.none { display: none; }
+/*#endregion*/
+
+
+
+
+
+
+
+/*创建相册*/
+.pop_create_album { width: 330px; padding-left: 82px; margin: 0 auto; color: #5f5f5f; line-height: 100%; margin-top: 20px; }
+.pop_create_album p { margin-bottom: 20px; position: relative; }
+.pop_create_album p .form_name { position: absolute; text-align: right; line-height: 120%; width: 70px; display: block; top: 6px; left: -82px; }
+.pop_create_album p .int_txt { border: solid #c8c8c8 1px; line-height: 20px; width: 256px; background: #fff; height: 18px; padding-top: 0px; }
+.pop_create_album p .count_txt { position: absolute; width: 100px; display: block; font-family: Tahoma; font-size: 10px; top: 6px; left: 265px; }
+.pop_create_album p .count_txt span { font-weight: bold; }
+.pop_create_album p .int_default { color: #afafaf; }
+.pop_create_album p .area_txt { border: solid 1px #c8c8c8; width: 252px; background: #fff; height: 54px; overflow: auto; font-size: 12px; padding: 2px; }
+
+.pop_create_album .bar { margin: 0 0 15px -82px; padding: 9px 15px 9px 15px; background: #f3f3f3; zoom: 1; _line-height: 130%; }
+.pop_create_album .bar .info { margin-bottom: 0; }
+.pop_create_album .bar:after { display: block; height: 0px; clear: both; content: ""; }
+.bg c_tx notice { color: #ff6c00; display: none; height: 15px; margin-bottom: 20px; padding-bottom: 1px; padding-left: 20px; padding-top: 3px; }
+.bt_tip_normal { border: #ccd4dc 1px solid; background: #f3f4f5 0px -95px url(../images/pupop_bg.png); color: #4d637f; height: 20px; padding: 0 12px 0 12px; height: 22px; cursor: pointer; margin-right: 6px; }
+.global_tip_button { text-align: right; background: #f3f3f3; width: 100%; height: 28px; clear: both; border-top: #e0e0e0 1px solid; padding-top: 6px; position: absolute; bottom: 0; left: 0; }

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2017-05-10 17:11:55
+ * @version $Id$
+ */
+ .layui-form{
+    position: relative;
+    overflow: auto;
+ }
+body{
+    position: relative;
+ }
+.right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.right .layui-btn{
+    float: right;   
+}
+.right .layui-input{
+    display: inline-block;
+    width: auto;
+    height: 30px;
+}
+
+.alIcon{
+    font-family: "optioning";
+    font-size: 26px;
+    cursor: pointer;
+    color: #fff;
+}
+.linkText{
+    display: inline-block;
+    width: 3em;
+    text-align: center;
+    cursor: pointer;
+}
+.addnigao:hover{
+    color: #eee;
+    
+}
+.addnigao{
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+.addnigao.a1{
+    position: absolute;
+    top: 5px;
+    left: 100px;
+}
+.addnigao.a2{
+    position: absolute;
+    top: 5px;
+    left: 180px;
+}
+.addnigao.a3{
+    position: absolute;
+    top: 5px;
+    left: 260px;
+}
+
+.yinc{
+    display: none;
+}

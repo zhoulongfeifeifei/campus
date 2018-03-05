@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>报名成功</title>
+	<link rel="stylesheet" href="layui/css/layui.css">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/CheckInformation.css"/>
+	<link rel="stylesheet" href="css/AdmissionSuccess.css" />
+</head>
+<body>
+	<!--顶部学校背景-->
+	<div class="header"></div>
+	<!--	中间各个模块-->
+	<div class="form-center">
+		<h1 class="title"></h1>
+		<h5 class="f-title">录取结果将于<span>2017年6月10日</span>发送到您的手机，也可以进入官网登录本系统查询</h5>
+		<form action="" class="layui-form form">
+			<div class="form-content">
+				<h3>志愿填报<span style="color: #f00;">*</span></h3>
+				<div class="zhiyuan">
+					<!--<div class="layui-form-item">   
+		                <label class="layui-form-label">第一志愿：</label>
+		                <div class="layui-input-inline">
+		                     <input class="layui-input" type="text" name="zy1" value="电子商务(500及500以上)" disabled>
+		                </div>
+		            </div>	
+		            <div class="layui-form-item">   
+		                <label class="layui-form-label">第二志愿：</label>
+		                <div class="layui-input-inline">
+		                     <input class="layui-input" type="text" name="zy2" value="会计(需面试)" disabled>
+		                </div>
+		            </div>	
+		            <div class="layui-form-item">   
+		                <label class="layui-form-label">第三志愿：</label>
+		                <div class="layui-input-inline">
+		                     <input class="layui-input" type="text" name="zy3" value="财务管理" disabled>
+		                </div>
+		            </div>	-->
+				</div>				 	                         
+	            <div class="layui-form-item" style="display: none;">  
+	                <label class="layui-form-label">是否服从调剂：</label>
+	                <div class="layui-input-inline">
+	                    <input type="radio" name="tiao" value="1" title="是">
+						<input type="radio" name="tiao1" value="2" title="否">
+	               	</div>
+	            </div>
+	            <div class="layui-form-item">  
+	                <label class="layui-form-label">录取码：</label>
+	                <div class="layui-input-inline">
+	                    <input class="layui-input" type="text" name="lqm1" value="" disabled>					 
+	                </div>
+	            </div>
+	            <div class="layui-form-item">  
+	                <label class="layui-form-label">录取通知手机号：</label>
+	                <div class="layui-input-inline">
+	                    <input class="layui-input" type="tel" name="phone" value="" disabled>					 
+	                </div>
+	            </div>
+	            <div class="layui-form-item">  
+	                <label class="layui-form-label layui-label">是否住校：</label>
+	                <div class="layui-input-inline zhuxiao" id="zhuXiao">
+	                   <input type="radio" name="sleep" lay-filter="sleep" value="1" title="是">
+	                    <input type="radio" name="sleep1" lay-filter="sleep1" value="2" title="否">
+	               </div>
+	            </div> 
+			</div>	
+			<div class="layui-form-item btnBack">
+				<!--<button id="save" type="submit" lay-submit class="layui-btn green"/>返回学校官网</button>-->
+				<input type="button" id="sava" class="layui-btn green" lay-submit lay-filter="sava" value="返回学校官网">
+			</div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.9.1/jquery.js"></script>
+<script type="text/javascript" src="js/placeholder.min.js"></script>
+<script src="layui/layui.js"></script>
+<script src="layui/lay/dest/layui.all.js"></script>
+<script src="js/common.js"></script>
+<script src="js/AdmissionSuccess.js"></script>
+</html>

@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,p,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: 0;vertical-align: baseline;background: transparent;}
+table, caption, tbody, tfoot, thead, tr, th, td{ vertical-align:middle;}
+th{
+    text-align:center;
+}
+html{margin-top:0px !important;}
+
+body {background: #fff;  font-size:14px; color: #656565;font-family: 'microsoft yahei',osaka,sans-serif;min-width: 1200px;}
+
+li{list-style: none;}
+
+a{cursor: pointer;margin: 0;padding: 0;border: 0;vertical-align: baseline;text-decoration:none;color:#000;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000;cursor: help;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #cccccc;margin: 0em 0;padding: 0;}
+
+input, select {vertical-align: middle;}
+
+h1,h2,h3,h4,h5,h6{ color:#999; padding:10px 0;}
+img{border: 0}
+
+em,i,strong{font-style:normal;}
+
+/*清除浮动*/  
+.clearfix:before,.clearfix:after{content: '';display: table;}  
+.clearfix:after{clear: both;}
+/*==========重置样式=========*/
+.layui-form-item{
+	display: inline-block;
+}
+.layui-form-item .layui-input-inline {
+    width: 100px;
+}
+.layui-form-select .layui-input {
+    height: 33px;
+}
+.tele{
+	float: left;
+	margin: 5px 10px 0px 30px;
+}
+.text{
+	width: 80px;
+	height: 29px;
+	float:left; 
+}
+.text_span{
+	width: 30px;
+	height: 31px;
+	border:1px solid #ccc;
+	border-left:none;
+	margin-right: 50px;
+	float: left;
+}
+.layui-form{
+	padding: 30px 0px;
+	border-bottom: 1px solid #ccc;
+}
+.layui-icon {
+    font-size: 28px;
+}
+.tianja{
+	display: inline-block;
+    width: 100px;
+    height: 33px;
+    background: #27ae61;
+    color: #FFF;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 33px;
+    float: right;
+    margin-right: 0px;
+}

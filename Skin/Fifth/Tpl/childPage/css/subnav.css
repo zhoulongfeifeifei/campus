@@ -1,0 +1,50 @@
+html,body{
+    height: 100%;
+}
+body{
+    background: #F4F3F8;
+    min-width: 1300px;
+}
+.top{
+    height: 50px;
+    width: 100%;
+    background-color: #548A2A;
+}
+.top img{
+    margin-left: 15%;
+    height: 30px;
+    margin-top: 10px;
+}
+.layui-tab{
+    width: 85%;
+    height: 90%;
+    margin: 0 auto;
+    min-width: 1020px;
+
+}
+.layui-tab-title{
+    border-bottom: 0;
+    margin-bottom: 20px;
+}
+.layui-tab-title li{
+    font-size: 18px;
+}
+.layui-breadcrumb a{
+    color: #028843 !important;
+}
+
+.layui-tab-content{
+    background: #fff;
+    border: 1px solid #efefef;
+    min-height: 85%;   
+
+}
+iframe{
+    border: 0;
+    min-height: 500px; 
+    width: 100%;
+}
+
+.icon.rt{
+    margin-right: 8%;
+}

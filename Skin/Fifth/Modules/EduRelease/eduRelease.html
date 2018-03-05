@@ -1,0 +1,82 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>成绩通知</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+    
+    <link rel="stylesheet" href="css/eduRelease.css"></head>
+<body>
+        <div class="layui-form">
+            <input type="hidden" id="classid">
+            <div class="layui-form-item">
+                <label class="layui-form-label">考试科目：</label>
+                <div class="layui-input-inline">
+                    <p class="layui-form-mid layui-word-aux">可在EXCEL模板中自定义科目</p>
+                </div>
+            </div>
+            <div  class="layui-form-item">
+                <label class="layui-form-label">学期：</label>
+                <div class="layui-input-block">
+                    <div class="layui-input-inline">
+                        <select id="Year" lay-filter="Year"  name="Year">
+                            <option value=""></option>                           
+                        </select>
+                    </div>
+                    <div class="layui-input-inline">
+                        <select id="Term" name="Term">
+                            <option value="1" selected>上学期</option>
+                            <option value="2" >下学期</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div  class="layui-form-item">
+                <label class="layui-form-label">考试类型：</label>
+                <div class="layui-input-inline">
+                    <select id="ScoreTypeId" lay-filter="ScoreTypeId" name="ScoreTypeId">
+                        <option value=""></option>
+                        <option id="custom" value="-1">自定义</option>
+                    </select>
+                </div>
+                <div class="layui-input-inline">
+                    <input type="text" id="ScoreTypeName" name="ScoreTypeName" class="layui-input" value="" placeholder="输入考试名称">
+                </div>
+            </div>
+            <div  class="layui-form-item">
+                <label class="layui-form-label">考试时间：</label>
+                <div class="layui-input-inline">
+                    <input class="layui-input"  onclick="layui.laydate({elem: this, festival: true})" id="ScoreTime" placeholder="选择时间">
+                </div>
+            </div>
+            <div  class="layui-form-item">
+                <label class="layui-form-label nianduan">年段：</label>
+                <div class="layui-input-inline">
+                    <select id="GradeId" name="GradeId">
+                        <option value>请选择</option>
+                    </select>
+                </div>
+                <div class="layui-input-inline" style="width: 300px;">
+                    <a class="layui-btn layui-btn-normal export">模版下载</a><span style="color: red;">点击下载模板之后进行上传模板</span>
+                </div>
+            </div>
+           <div class="f-input uploadfile">
+            		<label class="layui-form-label">上传模板：</label>
+	                <input type="file" name="file" class="layui-upload-file" lay-title="选择文件"> 
+	                <input id="txtfiles" class="path" placeholder="" readonly="">
+	         </div>
+             <div  class="layui-form-item">
+             <label class="layui-form-label"></label>
+             <a class="layui-btn" id="uploadfiles">发布成绩</a>
+             </div>
+        </div>
+    <script src="/Web/Assets/layui/layui.js"></script>
+    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+    <script>var $ = jQuery = layui.jquery;</script>
+    <script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/Web/Assets/plupload/plupload.full.min.js"></script>
+    <script src="js/eduRelease.js"></script>
+    </body>
+</html>

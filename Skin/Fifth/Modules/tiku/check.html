@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+    <link rel="stylesheet" href="../../Common/css/public.css" />
+    <link rel="stylesheet" href="../../Common/css/main.css">
+    <link href="css/check.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+        <ul class="layui-tab-title">
+            <li class="layui-this" id="dai">待审核</li>
+            <li id="yi">已审核</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show" id="wait">
+                <div class="top">
+                    <p class="top_p1">试题来源
+                        <span class="on" id="all1" data-id="0">全部</span>
+                    </p>
+                    <p class="top_p2">学&emsp;&emsp;科
+                        <span class="on" id="all2" data-id="0">全部</span>
+                    </p>
+                    <p class="top_p3">试题类型
+                        <span class="on" id="all3" data-id="0">全部</span>
+                    </p>
+                    <p class="top_p4">试题难度
+                        <span class="on" id="all4" data-id="0">全部</span>
+                    </p>    
+                </div>  
+                <div class="main" id="main1">
+                    <div class="main_top">
+                        <input type="checkbox" id="allcheck1" name="allcheck" value="">&nbsp;&nbsp;全选
+                        <span class="main_top_s1">批量通过</span>
+                        <span class="main_top_s2">批量驳回</span>
+                    </div>
+                   
+                    <div id="page1">
+                    </div>
+                </div>  
+            </div>
+            <div class="layui-tab-item" id="already">
+                <div class="top">
+                    <p class="top_p5">试题来源
+                        <span class="on" id="all5" data-id="0">全部</span>
+                    </p>
+                    <p class="top_p6">学&emsp;&emsp;科
+                        <span class="on" id="all6" data-id="0">全部</span>
+                    </p>
+                    <p class="top_p7">试题类型
+                        <span class="on" id="all7" data-id="0">全部</span>
+                    </p>
+                    <p class="top_p8">试题难度
+                        <span class="on" id="all8" data-id="0">全部</span>
+                    </p>     
+                </div>  
+                <div class="main" id="main2">
+                    <div id="page2">
+                    </div>
+                </div> 
+            </div>
+        </div>
+     </div>
+
+</body>
+<script src="/Web/Assets/jquery-1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="/Web/Assets/layui/layui.js"></script>
+<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+<!--<script>var $ = jQuery = layui.jquery;</script>-->
+<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/check.js"></script>
+
+
+</html>

@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,p,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: 0;vertical-align: baseline;background: transparent;}
+table, caption, tbody, tfoot, thead, tr, th, td{ vertical-align:middle;}
+th{
+    text-align: left;
+}
+html{margin-top:0px !important;}
+
+body {background: #fff;  font-size:14px; color: #656565;font-family: 'microsoft yahei',osaka,sans-serif;min-width: 1200px;}
+
+li{list-style: none;}
+
+a{cursor: pointer;margin: 0;padding: 0;border: 0;vertical-align: baseline;text-decoration:none;color:#000;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000;cursor: help;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #cccccc;margin: 1em 0;padding: 0;}
+
+input, select {vertical-align: middle;}
+
+h1,h2,h3,h4,h5,h6{ color:#999; padding:10px 0;}
+img{border: 0}
+
+em,i,strong{font-style:normal;}
+
+/*清除浮动*/  
+.clearfix:before,.clearfix:after{content: '';display: table;}  
+.clearfix:after{clear: both;}
+/*==========重置样式=========*/
+.vF-panel {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 5px 20px;
+    margin: 15px 0;
+}
+.bar-header {
+    line-height: 60px;
+    height: 60px;
+}
+.bar-header .text {
+    margin: 0 10px 0 0;
+    font-size: 12px;
+    color: #999;
+}
+.font-18 {
+    font-size: 18px!important;
+}
+.text {
+    color: #666;
+    font-weight: normal;
+}
+.blue {
+    color: #337ab7!important;
+}
+.form {
+    padding: 5px;
+    font-size: 14px;
+}
+.form .f1 {
+    padding: 10px;
+    border-top: 1px dashed #ddd;
+}
+.form .f1 [class*="span"]:first-child {
+    margin-left: 0;
+}
+.form .f1 .span1 {
+    width: 6.382978723404255%;
+}
+.form .f1 [class*="span"] {
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 30px;
+    margin-left: 2.127659574468085%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form .f1 .f-label {
+    text-align: right;
+    line-height: 30px;
+    font-size: 14px;
+}
+.form .f1 label {
+    display: inline-block;
+}
+.w-100 {
+    width: 100px!important;
+}
+.form .f1 .span4 {
+    width: 31.914893617021278%;
+}
+.form .f1 input:not([type]) {
+	float: left;
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+}
+input:not([type]) {
+    border: 1px solid #bbb;
+    outline: none;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 4px;
+}
+.btn {
+    font-size: 12px;
+    display: inline-block;
+    margin: 3px 5px;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    min-width: 35px;
+    color: #fff;
+    background: #616161;
+    text-align: center;
+    border-radius: 1px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    transition: background-color .2s ease 0s;
+    border-radius: 1px;
+    vertical-align: middle;
+}
+.btn-blue {
+    background: #3276b1;
+}
+.upload .btn {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: -2px;
+    margin: 0;
+}
+.clr {
+    clear: both;
+}
+.upload-preview img {
+    max-width: 200px;
+    max-height: 150px;
+}
+.layui-upload-button{
+    background-color: #3276b1;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+}

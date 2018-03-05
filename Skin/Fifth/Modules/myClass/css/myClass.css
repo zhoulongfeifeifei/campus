@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-11-09 11:14:19
+ * @version $Id$
+ */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica,STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial !important;
+}
+.l-con{
+    margin-top: 10px;
+    margin: auto;
+    padding: 15px;
+}
+ul#Notice {
+    margin-top: 12px;
+}
+.addNotice ,.btn{
+    border-radius: 4px;
+    /*background: #028843;*/
+    color: #fff;
+    padding: 0 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+.addNotice:hover ,.btn:hover{
+    color: #eee;
+}
+.l-con ul li{
+    list-style: none;
+    margin-bottom: 15px;
+    background: #fff;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    overflow: hidden;
+
+}
+.l-con ul li .lileft{
+   
+}
+.l-con ul li .liright{
+    
+}
+
+.l-con ul li .topimg{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 14%;
+    text-align: right;
+    background: url(../../Common/img/lileft.png) no-repeat top left;
+    background-size: 35% 40%;
+    padding: 10px 0 10px 16px;
+    box-sizing: border-box;
+}
+
+.l-con ul li .topimg img{
+    width: 60%;
+    border-radius: 4px;
+}
+.l-con ul li .content{
+    display: inline-block;
+    float: right;
+    color: #028843;
+    width: 84%;
+    background: url(../../Common/img/liright.png) no-repeat top right;
+    box-sizing: border-box;
+    padding: 10px 16px 10px 0;
+}
+.l-con ul li .content h3{
+    font-size: 1.2em;
+    line-height: 2.4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #028843;
+}
+.l-con ul li .content span{
+    opacity: .6;
+}
+.l-con ul li .content p{
+    font-size: 0.8em;
+    line-height: 2em;
+
+}
+.l-con ul li .content p span{
+    font-weight: bold;
+}
+.l-con .content .Q-A{
+    margin: 10px 0;
+    /*display: none;*/
+}
+.l-con .content .Q{
+    display: inline-block;
+    width: 80%;
+    height: 2em;
+    border: 1px solid #028843;
+    background: #ecf8e2;
+}
+.l-con .content .A{
+    display: inline-block;
+    width: 18%;
+    line-height: 2.3em;
+    background: #028843;
+    color: #fff;
+    border:0 none;
+}
+
+.block{
+    display: block !important;
+}
+
+
+/*学生作业*/
+.task .addNotice{
+    width: 80px;
+    text-align: center;
+}
+/*.task .addNotice , .taskSelect{*/
+    /*display: none;*/
+/*}*/
+.taskSelect{
+    margin-top: 12px;
+}
+.tashImg{
+    width: 60px; 
+    height: 60px;
+    margin-right: 5px;
+    display: inline-block;
+}
+.tashImg img{
+    width: 60px;
+    height: 40px;
+}
+.tashImg span{
+    width: 56px;
+    margin : 2px auto;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.taskfile{
+    display: block;
+}
+.taskfile a{
+    color:#2d39de;
+    display:inline-block; 
+    margin-right:10px;
+    text-decoration:underline;
+}
+
+.layui-input{
+    height: 30px;
+}
+.layui-form-select ul li{
+    line-height: 28px;
+    border: none;
+    border-radius: 0;
+}
+
+.Score.addNotice{
+    display: none;
+}
+.clear{
+    clear: both;
+}
+.select{
+    overflow: hidden;
+    padding: 10px 10px 10px 0;
+    /*display: none;*/
+}
+.right{
+    float: right;
+}
+
+
+/*班级通知*/
+#Notice , .Leave{
+    height: 650px;
+    overflow: auto;
+}
+
+/*问题答疑*/
+.quest {
+    margin-top: 10px;
+    display: none;
+}
+.quest textarea{
+    width: 100%;
+    background: #ecf8e2;
+    color: #028843;
+    font-size: 1.2em;
+}
+.quest .btn{
+    display: inline-block;
+    float: left;
+}
+.quest .layui-input-inline{
+    margin: 10px 0;
+}
+ul#Leave li {
+    margin-top: 10px;
+}
+
+
+/*请假*/
+/*.Leave .addNotice{*/
+    /*display: none;*/
+/*}*/
+#LeaveModal{
+    display: none;
+}
+ul#babyScore {
+    margin-top: 12px;
+}

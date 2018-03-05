@@ -1,0 +1,58 @@
+#iframe {
+	width: 100%;
+	height: 450px;
+}
+
+body {
+	position: relative;
+}
+
+#iframe2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+table thead th {
+	text-align: center !important;
+	class="layui-table"
+}
+th,td{
+	text-align: center !important;
+}
+a:hover{
+	text-decoration: none;
+}
+.w-20{
+	width: 20px !important;
+}
+.w-120{
+	width: 120px;
+	height: 30px;
+}
+.page_title{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+	}
+.page_title .span{
+    width: 100px;
+    display: block;
+    float: left;
+    border-bottom:2px solid green;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+.red{
+	color:red;
+}
+.blue{
+	color:blue;
+}
+.pull-right{
+	float: right;
+}

@@ -1,0 +1,439 @@
+﻿/*#region 专区 layout*/
+.page_area_select { min-height: 600px; _height: 600px; }
+    .page_area_select .col_main { min-height: 600px; _height: 600px; }
+.page_area { min-height: 600px; }
+    .page_area .col_main { min-height: 600px; }
+    .page_area .mod_clear { zoom: 1; }
+        .page_area .mod_clear:before { content: ""; clear: both; display: block; height: 0; }
+        .page_area .mod_clear:after { content: ""; clear: both; display: block; height: 0; }
+    .page_area .in_main { padding-left: 8px; padding-top: 8px; width: 753px; }
+    .page_area .col_main_feed { width: 560px; padding: 9px 0 0 0; }
+    .page_area .col_main_sidebar { width: 160px; padding-top: 9px; }
+        .page_area .col_main_sidebar .panel { padding: 3px 3px 0 3px; margin-bottom: 10px; }
+.AreaWindow { min-height: 602px; *min-height: 604px; _height: 648px; }
+    .AreaWindow .skinWindowTitle { height: 28px; }
+        .AreaWindow .skinWindowTitle h2 { margin: 0; padding: 0 0 0 14px; font-size: 12px; height: 28px; line-height: 28px; color: #1678aa; }
+    .AreaWindow .skinWindowContent { padding: 6px 11px 10px 11px; }
+.page_area .btn_upload { display: block; background: url(Botton.jpg) no-repeat; width: 150px; height: 33px; }
+.page_area .btnGongGao { background-position: 0px -33px; }
+.page_area .btnZuoYe { background-position: 0px -66px; }
+.struTitle_1 { height: 24px; line-height: 24px; border-bottom: 1px solid #dbe7ed; margin-top: 10px; }
+    .struTitle_1 h2 { font-size: 14px; color: #1678aa; width: 450px; float: left; padding-left: 5px; }
+    .struTitle_1 .struTitleBack_1 { display: block; width: 100px; float: left; text-align: right; color: #3d96b3; }
+/*#endregion*/
+
+/*#region 专区&身份选择*/
+.mschool .skinWindow { border: none; padding: 0; }
+.mschool .skinWindowTitle { margin-top: 4px; height: 26px; line-height: 26px; background: #c0e6f8; }
+.mschool .skinWindowContent { padding: 0; }
+/*button*/
+.mschool_wrap .button { font-size: 12px; text-align: center; height: 22px; line-height: 22px; }
+    .mschool_wrap .button .btn { position: relative; margin: 0 4px; height: 20px; line-height: 20px; border: 1px solid #d3e5ed; background: #5da9c2; cursor: pointer; color: #ffffff; }
+.mschool_wrap .prev_btn { padding: 4px 10px 4px 20px; }
+.mschool_wrap .next_btn { padding: 4px 20px 4px 10px; }
+.mschool_wrap .button .btn span { position: absolute; top: 7px; display: block; width: 5px; height: 9px; }
+.mschool_wrap .prev_btn span { left: 10px; _left: 26px; background: url(btnprev.jpg) no-repeat 0 0; }
+.mschool_wrap .next_btn span { right: 10px; background: url(btnarrow.jpg) no-repeat 0 0; }
+.mschool_wrap .msc { margin: 55px 0 0; }
+    .mschool_wrap .msc h3 { font-size: 22px; color: #d4b26a; padding-left: 25px; }
+/*身份图标列表*/
+.mschool_wrap .mscstatus ul { overflow: hidden; zoom: 1; margin-top: 38px; }
+.mschool_wrap .mscstatus li { float: left; margin: 0 0 35px 30px; }
+    .mschool_wrap .mscstatus li a { display: block; padding-top: 100px; width: 100px; height: 20px; }
+        .mschool_wrap .mscstatus li a.tea { background: url(tea.jpg) no-repeat 0 0; }
+        .mschool_wrap .mscstatus li a.par { background: url(par.jpg) no-repeat 0 0; }
+        .mschool_wrap .mscstatus li a.stu { background: url(stu.jpg) no-repeat 0 0; }
+        .mschool_wrap .mscstatus li a.chi { background: url(chi.jpg) no-repeat 0 0; }
+        .mschool_wrap .mscstatus li a span { display: block; height: 20px; line-height: 20px; text-align: center; color: #4e4e4e; font-size: 14px; font-weight: bold; letter-spacing: .1em; }
+.mschool_wrap .mscstatus .button { text-align: left; padding-left: 180px; }
+.mschool_wrap .mscstatus p { text-align: right; margin-top: 40px; padding: 0 5px 0 0; }
+    .mschool_wrap .mscstatus p a.tip { font-size: 14px; font-weight: bold; color: #777777; }
+/*学校&班级列表*/
+.mschool_wrap .mscList ul { margin: 35px 0; }
+.mschool_wrap .mscList li { margin: 15px 0; padding-left: 150px; }
+    .mschool_wrap .mscList li a { font-family: "微软雅黑"; display: inline; font-size: 20px; font-weight: 300; color: #c9c6a8; }
+.mschool_wrap .button { padding-left: 135px; text-align: left; }
+    .mschool_wrap .button .btn { margin: 0 15px 0 15px; }
+.rightOp .rightTitle li a { padding: 3px 7px 3px 8px; padding: 4px 7px 3px 8px\9; *padding: 5px 7px 4px 7px !important; }
+    .rightOp .rightTitle li a.current { padding: 3px 7px 3px 8px; padding: 4px 7px 3px 8px\9; *padding: 4px 7px 5px 7px !important; }
+/*#endregion */
+
+/*#region 教师虚拟网*/
+.virnetwork .vitualBody { padding: 0px 0 0 0px; overflow: hidden; }
+.virnetwork .vitualNum { margin: 10px 0 0 0; }
+.virnetwork .vitualList p { height: 28px; line-height: 28px; margin: 5px 0; }
+    .virnetwork .vitualList p.sh { background: #D6D6D6; }
+    .virnetwork .vitualList p span { display: block; float: left; margin-right: 8px; }
+.virnetwork .vitualBody .subTitle { display: block; margin: 5px 0 10px 0; color: #000000; height: 22px; line-height: 22px; padding-left: 15px; background: #f1f1f1; border-bottom: 1px solid #bbbbbb; }
+.virnetwork .vitualBody .editTel { margin-bottom: 10px; }
+.virnetwork .vitualList .vitualvnum input { margin-left: 2px; }
+.virnetwork .vitualList .callname { width: 120px; line-height: 1em; line-height: 20px\9; font-size: 100%; }
+.virnetwork .vitualList .input { padding-left: 5px; border: 1px solid #d0d0d0; height: 20px; }
+.virnetwork .vitualList .rnum { line-height: 1em; line-height: 20px\9; font-size: 100%; }
+.hightlight { background: #F5C9C9; }
+.virnetwork .vitualList .rnum { width: 105px; }
+.virnetwork .vitualList .vnum { float: none; }
+.virnetwork .vitualList a.link { display: inline-block; line-height: 1.3em; padding: 0px 2px; margin: 8px 10px 0 0; }
+    .virnetwork .vitualList a.link:hover { background: #6FBAD1; color: #ffffff; }
+.virnetwork .tip { color: #8c8c8c; }
+.virnetwork .error_tip { color: #ff0000; padding-left: 20px; display: block; height: 24px; line-height: 24px; background: url(/Js/jquery.validate/error.png) no-repeat 0 center; }
+.virnetwork .vitualBody .Botton_2 { float: right; margin-top: -35px; }
+#saveTel { margin: 0px 0 0; }
+/*#endregion */
+
+/*#region 学生列表*/
+.StudentList { }
+    .StudentList h1 { margin: 12px 0; padding: 0; display: block; width: 530px; border-bottom: solid 1px #dbe7ed; font-size: 12px; height: 25px; line-height: 25px; padding-left: 10px; color: #656565; }
+        .StudentList h1 span { font-weight: normal; }
+    .StudentList .List { color: #656565; }
+        .StudentList .List ul { margin: 0; padding: 0; list-style: none outside; height: 26px; line-height: 26px; width: 100%; border-collapse: collapse; }
+        .StudentList .List li { float: left; text-align: center; border: solid 1px #f1f1f1; border-top: 0; border-bottom-color: #E6E6E6; border-left-width: 0; height: 25px; white-space: nowrap; border-collapse: collapse; overflow: hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow: ellipsis; cursor: default; }
+            .StudentList .List li a { color: #384b09; text-decoration: underline; padding: 1px; }
+                .StudentList .List li a:hover { color: #ffffff; background: #384B09; }
+        .StudentList .List .ListTitle { background: #dbe7ed; font-weight: bold; color: #25728b; font-weight: bold; font-size: 12px; border-bottom: 0; }
+            .StudentList .List .ListTitle .Li3 { text-align: center; }
+        .StudentList .List .Li1 { width: 100px; }
+        .StudentList .List .Li2 { width: 52px; }
+        .StudentList .List .Li3 { width: 80px; border-left-width: 1px; text-align: left; padding-left: 5px; }
+        .StudentList .List .Li4 { width: 60px; }
+        .StudentList .List .Li5 { width: 100px; }
+        .StudentList .List .Li6 { width: 70px; text-align: left; padding-left: 5px; }
+        .StudentList .List .Li7 { width: 70px; }
+        .StudentList .List .Li8 { width: 70px; }
+        .StudentList .List .Li9 { width: 35px; }
+.input { border-color: #cccccc; }
+.StudentList .List .inh4 { width: 70px; }
+.StudentList .List .inh5 { width: 90px; }
+.sel { padding: 1px; }
+/*#endregion*/
+
+/*#region base_material_v3*/
+.base_material_v3 .fn_basicinfo { margin: 20px 20px 20px 20px; }
+    .base_material_v3 .fn_basicinfo table { width: 100%; }
+    .base_material_v3 .fn_basicinfo .basicinfo_title { width: 78px; padding-bottom: 15px; vertical-align: top; line-height: 23px; }
+        .base_material_v3 .fn_basicinfo .basicinfo_title label { line-height: 22px; }
+    .base_material_v3 .fn_basicinfo .td { padding-bottom: 15px; vertical-align: top; }
+    .base_material_v3 .fn_basicinfo .basicinfo_box { position: relative; line-height: 22px; }
+    .base_material_v3 .fn_basicinfo .td_crossline { border-width: 1px 0 0 0; padding-top: 15px; }
+.base_material_v3 .textinput { border-bottom: 1px solid; border-left: 1px solid; padding-bottom: 3px; line-height: 14px; padding-left: 3px; width: 150px; padding-right: 3px; height: 14px; border-top: 1px solid; margin-right: 7px; border-right: 1px solid; padding-top: 3px; }
+.base_material_v3 .textarea { width: 100%; height: 150px; border: 1px solid; overflow: auto; }
+.base_material_v3 select { margin-right: 7px; }
+.base_material_v3 .select_small { width: 65px; overflow: hidden; word-break: keep-all; }
+.base_material_v3 .select_medium { width: 100px; }
+.base_material_v3 .calinput { background-image: url(sprite.png); width: 112px; background-repeat: no-repeat; background-position: 100px 2px; }
+.base_material_v3 .base_submit { margin-left: 75px; }
+.base_material_v3 .inputLimit { line-height: 25px; color: #8AC0FF; }
+.base_material_v3 .a { line-height: 24px; padding: 2px; }
+    .base_material_v3 .a:hover { background: #82D6EF; color: #ffffff; }
+.base_material_v3 span.editPanel { display: none; }
+.base_material_v3 input.editInput { border-color: #cccccc; margin-left: 10px; outline: none; }
+/*#endregion*/
+
+/*#region 学生详情*/
+.StudentView { min-height: 300px; padding: 10px; }
+.StudentViewHeader { color: #3d3d3d; font-size: 20px; height: 40px; padding-left: 13px; }
+    .StudentViewHeader span { display: block; float: left; font-size: 14px; line-height: 30px; padding-right: 10px; }
+    .StudentViewHeader .stuName { padding-right: 100px; }
+    .StudentViewHeader .stuName, .StudentViewHeader .stuNumber { color: #e2701f; font-size: 20px; font-weight: bold; }
+.StudentView .h1 { display: block; background: #eaf7fd; margin: 10px 0 10px 0px; padding: 0; height: 23px; padding-left: 13px; border: solid 1px #e8f3f7; font-size: 12px; line-height: 23px; color: #666666; }
+    .StudentView .h1 span { display: block; float: left; }
+    .StudentView .h1 .hBt { float: right; }
+    .StudentView .h1 .Botton_2 { padding: 1px 3px; }
+.StudentView .StudentViewInfo { padding-left: 13px; }
+.StudentView td { color: #666666; }
+.StudentView p { margin: 0; }
+.StudentView .hr { height: 1px; background: #dbe7ed; }
+.StudentView .SubmitLine { text-align: center; }
+    .StudentView .SubmitLine input { margin: 0 10px; }
+.StudentView .InfoWrap { line-height: 25px; cursor: default; }
+.StudentView .alink { margin: 0 0 0 20px; display: inline-block; line-height: 1em; padding: 1px; }
+    .StudentView .alink:hover { color: #ffffff; background: #30C5F2; }
+.StudentView .LineHeight { line-height: 25px; }
+.StudyMaterial { padding: 20px 0 0 0; }
+    .StudyMaterial .LeftContainer { float: left; width: 530px; }
+    .StudyMaterial .RightContainer { float: left; width: 156px; }
+    .StudyMaterial .LeftContainer .back { display: block; height: 25px; line-height: 25px; margin-bottom: 5px; text-align: right; color: #3d96b3; border-bottom: 1px solid #dbe7ed; }
+    .StudyMaterial .StudyMaterialTitle, .materialListTitle { font-size: 12px; height: 23px; line-height: 23px; padding-left: 20px; font-weight: bold; background: #eaf7fd; }
+    .StudyMaterial .LeftContainer .materialUploading { padding-top: 18px; color: #666666; }
+    .StudyMaterial .LeftContainer .materialInfo { margin: 3px 0; }
+    .StudyMaterial .LeftContainer .inptext { height: 25px; line-height: 25px; }
+    .StudyMaterial .LeftContainer .materialInfo label { float: left; width: 72px; padding: 3px 0 0 3px; }
+    .StudyMaterial .LeftContainer .materialInfo select { width: 120px; border: 1px solid #aaaaaa; }
+    .StudyMaterial .LeftContainer .materialInfo input { width: 450px; margin: 0; padding: 0; height: 23px; vertical-align: middle; border: 1px solid #aaaaaa; }
+    .StudyMaterial .LeftContainer .materialInfo button { margin: 0; padding: 0; border: none; text-indent: -9999px; cursor: pointer; }
+    .StudyMaterial .LeftContainer .materialInfo .imitatefile { width: 390px; margin: 0; padding: 0; height: 23px; vertical-align: middle; border: 1px solid #aaaaaa; *margin-top: -12px; }
+    .StudyMaterial .LeftContainer .materialInfo .imitatebutton { width: 55px; height: 28px; line-height: 25px; background: url(../Images/Area/browse.jpg) no-repeat left 3px; }
+    .StudyMaterial .LeftContainer .materialInfo .materialdescription { margin: 0; padding: 0; width: 450px; height: 220px; overflow: auto; border: 1px solid #aaaaaa; }
+    .StudyMaterial .LeftContainer .sub { float: left; margin: 12px 0 0 0; width: 530px; height: 25px; text-align: center; }
+        .StudyMaterial .LeftContainer .sub .materialsubmit { margin: 0; padding: 0; border: none; width: 99px; height: 25px; text-indent: -999px; *text-indent: 0px; line-height: 999px; background: url(../Images/Area/materialSubmit.jpg) no-repeat left center; }
+.materialList { margin-top: 20px; color: #5c5c5c; }
+.detailInfo { padding: 12px 0 0 20px; border-bottom: 1px solid #dbf0fa; }
+    .detailInfo ul { margin: 0; padding: 0; list-style: none; width: 520px; overflow: auto; zoom: 1; }
+        .detailInfo ul li { float: left; }
+    .detailInfo .L1 { width: 440px; font-size: 14px; font-weight: bold; color: #1f7abc; }
+    .detailInfo .L2, .L3 { width: 40px; text-align: center; }
+        .detailInfo .L2 a, .L3 a { color: #e67309; }
+    .detailInfo p { margin: 0; padding: 0; font-size: 14px; line-height: 1.5em; }
+.materialList .return { text-align: center; height: 25px; line-height: 25px; }
+    .materialList .return a { color: #3d96b3; }
+.areaList { }
+    .areaList ul { margin: 0; padding: 5px; border-bottom: solid 1px #dbf0fa; }
+    .areaList li { margin: 0; padding: 0; list-style: none outside; display: block; }
+    .areaList .Li1 { height: 30px; line-height: 30px; float: left; color: #1f7abc; font-weight: bold; font-size: 14px; width: 368px; overflow: hidden; }
+        .areaList .Li1 a { color: #1f7abc; }
+    .areaList .Li2 { height: 30px; line-height: 30px; color: #979797; float: left; }
+    .areaList .Li3 { height: 30px; line-height: 30px; color: #e67309; float: left; width: 50px; text-align: center; }
+        .areaList .Li3 a { color: #e67309; }
+    .areaList .Li4 { clear: left; line-height: 25px; color: #5c5c5c; font-size: 14px; width: 100%; display: block; }
+    .areaList .Li5 { color: #1f7abc; height: 30px; line-height: 30px; }
+        .areaList .Li5 a { color: #1f7abc; }
+div { margin: 0; padding: 0; }
+.clear { clear: both; margin: 0; padding: 0; }
+.floatL { float: left; }
+#datalist ul { width: 100%; }
+    #datalist ul li { float: left; height: 24px; line-height: 24px; width: 100%; }
+.areaListTitle { }
+    .areaListTitle h1 { font-size: 12px; display: block; margin: 0; padding: 0; border-bottom: solid 1px #dbf0fa; height: 25px; line-height: 25px; color: #3f3f3f; padding-left: 5px; }
+        .areaListTitle h1 span { font-weight: normal; padding-left: 15px; }
+        .areaListTitle h1 a { color: #4a4a4a; }
+.areaViewback { display: block; width: 100%; height: 25px; line-height: 25px; margin-bottom: 10px; margin-top: 5px; text-align: right; color: #3d96b3; border-bottom: 1px solid #dbe7ed; }
+.areaViewTitle { height: 30px; background: #eaf7fd; text-align: center; line-height: 30px; font-weight: bold; margin: 5px 0 15px 0; font-size: 14px; letter-spacing: 10px; }
+.areaForm { color: #545454; }
+    .areaForm .formLine > td { padding: 0 0 10px 0; }
+    .areaForm .formLine .formTitle { padding-top: 5px; }
+.EditTextarea { width: 100%; height: 200px; overflow: auto; }
+.FlashUpload { border: solid 1px #b2cdd8; }
+.FormSubmit { padding: 10px 0 0 0; }
+.ReleaseBottom { padding-top: 12px; }
+.ContentMinHeight { min-height: 758px; _height: 758px; }
+/*修改虚拟网，短信接收号码，亲情网，点击无显示样式*/
+.noadd { display: none; }
+    .noadd p { margin: 0 0 5px 0; }
+        .noadd p .input { width: 100px; }
+        .noadd p .alink { margin: 0 0 10px 0; }
+        .noadd p input.ashortnum { width: 30px; }
+        .noadd p.pbtn { text-align: right; }
+.b_result, #addbusnum { margin-left: 100px; }
+#addVirtual { }
+#addfamily { }
+/*#endregion*/
+
+/*#region 文档详情页面*/
+.detailscon { }
+    .detailscon .detailsHeader { overflow: hidden; zoom: 1; }
+    .detailscon .detailsbody { }
+    .detailscon .detailsTitle { height: 28px; line-height: 28px; margin-top: 5px; }
+.detailsTitle strong { float: left; display: block; width: 450px; overflow: hidden; font-size: 14px; color: #3D96B3; }
+.detailsTitle span { float: left; display: block; width: 100px; text-align: right; color: #4a4a4a; margin-left: 10px; }
+.detailscon .op { height: 24px; line-height: 24px; text-align: right; }
+    .detailscon .op span { float: left; margin-right: 10px; }
+        .detailscon .op span b { padding-left: 3px; }
+    .detailscon .op a { color: #486F97; margin-left: 15px; cursor: pointer; text-decoration: underline; }
+.detailsbody { padding: 10px 5px; }
+    .detailsbody p { line-height: 1.3em; font-size: 1.2em; width: 550px; overflow: hidden; }
+/*#endregion*/
+
+/*#region 资料下载*/
+.data { }
+    .data .data_wrap { padding: 10px 0 0; }
+.data_wrap .input { outline: none; }
+/*---maincontent---*/
+.data .data_wrap .col_main_feed { width: 729px; }
+.data_wrap .sub_nav { color: #424242; height: 25px; line-height: 24px; width: 100%; }
+    .data_wrap .sub_nav span { background: #E8EDF0; border: 1px solid #C8D3DE; cursor: pointer; display: inline-block; float: left; margin-right: 5px; padding: 0 5px; }
+        .data_wrap .sub_nav span.On { background: #ffffff; }
+        .data_wrap .sub_nav span a { color: #3d3d3d; }
+.data_wrap .data_info { border-top: 1px solid #C8D3DE; z-index: 3; padding: 15px 0; }
+    .data_wrap .data_info li { margin-bottom: 15px; height: auto; overflow: hidden; }
+.data_list_info { float: left; width: 100%; }
+.data_wrap h2.infoTop { display: block; font-size: 14px; height: 1.4em; line-height: 1.4em; margin-bottom: 5px; overflow: hidden; position: relative; width: 100%; }
+.data_wrap h2.infoTop { color: #1F7ABC; font-weight: bold; }
+    .data_wrap h2.infoTop a:hover { color: #E67309; text-decoration: underline; }
+    .data_wrap h2.infoTop .data_app { position: relative; top: 2px; }
+.data_wrap div.infosummary { color: #646464; height: auto; line-height: 1.8em; margin-bottom: 5px; min-height: 45px; overflow: hidden; width: 100%; }
+.data_wrap .infoDown { position: relative; }
+    .data_wrap .infoDown .color span { color: #D7711C; line-height: 1.5em; }
+    .data_wrap .infoDown .color a { display: block; float: left; margin-right: 15px; }
+    .data_wrap .infoDown .author { position: absolute; right: 5px; bottom: 2px; color: #9B9B9B; }
+    .data_wrap .infoDown a.author:hover { text-decoration: underline; color: #E67309; }
+/*---slidebarcontent---*/
+.data .data_wrap .col_main_sidebar { }
+.data_wrap .collet_box { margin-bottom: 10px; }
+    .data_wrap .collet_box .btndata { background: url(data-upload.png) no-repeat 0 0; }
+.data_wrap .col_main_sidebar .search { }
+.data_wrap .search .input { border-color: #cccccc; width: 90px; float: left; margin: 1px 3px 0; outline: none; }
+.data_wrap .search .googleBt1 { min-width: 40px !important; }
+.data_wrap .col_main_sidebar .rank { padding: 15px 0 0; display: none; }
+.data_wrap .rank span.title { font-size: 14px; color: #1678AA; font-weight: bold; display: block; border-bottom: 1px solid #DDDDDD; padding: 5px 0 5px 12px; }
+.data_wrap .rank ul { margin: 5px 0; }
+.data_wrap .rank li { height: 20px; line-height: 20px; padding: 0 0 0 15px; }
+    .data_wrap .rank li a { color: #656565; }
+        .data_wrap .rank li a:hover { text-decoration: underline; color: #FF8521; }
+/*--dataUploadList--*/
+#dataUploadList ul { width: 100%; overflow: hidden; zoom: 1; padding: 0 0 15px; border-bottom: dotted 1px #D6D6D6; }
+#dataUploadList li { margin: 0; }
+    #dataUploadList li.Li1 { width: 540px; }
+        #dataUploadList li.Li1 .style { color: #C40300; }
+    #dataUploadList li.Li3 { width: 45px; }
+        #dataUploadList li.Li3 a:hover { background: #E67309; color: #ffffff; }
+    #dataUploadList li.Li4 { font-size: 12px; }
+        #dataUploadList li.Li4 a { color: #3d3d3d; }
+.dataUploadPager a { padding: 0 4px; }
+#dataUploadList .Li5 { display: none; }
+/*--datachoose--*/
+.data_choose_body { }
+    .data_choose_body h2 { color: #494949; display: block; font-size: 20px; line-height: 1.1; word-wrap: break-word; }
+    .data_choose_body p { padding: 10px 0 20px; line-height: 24px; }
+    .data_choose_body a.button { display: block; margin-bottom: 50px; width: 128px; height: 29px; border-color: #ffffff; cursor: pointer; background-color: #ffffff; background-image: url(/Images/Area/Btnchoose.png); background-repeat: no-repeat; }
+    .data_choose_body .Btncommon { background-position: 0 -87px; }
+        .data_choose_body .Btncommon:hover { background-position: 0 -58px; }
+    .data_choose_body .Btnvideo { background-position: 0 -29px; }
+        .data_choose_body .Btnvideo:hover { background-position: 0 0; }
+/*--dataUpload--*/
+.data_upload { }
+    .data_upload h2, .data_down h2 { padding: 3px 0 2px; background: #F5F5F5; color: #1C98D7; padding-left: 15px; }
+        .data_upload h2 .back { text-decoration: underline; font-size: 12px; font-weight: normal; float: right; display: block; margin: 3px 15px 0 0; *margin-top: -24px; color: #1678AA; }
+            .data_upload h2 .back:hover { color: #E67309; }
+    .data_upload p { margin: 10px 0; }
+        .data_upload p * { vertical-align: middle; }
+    .data_upload .left { margin: 3px 0 0; }
+    .data_upload .input { border-color: #cccccc; }
+    .data_upload .textarea { border-color: #cccccc; width: 420px; height: 140px; outline: none; resize: none; color: #000000; }
+    .data_upload .checkgroup { width: auto; }
+    .data_upload .googleBt1 { margin: 5px 0 0 85px; }
+#upload_process, #uploadvideoBtn { margin-left: 85px; }
+#upload_process { width: 100px; height: 18px; line-height: 18px; padding: 0 0 8px 0; }
+#uploader .input, #uploadercommon .input { float: left; margin: 2px 5px 0 0; }
+.data_upload .upload_ok { margin-left: 85px; width: 320px; height: 22px; border: solid 1px #91d060; padding-left: 5px; margin-top: 5px; }
+    .data_upload .upload_ok .uploader { margin-top: 2px; }
+.data_upload .filename { color: #aaaaaa; float: left; line-height: 15px; padding: 3px 3px 0 3px; }
+.data_upload .upload_process span { line-height: 20px; }
+.data_upload .delete { float: right; width: 9px; height: 9px; background: url(photo_v3.png) no-repeat -60px -17px; display: block; margin: 7px 5px 0 0; }
+#vedio_name { width: 300px; }
+/*--dataUploadCommon--*/
+.data_common_upload { }
+/*--dataUploadVideo--*/
+.data_video_upload .authorEdit { color: #1678AA; cursor: pointer; }
+/*--dataDownload--*/
+.data_down { border-top: 1px solid #C8D3DE; padding: 15px 0; }
+    .data_down .data_down_info * { line-height: 1.8em; }
+    .data_down h2 { text-align: center; padding: 3px; }
+        .data_down h2 a { color: #1C98D7; }
+            .data_down h2 a:hover { text-decoration: underline; color: #D7711C; }
+    .data_down p { margin: 10px 0; }
+        .data_down p * { vertical-align: middle; }
+    .data_down .left { margin: 3px 0 0; font-weight: bold; }
+    .data_down .data_down_info span.infovalue { display: block; height: 20px; line-height: 25px; }
+    .data_down .button { display: block; margin: 15px 0 0 20px; width: 185px; height: 49px; border-color: #ffffff; cursor: pointer; background-color: #ffffff; background-image: url(/Images/Area/Btndownload.png); background-repeat: no-repeat; }
+        .data_down .button:hover { background-position: 0 -47px; }
+/*#endregion */
+
+/*#region 考勤管理*/
+.attendance { }
+    .attendance .Structure_2 { margin: 12px 0px 0 0px; }
+    .attendance .attendHead { position: relative; height: 50px; border: 1px solid #b6d8f8; margin: 0 0 5px 0; background: url(Ahead_bg.jpg) repeat-x 0 0; }
+    .attendance .attendSearch { position: relative; margin: 9px 14px 5px 14px; padding: 7px 20px 8px 20px; background: url(Atitle_bg.jpg) repeat-x 0 0; }
+    .attendance .search .bg_l { position: absolute; _position: relative; width: 3px; height: 36px; left: 0; top: 0; background: url(Atitle_l.jpg) no-repeat 0 0; }
+    .attendance .search .title { padding-right: 12px; color: #3887b5; font-size: 14px; font-weight: bold; }
+    .attendance .search .input { margin-left: 4px; height: 16px; width: 90px; border-color: #727070 #e3e3e3 #e3e3e3 #727070; color: #565656; }
+#Aheadsearch { position: absolute; right: 12px; top: 8px; width: 112px; height: 38px; background: url(Asearch1.jpg) no-repeat 0 0; margin: 0; padding: 0; border: none; font-size: 0; cursor: pointer; line-height: 900px; }
+.attendance .attendMain { margin-top: 10px; border: 1px solid #b6d8f8; background: url(Amainbg.jpg) repeat-x left top; }
+.attendance .attendcon { padding: 22px 15px 20px 15px; }
+.attendance .attendTitle { font-size: 14px; color: #000000; color: #5c758c; padding: 0px 0 15px 0; }
+.attendance .maindetailsSearch { height: 32px; line-height: 22px; vertical-align: middle; position: relative; padding-bottom: 4px; border-bottom: 1px solid #b6d8f8; }
+.attendance .attendout { position: absolute; top: 2px; right: -2px; color: #85a4c4; }
+.attendance .maindetailsSearch span { float: left; margin-right: 5px; }
+.attendance .maindetailsSearch select { margin-top: 0px; }
+.attendance .quicksearch { width: 60px; height: 27px; margin: -4px 0 0 0; _margin: 0; padding: 0; border: none; font-size: 0; line-height: 700px; cursor: pointer; background: url(Aserach2.jpg) no-repeat 0 0; }
+.attendance .attendanceList { }
+    .attendance .attendanceList ul { overflow: hidden; zoom: 1; }
+    .attendance .attendanceList p { padding: 5px 0; text-align: center; font-weight: bold; color: #FF6633; }
+    .attendance .attendanceList li { float: left; }
+    .attendance .attendanceList .ListTitle { height: 32px; line-height: 32px; font-size: 12px; font-weight: bold; color: #5c758c; }
+    .attendance .attendanceList .List ul { color: #444444; background: url(contactline.jpg) repeat-x left bottom; height: 26px; line-height: 26px; }
+        .attendance .attendanceList .List ul:hover { background: #e9f5f8; }
+    .attendance .attendanceList li { cursor: default; width: 66px; text-align: center; overflow: hidden; }
+    .attendance .attendanceList .Li1 { padding-left: 5px; width: 60px; text-align: left; }
+    .attendance .attendanceList .Li0 { width: 100px; cursor: default; }
+    .attendance .attendanceList .ListTotal { height: 35px; line-height: 35px; }
+        .attendance .attendanceList .ListTotal .Li1 { width: 125px; }
+.attendance .attendPage { text-align: center; overflow: hidden; zoom: 1; }
+.attendance .attendpagecon { float: right; }
+.attendance .attendPage span, .attendance .attendPage p { margin-left: 5px; display: block; height: 24px; line-height: 24px; float: left; }
+    .attendance .attendPage p a { padding: 0 5px; display: block; float: left; margin-top: 2px; color: #7a7a7a; }
+/*#endregion */
+
+
+/*#region form globle
+------------------------------------*/
+.input, .textarea { outline: none; padding: 2px 0 0 3px; border-style: solid; border-width: 1px; font-family: '宋体'; }
+.inh1 { height: 22px; }
+.inh2 { height: 20px; }
+.inh3 { height: 18px; }
+.inh4 { height: 16px; }
+.button { margin: 0; padding: 0; border: 1px solid #ffffff; }
+.googleBt1 { color: #666666; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px; min-width: 80px; text-align: center; cursor: default; height: 24px; line-height: 22px; padding: 0 8px; }
+    .googleBt1:hover { background-color: #f8f8f8; color: #333333; border-color: #c6c6c6; }
+.left { display: block; float: left; width: 85px; text-align: right; margin-right: 5px; }
+.gendergroup label { padding: 0 10px 0 0; line-height: 24px; }
+    .gendergroup label input { margin-top: 1px; margin-top: -2px\9; }
+.checkgroup { display: block; float: left; width: 645px; }
+    .checkgroup label { float: left; margin: 0 10px 10px 0px; }
+    .checkgroup input { margin: -3px 2px 0 0; margin: -3px -2px -3px -3px\9; *margin: -3px 0px -3px 0px; }
+/*upload*/
+.up { display: block; height: 30px; position: relative; }
+    .up .left { float: left; padding-top: 3px; _padding-top: 5px; }
+.uploadgroup { position: absolute; left: 45px; top: 0px; background: #ffffff; z-index: 100; }
+    .uploadgroup input { margin: 0px; }
+.uploadBtn { cursor: pointer; width: 50px; padding: 0; margin: 0; }
+.file { position: absolute; left: 45px; top: 0px; padding: 0; margin: 2px 0 0\9; padding: 2px 0 2px 3px\9; z-index: 101; visibility: hidden; }
+
+/* @group pager style
+-----------------------------------*/
+.dataUploadPager { float: right; word-wrap: normal; }
+    .dataUploadPager a, .dataUploadPager strong { display: block; float: left; height: 26px; line-height: 26px; border: 1px solid #c2d5e3; padding: 0 9px; margin-left: 4px; text-align: center; color: #333333; font-family: Tahoma, Arial; }
+    .dataUploadPager strong { background-color: #E5EDF2; cursor: default; }
+    .dataUploadPager a:hover { border-color: #369; color: #369; }
+    .dataUploadPager .btnnext, .dataUploadPager .btnback { width: 45px; cursor: pointer; }
+/*#endregion*/
+
+/*#region 教师发短信成员选择
+----------------------------------------*/
+.msg-receiver { color: #000000; padding: 10px 0; }
+/*msg-hd*/
+.msg-hd { height: 30px; border-bottom: 1px solid #9FBACD; vertical-align: bottom; }
+    .msg-hd span { float: left; display: inline-block; margin: 0 10px 0 35px; padding: 8px 15px; background: #AEC4DC; border: 1px solid #8AAACD; border-bottom: none; color: #ffffff; letter-spacing: 1px; font-weight: bold; cursor: default; }
+    .msg-hd blockquote { padding: 8px 5px 0 0; text-align: right; color: #8c8c8c; }
+/*msg-bd*/
+.msg-bd { overflow: hidden; }
+.mlist { float: left; width: 210px; height: 315px; padding: 10px; margin: 10px 0; overflow: auto; }
+    .mlist h2 { font-size: 14px; padding-left: 12px; height: 24px; _line-height: 24px; color: #3d3d3d; }
+.sch-listed, .meb-listed { border-right: 1px solid #C3CFDF; }
+/*sch-listed*/
+.mlist ul li { height: 24px; line-height: 24px; padding-left: 10px; border: 1px solid #ffffff; }
+    .mlist ul li input { float: left; margin: 5px 5px 0 0; *margin: 0px 5px 0 0; }
+    .mlist ul li label { float: left; overflow: hidden; width: 120px; height: 24px; padding-right: 10px; cursor: default; *width: 105px; }
+    .mlist ul li.hover { background: #C3CFDF; border-color: #A2B4CD; }
+/*meb-listed*/
+.meb-listed .memberCon { display: none; }
+.meb-listed .membercur { display: block; }
+.meb-listed h2 { }
+.meb-listed .arrow_down, .meb-listed .arrow_up { background: url(Arrow.png) no-repeat 0 -29px; }
+.meb-listed .arrow_up { background-position: 0 0; }
+.meb-listed .sort { display: block; margin-bottom: 5px; padding-left: 12px; font-weight: bold; border-bottom: solid 1px #ccc; }
+    .meb-listed .sort span { padding-left: 20px; height: 20px; display: inline-block; line-height: 20px; cursor:pointer;}
+.meb-listed ul li { padding-right: 5px; }
+    .meb-listed ul li label { width: 150px; *width: 135px; }
+/*meb-selected*/
+.meb-selected .group { color: #A2B4CD; }
+.meb-selected .num { display: none; }
+/*#endregion*/
+
+/*#region 添加学生*/
+.stuadd-bd { margin: 20px 0 0 0; }
+    .stuadd-bd .lab { text-align: right; display: block; width: 90px; height: 18px; margin-bottom: 5px; padding: 5px 5px 0 0; }
+        .stuadd-bd .lab em { font-weight: bold; font-style: normal; color: #aa0000; padding: 0 5px 0 0; }
+    .stuadd-bd .input { border-color: #cccccc; height: 20px; }
+    .stuadd-bd .sel { padding: 1px; }
+.s_btn input { margin: 10px 0 0 95px; }
+/*#endregion*/

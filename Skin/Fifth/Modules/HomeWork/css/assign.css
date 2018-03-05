@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+.red{
+    color: #f00;
+}
+b{
+    font-weight: normal;
+}
+body{
+    background-color: #fff;
+    /*font-size: 16px;*/
+    padding: 30px;
+    /*min-width: 1200px;*/
+}
+body #zujuan .layui-tab-title li{
+    font-size: 18px;
+}
+body #zujuan .layui-tab-content{
+    padding: 20px 0;
+}
+#zujuan .title{
+    color: #fff;
+    height: 50px;
+}
+#zujuan .title span{
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #bfbfbf;
+}
+#zujuan .title .zhang, .title .kao{
+    margin-right: 20px;
+}
+#zujuan .title .on{
+    background-color: #00cc87;
+    height: 50px;
+    line-height: 50px;
+}
+#zujuan .main{
+    border: solid 1px #00cc87;
+    padding: 30px;
+}
+#zujuan .main .top p{
+    margin-bottom: 20px;
+    height: 24px;
+    line-height: 24px;
+}
+#zujuan .main .top p span{
+    display: inline-block;
+    padding: 0 5px;
+    text-align: center;
+    margin: 0 10px;
+}
+#zujuan .main .top p .on{
+    background-color: #00cc87;
+    border-radius: 5px;
+    color: #fff;
+}
+#zujuan .main .left{
+    float: left;
+    width: 200px;
+    height: 330px;
+    border: solid 1px #00cc87;
+    margin-bottom: 20px;
+}
+#zujuan .main .left p{  
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #00cc87;
+    color: #fff;
+}
+#zujuan .main .right{
+    float: right;
+    background-color: #fafafa;
+    width: calc(100% - 260px);
+    padding: 20px;
+}
+#zujuan .main .right>p{
+    margin-bottom: 20px;
+    height: 24px;
+    line-height: 24px;
+} 
+#zujuan .main .right>p span{
+    display: inline-block;
+    padding: 0 5px;
+    text-align: center;
+    margin: 0 10px;
+}
+#zujuan .main .right>p .on{
+    background-color: #00cc87;
+    border-radius: 5px;
+    color: #fff;
+}
+#zujuan .main .right .main_top{
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0;
+    position: relative;
+}
+#zujuan .main .right .main_top #sea{
+    height: 26px;
+    width: 200px;
+    padding: 0 10px;
+    position: absolute;
+    top: 3px;
+    left: 180px;
+}
+#zujuan .main .right .main_top img{
+    height: 26px;
+    position: absolute;
+    top: 3px;
+    left: 380px;
+}
+#zujuan .main .right .main_top .main_top_s1{
+    background-color: #00cc87;
+    padding: 5px 10px;
+    color: #fff;
+    margin: 0 10px;
+    border-radius: 2px;
+}
+#zujuan .main .right>section{
+    position: relative;
+    margin-bottom: 10px;
+}
+#zujuan .main .right>section>input{
+    position: absolute;
+    top: calc(50% - 9px);
+    left: 0;
+}
+#zujuan .con{
+    display: inline-block;
+    width: calc(100% - 34px);
+    border: solid 1px #ddd;
+    position: relative;
+    left: 34px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+#zujuan .con .info{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: solid 1px #ddd;
+}
+#zujuan .con .info span{
+    margin-right: 20px;
+}
+#zujuan .con .que{
+    padding: 15px 0;
+    border-bottom: solid 1px #ddd;
+}
+#zujuan .con .que .tigan img{
+    /*width: 100%;*/
+    max-width: 100%;
+}
+#zujuan .con .que .p1{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+#zujuan .con .que .p1 .jia{
+    display: inline-block;
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #00cc87;
+    border-radius: 5px;
+    float: right;
+}
+#zujuan .con .ans{
+    padding: 15px 0;
+}
+#zujuan .con .ans>p{
+    /*height: 25px;*/
+    line-height: 25px;
+    margin: 5px 0;
+}
+#zujuan .con .ans>p>span:first-child{
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    border: solid 2px #00cc87;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 14px;
+}
+#zujuan .fixed{
+    width: 120px;
+    height: 206px;
+    border: solid 1px #bfbfbf;
+    clear: left;
+}
+#zujuan .qingkuang{
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background-color: #bfbfbf;
+    color: #fff;
+    font-size: 20px;
+}
+#zujuan .shu{
+    text-align: center;
+    color: #666;
+    margin: 15px 0;
+    font-size: 18px;
+}
+#zujuan .num{
+    text-align: center;
+    color: #00cd88;
+    margin: 20px 0;
+    font-size: 30px;
+}
+#zujuan .yu{
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    border: solid 1px #00cd88;
+    border-radius: 5px;
+    margin: 0 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #00cd88;
+    /*cursor: pointer;*/
+}
+#zujuan .yu a{
+    text-decoration: none;
+    color: #00cd88;
+}
+#page1{
+    text-align: center;
+}
+

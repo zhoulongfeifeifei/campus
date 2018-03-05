@@ -1,0 +1,45 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	background: #ccc;
+}
+.content{
+	width: 94%;
+	padding: 8.0vw 3%;
+	background: #ccc;		
+}
+.content-infor{
+	width: 90%;
+	height: 120.0vw;
+	padding:0 5%;
+	font-size: 3.0vw;
+	color: #010101;
+	background: url(../img/lx.png) no-repeat center center;
+	background-size:cover;
+}	
+.content-infor h4{
+	padding-top: 5.87vw;
+	font-size: 3.73vw;
+	color: #010101;
+}
+.content-infor h2{
+	height: 20.0vw;
+	line-height: 20.0vw;
+	font-size: 4.8vw;
+}
+.content-infor .diff{
+	font-size: 5.87vw;
+	font-weight: 900;
+	color: #010101;
+}
+.content-infor p{
+	line-height: 5.33vw;
+	font-size: 4.0vw;
+}
+.content-infor h3{
+	width: 100%;
+	margin-top: 5.33vw;
+	text-align: right;
+	font-size: 3.2vw;
+}
+p{text-indent:2em;}

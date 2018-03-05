@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+
+    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if lt IE 8]>
+	<script src="/html/assets/ie7-not-supported.js"></script>
+	<![endif]-->
+    <!--[if lte IE 9]>
+	<script src="/html/assets/respond.js"></script>
+	<script src="/html/assets/html5shiv.min.js"></script>
+	<![endif]-->
+
+    <link rel="stylesheet" href="../../Common/css/public.css">
+    <link rel="stylesheet" href="../../Common/css/main.css">
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+    <script src="/Web/Assets/jquery-1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../../Common/function.js" type="text/javascript" charset="utf-8"></script>
+
+    <!--用于适配IE的placeholder-->
+    <script src="../../Common/placeholder.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <!--上传图片插件plupload-->
+    <script src="/Web/Assets/plupload/plupload.full.min.js"></script>
+
+    <!--批量上传图片样式-->
+    <link rel="stylesheet" href="/Web/Assets/css/dropzone.css" />
+    <link rel="stylesheet" href="/Web/Assets/css/colorbox.css" />
+    <link rel="stylesheet" href="../../Common/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/Web/Assets/css/ace.css" class="ace-main-stylesheet" />
+    <script src="/Web/Assets/ace-extra.js"></script>
+
+    <link href="/Web/Assets/datetimepicker/jquery.datetimepicker.css" rel="stylesheet" />
+<style>
+        .bar-header .blue{
+            color: #337ab7;
+        }
+        .bar-header .font-18{
+            font-size: 18px;
+        }  
+    </style>
+
+<body>
+
+
+    <div class="vF-panel">
+        <!--标题层-->
+        <div class="bar-header clearfix">
+            <span class="text font-18 blue">霸屏</span>
+        </div>
+        <!--标题层 End-->
+        <div class="form">
+            <form method="post" action="" id="form1">
+                <div class="aspNetHidden">
+                    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+                </div>
+
+                <div class="aspNetHidden">
+
+                    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="45393D51" />
+                </div>
+                <div class="f1">
+                    <label class="f-label span1">图片集：</label>
+                    <div class="f-input span11">
+
+
+
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <div class="bar-tool">
+                                    <a id="pickfiles" class="btn w-60" href="javascript:;">添加
+                                        <!--<input type="file" name="file" id="logo_file">-->
+                                    </a>
+                                    <span class="text h14">只支持10个字以内的描述</span>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="d_main">
+                                    <!--列表-->
+                                    <div class="d_table">
+                                        <div id="filelist" class="dropzone">
+                                        </div>
+                                    </div>
+                                    <!--/列表-->
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="clr"></div>
+                    </div>
+                </div>
+                <div class="f1" style="padding: 16px 10px;">
+<label class="f-label span1">电子屏：</label>
+<div class="f-input span8" id="wei">
+    <span class="text">选择您本次编辑的电子屏设备位置</span>
+    <br />
+    
+<br />
+</div>
+</div>
+
+<div class="f1">
+    <label class="f-label span1 w-100">发布状态：</label>
+    <div class="f-input span4">
+        <label class="red"><i class="fa fa-minus-circle"></i>未发布</label>
+        <br />
+        <label class="text"></label>
+        <div class="clr"></div>
+    </div>
+</div>
+
+<div class="f1 f-save">
+    <div class="f-input span4">
+
+        <input type="button" id="save" class="btn btn-blue" value="保存并发布" />
+
+    </div>
+</div>
+</form>
+</div>
+</div>
+<input type="hidden" id="message" value="" />
+</body>
+<script src="/Web/Assets/layui/layui.js"></script>
+<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/addimg.js"></script>
+
+</html>

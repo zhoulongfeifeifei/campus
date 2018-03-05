@@ -1,0 +1,22 @@
+.form-center{
+	width: 85%;
+	padding: 4% 10%;
+}
+.title{
+	height: 16.0vw;
+	background: url(../img/success.jpg) no-repeat center center;
+	background-size: contain;
+}
+.f-title{
+	height: 18.13vw;
+	font-size: 3.0vw;
+	color: #616161;
+	line-height: 18.13vw;
+	text-align: center;
+}
+.btnBack{
+	margin:3.3vw 0 3.3vw 15%;
+}
+.btnBack input{
+	width: 80%;
+}

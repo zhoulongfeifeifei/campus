@@ -1,0 +1,132 @@
+/*内容管理*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑";
+    font-weight: bold;
+}
+
+html, body, iframe {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+.clear {
+    clear: both;
+}
+.sp {
+    color: #000;
+    font-size: 14px;
+    margin-right: 20px;
+}
+.box {
+    border-top: 1px dashed #ddd;
+    height: 600px;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+}
+
+.container {
+    width: 360px;
+    height: 500px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
+    .container div:not(.tuwenlunbo):not(.weather) {
+        margin-top: 5px;
+    }
+
+.tuwenlunbo, .Notice, .emergent {
+    background: #B8E1F5;
+    cursor: pointer;
+}
+
+.date, .weather, .attendance {
+    background: #F1F1F1;
+}
+
+.tuwenlunbo {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 125px;
+    line-height: 125px;
+}
+
+.Notice, .date, .weather {
+    display: inline-block;
+}
+
+.Notice {
+    width: 57%;
+    height: 258px;
+    line-height: 258px;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 5px;
+    margin-left: 2%;
+}
+
+.date, .weather {
+    width: 36%;
+    height: 126.5px;
+    float: right;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.container .hover {
+    background: #F8D97C;
+    width: 100%;
+}
+
+    .container .hover.Notice {
+        width: 62%;
+        height: 272px;
+        margin: 0 !important;
+    }
+
+.emergent, .attendance {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    line-height: 50px;
+}
+
+img {
+    width: 30%;
+    margin: 10% auto 0;
+}
+
+.date p {
+    font-weight: normal;
+}
+
+.today {
+    font-size: 12px;
+}
+
+.datenow, .weeknow {
+    font-size: 18px;
+}
+
+.weather img {
+    margin-top: 20%;
+}
+.tianqipz {
+    line-height: 30px;
+    font-size: 14px;
+}
+
+iframe {
+    width: calc(100% - 400px);
+    float: right;
+    height: 100%;
+    /*min-width: 1000px;*/
+}

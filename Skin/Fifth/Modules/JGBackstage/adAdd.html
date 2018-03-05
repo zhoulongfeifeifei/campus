@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+
+
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+
+	</head>
+
+	<body>
+
+		<div class="layui-tab layui-tab-brief">
+			<ul class="layui-tab-title">
+				<li class="layui-this toptitle"></li>
+			</ul>
+		</div>
+		<style>
+			#adimg {
+				max-width: 600px;
+				max-height: 300px;
+			}
+			
+			#Sava,
+			#cancel {
+				margin-bottom: 10px;
+			}
+		</style>
+		<div class="layui-form">
+			<div class="layui-form-item">
+				<label class="layui-form-label">广告名称：</label>
+				<div class="layui-input-inline">
+					<input class="layui-input" type="text" name="adname" value="" lay-verify="required" />
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">广告图片：</label>
+				<div class="layui-input-inline">
+					<input class="layui-input layui-upload-file" type="file" name="file" />
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">图片预览：</label>
+				<div class="layui-input-inline">
+					<img src="" id="adimg" alt="">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">链接地址：</label>
+				<div class="layui-input-inline">
+					<input class="layui-input" type="text" name="linkurl" value="" />
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">广告位：</label>
+				<div class="layui-input-inline">
+					<select class="w-200" name="SortId" id="SortId">
+						<option value="-1">二维码</option>
+						<option value="0">漂浮广告</option>
+						<option value="1">广告位一</option>
+						<option value="2">广告位二</option>
+						<option value="3">广告位三</option>
+						<option value="4">广告位四</option>
+						<option value="5">广告位五</option>
+						<option value="6">广告位六</option>
+						<option value="7">广告位七</option>
+						<option value="8">广告位八</option>
+
+					</select>
+				</div>
+				<div class="layui-form-mid layui-word-aux">*每个广告位只能加一个,否则无效。</div>
+			</div>
+
+			<div class="layui-form-item">
+				<label class="layui-form-label">备注：</label>
+				<div class="layui-input-block">
+					<span class="red"></span>
+					<textarea class="layui-textarea" name="" maxlength="500" id="Notes" cols="30" rows="10"></textarea>
+				</div>
+				<div class="layui-form-mid layui-word-aux">*最多500字</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label"></label>
+				<div class="layui-input-block">
+					<input id="Sava" lay-submit lay-filter="Sava" type="submit" data-type="content" class="layui-btn layui-btn-green" value="保存" />
+					<input id="cancel" type="submit" class="layui-btn layui-btn-primary" value="取消" />
+				</div>
+			</div>
+		</div>
+
+		<script src="/Web/Assets/layui/layui.js"></script>
+		<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+		<script>
+			var form = layui.form(),
+				layer = layui.layer,
+				laydate = layui.laydate,
+				$ = jQuery = layui.jquery,
+				element = layui.element(),
+				layedit = layui.layedit,
+				upload = layui.upload;
+		</script>
+		<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/adAdd.js"></script>
+
+	</body>
+
+</html>

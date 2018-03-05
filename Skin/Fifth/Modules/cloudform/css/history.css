@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2017-01-05 17:29:57
+ * @version $Id$
+ */
+.layui-btn{
+    margin-right: 10px;
+	margin-top: 5px;
+}
+.layui-btn+.layui-btn{
+    margin-left: 0;
+}
+.addnigao{
+    top: -3px;
+}
+.search{
+    margin-top: 0px;
+}

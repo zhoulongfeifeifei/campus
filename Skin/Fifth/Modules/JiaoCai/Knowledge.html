@@ -1,0 +1,104 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<link href="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="css/ChapterLists.css" />
+		<link rel="stylesheet" href="../../Common/css/public.css">
+		<link rel="stylesheet" href="../../Common/css/listSearch.css">
+	</head>
+
+	<body>
+	
+		<div class="layui-tab layui-tab-brief">
+			<ul class="layui-tab-title">
+				<li class="layui-this">知识点管理</li>
+			</ul>
+		</div>
+		<form id="form" action="/AjaxStudent/Index" method="post">
+			
+				<a class="layui-btn layui-btn-small addnigao a1" id="tdz">
+				添加顶级知识点
+				</a>
+				<i class="biaozhu">注:对顶级知识点点击右键进行编辑管理</i>
+		</form>
+		<ul id="navigation"></ul>
+		<!--新增章节 模态框（Modal） -->
+		<!--<div class="modal fade laybox" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title" id="myModalLabel">
+                        新增章节</h4>
+                   </div>
+                </div>   
+			</div>
+		</div>	-->
+		
+		<div class="layer-box" style="display: none;">
+			
+			<form class="layui-form" action="" id="form99">
+				<div class="layui-form-item top-line">
+					<label class="layui-form-label">知识点名称</label>
+					<div class="layui-input-inline">
+						 <input type="hidden" name="id" value=""/>	
+						<input type="text" name="Name" required lay-verify="required" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-form-item" id="parent">
+					<label class="layui-form-label top-line">父级知识点</label>
+					<div class="layui-input-inline">
+						<input type="text" required lay-verify="required" autocomplete="off" class="layui-input fujie" disabled="disabled" id="pid"><br />
+						<span class="ts" style="font-size: 12px; color: red;">注：顶级知识点时此处为空</span>
+					    <input type="hidden" name="pid" value="0">
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="modal fade layui-tab-content" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+					</div>
+					<form id="form88" class="modal-body layui-form">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="layui-form-item">
+									<label for="Name" class="layui-form-label">知识点名称：</label>
+									<div class="layui-input-inline">
+										<input type="hidden" name="Id" value="0" />
+										<input type="text" class="form-control" name="Name" disabled="disabled">
+									</div>
+								</div>
+								<div class="form-group layui-form-item">
+									<label for="Name" class="layui-form-label">目标知识点：</label>
+									<div class="layui-input-inline">
+										<input type="hidden" name="Pid" />
+										<ul id="yi_ul">
+
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>		
+				</div>
+			</div>
+		</div>
+		<script src="/Web/Assets/layui/layui.js"></script>
+		<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+		<script>var $ = jQuery = layui.jquery;</script>
+		<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/js/ligerui.all.js"></script>
+		<script src="js/Knowledge.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

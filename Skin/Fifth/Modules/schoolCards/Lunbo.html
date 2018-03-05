@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+
+    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if lt IE 8]>
+	<script src="/html/assets/ie7-not-supported.js"></script>
+	<![endif]-->
+    <!--[if lte IE 9]>
+	<script src="/html/assets/respond.js"></script>
+	<script src="/html/assets/html5shiv.min.js"></script>
+	<![endif]-->
+    <link rel="stylesheet" href="../../Common/css/public.css">
+    <link rel="stylesheet" href="../../Common/css/main.css">
+    <script src="/Web/Assets/jquery-1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../../Common/function.js" type="text/javascript" charset="utf-8"></script>
+
+    <!--用于适配IE的placeholder-->
+    <script src="../../Common/placeholder.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <!--上传图片插件plupload-->
+    <script src="/Web/Assets/plupload/plupload.full.min.js"></script>
+
+    <!--批量上传图片样式-->
+    <link rel="stylesheet" href="/Web/Assets/css/dropzone.css" />
+    <link rel="stylesheet" href="/Web/Assets/css/colorbox.css" />
+    <link rel="stylesheet" href="../../Common/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/Web/Assets/css/ace.css" class="ace-main-stylesheet" />
+    <script src="/Web/Assets/ace-extra.js"></script>
+
+    <link href="/Web/Assets/datetimepicker/jquery.datetimepicker.css" rel="stylesheet" />
+    <style>
+        .bar-header .blue{
+            color: #337ab7;
+        }
+        .bar-header .font-18{
+            font-size: 18px;
+        }  
+        /*.w-100{
+            display: inline-block;
+            width: 100px;
+        }*/
+    </style>
+</head>
+
+<body style="background: #fff;">
+
+
+<div class="vF-panel">
+<!--标题层-->
+<div class="bar-header clearfix">
+    <span class="text font-18 blue">图文轮播</span>
+</div>
+<!--标题层 End-->
+<div class="form">
+    <!--./AlbumDesign.aspx?Deviceid=109CB00B375A8D7E-->
+    <form method="post" action="" id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+        </div>
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="45393D51" />
+        </div>
+        <div class="f1">
+            <label class="f-label span1" style="width: 80px;">图片集：</label>
+            <div class="f-input span11">
+
+                <div class="span12">
+                    <!--工具栏-->
+                    <div class="bar-tool">
+                        <!--?deviceid=109CB00B375A8D7E&step=2&intype=-->
+                        <a class="btn w_60 " onselectstart="event.returnValue=false" href="upload.html" id="upload">上传照片</a>
+
+<span class="text h14">建议尺寸：1080px:608px </span>
+<div class="clear"></div>
+</div>
+<!--/工具栏-->
+<!--列表-->
+<div class="row">
+    <div class="col-xs-12">
+        <!-- PAGE CONTENT BEGINS -->
+        <div>
+            <ul class="ace-thumbnails clearfix">
+
+
+            </ul>
+        </div>
+        <!-- PAGE CONTENT ENDS -->
+    </div>
+    <!-- /.col -->
+</div>
+<!-- /.row -->
+<div class="page">
+</div>
+<!--/列表-->
+</div>
+
+
+<!--<script src="/assets/jquery.js"></script>-->
+<script type="text/javascript">
+    // if ('ontouchstart' in document.documentElement) document.write("<script src='/assets/jquery.mobile.custom.js'>" + "<" + "/script>");
+</script>
+<!--<script src="/assets/bootstrap.js"></script>-->
+<!--<script src="/assets/jquery.colorbox.js"></script>-->
+<!--<script src="/assets/ace.js"></script>-->
+<!--<script src="/html/assets/datetimepicker/jquery.datetimepicker.js" type="text/javascript"></script>-->
+<script type="text/javascript">
+    jQuery(function ($) {
+        //时间控件
+
+        var $overflow = '';
+        var colorbox_params = {
+            rel: 'colorbox',
+            reposition: true,
+            scalePhotos: true,
+            scrolling: false,
+            previous: '<i class="ace-icon fa fa-arrow-left"></i>',
+            next: '<i class="ace-icon fa fa-arrow-right"></i>',
+            close: '&times;',
+            current: '{current} of {total}',
+            maxWidth: '100%',
+            maxHeight: '100%',
+            onOpen: function () {
+                $overflow = document.body.style.overflow;
+                document.body.style.overflow = 'hidden';
+            },
+            onClosed: function () {
+                document.body.style.overflow = $overflow;
+            },
+            onComplete: function () {
+                $.colorbox.resize();
+            }
+        };
+
+        // $('.ace-thumbnails [data-rel="colorbox"]').colorbox(colorbox_params);
+        $("#cboxLoadingGraphic").html("<i class='ace-icon fa fa-spinner orange fa-spin'></i>"); //let's add a custom loading icon
+
+
+        $(document).one('ajaxloadstart.page', function (e) {
+            $('#colorbox, #cboxOverlay').remove();
+        });
+
+    })
+</script>
+
+
+<div class="clr"></div>
+</div>
+</div>
+<div class="f1" style="padding: 16px 10px;">
+<label class="f-label span1" style="width: 80px;">电子屏：</label>
+<div class="f-input span8">
+    <span class="text">选择您本次编辑的电子屏设备位置</span>
+    <br />
+    <span style="margin-right: 24px; white-space: nowrap;" id="num">
+<!--<input type="checkbox" name="device" class="device" value="109CB00B375A8D7E" checked="checked" />109CB00B375A8D7E-->
+</span>
+<br />
+</div>
+</div>
+
+<div class="f1">
+    <label class="f-label span1 w-100" style="width: 80px;">发布状态：</label>
+    <div class="f-input span4" id="sta">
+        <label class="green"><i class="fa fa-check-circle"></i> 已发布</label>
+        <br />
+        <label class="text"></label>
+        <div class="clr"></div>
+    </div>
+</div>
+
+<div class="f1 f-save">
+    <div class="f-input span4">
+
+        <input type="hidden" id="deviceid" value="109CB00B375A8D7E" />
+        <input type="button" class="btn btn-red" value="发布" id="publish" />
+    </div>
+</div>
+</form>
+</div>
+</div>
+
+</body>
+<script src="/Web/Assets/layui/layui.js"></script>
+<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/Lunbo.js"></script>
+
+</html>

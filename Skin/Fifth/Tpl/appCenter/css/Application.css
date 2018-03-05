@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-11-03 18:45:09
+ * @version $Id$
+ */
+ p{
+    color: #2e6b0f;
+ }
+.content{
+    background: #fff;
+    padding: 5px 15px;
+    border-radius: 4px;  
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+.content>p{
+    padding: 0 0 15px 5px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.content>p span{
+    font-size: 16px;
+    border-bottom: 2px solid #7FAA7B;
+    padding: 15px;
+} 
+.content ul{
+    width: 100%;
+    padding-top: 30px;
+    overflow: hidden;
+}
+.content ul li{
+    width: 12.4%;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 20px;
+}
+.content ul li:nth-child(6n){
+    margin-right: 0;
+}
+.content ul li a{
+    text-align: center;
+    width: 100%;
+    display: block;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.content ul li a img{
+    background: #fff;
+    display: block;
+    width: 70%;
+    margin: 5px auto;
+    height: 131px;
+}
+.content ul li:last-child img{
+    width: 100%;
+    height: 100%;
+}
+.content ul li a p{
+    text-align: center;
+    line-height: 24px;
+    background: #f4f3f8;
+}
+
+.appInco{
+    font-family: "AppCenter";
+    font-size: 90px;
+    color: #3A862C;
+}

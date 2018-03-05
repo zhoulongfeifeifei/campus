@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="/Web/Assets/layui/css/layui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../Common/css/public.css">
+    <link rel="stylesheet" href="../../Common/css/listSearch.css">
+    <link href="css/clouddisk.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="content">
+        <div class="cloud_top">
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">个人云盘</li>
+                </ul>
+            </div>
+            <div class="progress">
+                <span class="progressNum"></span>
+                <span class="capacity">
+                    <span id="filenow"></span> /
+                <span id="fileall"></span> G(共
+                <span id="filenum"></span> 个文件)
+                </span>
+            </div>
+            <!--<a class="Expansion"><i class="cloudIcon">&#xe6ce;</i>扩容</a>-->
+        </div>
+        <div class="bar-header clearfix">
+            <div class="bar-header clearfix">
+                <input class="w-200 layui-upload-file" lay-type="file" type="file" name="file" title="上传文件" />
+                <a class="layui-btn layui-btn-small layui-btn-green moveall">批量转移</a>
+                <a class="layui-btn layui-btn-small layui-btn-green copyall">批量复制</a>
+                <a class="layui-btn layui-btn-small layui-btn-danger removeall">批量删除</a>
+                <a href="javascript:goDraft()" class="layui-btn layui-btn-small layui-btn-green">创建文件夹</a>
+                <div class="fr">
+                    <input type="hidden" id="Pid" name="Pid" value/>
+                    <input type="text" class="layui-input" name="Title" placeholder="标题" />
+                    <input type="submit" class="layui-btn layui-btn-green search" value="搜索" />
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-mid layui-word-aux" style="font-size: 14px;width: 100%;">云盘只支持txt;jpg;png;gif;zip;rar;ppt;doc;docx;rtf;xls;xlsx;csv;pptx;pps;ppsx;pdf这些文件格式</div>
+    </div>
+    <table class="layui-table show">
+        <thead id="nvfTable">
+            <tr></tr>
+        </thead>
+    </table>
+    <table class="layui-table">
+        <colgroup>
+            <col width="50">
+            <col>
+            <col width="150">
+            <col width="250">
+            <col width="170">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>
+                    <!-- <input type="checkbox" value="" /> -->
+                </th>
+                <th align="left">名称</th>
+                <th>大小</th>
+                <th>上传时间</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody id="FileList"></tbody>
+    </table>
+    <div class="layui-form">
+        <div id="Draft" class="layui-form-item" style="display:none">
+            <label class="layui-form-label foladername">文件夹名称:</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" data-id="" name="folder" type="text" value="" />
+            </div>
+        </div>
+        <div id="Draftedit" class="layui-form-item" style="display:none">
+            <div class="layui-form-item">
+                <label class="layui-form-label">老名称:</label>
+                <p class="oldfoldName"></p>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">新名称:</label>
+                <div class="layui-input-inline">
+                    <input class="layui-input" data-id="" name="newfoldName" type="text" value="" />
+                </div>
+            </div>
+        </div>
+        <div id="Catalog" style="display:none">
+            <ul id="demo"></ul>
+            <p class="tocatalog"></p>
+        </div>
+    </div>
+    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+    <script>
+    var $ = jQuery = layui.jquery
+    </script>
+    <script src="/Web/Include/tby.js"></script>
+    <script src="js/Personal.js"></script>
+</body>
+
+</html>

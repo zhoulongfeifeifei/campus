@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="/Web/Assets/layui/css/layui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/Web/Assets/kindeditor/themes/default/default.css" />
+		<link rel="stylesheet" href="css/Task.css">
+
+	</head>
+
+	<body>
+		<div class="contain">
+			<!-- <div class="layui-tab layui-tab-brief">
+            <ul class="layui-tab-title">
+                <li class="layui-this">发布作业</li>
+            </ul>
+        </div> -->
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<label class="layui-form-label">科目选择：</label>
+					<div class="layui-form-block subject">
+
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">班级选择：</label>
+					<div class="layui-form-block selectClass">
+					</div>
+				</div>
+				<div class="layui-form-item layui-form-text">
+					<label class="layui-form-label">作业内容：</label>
+					<div class="layui-input-block">
+						<textarea name="" id="Notes" placeholder="请输入" class="layui-textarea"></textarea>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">添加图片：</label>
+					<div class="layui-input-block">
+						<div class="layui-input-inline">
+							<input class="layui-upload-file img" id="addImg" type="file" name="file" />
+						</div>
+						<div class="layui-form-mid layui-word-aux">最多添加9张图片</div>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<div id="imgPreview">
+
+						</div>
+					</div>
+				</div>
+				<div class="layui-form-item localUpload">
+					<label class="layui-form-label">本地上传：</label>
+					<div class="layui-input-inline">
+						<div class="layui-input-inline">
+							<input class="layui-upload-file local" lay-type="file" type="file" name="file" />
+						</div>
+					</div>
+				</div>
+
+				<div class="layui-form-item">
+					<label class="layui-form-label">云盘选择：</label>
+					<div class="layui-input-inline">
+						<a class="layui-btn layui-btn-primary cloudDisk">云盘上传</a>
+					</div>
+					<div class="layui-form-mid layui-word-aux reSelect">如果重新选择,已选择的将会全部清空</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label"></label>
+					<div class="layui-input-block cloudList">
+
+					</div>
+				</div>
+				<div class="layui-form-item clounbox">
+					<div class="layui-input-block">
+						<div id="clounTree"></div>
+					</div>
+				</div>
+				<!--<div class="layui-form-item">
+					<label class="layui-form-label">发送方式：</label>
+					<div class="layui-form-block">
+						<input type="checkbox" value=1 name="reName" lay-filter="stateType" title="站内消息" />
+						 <input type="checkbox" name="reName" title="即时消息"/>
+                    <input type="checkbox" name="reName" title="抄送自己"/> 
+					</div>
+					 <div class="layui-form-mid layui-word-aux">学校购买短信服务后可以开启</div> 
+				</div>-->
+				<div class="layui-form-item">
+		            <label class="layui-form-label">发送方式：</label>
+		            <div class="layui-input-block pushType">
+		                <input type="checkbox" class="sentype" name="station" value=0 checked title="站内消息">
+		                <input type="checkbox" class="sentype" name="app" value=1 title="App消息">
+		                <input type="checkbox" class="sentype" name="shortmsg" lay-filter="shortmsg" value=2 title="短信息">
+		                
+		            </div>
+		            <div class="layui-input-block msgExclusive none">
+		                <input type="radio" class="sentype" name="duanxin" lay-filter="timedshortmsg" value=3 checked title="即时短信">
+		                <input type="radio" class="sentype" name="duanxin" lay-filter="timedshortmsg" value=4 title="定时短信">
+		                <input type="text" class="layui-input selectTime none" placeholder="请选择时间" onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM-DD hh:mm'})">
+		                <input type="checkbox" name="ccself" value=5 title="自己(反馈短信)"> 
+		            </div>
+		        </div>
+
+				<div class="layui-form-item">
+					<label class="layui-form-label"></label>
+					<div class="f-input span8">
+						<input id="Sava" lay-submit lay-filter="Sava" class="layui-btn" value="发布作业" />
+						<!-- <input id="cancel" type="submit" class="btn" value="取消"/> -->
+					</div>
+				</div>
+				<div id="Tree" class="layui-form-item">
+					<div class="layui-input-inline">
+						<label class="layui-form-label">个人云盘：</label>
+						<div class="layui-input-inline">
+							<ul id="Personal"></ul>
+						</div>
+					</div>
+					<div class="layui-input-inline">
+						<label class="layui-form-label">班级云盘：</label>
+						<div class="layui-input-inline">
+							<ul id="Public"></ul>
+						</div>
+					</div>
+					<div class="layui-input-inline">
+						<label class="layui-form-label">已选文件：</label>
+						<div class="layui-input-inline">
+							<ul id="OK">
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="/Web/Assets/layui/layui.js"></script>
+		<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+		<script>
+			var form = layui.form(),
+				layer = layui.layer,
+				upload = layui.upload,
+				laypage = layui.laypage,
+				$ = jQuery = layui.jquery;
+		</script>
+		<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/Web/Assets/kindeditor/kindeditor-min.js"></script>
+		<script src="/Web/Assets/kindeditor/zh_CN.js"></script>
+		<script src="js/taskPush.js"></script>
+	</body>
+
+</html>

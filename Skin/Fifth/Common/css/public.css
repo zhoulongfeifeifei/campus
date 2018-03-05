@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: 0;vertical-align: baseline;background: transparent;}
+table, caption, tbody, tfoot, thead, tr, th, td{ vertical-align:middle;}
+th{
+    text-align: left;
+}
+/*html{margin-top:4px !important;}*/
+
+body {background: #fff;  font-size:14px; color: #656565;font-family: 'microsoft yahei',osaka,sans-serif;}
+
+li{list-style: none;};
+
+a {cursor: pointer;margin: 0;padding: 0;border: 0;vertical-align: baseline;text-decoration:none;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000;cursor: help;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #cccccc;margin: 1em 0;padding: 0;}
+
+input, select {vertical-align: middle;}
+
+h1,h2,h3,h4,h5,h6{ color:#999; padding:10px 0;}
+img{border: 0}
+
+em,i,strong{font-style:normal;}
+/*
+ * common 通用class
+ */
+
+
+/*图片以及复选框之类的居中显示*/
+.middle{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*定位的相关的类*/
+
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+/*清除浮动的*/
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;} 
+.clearfix{*zoom:1}
+
+/*显示隐藏浮动方向*/
+.block{display: block}
+.hidden{display:none;}
+.fl{ float:left!important;}
+.fr{ float:right!important;}
+
+/*转化成块的同时向左浮动*/
+.block-fl{
+    display:block;
+    float: left;
+}
+.block-fr{
+    display:block;
+    float: right;
+}
+.inline-fl{
+    float: left;
+    display: inline-block;
+}
+.inline-fr{
+    display: inline-block;
+    float: right;
+}
+/*溢出隐藏*/
+.overflow{
+    overflow: hidden;
+}
+/*段落文字方向和段落文字的溢出隐藏*/
+.text-right{ text-align:right;}
+.text-left{ text-align:left;}
+.text-center{ text-align:center;}
+.text-hidden{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+/*主要的背景颜色*/
+.bg-color{
+	background-color:#fff;
+}
+/*头部导航条的背景颜色 */
+.bg-header{
+    background-color:#3a862c;
+}
+.bg-footer{
+    background-color:#3a862c;
+}
+/*主要的边框颜色*/
+.border{
+	border: 1px solid #e1e1e1;
+}
+.border-bottom{
+    border-bottom: 2px solid #e1e1e1;
+}
+.radius{
+    border-radius: 20px;
+}
+
+/*页面链接的划过效果*/
+.a-color{
+    color: #6e6e6e!important;/*这页面主要是灰色为主*/
+}
+.a-color:hover{
+    color: #808080!important;/*这页面主要是灰色为主*/
+}
+
+/*.bg_gray1{ background-color:#656565!important;}
+.bg_gray2{ background-color:#C0C0C0!important;}
+.bg_gray3{ background-color:#808080!important;}
+
+.bg_green1{ background-color:#00FF7F!important;}
+.bg_green2{ background-color:#7CFC00!important;}
+.bg_green3{ background-color:#32CD32!important;}
+
+.bg_red1{ background-color:#A52A2A!important;}
+.bg_red2{ background-color:#DC143C!important;}
+.bg_red3{ background-color:#FF0000!important;}
+
+.bg_bule1{ background-color:#A52A2A!important;}
+.bg_bule2{ background-color:#DC143C!important;}
+.bg_bule3{ background-color:#FF0000!important;}
+
+
+/*h标签的文字和行间距的大小*/
+.h-48{line-height: 48px;font-size: 24px;height:48px;letter-spacing: 3px;}
+.h-40{line-height: 40px;font-size: 20px;height:40px;letter-spacing: 3px;}
+.h-36{line-height: 36px;font-size: 18px;height:36px;letter-spacing: 3px;}
+.h-32{line-height: 32px;font-size: 16px;height:32px;letter-spacing: 2px;}
+.h-28{line-height: 28px;font-size: 14px;height:28px;letter-spacing: 2px;}
+.h-24{line-height: 24px;font-size: 12px;height:24px;letter-spacing: 2px;}
+
+/*p标签的文字和行间距的大小；包含首行缩进*/
+.p-28{line-height: 28px;font-size: 18px;height:28px;text-align: left;text-decoration: 36px}
+.p-24{line-height: 24px;font-size: 16px;height:24px;text-align: left;text-decoration: 32px}
+.p-20{line-height: 20px;font-size: 14px;height:20px;text-align: left;text-decoration: 28px}
+.p-16{line-height: 16px;font-size: 12px;height:16px;text-align: left;text-decoration: 24px}
+.p-14{line-height: 14px;font-size: 12px;height:14px;text-align: left;text-decoration: 24px}
+/*css3盒子模型布局的方式，老的写法*/
+.box-orient{
+    display:-moz-box;
+    display:-webkit-box;
+    display:box;
+    box-orient:horizontal;/*水平排列*/
+    -moz-box-orient:horizontal;
+    -webkit-box-orient:horizontal;
+}
+.box-align{
+    display:-moz-box;
+    display:-webkit-box;
+    display:box;
+    -moz-box-align:center;
+    -webkit-box-align:center;
+    -o-box-align:center;
+    box-align:center;/*垂直居中排列*/
+}
+.box-pack{
+    display:-moz-box;
+    display:-webkit-box;
+    display:box;
+    -moz-box-pack:justify;
+    -webkit-box-pack:justify;
+    -o-box-pack:justify;
+    box-pack:justify;/*闲于居中排列*/
+}
+.wrap{
+    -moz-box-flex:1;
+    -webkit-box-flex:1;
+    box-flex:1;/*等比排列*/
+}
+/*.layui-layer-content{
+    height: 430px; 
+    overflow: auto;
+}*/
+
+/*栅格布局*/
+.row-fluid {width: 100%;*zoom: 1; padding:4px 0;
+-webkit-box-sizing: border-box;   -moz-box-sizing: border-box;              }
+.row-fluid:before,
+.row-fluid:after {display: table;line-height: 0;content: "";}
+.row-fluid:after {clear: both;}
+.row-fluid [class*="span"] {display: block;float: left;width: 100%;min-height: 30px;margin-left: 2.127659574468085%;*margin-left: 2.074468085106383%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.row-fluid [class*="span"]:first-child {margin-left: 0;}
+.row-fluid .controls-row [class*="span"] + [class*="span"] {margin-left: 2.127659574468085%;}
+.row-fluid .span12 {width: 100%;*width: 99.94680851063829%;margin-left: 0;}
+.row-fluid .span11 {width: 91.48936170212765%;*width: 91.43617021276594%;}
+.row-fluid .span10 {width: 82.97872340425532%;*width: 82.92553191489361%;}
+.row-fluid .span9 {width: 74.46808510638297%;*width: 74.41489361702126%;}
+.row-fluid .span8 {width: 65.95744680851064%;*width: 65.90425531914893%;}
+.row-fluid .span7 {width: 57.44680851063829%;*width: 57.39361702127659%;}
+.row-fluid .span6 {width: 48.93617021276595%;*width: 48.88297872340425%;}
+.row-fluid .span5 {width: 40.42553191489362%;*width: 40.37234042553192%;}
+.row-fluid .span4 {width: 31.914893617021278%;*width: 31.861702127659576%;}
+.row-fluid .span3 {width: 23.404255319148934%;*width: 23.351063829787233%;}
+.row-fluid .span2 {width: 14.893617021276595%;*width: 14.840425531914894%;}
+.row-fluid .span1 {width: 6.382978723404255%;*width: 6.329787234042553%;}
+.row-padding-min{ padding:0;}
+
+/*操作图标的相关字体图像*/
+@font-face {font-family: 'optioning';
+    src: url('../font/optioning/iconfont.eot');
+    src: url('../font/optioning/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/optioning/iconfont.woff') format('woff'),
+    url('../font/optioning/iconfont.ttf') format('truetype'),
+    url('../font/optioning/iconfont.svg#iconfontyyy') format('svg');
+}
+/*应用中心的相关字体图像*/
+@font-face {font-family: 'AppCenter';
+    src: url('../font/AppCenter/iconfont.eot');
+    src: url('../font/AppCenter/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/AppCenter/iconfont.woff') format('woff'),
+    url('../font/AppCenter/iconfont.ttf') format('truetype'),
+    url('../font/AppCenter/iconfont.svg#iconfontyyy') format('svg');
+}
+/*管理员的相关字体图像*/
+@font-face {font-family: 'Administrator';
+    src: url('../font/Administrator/iconfont.eot');
+    src: url('../font/Administrator/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/Administrator/iconfont.woff') format('woff'),
+    url('../font/Administrator/iconfont.ttf') format('truetype'),
+    url('../font/Administrator/iconfont.svg#iconfontyyy') format('svg');
+}
+/*日志的相关字体图像*/
+@font-face {font-family: 'Schedule';
+    src: url('../font/Schedule/iconfont.eot');
+    src: url('../font/Schedule/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/Schedule/iconfont.woff') format('woff'),
+    url('../font/Schedule/iconfont.ttf') format('truetype'),
+    url('../font/Schedule/iconfont.svg#iconfontyyy') format('svg');
+}
+/*首页的相关字体图像*/
+@font-face {font-family: 'HomeIndex';
+    src: url('../font/HomeIndex/iconfont.eot');
+    src: url('../font/HomeIndex/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/HomeIndex/iconfont.woff') format('woff'),
+    url('../font/HomeIndex/iconfont.ttf') format('truetype'),
+    url('../font/HomeIndex/iconfont.svg#iconfontyyy') format('svg');
+}

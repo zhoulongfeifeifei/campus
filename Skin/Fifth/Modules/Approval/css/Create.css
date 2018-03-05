@@ -1,0 +1,40 @@
+.input-text {
+	padding: 6px 8px;
+	width: 250px;
+	font-size: 14px;
+	border: 1px solid #aaa;
+	outline: none;
+}
+
+.icons .icon {
+	width: 52px;
+	height: 52px;
+	float: left;
+	margin: 0 2px 5px 0;
+	position: relative;
+}
+
+.icons .icon img {
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	line-height: 48px;
+	font-size: 14px;
+}
+
+.icons .icon img:hover {
+	border: 2px solid skyblue;
+}
+
+.icons .chk:before {
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+	width: 18px;
+	height: 18px;
+	content: " ";
+	background: url("../images/icon/chk.png");
+	-ms-background-size: 18px 18px;
+	background-size: 18px 18px;
+	z-index: 999;
+}

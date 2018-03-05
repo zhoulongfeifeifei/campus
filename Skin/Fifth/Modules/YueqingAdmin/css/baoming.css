@@ -1,0 +1,92 @@
+@charset "UTF-8";
+body .Alink{
+    background-color: #f2f2f2;
+    width:100%;
+    height: 40px;
+    display:block;
+}
+.formbox{
+    width:100%;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+.layui-form-label{
+    width: 90px !important;
+}
+
+/*查看录取情况的页面的css*/
+.content{
+    width:100%;
+    background-color: #fff;
+    min-height: 300px;
+}
+.btn{
+    background-color: #5bb037;
+}
+.content p{
+    text-align: center;
+    font-size: 16px;
+    padding: 50px 0;
+}
+.lab{
+    width: 135px !important;
+    text-align: left;
+}
+.lable{
+    text-align: left;
+}
+.shuoming{
+    width:20%;
+    margin:auto;
+}
+
+.laydate_btn a{
+    width: 25px !important;
+    float: left !important;
+}
+.boxshuju{
+    width: 92% !important;
+    height:35px !important;
+    margin-bottom: 25px !important;
+    margin: auto;
+}
+.boxshuju button{
+    background-color: #7dc05f!important;
+}
+.boxshuju span{
+    float: left;
+    line-height: 35px;
+}
+.boxshuju ul li{
+    cursor: pointer;
+    float: left;
+    line-height: 35px;
+    margin-left: 100px;
+}
+.boxshuju ul li button{
+    width: 100px;
+}
+
+.boxshuju ul li.default{
+    margin-left: 48px;
+}
+.boxshuju ul li.default1{
+    margin-left: 20px;
+}
+.layui-form-item {
+    margin-left: 45px !important;
+}
+.btn-def{
+    width:30%;
+    min-width: 320px;
+    margin:auto;
+}
+.btn-def .quxiao{
+    width: 150px;
+    background-color: #bebebe;
+}
+.btn-def .baocun{
+    width: 150px;
+    background-color: #5bb037;
+}

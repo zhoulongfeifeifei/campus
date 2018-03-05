@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+    <link rel="stylesheet" href="../../Common/css/public.css"/>
+    <link rel="stylesheet" href="../../Common/css/main.css">
+    <link rel="stylesheet" href="css/ChuangjianBM.css">
+    <title>乐清登录系统</title>
+    <style>
+        #shili{
+            width: 100%;
+            margin:auto;
+            height: 400px;
+            display: none;
+        }
+        #shili img{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+<a href="BaoMingGuanli.html" class="Alink"><i class="layui-icon" style="font-size: 14px; color: #000;margin-right: 4px">&#xe603;</i>返回</a>
+<!--表格渲染-->
+<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+    <ul class="layui-tab-title">
+        <li class="layui-this">创建报名</li>
+        <li>登录说明</li>
+        <li>通知书</li>
+        <li>感谢信</li>
+    </ul>
+    <div class="layui-tab-content" style="height:auto;">
+        <!--创建报名-->
+        <div class="layui-tab-item layui-show">
+            <form class="layui-form formbox" action="" id="date">
+                <div class="layui-form-item">
+                    <label class="layui-form-label lable">项目名称:</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="projectName" class="layui-input" placeholder="请输入项目名称">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">报名有效时间:</label>
+                    <div class="layui-input-inline">
+                        <input class="layui-input" placeholder="开始时间" id="LAY_demorange_s" name="starttime">
+                    </div>
+                    <div class="layui-input-inline">
+                        <input class="layui-input" placeholder="结束时间" id="LAY_demorange_e" name="endtime">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">录取公布时间:</label>
+                    <div class="layui-inline" style="width: 190px;">
+                        <input class="layui-input" name="publictime" placeholder="公布时间"
+                               onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label lable">志愿数量:</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="zhiyuan" lay-verify="title" autocomplete="off" class="layui-input"
+                               placeholder="志愿数量">
+                    </div>
+                    <span class="lay-box">个</span>
+                </div>
+                <!--专业数据上传-->
+                <div class="layui-form-item">
+                    <label class="layui-form-label lable">专业数据上传:</label>
+                    <div class="layui-input-inline chuanshuju">
+                        <input type="file" name="file1" lay-type="file" class="layui-upload-file" id="upload1">
+                    </div>
+                    <div class="layui-input-inline" style="width: 110px;">
+                        <a href='#' class="layui-btn layui-btn-small btn" id="zhuanye">数据模板下载</a>
+                    </div>
+                    <div class="layui-input-inline" style="width: 120px;">
+                        <input type="text" name="zhuanye" class="layui-input" id="txtfiles" placeholder readonly
+                               style="border: none">
+                    </div>
+                    <div class="tishi">
+                        <a>(*请先下载数据模板,填充数据后再上传)</a>
+                    </div>
+                </div>
+                <!--面试数据上传-->
+                <div class="layui-form-item">
+                    <label class="layui-form-label lab">面试数据上传:</label>
+                    <div class="layui-input-inline tenum">
+                        <input type="file" name="file2" lay-type="file" class="layui-upload-file" id="upload4">
+                    </div>
+                    <div class="layui-input-inline" style="width: 110px;">
+                        <a href='#' class="layui-btn layui-btn-small btn" id="mianshifen">数据模板下载</a>
+                    </div>
+                    <div class="layui-input-inline" style="width: 120px;">
+                        <input type="text" name="mianshi" class="layui-input" id="mianshi" placeholder readonly
+                               style="border: none">
+                    </div>
+                    <div class="tishi">
+                        <a>(*请先下载数据模板,填充数据后再上传)</a>
+                    </div>
+                </div>
+                <!--学生中考数据上传-->
+                <div class="layui-form-item">
+                    <label class="layui-form-label lab">学生中考数据上传:</label>
+                    <div class="layui-input-inline switch">
+                        <input type="radio" name="Switch" value="1" title="开启" checked="" lay-filter="rad">
+                        <input type="radio" name="Switch" value="0" title="关闭" lay-filter="rad">
+                    </div>
+                </div>
+                <div class="layui-form-item" id="yincang">
+                    <label class="layui-form-label lab">学生中考数据上传:</label>
+                    <div class="layui-input-inline tenum">
+                        <input type="file" name="file3" lay-type="file" class="layui-upload-file" id="upload2">
+                    </div>
+                    <div class="layui-input-inline" style="width: 110px;">
+                        <a href="#" class="layui-btn layui-btn-small btn" id="student">数据模板下载</a>
+                    </div>
+                    <div class="layui-input-inline" style="width: 120px;">
+                        <input type="text" name="zhongkao" class="layui-input" id="zhongkao" placeholder readonly
+                               style="border: none">
+                    </div>
+                    <div class="tishi">
+                        <a>(*请先下载数据模板,填充数据后再上传)</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--描述说明-->
+        <div class="layui-tab-item">
+            <textarea class="layui-textarea" id="miaoshu" style="display: none"></textarea>
+        </div>
+        <!--通知书-->
+        <div class="layui-tab-item">
+            <textarea class="layui-textarea" id="tongzhishu" style="display: none"></textarea>
+            <a href="#" class="layui-btn btn layui-btn-small" id="tongzhili">通知书填写示例</a>
+        </div>
+        <!--感谢xin-->
+        <div class="layui-tab-item">
+            <textarea class="layui-textarea" id="ganxiexin" style="display: none"></textarea>
+        </div>
+    </div>
+</div>
+<div class="btn-def">
+    <button class="layui-btn-small layui-btn quxiao" id="quxiao">取消</button>
+    <a class="layui-btn-small layui-btn baocun" id="baocun">保存</a>
+</div>
+<div id="shili">
+    <img src="css/tong.png" alt="这是一张图片">
+</div>
+</body>
+<script src="/Web/Assets/jquery-1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="/Web/Assets/layui/layui.js"></script>
+<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+<script>
+    var $ = jQuery = layui.jquery;
+</script>
+<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/ChuangjianBM.js">
+</script>
+
+</html>

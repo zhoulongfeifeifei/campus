@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>集团后台管理</title>
+<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+<link rel="stylesheet" href="css/manage.css">
+</head>
+<body>
+<div class="header">
+    <a class="logo" href="schoollist.html">
+        <!-- <img src="../../Common/img/logo2.png"/> -->
+        顺治智慧校园
+    </a>
+    <div class="icon rt">
+        <div class="signout">
+            <a href="javascript:"><img title="退出" id="out" src="../../Common/img/退出.png" alt=""></a>
+        </div>
+    </div>
+
+    <ul class="layui-nav" lay-filter="">
+      <li class="layui-nav-item layui-this">
+        <a href="schoollist.html" target="bottom">集团管理</a>
+        <dl class="layui-nav-child"> <!-- 二级菜单 -->
+          <dd><a href="schoollist.html" target="bottom">学校管理</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">用户账号管理</a>
+        <dl class="layui-nav-child"> <!-- 二级菜单 -->
+          <dd><a href="teacherList.html?type=1" target="bottom">教师管理</a></dd>
+          <dd><a href="parentList.html?type=3" target="bottom">家长管理</a></dd>
+          <dd><a href="studentList.html?type=2" target="bottom">学生管理</a></dd>
+        </dl>
+      </li>
+    </ul>
+</div>
+<iframe src="schoollist.html" name="bottom" frameborder="0"></iframe>
+</body>
+<script src="/Web/Assets/layui/layui.js"></script>
+<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+<script>var $ = jQuery =layui.jquery;</script>
+<script src="/Web/Include/tby.js"></script>
+<script>
+  $('#out').on('click', function (event) {
+      clearToken();
+  });
+</script>
+</html>

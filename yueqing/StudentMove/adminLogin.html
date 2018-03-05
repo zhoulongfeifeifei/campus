@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+     <title>乐清登录系统</title>
+     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <!--顶部学校背景-->
+    <div class="header"></div>
+    <!--中间登录部分-->
+    <div class="con">
+    	<h2>管理录取登录</h2>
+ 		<form class="layui-form form" action="">	
+            <div class="layui-form-item item">
+                <div class="layui-inline">
+                    <label class="layui-form-label layui-label">账号：</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="name" lay-verify="name" autocomplete="off" class="layui-input" placeholder="请输入用户名">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item item">
+                <div class="layui-inline">
+                    <label class="layui-form-label layui-label">密码：</label>
+                    <div class="layui-input-block">
+                        <input type="password" name="password"  lay-verify="name" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item item">
+                <div class="layui-inline">
+                    <label class="layui-form-label layui-label">项目选择：</label>
+                    <div class="layui-input-block">
+                        <select name="" id="xiangmu" lay-filter="xiangmu">
+	                    	<option value="0">请选择</option>
+	                    </select>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <input id="sava" type="button" class="layui-btn btn green" lay-submit lay-filter="sava" value="登录">
+                </div>
+            </div>
+ 		</form>
+         <!--<h3>报名截止时间：<span class="stopTime"></span></h3>
+         <h3>录取公布时间：<span class="publishTime"></span></h3>-->
+    </div>
+
+
+</body>
+<script type="text/javascript" src="js/jquery-1.9.1/jquery.js"></script>
+<script src="layui/layui.js"></script>
+<script src="layui/lay/dest/layui.all.js"></script>
+<script src="js/common.js"></script>
+<script src="js/adminLogin.js"></script>
+</html>

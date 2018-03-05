@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2017-02-18 10:41:17
+ * @version $Id$
+ */
+.layui-input-block{
+	margin-left: 0;
+
+}
+.okblock .layui-input-block , .radioitem .layui-input-block{
+	padding-left: 8em;
+}
+.layui-form{ 
+	margin: 0 auto;
+	background: #ececec;
+	padding: 10px 5% ;
+	box-sizing: border-box;
+}
+.top img{
+	height: 90%;
+	margin: 0;
+}
+@media screen and (max-width: 800px) {
+   	.layui-form{ 
+        width: 95%;	
+    }
+
+}
+@media screen and (min-width: 800px) {
+   	.layui-form{ 
+        width: 60%;
+    }
+    .top img{
+    	margin-left: 20%;
+    }
+}
+
+
+

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+body{
+    background-color: #fff !important;
+    margin-top: -25px;
+}
+iframe{
+    height: 900px;
+}
+body .Alink{
+    background-color: #f2f2f2;
+    width:100%;
+    height: 40px;
+    display:block;
+}
+label.layui-form-label.lable1 {
+    margin-left: -48px;
+}
+label.layui-form-label.lable2 {
+    margin-left: -32px;
+}
+label.layui-form-label.lable3 {
+    margin-left: -31px;
+}
+.layui-input-inline.inputBox {
+    width: 165px;
+}
+.formbox{
+    width:100%;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    margin:auto;
+    background-color: #fff;
+    border-bottom: 1px solid #f2f2f2;
+}
+.layui-form-label{
+    width: 55px !important;
+}
+/*查看录取情况的页面的css*/
+.content{
+    width:100%;
+    margin-top: -10px;
+}
+.select{
+    width: 90px !important;
+    float: right;
+    margin-right: 4%;
+}
+.item{
+    margin-bottom: 0px !important;
+}
+.btn{
+    width: 100px;
+    background-color: #5baf36;
+    border-radius: 3px;
+}
+.btn:hover{
+    background-color: #5baf36;
+}
+.sta{
+    width:97%;
+    margin:auto;
+    padding: 20px 0px;
+}
+.sta span{
+    float: left;
+    line-height:27px;
+}
+.sta ul li{
+    float: left;
+    margin-left: 15px;
+    padding: 7px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.sta ul .first{
+	background-color: #5bb039;
+	color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

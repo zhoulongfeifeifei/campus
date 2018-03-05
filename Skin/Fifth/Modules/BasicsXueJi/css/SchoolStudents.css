@@ -1,0 +1,202 @@
+@charset "utf-8";
+ul,
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0
+}
+
+.main {
+	width:80%;
+	float:right;
+	background-color: white;
+	padding: 20px;
+	box-sizing: border-box;
+	min-height: 655px;
+}
+
+table th {
+	background-color: #DDDDDD;
+}
+
+table th,
+table td {
+	text-align: center;
+}
+
+.text-title span {
+	font-size: 18px;
+}
+
+textarea {
+	width: 100%;
+}
+
+.text-title {
+	line-height: 40px;
+}
+
+.cz {
+	margin: 10px 0;
+}
+
+#type_tbody td {
+	margin: 5px;
+}
+
+.nav_main {
+	width: 20%;
+	background-color: white;
+	margin: 20px 0;
+	min-height: 650px;
+	padding: 20px 15px;
+	cursor: pointer;
+	float: left;
+	box-sizing: border-box;
+}
+
+.nav_title {
+	background-color: #F3F4F6;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+}
+
+#nav_top ul,
+#nav_bottom ul {
+	width: 100%;
+	display: none;
+}
+#nav_top{
+	height: 450px;
+}
+#nav_bottom {
+	height: 250px;
+}
+#nav_top,
+#nav_bottom {
+	box-sizing: border-box;
+	width: 100% !important;
+    overflow: auto;
+}
+
+.nav_list ul li {
+	width: 100%;
+	cursor: pointer;
+}
+
+.nav-tabs a {
+	padding: 0 10px !important;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+	border-top: 2px solid #B3D5A9;
+}
+
+.label_bg li {
+	float: left;
+	color: dodgerblue;
+	width: 90px;
+	height: 20px;
+	line-height: 20px;
+	margin: 10px;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.label_bg li.active {
+	background-color: #5cb85c;
+	color: white;
+}
+
+.xsxx form,
+.ok,
+.no,
+.zybj,
+.ybybj {
+	display: none;
+}
+
+.active {
+	display: inline-block !important;
+}
+
+.modal-body {
+	overflow: hidden;
+	min-height: 300px;
+}
+
+.jf_list,
+.jf_list li {
+	width: 100%;
+	overflow: hidden;
+}
+
+.jf_list li {
+	margin: 5px 0;
+	border: 1px solid #B6D8F8;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.jf_list li span {
+	margin-right: 5px;
+}
+
+.name {
+	cursor: pointer;
+}
+
+.banj {
+	padding: 5px;
+}
+
+.yinc {
+	display: none;
+}
+.inpt {
+	height: 30px;
+}
+.title{
+	line-height: 30px;
+}
+.l-tree li .l-body{
+	width: 100%;
+}
+.layui-btn-mini{
+	margin-bottom: 0 !important;
+}
+
+#myModal,#plxg,#plzp,#drxs{
+	display: none;
+}
+.pull-right{
+	float: right;
+}
+.col-md-6{
+	width: 50%;
+	box-sizing: border-box;
+	float: left;
+}
+.layui-form-label{
+	width: 100px;
+}
+
+.layui-form-select{
+	z-index: order;
+}
+.body_box{
+	overflow: hidden;
+}
+h4{
+	padding-left: 30px;
+    box-sizing: border-box;
+    line-height: 30px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 14px;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   	  <meta charset="UTF-8"/>
+      <title>班级管理</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+      <link rel="stylesheet" type="text/css" href="css/SchoolClassRoom.css"/>
+   </head>
+   <body>
+		<div class="container-fluid" style="overflow: hidden;">
+			<div class="col-md-12 main">
+				<!--<div class="text-title">
+					<span class="">班级管理</span>
+					<form action="" class="pull-right">
+						<input type="text" name="" id="" value="" />
+						<a href="javascript:;" class="layui-btn layui-btn-green layui-btn-small">搜索</a>
+					</form>
+				</div>-->
+				<div class="col-md-12 cz">
+					<a href="javascript:;" data-operation="AjaxClassRoom.AddClassRoom" id="addclass" class="layui-btn layui-btn-green layui-btn-small yinc">新建班级</a>
+					<a href="javascript:;" data-operation="AjaxClassRoom.AddEditClassType" id="type_sz" class="layui-btn layui-btn-green layui-btn-small yinc">班级类型设置</a>
+					<a href="javascript:;" data-operation="AjaxClassRoom.DeleteClassRoom" id="plsc" class="layui-btn layui-btn-green layui-btn-small yinc">批量删除</a>
+					<a href="javascript:;" data-operation="AjaxClassRoom.AddClassRoomBatch" id="pladd" class="layui-btn layui-btn-green layui-btn-small yinc">批量建班</a>
+					<a href="javascript:;" data-operation="AjaxClassRoom.ClassGraduate" id="plby" class="layui-btn layui-btn-green layui-btn-small yinc">批量毕业班级</a>
+					
+					<!--<a href="javascript:;"  class="layui-btn layui-btn-green layui-btn-small pull-right">导入班级</a>
+					<a href="javascript:;"  class="layui-btn layui-btn-green layui-btn-small pull-right" style="margin-right: 5px;">下载模板</a>-->
+				</div>
+				<table class="layui-table">
+					<thead>
+						<tr>
+							<th>序号</th>
+							<th><input type="checkbox" id="qx" value="" /></th>
+							<th>班级名称</th>
+							<th>班级简称</th>
+							<th>班级编号</th>
+							<th>班级类型</th>
+							<!--<th>入学年份</th>-->
+							<th>年段</th>
+							<th>是否毕业</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody id="tbody">
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<form class="layui-form" id="form0" role="form">
+				<div class="layui-form-item">
+					<label for="Grade" class="layui-form-label">年段<span style="color:red">*</span>：</label>
+					<div class="layui-input-inline">
+						<select class="Grade"  name="Grade" lay-verify="required">
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="Splice" class="layui-form-label">班级编号：</label>
+					<div class="layui-input-inline">
+						<input type="number" class="layui-input" id="Splice" name="Splice" lay-verify=""
+							   placeholder="请输入班级编号">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="Type" class="layui-form-label">班级类型：</label>
+					<div class="layui-input-inline">
+						<select class=" Type"  name="Type">
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="Name" class="layui-form-label">班级名称<span style="color:red">*</span>：</label>
+					<div class="layui-input-inline">
+						<input type="text" class="layui-input" id="Name" name="Name" lay-verify="required"
+							   placeholder="请输入班级名称">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="ShortName" class="layui-form-label">班级简称：</label>
+					<div class="layui-input-inline">
+						<input type="text" class="layui-input" id="ShortName" name="ShortName"
+							   placeholder="请输入班级简称">
+					</div>
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button" id="save" lay-submit="" lay-filter="save" class="layui-btn layui-btn-green layui-btn-small">
+						保存
+					</button>
+					
+				</div>
+			</form>
+		</div>
+		
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<form class="layui-form" id="form3" role="form">
+				<div class="layui-form-item">
+					<label for="Grade" class="layui-form-label">年段<span style="color:red">*</span>：</label>
+					<div class="layui-input-inline">
+						<select class="Grade"  name="grade" lay-verify="required">
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="Splice" class="layui-form-label">入学年份：</label>
+					<div class="layui-input-inline">
+						<input type="number" class="layui-input" id="Splice" name="splice"
+							   placeholder="请输入入学年份">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="Splice" class="layui-form-label">班级数：</label>
+					<div class="layui-input-inline">
+						<input type="number" class="layui-input" id="Amount" name="amount"
+							   placeholder="请输入班级数">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="Type" class="layui-form-label">班级类型：</label>
+					<div class="layui-input-inline">
+						<select class="Type"  name="type">
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button"id="save3" lay-submit="" lay-filter="save3" class="layui-btn layui-btn-green layui-btn-small">
+						保存
+					</button>
+					
+				</div>
+			</form>
+		</div>
+	
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<form class="layui-form" id="form1" role="form">
+				<input type="hidden" name="Id" id="class_id" value="" />
+				<div class="layui-form-item">
+					<label for="Grade" class="layui-form-label">年段：</label>
+					<div class="layui-input-inline">
+						<select class="Grade"  name="Grade">
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="class_splice" class="layui-form-label">班级编号：</label>
+					<div class="layui-input-inline">
+						<input type="number" class="layui-input" id="class_splice" name="Splice"
+							   placeholder="请输入班级编号">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="Type" class="layui-form-label">班级类型：</label>
+					<div class="layui-input-inline">
+						<select class="Type"  name="Type">
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="class_name" class="layui-form-label">班级名称：</label>
+					<div class="layui-input-inline">
+						<input type="text" class="layui-input" id="class_name" name="Name"
+							   placeholder="请输入班级名称">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="short_name" class="layui-form-label">班级简称：</label>
+					<div class="layui-input-inline">
+						<input type="text" class="layui-input" id="short_name" name="ShortName"
+							   placeholder="请输入班级简称">
+					</div>
+				</div>
+				
+				<div class="modal-footer">
+					<button type="button"id="save1" lay-submit="" lay-filter="save1" class="layui-btn layui-btn-green layui-btn-small">
+						保存
+					</button>
+					
+				</div>
+			</form>
+		</div>
+		
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<form id="form2" class="layui-form" >
+				<table class="layui-table">
+					<thead>
+						<tr>
+							<th>
+								班级类型名称
+							</th>
+							<th>
+								班级类型顺序
+							</th>
+							<th style="width: 50px;text-align: center;" >
+								<a href="JavaScript:;" id="addtype" style="color: blue;">添加</a>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="type_tbody">
+						<tr>
+							<td><input type="text" name="TypeName"   value="" /></td>
+							<td><input type="number" name="Sort"  value="" /></td>
+							<td>
+								<input type="hidden" name="Id"  value="0" />
+								<a class=" del" style="color: red;">删除</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="modal-footer">
+					<button type="button" id="save2" class="layui-btn layui-btn-green layui-btn-small">
+						保存
+					</button>
+					
+				</div>
+			</form>
+		</div>
+	    <script src="/Web/Assets/layui/layui.js"></script>
+	    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	    <script>
+	    	var form = layui.form(),
+				layer = layui.layer,
+				laydate = layui.laydate,
+				 $ = jQuery = layui.jquery;
+			
+	    </script>
+	    <script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="/Web/Include/validate.js" type="text/javascript" charset="utf-8"></script>
+    	<script src="js/SchoolClassRoom.js" type="text/javascript" charset="utf-8"></script>
+   </body>
+</html>

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+	    <link href="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css" />
+	    <link rel="stylesheet" href="../../Common/css/public.css">
+	    <link rel="stylesheet" href="../../Common/css/listSearch.css">
+	    <link rel="stylesheet" type="text/css" href="css/Column.css"/>
+	</head>
+
+	<body style="min-height: 650px;">
+
+	<div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <!-- <li class="layui-this">栏目管理</li> -->
+        </ul>  
+    </div>
+    <a href="AddColumn.html" data-operation="AjaxJianGong.AddCatalog" class="yinc layui-btn layui-btn-small addnigao">添加顶级栏目</a>
+    <div class="right" id="form">
+        <input class="layui-input" id="stuName" type="text" name="Title"  placeholder="栏目名称"/>
+        <a href="javascript:;" id="save" class="layui-btn layui-btn-small layui-btn-green search">搜索</a>
+    </div>
+	<div class="c_left">
+		<div class="nav_title">所有栏目</div>
+		<ul class="c_left_tree"></ul>
+	</div>
+	
+	<div class="c_right">
+		<table class="layui-table">
+			<thead>
+				<tr>
+					<th>栏目名称</th>
+					<th>父栏目</th>
+					<th>模块类型</th>
+	                <th title="是否校内新闻">校内</th>
+					<th title="是否新闻">新闻</th>
+					<th title="是否显示在首页">首页</th>
+					<th title="是否显示在导航">导航</th>
+					<th title="是否置顶">置顶</th>
+					<th title="是否通知">通知</th>
+					<th>排序</th>
+					<th>创建时间</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody id="roleTable">
+	
+			</tbody>
+		</table>
+		<div id="page"></div>
+	
+		</body>
+	</div>
+    
+	<script src="/Web/Assets/layui/layui.js"></script>
+	<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	<script>
+		var form = layui.form(),
+			layer = layui.layer,
+			laydate = layui.laydate,
+			$ = jQuery = layui.jquery,
+			element = layui.element(),
+			laypage = layui.laypage,
+			layedit = layui.layedit,
+			upload = layui.upload;
+	</script>
+	<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/js/ligerui.all.js" type="text/javascript"></script>
+    <script src="js/Column.js"></script> 
+</html>

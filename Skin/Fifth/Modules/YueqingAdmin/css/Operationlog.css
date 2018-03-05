@@ -1,0 +1,94 @@
+body{
+    padding:0 15px;
+    background: #fff;
+}
+.cons{
+    margin-top: -20px;
+}
+.layui-right{
+    padding-right: 20px;
+    float: right;
+}
+.btn{
+    background-color:#5bb037 ;
+    margin-top: 4px;
+    padding: 0px 20px;
+}
+.layui-right{
+    margin-right: 30px !important;
+}
+.item{
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 10px;
+}
+.lable{
+    text-align: left !important;
+    padding: 9px 0 !important;
+}
+div.type{
+    width:100%;
+    display: inline-block;
+}
+.type{
+    border-bottom: 1px dashed #bcdbaf;
+    padding-bottom: 2px;
+}
+.inputBox{
+    width: 230px !important;
+}
+.type ul li{
+    float: left;
+    padding: 3px 0px;
+}
+span {
+    display: inline-block;
+    float: left;
+    line-height: 25px;
+}
+.type ul li.first{
+    background-color: #7ec05e;
+    margin-left: 56px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3px;
+}
+.type ul li.pers{
+    padding: 7px 10px;
+    margin-left: 44px;
+    cursor: pointer;
+}
+.inline{
+    margin-right: 140px !important;
+}
+.select{
+    width: 0px !important;
+    margin-left: 50px
+}
+.type2{
+    margin-top: 25px;
+}
+#Update{
+    float: right;
+    background-color: #5bb136;
+}
+.layui-Btn{
+    background-color:#5cb037 ;
+}
+.layui-Btn a{
+    color: #fff;
+}
+.layui-Bt{
+    background-color:#af3738;
+}
+.tableBox{
+    margin-top: 30px;
+}
+.table th,tr{
+    text-align: left;
+}
+#interview{
+    display: none;
+}
+#interview{
+    padding-bottom: 30px;
+}

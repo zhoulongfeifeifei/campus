@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+
+    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if lt IE 8]>
+	<script src="/html/assets/ie7-not-supported.js"></script>
+	<![endif]-->
+    <!--[if lte IE 9]>
+	<script src="/html/assets/respond.js"></script>
+	<script src="/html/assets/html5shiv.min.js"></script>
+	<![endif]-->
+    <link rel="stylesheet" href="../../Common/css/public.css">
+    <link rel="stylesheet" href="../../Common/css/main.css">
+    <link rel="stylesheet" href="/web/Assets/layui/css/layui.css">
+    <script src="/Web/Assets/jquery-1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../../Common/function.js" type="text/javascript" charset="utf-8"></script>
+
+    <!--用于适配IE的placeholder-->
+    <script src="../../Common/placeholder.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <!--上传图片插件plupload-->
+    <script src="/Web/Assets/plupload/plupload.full.min.js"></script>
+
+    <!--批量上传图片样式-->
+    <link rel="stylesheet" href="/Web/Assets/css/dropzone.css" />
+    <link rel="stylesheet" href="/Web/Assets/css/colorbox.css" />
+    <link rel="stylesheet" href="../../Common/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/Web/Assets/css/ace.css" class="ace-main-stylesheet" />
+    <script src="/Web/Assets/ace-extra.js"></script>
+
+    <link href="/Web/Assets/datetimepicker/jquery.datetimepicker.css" rel="stylesheet" />
+    <style>
+        .table table tbody tr{
+            font-size: 12px;
+        }
+        .table table thead tr th{
+            text-align: center;
+        }
+        .table table thead tr{
+            background: #ddd;
+        }
+        .table table tbody tr:hover{
+            background: #eee;
+        }
+        .table table tbody tr .edit a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .table table tbody tr .edit a:first-child{
+            color: #656565;
+        }
+        .bar-header .blue{
+            color: #337ab7;
+        }
+        .bar-header .font-18{
+            font-size: 18px;
+        }
+        .red{
+            color: #f00;
+        }
+        .green{
+            color: #47a447;
+        }
+        .text-shenglue{
+            overflow: hidden; /*自动隐藏文字*/
+            text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+            white-space: nowrap;/*强制不换行*/
+            width: 20em;/*不允许出现半汉字截断*/
+        }
+    </style>
+</head>
+
+<body style="background: #fff;">
+    <div class="vF-panel">
+        <!--标题层-->
+        <div class="bar-header clearfix">
+            <span class="text font-18 blue">展示方式：</span>
+            <span>
+                <input type="radio" name="type" id="img" />图片</span>
+            <span>
+                <input type="radio" name="type" id="title" />文字通知</span>
+            <span>
+                <input type="radio" name="type" id="video" />视频</span>
+        </div>
+        <!--标题层 End-->
+        <div class="form">
+            <form method="post" action="" id="form1">
+                <div class="aspNetHidden">
+                    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+                </div>
+
+                <div class="aspNetHidden">
+
+                    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4ED33B19" />
+                </div>
+                <div id="album">
+
+                    <div class="f1">
+                        <label class="f-label span1" style="width: 80px;">图片集：</label>
+                        <div class="f-input span11">
+
+                            <div class="span12">
+                                <!--工具栏-->
+                                <div class="bar-tool">
+
+                                    <a class="btn w_60 " onselectstart="event.returnValue=false" href="upload.html" id="upload">上传照片</a>
+
+<span class="text h14">建议尺寸：1080px:608px; </span>
+<div class="clear"></div>
+</div>
+<!--/工具栏-->
+<!--列表-->
+<div class="row">
+    <div class="col-xs-12">
+        <!-- PAGE CONTENT BEGINS -->
+        <div>
+            <ul class="ace-thumbnails clearfix">
+
+
+            </ul>
+        </div>
+        <!-- PAGE CONTENT ENDS -->
+    </div>
+    <!-- /.col -->
+</div>
+<!-- /.row -->
+<div id="page">
+</div>
+<!--/列表-->
+</div>
+
+
+<script type="text/javascript">
+    jQuery(function ($) {
+        //时间控件
+
+        var $overflow = '';
+        var colorbox_params = {
+            rel: 'colorbox',
+            reposition: true,
+            scalePhotos: true,
+            scrolling: false,
+            previous: '<i class="ace-icon fa fa-arrow-left"></i>',
+            next: '<i class="ace-icon fa fa-arrow-right"></i>',
+            close: '&times;',
+            current: '{current} of {total}',
+            maxWidth: '100%',
+            maxHeight: '100%',
+            onOpen: function () {
+                $overflow = document.body.style.overflow;
+                document.body.style.overflow = 'hidden';
+            },
+            onClosed: function () {
+                document.body.style.overflow = $overflow;
+            },
+            onComplete: function () {
+                $.colorbox.resize();
+            }
+        };
+
+        // $('.ace-thumbnails [data-rel="colorbox"]').colorbox(colorbox_params);
+        $("#cboxLoadingGraphic").html("<i class='ace-icon fa fa-spinner orange fa-spin'></i>"); //let's add a custom loading icon
+
+
+        $(document).one('ajaxloadstart.page', function (e) {
+            $('#colorbox, #cboxOverlay').remove();
+        });
+
+    })
+</script>
+
+
+<div class="clr"></div>
+</div>
+</div>
+<div class="f1" style="padding: 16px 10px;">
+<label class="f-label span1" style="width: 80px;">电子屏：</label>
+<div class="f-input span8">
+    <span class="text">选择您本次编辑的电子屏设备位置</span>
+    <br />
+    <span style="margin-right: 24px; white-space: nowrap;" id="num">
+<!--<input type="checkbox" name="device" class="device" value="109CB00B375A8D7E" checked="checked" />109CB00B375A8D7E-->
+</span>
+<br />
+</div>
+</div>
+
+<div class="f1">
+    <label class="f-label span1 w-100" style="width: 80px;">发布状态：</label>
+    <div class="f-input span4" id="sta">
+        <label class="green"><i class="fa fa-check-circle"></i> 已发布</label>
+        <br />
+        <label class="text"></label>
+        <div class="clr"></div>
+    </div>
+</div>
+
+<div class="f1 f-save">
+    <div class="f-input span4">
+
+        <input type="hidden" id="deviceid" value="109CB00B375A8D7E" />
+        <input type="button" class="btn btn-red" value="发布" id="publisht" />
+    </div>
+</div>
+</div>
+<div id="notice">
+    <div class="bar-header clearfix">
+        <a class="btn btn-orange addnotice" href="addNotice.html" id="add">新增通知</a>
+    </div>
+    <!--标题层 End-->
+
+    <!--table层-->
+    <div class="table table-normal">
+        <table>
+            <thead>
+                <tr>
+                    <th>标题</th>
+                    <th style="width: 300px;">内容</th>
+<th>新增时间</th>
+<th>发布时间</th>
+<th>状态</th>
+<th>发布人</th>
+<th>操作</th>
+</tr>
+</thead>
+<tbody>
+
+</tbody>
+
+</table>
+</div>
+<!--table层 End-->
+
+<!--分页层-->
+<div id="page">
+
+    <!--<span class="total"></span>-->
+</div>
+<!--分页层 End-->
+</div>
+<!--<div id="noticet">
+    <input type="hidden" name="id" value="0" />
+    <input type="hidden" name="noticetype" value="0" />
+    <input type="hidden" name="devicetype" value="1" />
+    <input type="hidden" name="type" value="2" />
+    <input type="hidden" name="Deviceid" value="109CB00B375A8D7E" />
+    <div class="f1">
+        <label class="f-label span1 w-100">截止时间：</label>
+        <div class="f-input span4">
+            <div class="layui-inline">
+                <input class="layui-input" placeholder="" onclick="layui.laydate({elem: this, istime: true, min: laydate.now(), format: 'YYYY-MM-DD hh:mm'})">
+</div>
+</div>
+</div>
+
+<div class="f1">
+    <label class="f-label span1 w-100">标题：</label>
+    <div class="f-input span4">
+        <input name="title" value="" />
+        <label class="text">建议不要超过10个字</label>
+    </div>
+</div>
+
+<div class="f1">
+    <label class="f-label span1 w-100">通知内容：</label>
+    <div class="f-input span4">
+        <textarea id="detail" name="detail" class="w-600 h-100"></textarea>
+        <label class="text">建议不要超过1000个字</label>
+    </div>
+</div>
+<div class="f1" style="padding: 16px 10px;">
+<label class="f-label span1 w-100">电子屏：</label>
+<div class="f-input span9" id="wei">
+    <span class="text">选择您本次编辑的电子屏设备位置</span>
+    <br />
+    <br />
+
+</div>
+</div>
+
+<div class="f1 f-save">
+    <label class="f-label span1 w-100"></label>
+    <div class="f-input span8">
+        <input type="button" id="save" class="btn btn-blue" value="保存并发布" />
+
+        <input type="button" id="Nopublish" class="btn btn-green" value="取消发布" style="display: none;" />
+
+<input type="button" id="publish" class="btn btn-red" value="发布" style="display: none;" />
+
+<input type="button" id="saveNotPub" class="btn" value="保存草稿(不发布)" />
+</div>
+</div>
+</div>-->
+<div id="vid">
+    <div class="f1 f-save">
+        <div class="f-input span4">
+            <input type="button" class="btn btn-red" value="发布" id="publishr" />
+        </div>
+    </div>
+</div>
+</form>
+</div>
+</div>
+<!--<link href="/html/assets/AlerMsg/AlerMsg.css" rel="stylesheet" />
+<script src="/html/assets/AlerMsg/AlerMsg.js"></script>-->
+<script>
+    $(function () {
+        var type = 1;
+        if (type == 1) {
+            document.getElementById("album").style.display = "";
+            document.getElementById("notice").style.display = "none";
+            // document.getElementById("noticet").style.display = "none";
+            document.getElementById("vid").style.display = "none";
+            document.getElementById("img").checked = "checked";
+        }
+        else if (type == 2) {
+            document.getElementById("album").style.display = "none";
+            document.getElementById("notice").style.display = "";
+            // document.getElementById("noticet").style.display = "none";
+            document.getElementById("vid").style.display = "none";
+            document.getElementById("title").checked = "checked";
+        } else if (type == 3) {
+            document.getElementById("album").style.display = "none";
+            document.getElementById("notice").style.display = "none";
+            // document.getElementById("noticet").style.display = "none";
+            document.getElementById("vid").style.display = "";
+            document.getElementById("video").checked = "checked";
+        } else {
+            document.getElementById("album").style.display = "";
+            document.getElementById("notice").style.display = "none";
+            // document.getElementById("noticet").style.display = "none";
+            document.getElementById("vid").style.display = "none";
+            document.getElementById("img").checked = "checked";
+        }
+    });
+    $("#title").click(function () {
+        document.getElementById("notice").style.display = "";
+        document.getElementById("album").style.display = "none";
+        // document.getElementById("noticet").style.display = "none";
+        document.getElementById("vid").style.display = "none";
+    });
+    $("#img").click(function () {
+        document.getElementById("notice").style.display = "none";
+        document.getElementById("album").style.display = "";
+        // document.getElementById("noticet").style.display = "none";
+        document.getElementById("vid").style.display = "none";
+    });
+    $("#video").click(function () {
+        document.getElementById("notice").style.display = "none";
+        document.getElementById("album").style.display = "none";
+        // document.getElementById("noticet").style.display = "none";
+        document.getElementById("vid").style.display = "";
+    });
+    // $(".addnotice").click(function () {
+    //     document.getElementById("notice").style.display = "none";
+    //     document.getElementById("album").style.display = "none";
+    //     // document.getElementById("noticet").style.display = "";
+    //     document.getElementById("vid").style.display = "none";
+    // });
+</script>
+</body>
+<!--<script src="/Web/Assets/layui/layui.js"></script>-->
+<!--<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>-->
+<script src="/web/Assets/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+<script src="/web/Assets/layui/lay/dest/layui.all.js" type="text/javascript" charset="utf-8"></script>
+<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/Lunbo.js"></script>
+<script src="js/Notice.js"></script>
+
+</html>

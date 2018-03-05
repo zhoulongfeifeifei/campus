@@ -1,0 +1,108 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>云表单设计</title>
+    <link href="../../Common/css/reset.css" rel="stylesheet"/>
+    <link href="../../Common/css/main.css" rel="stylesheet"/>
+    <link href="/Web/Assets/jquery-ui/jquery-ui.min.css" rel="stylesheet"/>
+    <link href="cform/cForm.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+    <link rel="stylesheet" href="css/ceate.css">
+</head>
+<body>
+    <div class="vF-panel cForm">
+        <div class="layui-tab layui-tab-brief">
+            <ul class="layui-tab-title">
+                <li class="layui-this">创建表单</li>
+            </ul>  
+        </div>
+        <div class="fr">
+            
+        </div>
+        <div class="left-wrap">
+            <h3 class="left-title">自由控件</h3>
+            <ul id="sortable_left" class="list clearfix">
+                <li class="item item-single" data-typeid="0">单行输入框</li>
+                <li class="item item-multi" data-typeid="1">多行输入框</li>
+                <li class="item item-number" data-typeid="2">数字输入框</li>
+                <li class="item item-radio item-radio-close" data-typeid="3">单选框</li>
+                <li class="item item-check item-radio-close" data-typeid="4">多选框</li>
+                <li class="item item-date-multi" data-typeid="5">日期区间</li>
+                <li class="item item-date" data-typeid="6">日期</li>
+                <li class="item item-pic" data-typeid="7">照片</li>
+                
+            </ul>
+        </div>
+        <div class="mid-wrap-bg"></div>
+        <div class="mid-wrap">
+            <ul class="list"></ul>
+        </div>
+        <div class="right-wrap">
+            <h3 class="r-title" style="text-align: right;">
+                <span name="r-box-1">控件设置</span>
+                <span name="r-box-2" class="active">表单设置</span>
+            </h3>
+            <div class="r-box r-box-1"></div>
+            <div class="r-box r-box-2 active">
+                <form action="Setting" class="layui-form" method="post">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">表单名称</label>
+                        <div class="layui-input-block">
+                            <input type="text" data-limit="100" class="layui-input" id="Title" />
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">有效期</label>
+                        <div class="layui-input-block">
+                            <input type="text" data-limit="100" onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" class="layui-input" placeholder="开始时间" id="BeginTime" /> -
+                            <input type="text" data-limit="100" onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" class="layui-input" placeholder="结束时间" id="EndTime" />
+                            <input type="checkbox" class="input-checkbox forever" name="forever" id="ForEver" lay-filter="ForEver" title="永久" />
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">表单权限</label>
+                        <div class="layui-input-block">
+                            <input type="checkbox" id="IsRepeat" lay-skin="primary" lay-filter="IsRepeat" title="参与人有效期内修改" />
+                            <input type="checkbox" id="IsOpen" lay-skin="primary" lay-filter="IsOpen" title="允许开放给平台外人员填"/>
+
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">参与人添加</label>
+                        <div class="layui-input-block">
+                            <input class="layui-btn selectPeople"  value="选择人"/>
+                            <input type="text" name="Participant" class="layui-input" style="border: none;" readonly="readonly">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label"></label>
+                        <div class="layui-input-block">
+                            <a class="layui-btn layui-btn-warm" href="History.html">取消</a>
+                            <a class="layui-btn save" href="javascript:;">发布</a>
+                        </div>
+                    </div>
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/Web/Assets/layui/layui.js"></script>
+    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+    <script>
+    var $ = jQuery = layui.jquery;
+    </script>
+    <script src="/Web/Assets/jquery-ui/jquery-ui.min.js"></script>
+
+    <script src="/Web/Include/tby.js"></script>
+    <script src="cform/cForm.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/yh.js"></script>
+    <script src="js/FlashInteractive.js"></script>
+    <script src="js/lzone.js"></script>
+    <!-- <script src="../../Common/js/placeholder.min.js"></script> -->
+    <script src="js/Create.js"></script>
+
+</body>
+</html>

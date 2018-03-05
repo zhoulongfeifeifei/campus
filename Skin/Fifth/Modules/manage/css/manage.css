@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2017-04-22 11:04:24
+ * @version $Id$
+ */
+html,body,iframe{
+    height: 100%;
+    width: 100%;
+}
+iframe{
+    height: calc(100% - 63px);
+}
+.header{
+    position: relative;
+}
+.logo{
+    width: 220px;
+    position: absolute;
+    right: 70px;
+    line-height: 60px;
+    vertical-align: middle;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    font-family: "楷体";
+}
+.logo:hover{
+    color: #fff;
+}
+.logo img{
+    height: 30px;
+}
+.icon{
+    position: absolute;
+    right: 0;
+    line-height: 60px;
+    z-index: 2;
+}
+.icon img{
+    width: 30px;
+    height: 30px;
+    
+}
+.settings,.signout{
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+}

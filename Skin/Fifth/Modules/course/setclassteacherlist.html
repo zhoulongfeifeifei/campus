@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+
+
+    <link href="../../Common/css/reset.css" rel="stylesheet"/>
+    <link href="../../Common/css/main.css" rel="stylesheet"/>
+    <link href="/Web/Assets/select2/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../../Common/css/public.css">  
+
+    <link rel="stylesheet" href="../../Common/css/FourHeight.css">  
+    <link rel="stylesheet" href="css/SetClassTeacher.css" >
+</head>
+<body style="background: #fff;">
+    <span class="text red">注：双击班主任名字可删除</span>
+    <div class="fr">
+        <select id="selectClass">
+            <option value="-1">所有年级</option>
+            
+        </select>
+    </div>
+    <table class="layui-table">
+        <colgroup>
+            <col width="150">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+            <col width="200">
+      </colgroup>
+        <thead>
+            <tr id="classRoom">
+                <th>班级名称</th>
+                <th>班主任</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+<div id="divTeacher">
+    <span class="before"> </span>
+    <select id="sltTeacher" style="width: 100px;"></select>
+    <a class="btn btn-blue ok">确定</a>
+    <a class="btn cancel">取消</a>
+</div>
+<div class="height"></div>
+
+	<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	<script>var $ = jQuery = layui.jquery;</script>
+	<script src="/Web/Include/tby.js"></script>
+    <script src="/Web/Assets/select2/select2.full.min.js"></script>
+    <script src="/Web/Assets/select2/zh-CN.js"></script>
+    <script src="js/SetClassTeacher.js"></script>
+</body>
+</html>

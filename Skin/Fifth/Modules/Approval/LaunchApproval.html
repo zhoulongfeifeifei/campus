@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/LaunchApproval.css" />
+
+	</head>
+
+	<body>
+		<div class="layui-tab layui-tab-brief">
+			<ul class="layui-tab-title">
+				<li class="layui-this">审批填写</li>
+			</ul>
+		</div>
+		<form action="/AjaxExamine/Addexamine" class="layui-form">
+			<ul id="lists" class="form layui-form-item">
+
+			</ul>
+			<ul class="ApprovalName form layui-form-item">
+				<li class="layui-form-item">
+					<label class="layui-form-label">审批人：</label>
+					<div class="layui-input-inline">
+						<input class="layui-input" type="text" id="sp" name="" value="" readonly="readonly" />
+					</div>
+					<div id="ApprovalName"  class="layui-btn layui-btn-small">请选择</div>
+				</li>
+			</ul>
+			<ul class="csName form layui-form-item">
+				<li class="layui-form-item">
+					<label class="layui-form-label">抄送人：  </label>
+					<div class="layui-input-inline">
+						<input class="layui-input" type="text" id="cs" name="" value="" readonly="readonly" />
+					</div>
+					<div id="csName"  class="layui-btn layui-btn-small">请选择</div>
+				</li>
+			</ul>
+
+			<div class="layui-form-item">
+				<label class="layui-form-label"></label>
+				<div class="layui-input-block">
+					<input id="Id" name="Id" type="hidden" value="92" />
+					<input type="button" id="baocun" lay-submit lay-filter="Sava" class="layui-btn layui-btn-small " value="保存" />
+					<a type="button" class="layui-btn layui-btn-small layui-btn-danger" href="HistoryApproval.html">取消</a>
+				</div>
+			</div>
+		</form>
+		
+			<script src="/Web/Assets/layui/layui.js"></script>
+			<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+			<script>
+				var form = layui.form(),
+					layer = layui.layer,
+					laydate = layui.laydate,
+					laypage = layui.laypage,
+					$ = jQuery = layui.jquery;
+			</script>
+			<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+			<script src="/Web/Assets/plupload/plupload.full.min.js"></script>
+			<script src="js/LaunchApproval.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>

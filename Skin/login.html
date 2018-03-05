@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit">
+    <title>顺治智慧校园</title>
+    <link rel="stylesheet" type="text/css" href="login/css/login.css" />
+</head>
+
+<body>
+<!--[if lt IE 7]>
+	<div style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;'>
+		<div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'><a href='#' onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-cornerx.jpg' style='border: none;' alt='关闭此通知'/></a></div>
+		<div style='width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;'>
+			<div style='width: 75px; float: left;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-warning.jpg' alt='Warning!'/></div>
+			<div style='width: 275px; float: left; font-family: Arial, sans-serif;'>
+				<div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>您使用的是过时的浏览器</div>
+				<div style='font-size: 12px; margin-top: 6px; line-height: 14px;'>为了获得更好的浏览体验，<br />推荐使用右侧所示的先进浏览器。</div>
+			</div>
+			<div style='width: 75px; float: left;'><a href='http://www.firefox.com' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-firefox.jpg' style='border: none;' alt='Get Firefox'/></a></div>
+			<div style='width: 75px; float: left;'><a href='http://windows.microsoft.com/zh-CN/internet-explorer/downloads/ie' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-ie8.jpg' style='border: none;' alt='Get Internet Explorer'/></a></div>
+			<div style='width: 73px; float: left;'><a href='http://www.apple.com/safari/download/' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-safari.jpg' style='border: none;' alt='Get Safari'/></a></div>
+			<div style='float: left;'><a href='http://www.google.com/chrome' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-chrome.jpg' style='border: none;' alt='Get Google Chrome'/></a></div>
+		</div>
+	</div>
+<![endif]-->
+    <div class="container">
+        <h1>顺治智慧校园</h1>
+        <div class="toum">
+            <div class="appleId">
+                <div class="userLogin">
+                    <p class="logntitle">用户登录</p>
+                    <input type="text" name="userName" placeholder="请输入用户名" />
+                    <input type="password" name="password" placeholder="请输入密码" />
+                    <button onclick="postAppleId()" class="login">登录</button>
+                    <span class="error"></span>
+                </div>
+            </div>
+            <div class="selectRole disnone">
+                <p class="selectTitle">请选择</p>
+                <ul id="selectSchool">
+                    <!-- <li>
+                        <label>
+                            <img src="login/img/school.png" alt="">
+                            <p>学校1</p>
+                            <input type="radio" name="school" value="1" checked>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <img src="login/img/school.png" alt="">
+                            <p>学校2</p>
+                            <input type="radio" name="school" value="2">
+                        </label>
+                    </li> -->
+                </ul>
+
+                <ul id="selectIdentity">
+                    <!-- <li class="greenBorder" data-role="10">
+                        <img src="login/img/teacher.png" alt="">
+                        <p>我是教师</p>
+                    </li>
+                    <li data-role="2">
+                        <img src="login/img/student.png" alt="">
+                        <p>我是学生</p>
+                    </li>
+                    <li data-role="3">
+                        <img src="login/img/parent.png" alt="">
+                        <p>我是家长</p>
+                    </li> -->
+                </ul>
+                <button onclick="signIn()">进入</button>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+<script src="../Include/constant.js"></script>
+<script src="../Assets/layui/layui.js"></script>
+<script src="../Assets/layui/lay/dest/layui.all.js"></script>
+<script> var $ = jQuery = layui.jquery</script>
+<script src="../Include/getToken.js"></script>
+<script src='../Include/tby.js'></script>
+<script src='login/js/login.js'></script>
+</html>

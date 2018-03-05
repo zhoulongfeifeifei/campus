@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+    <link rel="stylesheet" href="../../Common/css/public.css"/>
+    <link rel="stylesheet" href="../../Common/css/main.css">
+    <link href="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet"
+          type="text/css"/>
+    <link rel="stylesheet" href="css/ZhuanYeShuJu.css">
+    <title>乐清登录系统</title>
+    <style>
+        .shuMenu {
+            height: 645px;
+        }
+    </style>
+</head>
+<body>
+<!--返回-->
+<a href="javascript:history.back(-1)" class="goback">
+    <i class="layui-icon" style="font-size: 14px; color: #000;margin-right: 4px">&#xe603;</i>返回
+</a>
+<!--数据渲染-->
+<div class="shuMenu">
+    <!--右侧页面表格渲染-->
+    <div class="biaoju">
+        <div class="layui-form tableBox">
+            <table class="layui-table table">
+                <colgroup>
+                    <col width="90">
+                    <col width="200">
+                    <col width="150">
+                    <col width="150">
+                    <col width="100">
+                    <col width="100">
+                    <col width="120">
+                    <col>
+                </colgroup>
+                <thead>
+                <tr>
+                    <th colspan="10" class="thtop">专业数据表</th>
+                </tr>
+                <tr>
+                    <th>专业编号</th>
+                    <th>专业名称</th>
+                    <th>分数线</th>
+                    <th>招生人数</th>
+                    <th>是否面试</th>
+                    <th>面试打分方式</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div id="layout" style="display: none;">
+    <form class="layui-form formbox" action="" id="date">
+        <div class="layui-form-item">
+            <label class="layui-form-label">专业名称:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="name" class="layui-input" placeholder="请输入专业名称">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">分数线:</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" placeholder="请输入分数线" type="text" name="fenshu">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">招生人数:</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" placeholder="请输入招生人数" type="text" name="zhaosheng">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否面试:</label>
+            <div class="layui-input-inline">
+                <select name="mianshi" lay-filter="mianshi">
+                    <option value="1" selected=''>是</option>
+                    <option value="0">否</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">面试打分方式:</label>
+            <div class="layui-input-inline">
+                <input type="radio" name="fenzhi" value="1" title="分值" checked="" lay-filter="tiao">
+                <input type="radio" name="fenzhi" value="2" title="赋分" lay-filter="tiao">
+            </div>
+        </div>
+    </form>
+</div>
+<div id="page"></div>
+</body>
+<script src="/Web/Assets/jquery-1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="/Web/Assets/layui/layui.js"></script>
+<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+<script>var $ = jQuery = layui.jquery;</script>
+<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+<script src="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/js/ligerui.all.js" type="text/javascript"></script>
+<script src="js/zhuanyeshuju.js"></script>
+</html>

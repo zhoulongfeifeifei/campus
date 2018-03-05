@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+</head>
+
+<body>
+    <div class="layui-form">
+        <div class="layui-form-item">
+            <label class="layui-form-label">表单名称：</label>
+            <div class="layui-input-inline">
+                <input type="text" name="Title" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">有效期：</label>
+            <div class="layui-input-inline">
+                <input type="text" onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" id="BeginTime" name="BeginTime" class="layui-input">
+            </div>
+            <div class="layui-input-inline">
+                <input type="text" onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" id="EndTime" name="EndTime" class="layui-input">
+            </div>
+            <label class="layui-form-label">永久</label>
+            <div class="layui-input-inline">
+                <input type="checkbox" id="ForEver" lay-filter="ForEver" name="ForEver" lay-skin="switch">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">接收人重复填写表单</label>
+            <div class="layui-input-inline">
+                <input type="checkbox" id="IsRepeat" lay-filter="IsRepeat" name="IsRepeat" lay-skin="switch">
+            </div>
+            <label class="layui-form-label">开放给平台外人员填写</label>
+            <div class="layui-input-inline">
+                <input type="checkbox" id="IsOpen" lay-filter="IsOpen" name="IsOpen" lay-skin="switch">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-block">
+                <input id="Sava" type="button" class="layui-btn" value="保存" />
+            </div>
+        </div>
+    </div>
+    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+    <script>
+    var $ = jQuery = layui.jquery;
+    </script>
+    <script src="/Web/Include/tby.js"></script>
+    <script src="js/editForm.js"></script>
+</body>
+
+</html>

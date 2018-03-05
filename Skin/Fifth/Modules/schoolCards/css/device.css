@@ -1,0 +1,28 @@
+
+.c_right{
+	width: 100%;
+	padding: 0 5px;
+	box-sizing: border-box;
+	height: 589px;
+}
+.c_right table{
+	margin: 0 !important;
+}
+.c_right table thead th{
+	text-align: center;
+	white-space:nowrap;
+	padding: 9px 5px !important;
+}
+.c_right table tbody td{
+	text-align: center;
+	padding: 9px 5px !important;
+}
+.c_right table thead tr th:last-child,.c_right table tbody tr td:last-child{
+	min-width: 202px !important;
+}
+.red{
+    color: #f00;
+}
+.green{
+    color: #47a447;
+}

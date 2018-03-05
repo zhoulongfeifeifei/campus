@@ -1,0 +1,72 @@
+body{
+	background: #f2f2f2;
+}
+.form-center{
+	width: 85%;
+	padding: 4% 8%;
+}
+.title{
+	font-size: 5.9vw;
+	color: #616161;
+	text-align: center;
+}
+.f-title{
+	height: 20.5vw;
+	font-size: 2.67vw;
+	color: #616161;
+	line-height: 20.5vw;
+	text-align: center;
+}
+.form-content{
+	width: 100%;
+	padding:2.67vw 0;
+}
+.form h3{
+	height: 26.6vw;
+    font-size: 5.1vw;
+    font-weight: 700;
+    color: #000;
+    line-height: 26.6vw;
+}
+.layui-form-item{
+	font-size: 4.0vw;
+}
+.layui-form-label{
+	 width: 40%;
+    text-align: left;
+    padding: 4.0vw 0;
+}
+.layui-input-inline{
+	width: 36.67vw;
+}
+.layui-input, .layui-textarea{
+	height: 9.6vw;
+	background: #ccc;
+}
+
+.layui-form-item .btn1{
+	width: 45%;
+	display: inline-block;
+	margin: 0;
+}
+.layui-btn{
+	height: 12vw;
+	line-height: 12vw;
+	font-size: 4.53vw;
+}
+.layui-form-item .btn1 input{
+	width: 95%;
+} 
+.btn-div{
+	margin:3.33vw 0 0 25%;
+}
+.layui-input-block{
+	margin-left: 0;
+}
+.layui-form-radio{
+	line-height: 11.33vw;
+}
+.layui-form-radio span{
+	font-size: 3.73vw;
+}
+.la

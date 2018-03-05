@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/**
+ * 日程协同主页面的css
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2017-03-02 17:06:54
+ * @version $Id$
+ */
+
+#calendar{width:100%;overflow: auto;}
+h2{font-size: 22px;}
+/*.ui-widget-content ,.fc-scroller.fc-day-grid-container{
+    height: auto !important;
+}*/
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight{
+    background: #ececec;
+    border-color: #ececec;
+}
+.layui-layer-iframe .layui-layer-content{
+    height: 80% !important;
+}

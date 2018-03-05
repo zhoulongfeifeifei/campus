@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<link href="/Web/Assets/layui/css/layui.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="css/AddHandleType.css"/>
+		<title>增减类型处理</title>
+	</head>
+	<body>
+		<div class=" vF-panel">
+			<div class="page_title">
+				<span class="span">资产类型</span>
+				<div class="pull-right">
+					<a href="javascript:;" class="layui-btn layui-btn-green layui-btn-small add" data-toggle="modal" data-target="#myModal" style="float: right;">添加</a>
+				</div>
+			</div>
+			<table class="layui-table">
+				<thead>
+				   	<tr>
+				      	<th>类型</th>
+				      	<th>名称</th>
+				      	<th>描述</th>
+				      	<th>操作</th>
+					</tr>
+				</thead>
+				<tbody id="tbody">
+				</tbody>
+			</table>
+			<div id="page">
+
+			</div>
+		</div>
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		    <div class="modal-dialog">
+		        <form class="lauyi-form" method="post" id="form0"  role="form">
+		           	<input type="hidden" name="Id" id="Id" value="0" />
+					<div class="layui-form-item">
+						<label class="layui-form-label">类别<span class="text-danger"> *</span></label>
+						<div class="layui-input-inline">
+						   <input type="" class="layui-input" name="HandlerType" id="HandlerType" value="" />
+						</div>
+					</div>
+					  <div class="layui-form-item">
+					    <label class="layui-form-label">名称<span class="text-danger"> *</span></label>
+					    <div class="layui-input-inline">
+					    	<input type="" class="layui-input" name="Name" id="Name" value="" />
+					    </div>
+					  </div>
+					  <div class="layui-form-item">
+					    <label class="layui-form-label">备注</label>
+					    <div class="layui-input-inline">
+					    	<textarea class="layui-textarea textarea" name="Descript" id="Descript" rows="5"></textarea>
+					    </div>
+					  </div>						
+		        </form>
+		    </div><!-- /.modal -->
+		</div>
+	<script src="/Web/Assets/layui/layui.js"></script>
+	<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	<script>var $ = jQuery = layui.jquery;</script>	
+	<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/AddHeadleType.js"></script>
+	</body>
+</html>

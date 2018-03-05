@@ -1,0 +1,70 @@
+@charset "UTF-8";	
+/*CSS Reset*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+header,
+hgroup,
+nav,
+section,
+article,
+aside,
+footer,
+figure,
+figcaption,
+menu,
+button {
+	margin: 0;
+	padding: 0; }
+
+body,html {
+    font-family: "Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+	color: #000;
+	overflow-x: hidden;
+	background-color: #f8f8f8;
+	-webkit-user-select: none;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+	outline: 0; 
+	font-size: 13.33vw;  
+	/*是以  iphone6为基准，以100px字体大小为基准的    100/(750/100) = 13.33   */ 
+}
+li{
+	list-style: none;
+}
+.header{
+    height: 20vw;
+    background:url("../img/header.jpg") no-repeat;
+    background-size: contain;
+    -webkit-background-size: contain;
+}
+.green{
+	background: #5bb037;
+	color: #fff;
+}
+.blue{
+	background: #5ab6cb;
+	color: #fff;
+}

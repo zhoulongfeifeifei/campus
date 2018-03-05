@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+	<link rel="stylesheet" href="../../Common/css/public.css" />
+	<link rel="stylesheet" href="../../Common/css/main.css">
+	<link href="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/AnalogRecording.css">
+	<title>乐清登录系统</title>
+	<style>
+		.search {
+			background-color: #7dc05f;
+		}
+
+		#tree1 {
+			height: auto;
+		}
+
+		#tree1 li {
+			cursor: pointer;
+			height: 30px;
+			line-height: 30px;
+			text-indent: 25px;
+		}
+		.zymc{
+			width: 25%;
+		    padding: 7px 16px;
+		    margin-left: 10px;
+		    border-radius: 3px;
+    		float: left;
+    		text-align: center;
+    		color: #000000;
+		}
+		.addZy{
+			 background-color: #5bb039;
+    		 color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+<!--返回-->
+<a href="javascript:history.back(-1)" class="goback">
+	<i class="layui-icon" style="font-size: 14px; color: #000;margin-right: 4px">&#xe603;</i>返回
+</a>
+<!--数据渲染-->
+<div class="content">
+	<form class="layui-form formbox" action="">
+		<div class="layui-form-item item">
+			<div class="layui-inline inline">
+				<label class="layui-form-label lable">录取编号:</label>
+				<div class="layui-input-inline inputBox">
+					<input type="text" name="lqbm" lay-verify="title" autocomplete="off" placeholder="请输入录取编号" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-inline inline">
+				<label class="layui-form-label lable">姓名:</label>
+				<div class="layui-input-inline inputBox">
+					<input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入姓名" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-inline inline">
+				<label class="layui-form-label lable">准考证号:</label>
+				<div class="layui-input-inline inputBox">
+					<input type="text" name="zkzh" lay-verify="" autocomplete="off" placeholder="请输入准考证号" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-inline inline">
+				<label class="layui-form-label lable">录取专业:</label>
+				<div class="layui-input-inline inputBox">
+					<input type="text" name="Professional" lay-verify="email" autocomplete="off" placeholder="请输入报名专业" class="layui-input">
+				</div>
+			</div>
+			<!--<div class=" select">
+        <button class="layui-btn-small layui-btn btn">查询</button>
+    </div>-->
+			<div class="layui-inline select selbox">
+				<div class="layui-input-inline box">
+					<a href="javascript:;" class="layui-btn search layui-btn-small">查询</a>
+				</div>
+			</div>
+		</div>
+	</form>
+	<!--状态展示-->
+
+	<div class="sta">
+		<span>状态:</span>
+		<ul>
+			<li class='lathis first'  luQuStatus='3'>全部</li>
+			<li class='lathis ' id="moni" luQuStatus='1'>录取成功</li>
+			<li class="lathis" id="shibai" luQuStatus='2'>录取失败</li>
+		</ul>
+		<div class="zymc">全部</div>
+		<div class="linkBtn">
+			<a href="javascript:;" class="layui-btn layui-btn-small tzs">通知书导出</a>
+			<a href="javascript:;" class="layui-btn layui-btn-small shuju1">总分数据导出</a>
+			<a href="javascript:;" class="layui-btn layui-btn-small shuju2">专业数据导出</a>
+			<a href="javascript:;" class="layui-btn layui-btn-small xin">重新录取</a>
+			<a href="javascript:;" class="layui-btn layui-btn-small fabulq">发布录取</a>
+		</div>
+	</div>
+
+	<!--树结构菜单-->
+	<div class="shuMenu">
+		<!--左侧树形菜单-->
+		<div class="shujiegou">
+			<div class="tit">录取情况(录取量/招生量)</div>
+			<!--演示树结构信息-->
+			<ul id="tree1">
+			</ul>
+			<!--<ul id="tree1">
+    <!--<li>
+        <span>全部(1000/2000)</span>
+        <ul>
+            <li><span>财务管理(78/80)</span></li>
+            <li><span>国际商务(99/100)</span></li>
+            <li><span>国际商务(99/100)</span></li>
+            <li><span>国际商务(99/100)</span></li>
+            <li><span>国际商务(99/100)</span></li>
+            <li><span>国际商务(99/100)</span></li>
+        </ul>
+    </li>-->
+			<!--</ul>-->
+		</div>
+		<!--右侧页面表格渲染-->
+		<div class="biaoju">
+			<div class="tableBox">
+				<table class="layui-table">
+					<colgroup>
+						<col width="100">
+						<col width="100">
+						<col width="150">
+						<col width="100">
+						<col width="150">
+						<col width="280">
+						<col width="150">
+						<col width="150">
+						<col width="150">
+						<col width="150">
+						<col width="100">
+					</colgroup>
+					<thead>
+					<tr>
+						<th>录取编号</th>
+						<th class="name">姓名</th>
+						<th>准考证号</th>
+						<th>录取码</th>
+						<th>联系电话</th>
+						<th class="zhuanye">录取专业</th>
+						<th class="zhongkaofen">中考总分一</th>
+						<th class="zongfen">语数外总分</th>
+						<th class="mianshifen">面试分数</th>
+						<th class="zhuangtai">状态</th>
+						<th>操作</th>
+					</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+				<div id="page"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="/Web/Assets/jquery-1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="/Web/Assets/layui/layui.js"></script>
+<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+<script>
+    var $ = jQuery = layui.jquery;
+</script>
+<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+<script src="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/js/ligerui.all.js" type="text/javascript"></script>
+<script src="js/AnalogRecording.js"></script>
+
+</html>

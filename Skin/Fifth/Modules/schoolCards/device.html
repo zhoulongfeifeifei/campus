@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+	    <link rel="stylesheet" href="../../Common/css/public.css">
+	    <!--<link rel="stylesheet" href="../../Common/css/listSearch.css">-->
+		<link rel="stylesheet" href="../../Common/font-awesome/css/font-awesome.css" />
+	    <link rel="stylesheet" type="text/css" href="css/device.css"/>
+	</head>
+
+	<body style="min-height: 650px; min-width: 1300px;">
+
+	
+	<div class="c_right">
+		<table class="layui-table">
+			<thead>
+				<tr>
+					<th>序号</th>
+					<th>设备编号</th>
+					<th>设备位置</th>
+	                <th title="考勤连接状态">考勤连接状态</th>
+					<th>最近一次连接时间</th>
+					<th title="内容连接状态">内容连接状态</th>
+					<th>数据来源</th>
+					<th>校牌版本</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody id="roleTable">
+                <!--<tr>
+                    <td>1</td>
+                    <td>109CB00B375A8D7E</td>
+                    <td></td>
+                    <td><i class="fa fa-minus-circle red"></i></td>
+                    <td>2017-04-26 04:29:44</td>
+                    <td><i class="fa fa-check-circle green"></i></td>
+                    <td>学事通</td>
+                    <td>XIAOAN2.0.13</td>
+                    <td>
+                        <a href="checkonMould.html" class="layui-btn layui-btn-mini" title="考勤模板" style="background-color: #666">考勤模板</a>
+                        <a href="" class="layui-btn layui-btn-mini update" title="版本更新" style="background-color: #47a447">版本更新</a>
+                        <a href="" class="layui-btn layui-btn-mini restart" title="重启" style="background-color: #f00">重启</a>
+                        <a href="" class="layui-btn layui-btn-mini logs" title="传日志" style="background-color: #ff9100">传日志</a>
+                        <a href="" class="layui-btn layui-btn-mini imglogs" title="日志图片" style="background-color: #666">日志图片</a>
+                        <a href="mould.html" class="layui-btn layui-btn-mini" title="选择模板" style="background-color: #551a8b">模板选择</a>
+                        <a href="cont.html" class="layui-btn layui-btn-mini" title="内容管理" style="background-color: #551a8b">内容管理</a>
+                    </td>
+                </tr>-->
+			</tbody>
+		</table>
+		<div id="page"></div>
+	
+		</body>
+	</div>
+    
+	<script src="/Web/Assets/layui/layui.js"></script>
+	<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	<script>
+		var form = layui.form(),
+			layer = layui.layer,
+			laydate = layui.laydate,
+			$ = jQuery = layui.jquery,
+			element = layui.element(),
+			laypage = layui.laypage,
+			layedit = layui.layedit,
+			upload = layui.upload;
+	</script>
+	<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/device.js"></script> 
+</html>

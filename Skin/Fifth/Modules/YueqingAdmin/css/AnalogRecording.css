@@ -1,0 +1,142 @@
+@charset "UTF-8";
+body{
+    padding:0;
+    background-color: #fff;
+    padding: 2px 10px;
+}
+td.lqzye{
+    padding:0;
+    display: table-caption;
+    width: 400px;
+}
+.goback{
+    margin-bottom: 15px;
+    display: block;
+}
+.select{
+    float: right;
+    margin-right: 62px;
+    width: 50px;
+}
+.btn{
+    border-radius: 3px;
+    background-color: #757575;
+    margin-left: 40px;
+}
+.sta{
+    margin-bottom: 55px;
+}
+.sta span{
+    float: left;
+    line-height: 28px;
+    margin-left: 40px;
+}
+.sta ul li{
+    float: left;
+}
+.sta ul .lathis {
+	/*background-color: #009688;*/
+  	color: #000;
+    padding: 7px 16px;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+.sta ul .first{
+	background-color: #5bb039;
+	color:#fff;
+}
+/*查看录取情况的页面的css*/
+label.layui-form-label.lable {
+    width: 68px;
+}
+.linkBtn{
+    float: right;
+    margin-right: 25px;
+}
+/*.xin,.fabu{
+    background-color: #757575;
+}*/
+/*树结构*/
+.shuMenu{
+    border-top: 1px solid #f2f2f2;
+    width:100%;
+    min-height: 500px;
+}
+.shuMenu .shujiegou{
+    width:22%;
+    height: 400px;
+    overflow-y: scroll;
+    float: left;
+}
+.shuMenu .biaoju{
+    float: right;
+    height: 500px;
+    padding: 0 3px;
+    width:77%;
+}
+.tableBox{
+	width: 100%;
+    overflow: auto;
+    height: 100%;
+}
+.layui-table th,.layui-table  tr{
+    text-align: center;
+}
+.shujiegou .tit{
+    width:95%;
+    height: 35px;
+    line-height: 35px;
+    color: #FFF;
+    text-align: center;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color:#7dc05f ;
+}
+.layui-btn-gray{
+    background-color: #757575 !important;
+}
+.lay-green{
+    background-color:#7dc05f ;
+}
+.linkB{
+    float: right;
+    margin-right: 1px;
+    margin-top: -37px;
+}
+.l-tree{
+    width:100% !important;
+
+}
+.layui-input-inline.inputBox{
+    width: 170px;
+}
+label.layui-form-label.lable {
+    width: 51px !important;
+    padding:8px 4px;
+}
+.layui-form-item .layui-inline{
+    margin-right: 0 !important;
+}
+.layui-inline.select.selbox {
+    width: 70px !important;
+
+}
+.lathis{
+	cursor: pointer;
+}
+
+input.fabu {
+    width: 83px;
+}
+
+/*表格修饰*/
+.layui-table td{
+    padding: 0px 0px;
+}
+.layui-table th {
+    padding: 11px 9px!important;
+}
+p.zt{
+    color: #ff0000;
+}

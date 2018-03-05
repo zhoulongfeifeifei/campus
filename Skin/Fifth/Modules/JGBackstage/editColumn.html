@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<style>
+			.info-top {
+				font-size: 16px;
+				height: 30px;
+				line-height: 30px;
+			}
+			
+			.info-top li {
+				float: left;
+				padding-right: 50px;
+			}
+			
+			.info-top li span {
+				margin-left: 8px;
+				color: #e2701f;
+				font-weight: bold;
+			}
+			
+			.info-title {
+				font-size: 16px;
+				height: 40px;
+				line-height: 40px;
+				border-bottom: 1px dashed #ddd;
+				margin-top: 10px;
+			}
+			
+			.info-item {
+				padding-top: 10px;
+			}
+			
+			.info-item .f1 {
+				padding-top: 0;
+			}
+			
+			.form .f1 {
+				border-top: none;
+			}
+			#Sort{
+				line-height: 30px;
+			}
+			#save{
+				margin-bottom: 10px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+	<div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">栏目编辑</li>
+        </ul>  
+    </div>
+	<form class="layui-form" id="form0" method="post">
+		<input type="hidden" name="id">
+		<div class="layui-form-item">
+			<label class="layui-form-label">栏目名称<span style="color:red">*</span>：</label>
+			<div class="layui-input-inline">
+				<input class="layui-input" type="text" id="Title" name="title" value=""  />
+			</div>
+		</div>
+		
+		
+		<div class="layui-form-item">
+			<label class="layui-form-label">父级栏目：</label>
+			<div class="layui-input-inline">
+				 <select name="parentId" id="ParentId">
+                    <option value="0"></option>
+                </select>
+			</div>
+		</div>
+		
+		<div class="layui-form-item">
+			<label class="layui-form-label">模块类型：</label>
+			<div class="layui-input-inline">
+				 <select id="Channel" name="channel">
+                    <option value="-1"></option>
+                </select>
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">上传图片：</label>
+			<div class="layui-input-inline">
+				 <input class="layui-input" type="text" id="Imgurl" name="" value="" disabled="disabled" />
+				 <a id="icbtn" class="layui-btn layui-btn-small layui-btn-green">选择图片</a>
+				 <img id="yulan" src="" style="width: 150px;height: 150px;display: none;"/>
+				 <input type="hidden" name="imgUrl" id="ImgUrl" value="" />
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label"></label>
+			<div class="layui-input-block">
+				<input type="checkbox" name="isInner" id="IsInner" value="0" title="是否校内新闻" />
+				<input type="checkbox" name="isNew" id="IsNew" value="" title="是否新闻"/>
+				<input type="checkbox" name="showOnHomepage" id="ShowOnHomepage" value="" title="是否显示在首页"/>
+				<input type="checkbox" name="showOnNav" id="ShowOnNav" value="" title="是否显示在导航"/>
+				<input type="checkbox" name="isTop" id="IsTop" value="" title="是否置顶"/>
+				<input type="checkbox" name="isNotify" id="IsNotify" value="" title="是否通知"/>
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">排序：</label>
+			<div class="layui-input-inline">
+				<input class="layui-input" type="number" id="Sort" name="sort" value=""  />
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label"></label>
+			<div class="layui-input-inline">
+				<input class="layui-btn layui-btn-green" lay-submit lay-filter="Sava" id="save" type="button" value="保存修改" />
+			</div>
+		</div>
+	</form>
+
+	</body>
+     	<script src="/Web/Assets/layui/layui.js"></script>
+	    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	    <script>
+	    	var form = layui.form(),
+			layer = layui.layer,
+			laydate = layui.laydate,
+			$ = jQuery = layui.jquery,
+			element = layui.element(),
+			layedit = layui.layedit,
+			upload = layui.upload;
+			
+	    </script>
+	    <script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/editColumn.js"></script>
+</html>

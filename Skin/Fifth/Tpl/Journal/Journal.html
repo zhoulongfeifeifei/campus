@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link href="/Web/Assets/layui/css/layui.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="../../Common/css/public.css">
+        <link rel="stylesheet" type="text/css" href="css/journal.css" />
+    </head>
+    <style>
+        span.right {
+        float: right;
+        color: #028843;
+        cursor: pointer;
+    }
+    </style>
+
+    <body>
+        <div class="content" id="LogTain">
+        <div class="content-left">
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">日志</li>
+                </ul>
+            </div>
+            
+                <div class="left_top">
+                    <div class="top_btn">
+                        <a class="layui-btn layui-btn-small layui-btn-green" href="addJournal.html">发表日志</a>
+                        <!-- <a href="#">批量管理</a> -->
+                    </div>
+                    <div class="layui-form">
+                        <div class="layui-form-item xz">
+                            <div class="layui-input-inline">
+                                <input type="text" class="layui-input" placeholder="" />
+                                <img id="search" src="../../Common/img/fdj.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="journal_content">
+                    <ul id="journalList">
+                        <!-- <li>
+                            <a href="#">第三支部简介第三支部简介第三支部简介</a>
+                            <div class="li_right">
+                                <span>2016-11-7（1/5）</span>
+                                <a href="#">编辑</a>
+                                <a href="#">删除</a>
+                            </div>
+                        </li> -->
+                    </ul>
+                    <div id="page"></div>
+                </div>
+            </div>
+            <div class="content_right">
+                <div>
+                    <div class="right_top">
+                        <p>日志分类</p>
+                        <a href="javascript:ManageLog()">管理</a>
+                    </div>
+                    <ul id="journalType">
+                        <!-- <li><a href="#">全部日志<span>(100)</span></a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div style="clear:both"></div>
+        
+        <div class="manageLogType">
+            <a class="addType">添加分类</a>
+            <ul>
+            </ul>
+        </div>
+    </body>
+        
+		<script src="/Web/Assets/layui/layui.js"></script>
+		<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+		<script>
+			var $ = jQuery = layui.jquery;
+		</script>
+		<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+    	<script src="js/Journal.js"></script>
+</html>

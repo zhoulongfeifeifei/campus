@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>学科管理</title>
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+    <link rel="stylesheet" href="../../Common/css/public.css">
+    <link rel="stylesheet" href="../../Common/css/FourHeight.css">
+    <link rel="stylesheet" href="css/again.css">
+</head>
+
+<body>
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <!-- <li class="layui-this">教室列表</li> -->
+        </ul>
+    </div>
+    <a href="javascript:editOrAnd()" class="layui-btn layui-btn-small addnigao">新增</a>
+    <a href="javascript:daoru()" class="layui-btn layui-btn-small addnigao a1">导入</a>
+    
+    <div class="right layui-form">
+        <div class="layui-input-inline">
+            <select class="typeid" name="typeid" lay-filter="classType">
+                <option value=""></option>
+            </select>
+        </div>
+        <input class="layui-input" type="text" name="Title" placeholder="标题名称" />
+        <a href="javascript:;" class="layui-btn layui-btn-small layui-btn-green search">搜索</a>
+    </div>
+    <table class="layui-table">
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>教室名称</th>
+                <th>教室类型</th>
+                <th>对应班级</th>
+                <th>房间</th>
+                <th>容纳人数</th>
+                <th>所在楼</th>
+                <th>楼层</th>
+                <th>有效座位数</th>
+                <th>考试座位数</th>
+                <th>选课？</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div class="page"></div>
+    <form class="layui-form" id="form1" style="display: none;">
+        <div class="layui-form-item">
+            <input type="hidden" name="id" id="id" />
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">教室名称：</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" id="RoomName" maxlength="15" name="RoomName" lay-verify="required" />
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">所在楼号：</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" id="BuildingName" value="0" name="BuildingName" />
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">层数：</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" id="FloorName" value="0" name="FloorName" />
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">房间：</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" id="Name" value="0" name="Name" />
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">有效座位数：</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" id="ValidSeats" value="0" name="ValidSeats" />
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">考试座位数：</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" id="ScoreSeats" value="0" name="ScoreSeats" />
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">容纳人数：</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" id="MaxSeats" value="0" name="MaxSeats" />
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">教室类型：</label>
+            <div class="layui-input-inline">
+                <select name="typeid" class="typeid">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">教室班级：</label>
+            <div class="layui-input-inline">
+                <select name="ClassId" id="ClassId">
+                    <option value=""></option>
+                </select>
+            
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否用于选修：</label>
+            <div class="layui-input-inline">
+                <select name="IsElective" id="iselcetive">
+                    <option value="0">否</option>
+                    <option value="1">是</option>
+                </select>
+            
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">备注：</label>
+            <div class="layui-input-block textar">
+                <textarea id="Remarks" class="layui-textarea" name="Remarks"></textarea>
+            </div>
+        </div>
+    </form>
+    <form id="form2" class="layui-form" runat="server" style="display: none;">
+        <div class="layui-form-item">
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">选择文件：</label>
+            <div class="layui-input-inline" style="width: 210px">
+                <a class="layui-btn download " download target="_blank">下载模版</a>
+                <input type="file" id="daoru" name="file" class="layui-upload-file" lay-type="file">
+            </div>
+        </div>
+        <input type="hidden" id="filename" />
+    </form>
+</body>
+<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+<script>
+var $ = jQuery = layui.jquery
+</script>
+<script src="/Web/Include/tby.js"></script>
+<script src="js/jiaoshiguanli.js"></script>
+</html>

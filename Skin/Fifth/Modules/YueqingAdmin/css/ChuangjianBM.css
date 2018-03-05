@@ -1,0 +1,165 @@
+@charset "UTF-8";
+body{
+    background-color: #fff;
+    padding:0px 20px !important;
+}
+.formbox{
+    width:100%;
+    margin-top: -10px;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+/*.layui-form-label{*/
+    /*width: 90px !important;*/
+/*}*/
+
+/*查看录取情况的页面的css*/
+.content{
+    width:100%;
+    background-color: #fff;
+    min-height: 300px;
+}
+span.lay-box{
+    line-height: 38px;
+
+}
+.layui-input-inline.chuanshuju {
+    margin-left: 30px;
+    width: 120px;
+}
+.layui-input-inline.tenum {
+    margin-left: -30px;
+    width: 120px;
+}
+.layui-input-inline.switch {
+    margin-left: -30px;
+}
+.btn{
+    background-color: #5bb037;
+    width: 100px;
+    height: 32px;
+    margin-top: 1px;
+}
+.white{
+    background-color: #fff;
+    color: #000;
+}
+.white:hover{
+    background-color: #fff;
+    color: #000;
+}
+.btn:hover{
+    background-color: #5bb037;
+}
+.content p{
+    text-align: center;
+    font-size: 16px;
+    padding: 50px 0;
+    color: #000;
+}
+.lab{
+    width: 135px !important;
+    text-align: left;
+}
+.lable{
+    text-align: left;
+}
+.shuoming{
+    width:26%;
+    min-width: 400px;
+    margin:auto;
+}
+.boxshuju ul li a.download{
+    display: block;
+    width: 100px;
+    height: 33px;
+    line-height: 33px;
+    background-color: #7dc05f;
+}
+.layui-input-inline.layui-lef {
+    margin-left: -40px;
+    width: 55px;
+}
+.laydate_btn a{
+    width: 25px !important;
+    float: left !important;
+}
+.boxshuju{
+    width: 92% !important;
+    height:35px !important;
+    margin-bottom: 25px !important;
+    margin: auto;
+}
+.tishi{
+    height: 38px;
+    line-height: 32px;
+}
+.tishi a{
+    color: #ff0000;
+    font-size: 14px;
+}
+.boxshuju button{
+    background-color: #7dc05f!important;
+}
+.boxshuju span{
+    float: left;
+    line-height: 35px;
+}
+.boxshuju ul li{
+    cursor: pointer;
+    float: left;
+    line-height: 35px;
+    margin-left: 100px;
+}
+.boxshuju ul li button{
+    width: 100px;
+}
+
+.boxshuju ul li.default{
+    margin-left: 48px;
+}
+.boxshuju ul li.default1{
+    margin-left: 20px;
+}
+.layui-form-item {
+    margin-left: 45px !important;
+}
+.btn-def{
+    width:30%;
+    min-width: 320px;
+    margin:auto;
+}
+.btn-def .quxiao{
+    width: 150px;
+    background-color: #bebebe;
+}
+/*.layui-box:hover{*/
+    /*color: #fff;*/
+/*}*/
+.btn-def .baocun{
+    width: 150px;
+    background-color: #5bb037;
+}
+.layui-upload-icon i {
+    display: none;
+
+}
+.layui-upload-icon{
+    line-height: 32px !important;
+    margin-left: 24px;
+    font-size: 13px;
+}
+.layui-upload-button {
+    height: 32px;
+    width: 110px;
+    border:none;
+    color: #fff;
+    background-color: #5bb037 !important;
+}
+.layui-form-label{
+    width: 75px ;
+}
+.layui-layedit {
+    margin-top: 15px;
+}

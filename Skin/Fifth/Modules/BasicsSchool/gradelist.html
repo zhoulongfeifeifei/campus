@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+   	  <meta charset="UTF-8"/>
+      <title>年段管理</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+      <link rel="stylesheet" type="text/css" href="css/gradelist.css"/>
+   </head>
+  <body>
+		<div class="container-fluid" style="overflow: hidden;">
+			<div class="col-md-12 main">
+				<div class="text-title">
+					<!--<span class="">年段列表</span>-->
+					<form action="" class="pull-right">
+						<!--<input type="text" name="" id="" value="" />
+						<a href="javascript:;" class="layui-btn layui-btn-green layui-btn-small">搜索</a>-->
+						<a href="javascript:;" id="add"  data-operation="AjaxSchool.AddGrade" data-toggle="modal" data-target="#myModal"   class="layui-btn layui-btn-green layui-btn-small yinc">添加</a>
+						<a href="javascript:;" id="plsc"  data-operation="AjaxSchool.DeleteGrade" class="layui-btn layui-btn-green layui-btn-small yinc">批量删除</a>
+					</form>
+				</div>
+				<table class="layui-table">
+					<thead>
+						<tr>
+							<th>序号</th>
+							<th><input type="checkbox" name="" id="qx" value="" /></th>
+							<th>年段名称</th>
+							<th>年段简称</th>
+							<th>入学年份</th>
+							<th>学制</th>
+							<th>状态</th>
+							<th>行政班数量</th>
+							<th>选修班数量</th>
+							<th>备注</th>
+							<th >操作</th>
+						</tr>
+					</thead>
+					<tbody id="tbody">
+						
+					</tbody>
+				</table>
+				<span style="color:red">注：学制到期后该年段自动变成停用状态</span>
+			</div>
+		</div>
+		<!-- 模态框（Modal） -->
+		<div id="myModal">
+			<form class="layui-form" id="form0" role="form">
+				<input type="hidden" name="id" id="id" value="0" />
+				<div class="layui-form-item">
+					<label for="Grade" class="layui-form-label">年段名称<span style="color:red">*</span>：</label>
+					<div class="layui-input-inline">
+						<input type="text" class="layui-input" lay-verify="required" id="grade" name="grade"
+							   >
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="ShortName" class="layui-form-label">年段简称：</label>
+					<div class="layui-input-inline">
+						<input type="text" class="layui-input" id="shortName" placeholder="初一年段" name="shortName"
+							    >
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="SchoolYear" class="layui-form-label">入学年份<span style="color:red">*</span>：</label>
+					<div class="layui-input-inline">
+						<select  class="" id="schoolYear" name="schoolYear" lay-verify="required" >
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="Year" class="layui-form-label">学制<span style="color:red">*</span>：</label>
+					<div class="layui-input-inline">
+						<input type="text" class="layui-input" lay-verify="required" id="year"  name="year">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="Year" class="layui-form-label">行政班数量：</label>
+					<div class="layui-input-inline">
+						<input type="text" class="layui-input" lay-verify="" id=""  name="">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="Year" class="layui-form-label">选修班数量：</label>
+					<div class="layui-input-inline">
+						<input type="text" class="layui-input" lay-verify="" id=""  name="">
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="Status" class="layui-form-label">使用状态：</label>
+					<div class="layui-input-inline">
+					    <select class="" id="status" name="status">
+                            <option value="1">正常</option>
+					        <option value="0">毕业</option>
+					    </select>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="Remark" class="layui-form-label">备注：</label>
+					<div class="layui-input-inline">
+						<textarea class="" id="remark" name="remark" rows="5" ></textarea>
+					</div>
+				</div>
+				<div class="layui-form-item" style="text-align: right;padding-right: 5px;">
+					<a id="save" class="layui-btn layui-btn-small" lay-submit="" lay-filter="save">保存</a>
+				</div>
+			</form>
+		</div>
+	    <script src="/Web/Assets/layui/layui.js"></script>
+	    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	    <script>
+	    	var form = layui.form(),
+				layer = layui.layer,
+				laydate = layui.laydate,
+				  $ = jQuery = layui.jquery;
+	    </script>
+	    <script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="/Web/Include/validate.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/gradelist.js" type="text/javascript" charset="utf-8"></script>
+   </body>
+</html>

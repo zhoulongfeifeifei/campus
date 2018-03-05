@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-12-11 10:23:15
+ * @version $Id$
+ */
+body,html{
+                height: 100%;width: 100%;
+            }
+        .content .album_c{
+            width: 100%;
+            padding-top: 30px;
+            overflow: hidden;
+            padding-left: 5%;
+        }
+        .content .album_c li{
+            width: 15%;
+            float: left;
+            margin-right: 5%;
+            margin-bottom: 20px;
+            text-align: center;
+            background: #fff;
+        }
+        .content .album_c li:nth-child(6n){
+            margin-right: 0;
+        }
+        .content .album_c li a{
+            width: 100%;
+            display: block;
+            text-align: center;
+            position: relative;
+        }
+        .content .album_c li a img{
+            background: #fff;
+            width: 100%;
+            height:100%;
+        }

@@ -1,0 +1,2 @@
+/*树形菜单自行定义的颜色*/
+body .layui-tree-skin-shihuang .layui-tree-branch{color: #3a862c;}    

@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-11-07 19:27:00
+ * @version $Id$
+ */
+.content{
+    background: #fff;
+    padding: 5px 15px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+#LogTain{
+    min-height: 800px;
+}
+.content>div{
+    overflow: hidden;
+}
+.content-left{
+    float: left;
+    display: inline-block;
+    width: 80%;
+}
+.content_right{
+    float: right;
+    display: inline-block;
+    width: 17%;
+    background: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    min-height: 800px;
+}
+.content_right .right_top{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #39882A;
+}
+.content_right .right_top p{
+    display: inline-block;
+}
+.content_right .right_top a{
+    float: right;
+}
+.content_right .right_top p,
+.content_right .right_top a{
+    color: #028843;
+    font-weight: bold;
+}
+
+.content_right ul li{
+    line-height: 1.5em;
+}
+.content_right ul li a{
+    color: #028843;
+    font-family: "黑体";
+}
+.content_right ul li a span{
+    float: right;
+}
+
+
+
+.content_top{
+    border-bottom: 1px solid #39882A;
+}
+.content_top p{
+    color: #39882A;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 12px;
+}
+.content_top p i{
+    font-style: normal;
+}
+.left_top{
+    overflow: hidden;
+}
+.top_btn{
+    display: inline-block;
+    float: left;
+}
+.top_btn a{
+    margin-right: 5px;
+}
+.top_btn .active_btn{
+    display: inline-block;
+    width: 6em;
+    text-align: center;
+    line-height: 2em;
+    background: #3A862C;
+    color: #fff;
+    border-radius: 4px;
+}
+.xz{
+    margin-bottom: 0!important;
+}
+.xz input{
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.left_top .layui-form{
+    float: right;
+    display: inline-block;
+}
+.xz .layui-input-inline{
+    border: 1px solid #39882A;
+    width: 115px!important;
+}
+.xz .layui-input-inline:last-child{
+    width: 190px!important;
+    margin-right: 0;
+    position: relative;
+    padding-right: 30px;
+}
+.xz .layui-input-inline img{
+    width: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #39882A;
+    padding: 5px;
+    cursor: pointer;
+}
+.search img{
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #39882A;
+    padding: 5px;
+}
+.li_right .alIcon{
+    font-family: "optioning";
+    font-size: 26px;
+    cursor: pointer;
+    
+}
+.li_right a{
+    text-align: center;
+}
+
+
+.journal_content{
+    background: #fff;
+    margin-top: 10px;
+    padding: 10px;
+}
+.journal_content li{
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    line-height: 40px;
+}
+.journal_content li a{
+    font-size: 16px;
+    color: #666;
+    font-family: "黑体";
+}
+.journal_content li > a{
+    display: inline-block;
+    max-width: 62%;
+    float: left;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.journal_content li .li_right{
+    display: inline-block;
+    max-width: 37%;
+    float: right;
+    overflow: hidden;
+}
+.li_right a{
+    width: 3em;
+    display: inline-block;
+}
+#page{
+    margin-top: 30px;
+}
+
+.layui-layedit{
+    height: 200px;
+    margin-bottom: 20px;
+}
+.layui-layer-page .layui-layer-content{
+    height: 800px;
+}
+
+
+.addType , .selectFriends{
+    color: #01AAED;
+    cursor: pointer;
+}
+.selectFriends , .manageLogType{
+    display: none;
+}
+.manageLogType > .addType{
+    width: 5em;
+    display: block;
+    text-align: center;
+    margin:  5px 5px 5px 16px;
+}
+.manageLogType ul{
+    width: 90%;
+    margin:auto;
+}
+.manageLogType ul li div a.editLog {
+    margin-right: 15px;
+}
+.manageLogType ul li{
+    line-height: 1.5em;
+}
+.manageLogType ul div{
+    float: right;
+}
+.manageLogType ul div a{
+    display: inline-block;
+    color: #028843;
+}
+#journalType li a{
+    display: inline-block;
+}
+#journalType li .f-right{
+    float: right;
+    color: #028843;
+    cursor: pointer;
+}
+

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+    <link rel="stylesheet" href="../../Common/css/public.css">
+    <link rel="stylesheet" href="../../Common/css/listSearch.css">
+</head>
+<body>
+
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <!-- <li class="layui-this">抄送给我</li> -->
+        </ul>
+    </div>
+    <div class="layui-form right">
+        <div class="layui-input-inline">
+            <select name="" id="condition" lay-filter="condition">
+                <option value=0>全部状态</option>
+            </select>    
+        </div>
+        <div class="layui-input-inline">
+            <input class="layui-input" type="text" name="Key"  placeholder="标题名称"/>
+        <a href="javascript:;" class="layui-btn layui-btn-small layui-btn-green search">搜索</a>
+        </div>
+    </div>
+    <table class="layui-table">
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>标题</th>
+                <th>发起人</th>
+                <th>状态</th>
+                <th>发布时间</th>
+                <th>详情</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+                
+        </tbody>
+    </table>
+    <div id="page11"></div>
+    <script src="/Web/Assets/layui/layui.js"></script>
+    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+    <script>var $ = jQuery = layui.jquery</script>
+    <script src="/Web/Include/tby.js"></script>
+    
+    <script src="js/getStatus.js"></script> 
+    <script src="js/CCToMe.js"></script>   
+   
+
+</body>
+</html>

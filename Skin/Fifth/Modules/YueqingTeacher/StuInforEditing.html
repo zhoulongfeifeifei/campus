@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+    <link rel="stylesheet" href="../../Common/css/public.css" />
+    <link rel="stylesheet" href="../../Common/css/main.css">
+    <link href="css/Operation.css" rel="stylesheet">
+    <link href="css/BaoMing.css" rel="stylesheet">
+    <link href="css/Details.css" rel="stylesheet">
+    <title>乐清登录系统</title>
+    <style>
+    	.btn,.btn1{
+    		 background-color: #5bb037;
+    		 height: 38px;
+    	}
+    	.btn1{
+    		width: 204px;
+    	}
+    	select{
+    		width: 63%;
+    		height: 40px;
+    	}
+    </style>
+</head>
+<body>
+<a href="javascript:history.back()"><i class="layui-icon" style="font-size: 14px; color: #000;margin-right: 4px">&#xe603;</i>返回</a>
+<div style="float: right;display: none;">
+    <button class="layui-btn-small layui-btn dayin">打印</button>
+    <button class="layui-btn-small layui-btn daochu">导出</button>
+</div>
+<div style="margin-top: 18px"></div>
+<!--中考成绩-->
+<div class="zhiyuan">
+    <div class="title">
+        <h2>中考成绩<i class="bj">*</i></h2>
+    </div>
+    <form class="layui-form formbox" action="">
+        <div class="layui-form-item">
+            <label class="layui-form-label">总分一:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="zf" lay-verify="title" autocomplete="off" placeholder="请输入总分"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">语文:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="yw" lay-verify="title" autocomplete="off" placeholder="请输入语文分数"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">数学:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="sx" lay-verify="title" autocomplete="off" placeholder="请输入数学分数"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">英语:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="english" lay-verify="title" autocomplete="off" placeholder="请输入英语分数"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">科学:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="kx" lay-verify="title" autocomplete="off" placeholder="请输入标题"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">社会:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="sh" lay-verify="title" autocomplete="off" placeholder="请输入科学分数"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">体育:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="ty" lay-verify="title" autocomplete="off" placeholder="请输入体育分数"
+                       class="layui-input">
+            </div>
+        </div>
+        <!--<div style="width: 451px;">
+		<div>-->
+
+    </form>
+</div>
+<!--个人信息-->
+<div class="zhiyuan">
+    <div class="title">
+        <h2>个人信息<i class="bj">*</i></h2>
+    </div>
+    <form class="layui-form formbox" action="">
+        <div class="layui-form-item">
+            <label class="layui-form-label">准考证号:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="zhunakozheng" lay-verify="number" autocomplete="off" placeholder="请输入准考证号"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">姓名:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入姓名"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">性别:</label>
+            <div class="layui-input-block">
+                <input type="radio" name="xb" value="1" lay-filter="xb" title="男" checked="">
+			    <input type="radio" name="xb" value="2" lay-filter="xb" title="女">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">毕业学校:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="schoolName" lay-verify="title" autocomplete="off" placeholder="请输入毕业学校"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">家庭住址:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="jtzz" lay-verify="title" autocomplete="off" placeholder="请输入家庭住址"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">监护人电话:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="jhp" lay-verify="title" autocomplete="off" placeholder="请输入监护人电话"
+                       class="layui-input">
+            </div>
+        </div>
+
+    </form>
+</div>
+ <!--志愿填报-->
+<div class="zhiyuan" style="height: auto;">
+    <div class="title">
+        <h2>志愿填报<i class="bj">*</i></h2>
+    </div>
+    <form class="layui-form formbox" action="">
+    	<div class="zy">	        
+	    </div>    
+        <div class="layui-form-item" style="display: none;">
+            <label class="layui-form-label">是否服从调剂:</label>
+            <div class="layui-input-inline">
+                <input type="radio" name="tiao" lay-filter="tiao" value="1" title="是">
+	            <input type="radio" name="tiao" lay-filter="tiao" value="2" title="否">        
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">录取码:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="lqm" lay-verify="title" autocomplete="off" placeholder="请输入录取码"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">录取通知手机号:</label>
+            <div class="layui-input-inline">
+                <input type="text" name="lqphone" lay-verify="lqphone" autocomplete="off" placeholder="请输入手机号"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否住校:</label>
+            <div class="layui-input-inline">
+                <input type="radio" id="sleep" name="sleep" value="1" lay-filter="sleep" title="是" checked="">
+				<input type="radio" id="sleep1" name="sleep" value="2" lay-filter="sleep" title="否" >
+            </div>
+        </div>
+        <div>
+        	<input id="edit" class="layui-btn green btn" lay-submit lay-filter="edit" value="修改" />
+        	<input id="save" class="layui-btn green btn1" lay-submit lay-filter="save"/ value="核对"/>
+        </div>
+    </form>
+</div>
+</body>
+<script src="/Web/Assets/jquery-1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="/Web/Assets/layui/layui.js"></script>
+<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+<script>var $ = jQuery = layui.jquery;</script>
+<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/Edit.js"></script>
+</html>

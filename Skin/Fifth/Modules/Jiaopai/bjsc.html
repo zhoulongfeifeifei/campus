@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>班牌管理</title>
+    <link rel="stylesheet" href="/web/Assets/layui/css/layui.css">
+    <link rel="stylesheet" href="css/bjsc.css">
+</head>
+<body>
+	<div class="vF-panel">
+        <!--标题层-->
+        <div class="bar-header clearfix">
+            <span class="text font-18 blue">编辑</span>
+        </div>
+        <!--标题层 End-->
+        <div class="form clearfix">
+            <form id="form1">
+                <input type="hidden" name="id" value="0">
+                <input type="hidden" name="type" value="2">                
+                <div class="f1 clearfix">
+                    <label class="f-label span1 w-100">类别名称：</label>
+                    <div class="f-input span4">
+                        <input id="bt" name="title" value="">
+                        <label class="text" style="color: red;" id="bi">必填</label>
+                        <label class="text" style="color: red; display: none;" id="tian">请先填写类别名称</label>
+                        <div class="clr"></div>
+                    </div>
+                </div>
+                <div class="f1 clearfix">
+                    <label class="f-label span1 w-100">类别LOGO：</label>
+                    <div class="f-input span4">
+                        <div id="container" class="upload" style="position: relative;">
+                            <input class="path-r" id="filename" placeholder="" readonly="">
+                            <input type="hidden" name="filename" id="hiddeninput" value="">
+                            <input type="file" name="file" class="layui-upload-file" lay-title="上传">
+                            <div class="clr"></div>
+                            <div class="text">
+                               尺寸：250*335(3:4)(注意：图片大小最大不超过3M，请升级到IE8及以上。)
+                            </div>      
+                        </div>
+                        <br>
+                        <div id="filelist" class="upload-preview">
+                            <img src="" style="width: 100%;">
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                </div>
+                <div class="f1 clearfix">
+                    <label class="f-label span1 w-100"></label>
+                    <div class="f-input span4">
+                        <input type="button" id="save" class="btn btn-blue" value="保存">
+                        <input type="button" id="cancel" class="btn btn-blue" value="取消" onclick="javascript:history.go(-1)">
+                    </div>
+                </div>
+                <input type="hidden" name="action" value="knowledge.edittype">
+            </form>
+        </div>
+    </div>
+</body>
+<script src="/web/Assets/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+<script src="/web/Assets/layui/lay/dest/layui.all.js" type="text/javascript" charset="utf-8"></script>
+<script src='/web/Assets/jquery-1.9.1/jquery.js'></script>
+<script src="/web/Include/tby.js"></script>
+<script src='/web/Assets/jquery-1.9.1/plug/jquery.cookie.js'></script>
+
+<script src='js/bjsc.js'></script>
+</html>

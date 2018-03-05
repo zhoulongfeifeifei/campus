@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	通知管理
+</title>
+    <!--[if lt IE 8]>
+	<script src="/html/assets/ie7-not-supported.js"></script>
+	<![endif]-->
+	<!--[if lte IE 9]>
+	<script src="/html/assets/respond.js"></script>
+	<script src="/html/assets/html5shiv.min.js"></script>
+	<![endif]-->
+    <link rel="stylesheet" href="../../Common/css/public.css">
+    <link rel="stylesheet" href="../../Common/css/main.css">
+    <link rel="stylesheet" href="../../Common/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/web/Assets/layui/css/layui.css">
+    <script src="/Web/Assets/jquery-1.9.1/jquery.min.js" type="text/javascript"></script>
+	<script src="../../Common/function.js" type="text/javascript" charset="utf-8"></script>
+    <!--用于适配IE的placeholder-->
+    <script src="../../Common/placeholder.min.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+        /*.table table{
+            font-size: 14px;
+        }*/
+        .table table thead tr th{
+            text-align: center;
+        }
+        .table table thead tr{
+            background: #ddd;
+
+        }
+        .table table tbody tr:hover{
+            background: #eee;
+        }
+        .table table tbody tr .edit a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .table table tbody tr .edit a:first-child{
+            color: #656565;
+        }
+        .bar-header .blue{
+            color: #337ab7;
+        }
+        .bar-header .font-18{
+            font-size: 18px;
+        }
+        .red{
+            color: #f00;
+        }
+        .green{
+            color: #47a447;
+        }
+        .text-shenglue{
+            overflow: hidden; /*自动隐藏文字*/
+            text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+            white-space: nowrap;/*强制不换行*/
+            width: 20em;/*不允许出现半汉字截断*/
+        }
+        #page{
+            margin: 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background: #fff;min-width: 1080px;">
+    <div class="vF-panel">
+        <form method="post" action="" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="985AF143" />
+</div>
+        <!--标题层-->
+        <div class="bar-header clearfix">
+            <span class="text font-18 blue">通知列表</span>
+            <a class="btn btn-orange" href="addNotice.html" id="add">新增通知</a>
+        </div>
+        <!--标题层 End-->
+        
+        <!--table层-->
+        <div class="table table-normal">
+            <table>
+                <thead>
+                    <tr>
+                        <th>标题</th>
+                        <th style="width: 300px;">内容</th>
+                        <th>新增时间</th>
+                        <th>发布时间</th>
+                        <th>状态</th>
+                        <th>发布人</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                
+            </table>
+        </div>
+        <!--table层 End-->
+        
+        <!--分页层-->
+        <div id="page">
+        	
+            <!--<span class="total"></span>-->
+        </div>
+        <!--分页层 End-->
+    </form>
+    </div>
+    
+    <!--<link href="/html/assets/AlerMsg/AlerMsg.css" rel="stylesheet"/>-->
+    <!--<script src="/html/assets/AlerMsg/AlerMsg.js"></script>-->
+</body>
+<script src="/web/Assets/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+<script src="/web/Assets/layui/lay/dest/layui.all.js" type="text/javascript" charset="utf-8"></script>
+<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/Notice.js"></script>
+</html>

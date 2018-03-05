@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+    <link href="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../Common/css/public.css" />
+    <link rel="stylesheet" href="../../Common/css/main.css">
+    <link href="css/assign.css" rel="stylesheet">
+    <link href="css/organizePaper.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" id="zujuan">
+        <ul class="layui-tab-title">
+            <li class="layui-this">全部</li>
+            <li>同步资源</li>
+            <li>卷库资源</li>
+            <li>网络资源</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show" id="quan">
+                <p class="title">
+                    <span class="zhang on">按章节</span>
+                    <span class="kao">按考点</span>
+                    <span class="zhi">按知识点</span>
+                </p>
+                <main class="main clearfix">
+                    <div class="top">
+                        <p class="top1">
+                            <b>资源：</b>
+                            <span class="on" data-id="ben">本校题库</span>
+                            <span data-id="wo">我的题库</span>
+                        </p>
+                        <p class="top3">
+                            <b>年级：</b>
+                        </p>
+                        <p class="top2">
+                            <b>科目：</b>
+                        </p>
+                        <p class="top4">
+                            <b>教材：</b>
+                        </p>
+                    </div>
+                    <div class="left">
+                        <p>章节</p>
+                        <div id="demo"></div>
+                    </div>
+                    <div class="right" id="main1">
+                        <p class="lei">
+                            <b>试题类型：</b>
+                            <span class="on" data-id="0">全部</span>
+                        </p>
+                        <p class="zuo">
+                            <b>作业类型：</b>
+                            <span data-id="0">普通</span>
+                            <span data-id="1">背诵</span>
+                            <span data-id="2">听力</span>
+                            <span data-id="3">默写</span>
+                            <span data-id="4">阅读</span>
+                        </p>
+                        <p class="nan">
+                            <b>试题难度：</b>
+                            <span data-id="0">全部</span>
+                        </p>
+                        <p class="in">
+                            <b class="account">共3456题</b>
+                            <span class="pai">排序：</span>
+                            <span class="xin">最新</span>
+                            <span class="zheng">正确率</span>
+                        </p>
+                        <div class="main_top">
+                            <input type="checkbox" id="allcheck1" name="allcheck" value="">&nbsp;&nbsp;全选
+                            <span class="main_top_s1">批量添加</span>
+                            <input type="text" id="sea" placeholder="请输入试题来源">
+                            <img src="img/search.png" alt="">
+                        </div>
+
+                        <div id="page1"></div>
+                    </div>
+                    <div class="fixed" id="box">
+                        <p class="qingkuang">选题情况</p>
+                        <p class="shu">题目数量</p>
+                        <p class="num">0</p>
+                        <!--<p class="yu"><a href=""><img src="img/right.png" alt="">预览</a></p>-->
+                        <p class="yu"><img src="img/right.png" alt="">预览</p>
+                    </div>
+                </main>
+
+            </div>
+            <div class="layui-tab-item" id="tong">
+                同步资源
+            </div>
+            <div class="layui-tab-item" id="juan">
+                卷库资源
+            </div>
+            <div class="layui-tab-item" id="wang">
+                网络资源
+            </div>
+
+        </div>
+    </div>
+    <div id="yulan">
+        <div class="top">
+            <p>
+                <!--<span class="dan"></span>
+                <span class="duo"></span>
+                <span class="pan"></span>
+                <span class="tian"></span>
+                <span class="jie"></span>-->
+                <span class="zong"></span>
+                <span class="shi"></span>
+            </p>
+            <img src="img/close.png" alt="">
+        </div>
+        <div class="middle">
+            <input type="text" placeholder="请输入试卷名称">
+            <span>是否推荐：<label><input type="radio" value="1" name="tuijian">是</label><label><input type="radio" value="0" name="tuijian">否</label></span>
+        </div>
+        <main class="main">
+            <section class="sec" id="sec1"></section>
+            <!--<section class="sec" id="sec2"></section>
+            <section class="sec" id="sec3"></section>
+            <section class="sec" id="sec4"></section>
+            <section class="sec" id="sec5"></section>-->
+            
+        </main>
+        <div class="que">确定</div>
+        <div class="xia">下一步</div>
+    </div>
+</body>
+<script src="/Web/Assets/jquery-1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="/Web/Assets/layui/layui.js"></script>
+<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+<!--<script>var $ = jQuery = layui.jquery;</script>-->
+<script src="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/js/ligerui.all.js" type="text/javascript"></script>
+<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/assign.js"></script>
+
+
+</html>

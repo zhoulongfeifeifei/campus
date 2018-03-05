@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>课程管理</title>
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+    <link rel="stylesheet" href="../../Common/css/public.css">
+    <link rel="stylesheet" href="../../Common/css/FourHeight.css">
+    <link rel="stylesheet" href="css/again.css">
+</head>
+<body>
+
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <!-- <li class="layui-this">课程管理</li> -->
+        </ul>  
+    </div>
+    <a href="javascript:editOrAnd()" class="layui-btn layui-btn-small addnigao">新增</a>
+    <a href="javascript:daoru()" class="layui-btn layui-btn-small addnigao a1">导入</a>
+
+    <table class="layui-table" lay-skin="line">
+        <thead>
+        <tr>
+            <th>序号</th>
+            <th>课程名称</th>
+            <th>所属学科</th>
+            <th>是否选修课</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div class="page"></div>
+
+    <form id="form1" class="layui-form" style="display: none; margin-top: 40px;">
+        <input type="hidden" name="subject_id" id="id" />
+        <div class="layui-form-item">
+            <label class="layui-form-label">课程名称：</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" id="subjectname" maxlength="15" name="subject_name" lay-verify="required" />
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否选修：</label>
+            <div class="layui-input-inline">
+                <select name="IsElective" id="iselcetive">
+                    <option value="0">否</option>
+                    <option value="1">是</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">所属学科：</label>
+            <div class="layui-input-inline">
+                <select name="typeid" id="typeid">
+                    <option value=""></option>
+                </select> 
+            </div>
+        </div>
+    </form>
+
+    <form id="form2" class="layui-form" runat="server" style="display: none;">
+        <div class="layui-form-item">
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">选择文件：</label>
+            <div class="layui-input-inline" style="width: 210px">
+                <a class="layui-btn layui-btn download " download target="_blank">下载模板</a>
+                <input type="file"  id="pickfiles" class="layui-upload-file" lay-type="file" name="ads">
+            </div>
+        </div>
+        <input type="hidden" id="filename"/>
+    </form>
+    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+    <script>var $ = jQuery = layui.jquery</script>
+    <script src="/Web/Include/tby.js"></script>
+
+    <script src="js/kecheng.js"></script>
+
+
+</body>
+</html>

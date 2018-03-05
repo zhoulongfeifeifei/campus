@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <meta name="renderer" content="webkit">
+		<title>智慧校园首页</title>
+        <link href="../../Assets/layui/css/layui.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="Common/index/css/index.css"/>
+        <link rel="stylesheet" href="Common/index/css/indexNew.css"/>
+	</head>
+	<body>
+		<div id="header">
+			<div>
+				<img src= alt="学校LOGO" class="logo"/>
+				<div class="icon rt">
+					<div class="news">
+						<a href="javascript:;">
+							<img title="消息" src="Common/index/img/消息.png" alt="" />
+							<i class="num">6</i>
+						</a>
+						<span class="sj"></span>
+						<div class="news_down">
+							<a target="bottom" href="Modules/NewsCenter/NewsPL.html?id=1">评论<span class="pl"></span></a>
+                            <a target="bottom" href="Modules/NewsCenter/NewsPL.html?id=2">赞<span class="zan"></span></a>
+						</div>	
+					</div>
+					<div class="settings">
+						<a href="Tpl/userInfo/userInfo.html" target="bottom"><img title="设置"   src="Common/index/img/设置.png"/></a>
+					</div>
+					<div class="signout">
+						<a href="javascript:"><img title="退出" id="SignOut" src="Common/index/img/退出.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		        </div>
+    		<div class="top">
+    				<ul class="nav rt">
+    					<li class="hover">
+    						<a href="Tpl/Default/default.html" target="bottom">首页</a>
+    					</li>
+    					<li>
+    						<a href="Tpl/appCenter/ApplicationCenter.html" target="bottom">应用中心</a>
+    					</li>
+    					<li>
+    						<a href="Tpl/cloudClassRoom/cloudClassRoom.html" target="bottom">同步课堂</a>
+    					</li>
+    					<li>
+    						<a href="Tpl/Resource/Resource.html" target="bottom">校本资源</a>
+    					</li>
+    					<li>
+    						<a href="Tpl/Album/Album.html" target="bottom">相册</a>
+    					</li>
+    					<li>
+    						<a href="Tpl/Journal/Journal.html" target="bottom">日志</a>
+    					</li>
+    				</ul>
+				<div class="user">
+					<div class="avatar">
+						<a href="Tpl/userInfo/userInfo.html" target="bottom"><img src="common/img/7.png" id="userFace" alt="" /></a>
+					</div>
+					<div class="userInfo">
+						<p></p>
+					</div>
+				</div>
+    		</div>
+
+		<section >
+			<iframe scrolling="no" id="ifbox" onload="javascript:gogogo()" rameborder="0" src="Tpl/Default/default.html" name="bottom" width="100%"></iframe>
+		</section>
+		<footer>
+			<p>Copyright &copy; 2016-2017  顺治科技股份有限公司, All Rights Reserved </p>
+		</footer>
+	</body>
+    <script src='../../Assets/layui/lay/dest/layui.all.js'></script>
+    <script>var $ = jQuery = layui.jquery;$('.nav a').on('click', function(event) {$(this).parent().addClass('hover').siblings().removeClass('hover');});</script>
+    
+    <script src='../../Include/tby.js'></script>
+    <script src='Common/index/js/index.js'></script>
+    <script src='Common/index/js/indexNew.js'></script>
+
+
+</html>

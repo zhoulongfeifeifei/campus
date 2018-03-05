@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,p,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: 0;vertical-align: baseline;background: transparent;}
+table, caption, tbody, tfoot, thead, tr, th, td{ vertical-align:middle;}
+th{
+    text-align: left;
+}
+html{margin-top:0px !important;}
+
+body {background: #fff;  font-size:14px; color: #656565;font-family: 'microsoft yahei',osaka,sans-serif;min-width: 1200px;}
+
+li{list-style: none;};
+
+a {cursor: pointer;margin: 0;padding: 0;border: 0;vertical-align: baseline;text-decoration:none;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000;cursor: help;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #cccccc;margin: 1em 0;padding: 0;}
+
+input, select {vertical-align: middle;}
+
+h1,h2,h3,h4,h5,h6{ color:#999; padding:10px 0;}
+img{border: 0}
+
+em,i,strong{font-style:normal;}
+
+/*清除浮动*/  
+.clearfix:before,.clearfix:after{content: '';display: table;}  
+.clearfix:after{clear: both;}
+/*==========重置样式=========*/
+.main{
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+.main_header{
+    font-size: 18px!important;
+    color: #337ab7!important;
+    line-height: 30px;
+	padding: 4px 0;
+}
+.main_cent{
+	padding: 4px 0;
+}
+.custom-item{
+	width: 150px;
+    position: relative;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 0 30px 30px 0;
+    display: inline-block;
+    float: left;
+    background: #fff;
+}
+.custom-item:hover .hover{
+	display: block;
+}
+img.bg {
+    width: 100%;
+    display: block;
+}
+.hover{
+	display: none;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-align: center;
+}
+.custom-user {
+    background: #ddd;
+    border-color: #ddd;
+}
+.custom-item .hover a.addItem {
+    background: #398439;
+}
+.custom-item .hover a {
+    display: inline-block;
+    padding: 0 20px;
+    background: #f49d12;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    margin: 55px 0;
+    border-radius: 1px;
+    cursor: pointer;
+}
+.custom-item-disabled{ background:#ddd;}
+.custom-item-disabled .bg,.customList .custom-item-disabled .hover a{
+
+    -webkit-filter: grayscale(1);/* Webkit */ 
+    filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);}
+.custom-item-disabled img.bg{ }
+.custom-item-disabled .t span{ display:inline-block; padding-left:20px; background:url(../img/lock.png) no-repeat left center; background-size:15px;}
+.t{
+	height: 30px;
+    line-height: 30px;
+    font-size: 18px
+}
+.custom-edit{
+	height: 24px;
+    line-height: 24px
+}
+.custom-edit a {
+    margin: 0 5px;
+}
+.custom-edit a:hover{ 
+    text-decoration:underline;
+     cursor:pointer;
+ }
+.green{
+	color: #47a447!important;
+}
+.main_footer{
+	position: fixed;
+    left: 50%;
+    top: 20%;
+    width: 240px;
+    padding: 10px 20px 15px;
+    margin: 0 0 0 -140px;
+    background: #fff;
+    border-radius: 2px;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0,0,0,.4);
+    display: none;
+}
+.b{
+	padding: 10px 0;
+}
+.b input{
+   display: block;
+   width: 100%;
+   height: 40px;
+   line-height: 25px\9;
+   margin-bottom: 10px;
+   border: 1px solid #bbb;
+   padding: 6px 8px;
+   color: #333;
+   outline: none;
+   max-width: 100%;
+   box-sizing: border-box;
+}
+.f{
+	text-align: center;
+}
+.f .btn {
+    width: 95px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0;
+    float: left;
+}
+.f .ok {
+    margin-right: 10px;
+}
+.btn {
+    font-size: 12px;
+    display: inline-block;
+    margin: 3px 5px;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    min-width: 35px;
+    color: #fff;
+    background: #2d3e50;
+    text-align: center;
+    border-radius: 1px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    font-size: 12px;
+    transition: background-color .2s ease 0s;
+}
+.btn-green {
+    background: #47a447;
+}
+.btn-gray {
+    background: #999;
+}

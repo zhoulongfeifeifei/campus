@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<link rel="stylesheet" type="text/css" href="css/menuedit.css"/>
+		<style type="text/css">
+			#modulePid{
+				width: 100% !important;
+				height: 250px;
+				overflow: auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<fieldset class="layui-elem-field">
+		  	<legend>菜单编辑</legend>
+			<form class="layui-form" id="form0">
+				<input type="hidden" name="moduleId" id="moduleId" value="0" />
+				<div class="layui-form-item">
+					<label class="layui-form-label">名称：</label>
+					<div class="layui-input-inline">
+						<input class="layui-input" type="text" id="moduleName" name="moduleName" value="" />
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">方法名：</label>
+					<div class="layui-input-inline">
+						<input class="layui-input" type="text" id="alias" name="alias" value="" /> 控制对应的操作
+					</div>
+				</div>
+
+				<div class="layui-form-item">
+					<label class="layui-form-label">排序：</label>
+					<div class="layui-input-inline">
+						<input class="layui-input" type="text" id="orderId" name="orderId" value="" />
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">类别：</label>
+					<div class="layui-input-inline">
+
+						<select name="typeId" id="typeId">
+							<option value="1">菜单</option>
+							<option value="2">按钮</option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">父级栏目：</label>
+					<div class="layui-input-inline">
+						<input type="hidden" name="modulePid"  value="" />
+						<ul id="modulePid">
+							
+						</ul>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">路径：</label>
+					<div class="layui-input-inline">
+						<input class="layui-input" type="text" id="moduleUrl" name="moduleUrl" value="" />
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">图标路径：</label>
+					<div class="layui-input-inline">
+						<input class="layui-input" type="text" id="icoUrl" name="icoUrl" value="" />
+					</div>
+				</div>
+
+				<div class="layui-form-item">
+					<label class="layui-form-label"></label>
+					<div class="layui-input-inline">
+						<input type="checkbox"  name="showAppCenter" id="showAppCenter" value="" title="应用中心显示"/>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label"></label>
+					<div class="layui-input-inline">
+						<input type="checkbox" name="showMyClass" id="showMyClass" title="我的班级" />
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label"></label>
+					<div class="layui-input-inline">
+						<input type="checkbox" name="showMyApp" id="showMyApp" title="我的应用" />
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label"></label>
+					<div class="layui-input-inline">
+						<input type="checkbox" name="IsSendDynamic" id="isSendDynamic" title="是否发布动态" />
+					</div>
+				</div>
+
+				<div class="layui-form-item">
+					<label class="layui-form-label"></label>
+					<div class="layui-input-inline">
+						<input class="layui-btn layui-btn-green layui-btn-small" id="save" type="button" value="保存修改" />
+					</div>
+				</div>
+			</form>
+		</fieldset>
+		<script src="/Web/Assets/layui/layui.js"></script>
+	    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	    <script>var $ = jQuery =layui.jquery;</script>
+	    <script src="/Web/Include/tby.js"></script>
+		<script src="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/js/ligerui.all.js"></script>
+		<script src="js/menuedit.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css" media="all" />
+         <link rel="stylesheet" href="css/persourceType.css" media="all" />
+	</head>
+	<style type="text/css">
+		#model{
+			display: none;
+		}
+		.grade{
+	         margin-left:-15px
+         }
+	</style>
+
+	<body>
+		<a href="javascript:;" id="addnigao" data-operation="SchoolResources.AddResGrade" class="yinc layui-btn layui-btn-small ">添加年级</a>
+		<table class="layui-table" id="roleTable">
+			<colgroup>
+				<col>
+				<col>
+				<col width="200">
+				<col width="300">
+                <col width="200">
+			</colgroup>
+			<thead>
+				<tr>
+                    <th>编号</th>
+					<th>年段名称</th>
+					<th>创建人</th>
+					<th>创建时间</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+			</tbody>
+		</table>
+		<div id="model">
+			<form class="layui-form" id="form0" method="post">
+				<div class="layui-form-item item-lay">
+					<label class="layui-form-label grade">年段名称:</label>
+					<div class="layui-input-inline">
+						<input class="layui-input" type="text" lay-verify="required"  id="name" name="name" value=""  />
+					</div>
+				</div>
+			</form>
+		</div>
+		<script src="/Web/Assets/layui/layui.js"></script>
+		<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+		<script>
+			var form = layui.form(),
+				layer = layui.layer,
+				laydate = layui.laydate,
+				$ = jQuery = layui.jquery,
+				element = layui.element(),
+				layedit = layui.layedit,
+				upload = layui.upload;
+		</script>
+		<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="js/GradeLists.js"></script>
+
+	</body>
+
+</html>

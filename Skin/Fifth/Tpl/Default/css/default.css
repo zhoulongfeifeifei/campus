@@ -1,0 +1,501 @@
+html{
+	font-size: 14px;
+	color:#666;
+}
+body{
+	background: none
+}
+.content>div>div{
+	padding:12px;
+	background: #fff;
+	color:#999;
+}
+.content{
+	overflow: hidden;
+	width: 90%;
+	margin: 0 auto;
+}
+.content_left{
+	width: 20%;
+	float: left;
+}
+.menu_list{
+	margin-bottom: 15px;
+}
+
+.menu_list.myclass{
+	background:#fff url(../images/myclass.png) no-repeat;
+}
+.menu_list.myapp{
+	background:#fff url(../images/myapp.png) no-repeat;
+}
+
+.menu_list.myclass, .menu_list.myapp{
+	background-position: 0 0; 
+	background-size: 50%; 
+}
+
+
+.menu_list ul{
+	margin : 30px 0 0 20%;
+}
+.menu_list ul li a{
+	display: block;
+	margin-top: 12px;
+}
+.menu_list ul li{
+	padding:8px 0 0 5px;
+	position: relative;
+}
+.menu_list ul li:not(.addApp):hover .remove{
+	display: block;
+}
+.menu_list li a img{
+	width: 20px;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+.menu_list li a span{
+	color:#666;
+	font-size: 16px;
+}
+.menu_list ul li .remove{
+	position: absolute;
+	right: 0;
+	top: 60%;
+    display: none;
+    cursor: pointer;
+}
+.menu_list .nub{
+	background: red;
+	border-radius: 50%;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	color: #fff;
+	text-align: center;
+}
+.content_middle{
+	width: 55%;
+	float: left;
+	margin-left: 1%;
+}
+.menu_list #myClass a span,.menu_list #myApp a span,{
+	font-size: 18px;
+	color: #666;
+}
+.ss{
+	margin-top: 10px;
+}
+.ss ul{
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px solid #3A862C;
+}
+
+.ss ul li{
+	float: left;
+	padding: 3px 30px;
+	border: 1px solid #3A862C;
+	margin-right: 10px;
+	margin-bottom: -1px;
+	font-size: 14px;
+}
+.ss ul li:first-child{
+	margin-left: 30px;
+}
+.ss ul li.active{
+	border-bottom: 1px solid #C1DCB1;
+	font-weight: bold;
+}
+.ss textarea{
+	width: 100%;
+	height: 60px;
+	background: #C1DCB1;
+	border: 1px solid #3A862C;
+	margin-top: 10px;
+}
+.ss .release{
+	overflow: hidden;
+}
+.ss .release .re_left{
+	float: left;
+}
+.ss .release .re_left .biaoqing{
+	margin-right: 30px;
+}
+.ss .release .re_left .biaoqing,
+.ss .release .re_left .tupian{
+	display: inline-block;
+	width: 65px;
+}
+.ss .release .re_left img{
+	float: left;
+	width: 30px;
+	margin-right: 5px;
+}
+.ss .release .re_left p{
+	float: right;
+	line-height: 30px;
+}
+.ss .release .re_right{
+	float: right;
+}
+.ss .release .re_right p{
+	display: inline-block; 
+	float: left;
+	margin: 5px 10px;
+	cursor: pointer;
+}
+.ss .release .re_right a{
+	display: inline-block;
+	border-radius: 4px;
+	background: #028843;
+	color: #fff;
+	padding: 5px 20px;
+}
+.dynamic{
+	margin-top: 10px;
+}
+.dynamic h4{
+	border-bottom: 1px solid #3A862C;
+	padding-left: 10px;
+	font-size: 16px;
+}
+.dynamic h4 ul{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+.dynamic h4 ul li{
+	float: left;
+	padding: 3px 40px;
+	border: 1px solid #3A862C;
+	margin-right: 10px;
+	margin-bottom: -1px;
+	font-weight: normal;
+	font-size: 14px;
+}
+.dynamic h4 ul li.active{
+	border-bottom: 1px solid #C1DCB1;
+	background: #8CBC80;
+	font-weight: bold;
+}
+.ssinfo{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #8daf7c;
+}
+.publisher div p:first-child{
+	margin-bottom: 5px;
+	font-size: 14px;
+	
+}
+.publisher div p:first-child span{
+	font-size: 16px;
+	font-weight: bold;
+}
+.publisher div{
+	display:inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.publisher img{
+	width: 80px;
+	vertical-align: middle;
+}
+.publishnews{
+	overflow: hidden;
+}
+.publishnews div{
+	width: 85%;
+	display: inline-block;
+	float: right;
+	overflow: hidden;
+	border-top: 1px dashed rgba(2, 136, 93, 0.5);
+	margin-top: 10px;
+	padding: 10px 0 0;
+}
+.publishnews div p{
+	line-height: 2.5em;
+	padding-left: 8%;
+	font-size: 1em;
+}
+/*.publishnews div p.laba{
+	background: url(../img/信息公告.png) no-repeat left center;
+	background-size: auto 100%;
+}
+.publishnews div p.new{
+	background: url(../img/班级通知.png) no-repeat left center;
+	background-size: auto 100%;
+}
+.publishnews div p.shenpi{
+	background: url(../img/待办事务.png) no-repeat left center;
+	background-size: auto 100%;
+}
+*/
+.publishnews ul{
+	overflow: hidden;
+}
+.publishnews ul li{
+	float: left;
+	width: 32%;
+	margin-right: 2%;
+}
+.publishnews ul li:nth-child(3n+0){
+	margin-right: 0;
+}
+.publishnews ul li img{
+	width: 100%;
+}
+
+.comment{
+	margin-top: 15px;
+	padding-top: 15px;
+	position: relative;
+	border-top: 1px dashed #3A862C;
+}
+.comment ul{
+	overflow: hidden;
+}
+.comment ul li{
+	float: left;
+	padding: 0 20px;
+	cursor: pointer;
+	border-right: 1px solid #3A862C;
+}
+.comment ul li:last-child{
+	border-right: 0;
+}
+.comment ul li span,.comment ul li img{
+	vertical-align: middle;
+	font-size: 16px;
+	color:  #666;
+}
+.comment ul li img{
+	width: 16px;
+	margin-right: 8px;
+}
+.comment div{
+	margin-top: 15px;
+	
+}
+.commentdiv{
+	position: relative;
+	display: none;
+    z-index: 2;
+}
+.comment .commentdiv textarea{
+	resize:none;
+	border: 1px solid #3A862C;
+	padding: 4px 10px;
+	font-size: 14px;
+	width: 98%;
+}
+.comment .commentdiv .pinglun{
+	display: inline-block;
+	background: #3A862C;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 14px;
+	width: 13%;
+	line-height: 32px;
+	float: right;
+	text-align: center;
+}
+.comment .showcomment{
+	overflow: hidden;
+}
+.comment .showcomment .s1 > img,
+.comment .showcomment .s2 > img{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+}
+.comment .showcomment .s1{
+	width: 100%;
+	margin: 20px 0;
+}
+.comment .showcomment .s2 {
+	margin-left: 10%;
+	width: 90%;
+	display: block;
+	min-height: 45px;
+}
+.comment .showcomment div{
+	display: inline-block;
+	margin-top: 5px;
+}
+.comment .showcomment .isFocus-a img{
+	width: 16px;
+	height: 14.5px;
+    margin-right: 8px;
+    margin-top: 1px;
+}
+.comment .showcomment p{
+	display: block;
+	font-size: 14px;
+}
+.content_right{
+	float: right;
+	width:23%;
+}
+
+.rt_title{
+	font-weight: bold;
+	padding: 0 0 10px 10px;
+	color: #3A862C;
+	border-bottom: 1px solid #3A862C;
+	margin-bottom: 10px;
+}
+.clouddisk .progress{
+	width: 90%;
+	margin:0 auto;
+	background: #fff;
+	border: 1px solid #3A862C;
+	height: 16px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.clouddisk .progress div{
+	background: #3A862C;
+	height: 16px;
+	border-radius: 10px;
+	width: 0;
+}
+.clouddisk span.more{
+	float: right;
+}
+.rt {
+	float: right;
+}
+.rt .indexIcon{
+	font-size: 12px;
+}
+.clouddisk #capacity{
+	display: inline-block;
+}
+.clouddisk p:last-child{
+	margin-left: 5%;
+}
+.clouddisk p:last-child span{
+	margin-left: 20px;
+}
+
+.schoolnews ul a{
+	color: #666;
+	font-size: 15px;
+}
+.schoolnews ul a span{
+	display: block;
+	color: #666;
+	font-size: 12px;
+}
+.schoolnews ul li{
+	margin-bottom: 20px;
+}
+
+.curriculum{
+	margin-top: 10px;
+}
+.publiclink{
+	margin-top: 10px;
+}
+.publiclink>div>div{
+	padding:5px 20px;
+	background: #fff;
+	cursor: pointer;
+}
+.publiclink>div{
+	margin-bottom: 10px;
+	text-align: center;
+
+
+}
+.publiclink > div a{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #70d65d;
+}
+/*课表*/
+#Schedule {
+	table-layout:fixed;
+	border-collapse: collapse; 
+	margin:0 auto; 
+	color:#666; 
+	width: 100%;
+}
+#Schedule td{
+/*	width: 100%;
+	table-layout:fixed;*/
+/*	height:30px; */
+	font-size: 8px;
+	word-break:break-all;
+}
+#Schedule th { 
+	background-repeat:repeat-x; 
+	height:30px; 
+} 
+#Schedule td,#Schedule th{ 
+	padding:0 1em 0; 
+} 
+#Schedule tr th:nth-child(1){
+	width: 15%;
+	/*background: none;*/
+}
+.inlineblock{
+	display: inline-block !important;
+}
+.block{
+	display: block !important;	
+}
+.noneblock{
+	display: none !important;
+}
+
+/*二级下的右边加ifarme*/
+.Invisible_right{
+	display: none;
+	width: 78%;
+	float: right;
+	height: 800px;
+	background:#fff;
+	color:  #028843;
+	padding: 5px;
+	border-radius: 4px;
+}
+.Invisible_right .layui-breadcrumb a cite{
+	color: #028843;
+}
+.layui-breadcrumb{
+	padding: 5px 15px;
+}
+.Invisible_right iframe{
+
+}
+
+.loadMore{
+	text-align: center;
+	cursor: pointer;
+	background: #ecf8e2;
+	padding: 5px 0;
+}
+
+
+.indexIcon{
+	font-family: "HomeIndex",AppCenter;
+	font-size: 24px;
+	vertical-align: middle;
+	color: #028843;
+	display: inline-block;
+	margin-right: 10px;
+}
+.ok.indexIcon{
+	color: #666;
+}
+.isFocus .indexIcon{
+	padding-top: 5px;
+	font-size: 16px;
+}

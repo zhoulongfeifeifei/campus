@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>问题解答</title>
+    <link href="/Web/Assets/layui/css/layui.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/myClass.css">
+    <link rel="stylesheet" href="css/question.css">
+
+</head>
+<body>
+    
+    <div class="quest layui-form">
+        <div class="layui-form-item">
+            <textarea placeholder="有问题就尽情的问吧!" name="" id="question" cols="30" rows="6"></textarea>
+            <div class="layui-input-inline">
+                <select name="city" id="teacherList" lay-verify="required">
+                    <option value>请选择请教老师</option>
+                </select>
+            </div>
+            <div class="layui-input-inline">
+                <a href="javascript:" class="layui-btn layui-btn-small btn Sava">提问</a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="layui-tab" style="min-width:750px;">
+        <ul class="layui-tab-title">
+            <li class="layui-this">未解决</li>
+            <li>已解决</li>
+        </ul>
+        <div class="l-con layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <ul id="noQuestionList">
+
+                </ul>
+
+            </div>
+            <div class="layui-tab-item">
+                <ul id="okQuestionList">
+
+                   <!--  <li>
+                        <div class="topimg">
+                            <img src="/Skin/3/img/usertx.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>已解决</h3> 
+                            <span>2016-11-09 11:25</span>
+                            <p>今天表扬2.6.10.14.52同学,成绩考了99分,请同学们再接再厉!请其他同学以他为榜样</p>
+                            <div class="answer">
+                                <input class="A" readonly="readonly" type="text">
+                                <input class="Q" type="text" value="回答">
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+
+            </div>
+        </div>
+        
+    </div>
+    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+    <script>var $ = jQuery =layui.jquery</script>
+    <script src="/Web/Include/tby.js"></script>
+    <script src="js/questionAnswer.js"></script>
+</body>
+</html>

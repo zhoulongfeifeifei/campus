@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="../../Common/css/main.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css" media="all" />
+		<style>
+			body {
+				background: #fff;
+			}
+			
+			.form .f-input .ad {
+				position: relative;
+				margin-right: 20px;
+				display: inline-block;
+			}
+			
+			.form .f-input .removeAdmin {
+				cursor: pointer;
+				position: absolute;
+				top: -10px;
+				right: -4px;
+				font-size: 20px;
+			}
+			
+			.form .f-input .removeAdmin:active {
+				opacity: .7;
+			}
+			
+			.Icon {
+				font-family:optioning;
+				color:#ff0000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="form">
+			<div class="f1">
+				<div id="teacherAdmin" class="f-input span12">
+
+				</div>
+			</div>
+		</div>
+		<div class="layui-tab layui-tab-brief">
+			<ul class="layui-tab-title">
+			</ul>
+		</div>
+		<div class="layui-form">
+			<div class="layui-form-item">
+				<div class="layui-input-inline">
+					<select id="idselect" name="id" lay-search>
+						<option value="0"></option>
+					</select>
+				</div>
+				<input type="submit" class="layui-btn layui-btn-small" id="add" value="添加"/>
+			</div>
+		</div>
+        <script src="/Web/Assets/layui/layui.js"></script>
+		<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+		<script>
+			var form = layui.form(),
+				layer = layui.layer,
+				$ = jQuery = layui.jquery;
+		</script>
+		<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/resAuditer.js"></script>
+	</body>
+
+</html>

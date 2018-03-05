@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>班牌管理</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/wapreset.css">
+    <link rel="stylesheet" href="css/wapmain.css">
+    <link rel="stylesheet" href="/web/Assets/layui/css/layui.css">
+    <style>
+        .bar-header{
+            margin-bottom: 10px;
+        }
+        #box-add{
+            display: none;
+        }
+        /*#box-con #form1 .table table{
+            width: 540px;
+        }*/
+        .w-150{
+            width: 150px;
+        }
+        .w-100{
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="set-box" id="box-con">
+        <!--包裹层-->
+        <!--标题层-->
+        <div class="bar-header clearfix">
+            <span class="text font-18 blue">紧急插播</span>
+            <span class="text"></span>
+            <a class="btn btn-red" id="add">新增</a>
+            <a class="btn" id="return" href="">返回</a>
+        </div>
+        <!--标题层 End-->
+        <form id="form1">
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th class="w-150">内容</th>
+                            <th class="w-100">署名</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <br/>
+            </div>
+        </form>
+        <div id="page"></div>
+    </div>
+
+    <div class="set-box" id="box-add">
+        <!--包裹层-->
+        <!--标题层-->
+        <div class="bar-header clearfix">
+            <span class="text font-18 blue">紧急插播设置</span>
+            <span class="text"></span>
+        </div>
+        <!--标题层 End-->
+        <form id="form1">
+            <input type="hidden" name="noticeid" value="0" />
+            <input type="hidden" name="deviceid" value="0BFC8690DB84F51E" />
+            <input type="hidden" name="flag" value="1" />
+            <div class="form">
+                <div class="f1">
+                    <label class="f-label span3">标题：</label>
+                    <div class="f-input span9">
+                        <input name="title" id="title" value="" />
+                        <label class="text">建议不要超过10个字</label>
+                    </div>
+                </div>
+                <div class="f1">
+                    <label class="f-label span3">持续时间：</label>
+                    <div class="f-input span9">
+                        <select id="endtimeint" name="endtimeint">
+                            <option value="30">30秒</option>
+                            
+                            <option value="60" >1分钟</option>
+                            
+                            <option value="120" >2分钟</option>
+                            
+                            <option value="180" >3分钟</option>
+                            
+                            <option value="240" >4分钟</option>
+                            
+                            <option value="300" >5分钟</option>
+                            
+                            <option value="360" >6分钟</option>
+                            
+                            <option value="420" >7分钟</option>
+                            
+                            <option value="480" >8分钟</option>
+                            
+                            <option value="540" >9分钟</option>
+                            
+                            <option value="600" >10分钟</option>
+                            
+                            <option value="660" >11分钟</option>
+                            
+                            <option value="720" >12分钟</option>
+                            
+                            <option value="780" >13分钟</option>
+                            
+                            <option value="840" >14分钟</option>
+                            
+                            <option value="900" >15分钟</option>
+                            
+                            <option value="960" >16分钟</option>
+                            
+                            <option value="1020" >17分钟</option>
+                            
+                            <option value="1080" >18分钟</option>
+                            
+                            <option value="1140" >19分钟</option>
+                            
+                            <option value="1200" >20分钟</option>
+                            
+                            <option value="1260" >21分钟</option>
+                            
+                            <option value="1320" >22分钟</option>
+                            
+                            <option value="1380" >23分钟</option>
+                            
+                            <option value="1440" >24分钟</option>
+                            
+                            <option value="1500" >25分钟</option>
+                            
+                            <option value="1560" >26分钟</option>
+                            
+                            <option value="1620" >27分钟</option>
+                            
+                            <option value="1680" >28分钟</option>
+                            
+                            <option value="1740" >29分钟</option>
+                            
+                            <option value="1800" >30分钟</option>
+                            
+                            <option value="1860" >31分钟</option>
+                            
+                            <option value="1920" >32分钟</option>
+                            
+                            <option value="1980" >33分钟</option>
+                            
+                            <option value="2040" >34分钟</option>
+                            
+                            <option value="2100" >35分钟</option>
+                            
+                            <option value="2160" >36分钟</option>
+                            
+                            <option value="2220" >37分钟</option>
+                            
+                            <option value="2280" >38分钟</option>
+                            
+                            <option value="2340" >39分钟</option>
+                            
+                            <option value="2400" >40分钟</option>
+                            
+                            <option value="2460" >41分钟</option>
+                            
+                            <option value="2520" >42分钟</option>
+                            
+                            <option value="2580" >43分钟</option>
+                            
+                            <option value="2640" >44分钟</option>
+                            
+                            <option value="2700" >45分钟</option>
+                            
+                            <option value="2760" >46分钟</option>
+                            
+                            <option value="2820" >47分钟</option>
+                            
+                            <option value="2880" >48分钟</option>
+                            
+                            <option value="2940" >49分钟</option>
+                            
+                            <option value="3000" >50分钟</option>
+                            
+                            <option value="3060" >51分钟</option>
+                            
+                            <option value="3120" >52分钟</option>
+                            
+                            <option value="3180" >53分钟</option>
+                            
+                            <option value="3240" >54分钟</option>
+                            
+                            <option value="3300" >55分钟</option>
+                            
+                            <option value="3360" >56分钟</option>
+                            
+                            <option value="3420" >57分钟</option>
+                            
+                            <option value="3480" >58分钟</option>
+                            
+                            <option value="3540" >59分钟</option>
+                            
+                        </select>
+                    </div>
+                </div>
+                <div class="f1">
+                    <label class="f-label span3">通知内容：</label>
+                    <div class="f-input span9">
+                        <textarea id="detail" name="detail" class="h-100"></textarea>
+                        <label class="text">建议不要超过1000个字</label>
+                    </div>
+                </div>
+                <div class="f1">
+                    <label class="f-label span3">署名：</label>
+                    <div class="f-input span9">
+                        <input id="signname" name="signname" value="" />
+                    </div>
+                </div>
+                <div class="f1 f-save">
+                    <label class="f-label span3"></label>
+                    <div class="f-input span9">
+                        <a id="save" class="btn btn-blue" style="min-width:50px;">立即发布</a>
+                        <a id="returnf" class="btn" style="min-width:50px;">返回</a>
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" name="action" value="neweboard.editnotice" />
+        </form>
+    </div>
+
+    <div class="main-wrap noon-1 notice-1" style="margin-left: 30px;">
+    	<img class="bg-main" src="img/bg-main.jpg"/>
+    	<header class="topbar">
+        	<h3 class="classname"> </h3>
+            <img class="weather fr" src="img/topbar-fr.png"/>
+        </header>
+        <img src="img/logo-xst.png" class="logo-xst"/>
+        
+        <div class="fullbox">
+        	<img class="fullbox-bg" src="img/bg-big.jpg"/>
+        	<img class="fullbox-over" src="img/noon-1.png"/>
+            <div class="lunbo-box font-fzxk">
+                <ul class="hiSlider">
+                    <li class="hiSlider-item">
+                    	<img src="img/bg-n.jpg"/>
+                        <span class="t">紧急插播</span>
+                        <div class="info">
+                        	<table>
+                                <tr>
+                                    <td>
+                            	        
+                        	        </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="bottom">
+                        	<span class="s1"> </span>
+                            <span class="s2"> </span>
+                        </div>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+</body>
+<script src='/web/Assets/jquery-1.9.1/jquery.js'></script>
+<script src="/web/Assets/layui/layui.js"></script>
+<script src="/web/Assets/layui/lay/dest/layui.all.js"></script>
+<script src="/web/Include/tby.js"></script>
+<script src="js/JinJi.js"></script>
+<script type="text/javascript">
+    $('#add').click(function(){
+        $('#box-add').css('display','inline-block');
+        $('#box-con').css('display','none');
+    })
+    $('#returnf').click(function(){
+        $('#box-add').css('display','none');
+        $('#box-con').css('display','inline-block');
+    })
+
+    $(function () {
+        var $mainWrap = $('.main-wrap');
+        $mainWrap.height($mainWrap.width() * 9 / 16);
+        $mainWrap.width($mainWrap.width());
+
+    })
+    
+</script>
+
+</html>

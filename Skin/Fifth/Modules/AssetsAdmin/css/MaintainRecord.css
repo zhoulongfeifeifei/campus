@@ -1,0 +1,52 @@
+.Time {
+	width: 180px !important;
+}
+
+.textarea {
+	width: 250px !important;
+	min-height: 100px;
+}
+
+.text-danger {
+	color: red !important;
+}
+
+select {
+	width: 100px;
+	height: 30px;
+}
+.layui-table th,
+.layui-table td {
+	text-align: center;
+	padding: 9px 0;
+}
+ .page_title{
+    width: 100%;
+    border-bottom:1px solid #eaeaea;
+    height: 50px;
+    line-height: 50px;
+	}
+.page_title .span{
+    width: 100px;
+    display: block;
+    float: left;
+    border-bottom:2px solid green;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+.page_title{
+	margin: 5px 0;
+}
+.page_title select,.page_title input{
+	width: 150px;
+	height: 30px;
+}
+a:hover{
+	text-decoration: none;
+}
+.add{
+	margin-left: 20px;
+}

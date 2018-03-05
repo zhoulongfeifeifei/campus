@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.top{
+    width: 300px;
+    margin: 40px auto;
+    height: 50px;
+    line-height: 50px;
+    color: #27ae61;
+    font-size: 18px;
+    /*text-align: center;*/
+    position: relative;
+}
+.top p{
+    margin-left: 70px;
+}
+.top img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.middle{
+    text-align: center;
+    margin: 40px 0;
+}
+.bo{
+    background-color: #27ae61;
+    width: 124px;
+    height: 38px;
+    line-height: 38px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin: 30px auto;
+}

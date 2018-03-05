@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-11-28 14:53:14
+ * @version $Id$
+ */
+body{
+    background: #fff;
+    padding: 5px 10px;
+}
+#userFace{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+#displayUserFace{
+    width: 160px;
+}
+h3{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.layui-upload-button{
+    width: 80% !important;
+    margin-left: 10% !important;
+}
+.imgbutoom{
+    margin-left: 20px;
+}

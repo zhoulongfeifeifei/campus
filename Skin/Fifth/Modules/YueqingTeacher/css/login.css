@@ -1,0 +1,164 @@
+@charset "UTF-8";
+body{
+    font-family: '微软雅黑';
+}
+.header{
+    width:100%;
+    height: 105px;
+    min-width: 1100px;
+    background:url("../img/001.png") no-repeat left center;
+}
+.box1 .layui-input{
+    *width:75%;
+}
+.box .layui-input{
+    *width:75%;
+}
+.box1{
+    margin-left: 38px;
+    width: 100% !important;
+    margin-right: 22px !important;
+    *width:74% !important;
+}
+.con{
+    width:80%;
+    min-width: 1100px;
+    margin:5% 10%;
+    /*height: 1000px;*/
+}
+.layLeft{
+    width:73%;
+    float: left;
+}
+.layLeft .zhaosheng{
+    width:50%;
+    height:auto;
+    margin:auto;
+    /*margin:25% 28%;*/
+}
+.layT{
+    width:100%;
+    height:auto;
+    margin-top:2%;
+}
+.layT .hr{
+    width:95%;
+    margin:auto;
+    border-bottom:1px solid #e9e9e9;
+}
+.layT .SchName{
+    background: url("../../../Common/img/bj12_03.png") repeat center left;
+    margin-top: 25px;
+    width:100%;
+    height: 80px;
+    text-indent: 25%;
+    font-size: 16px;
+    margin-top: 5px;
+    line-height: 60px;
+    color: #898989;
+    letter-spacing: 1px;
+}
+.layLeft .zhaosheng h2{
+    font-size: 25px;
+    color: #2d2d2d;
+}
+.layLeft .zhaosheng .shuoming{
+    margin-top: 14%;
+}
+.zhaosheng p a{
+    color: #555;
+    margin-left: -6px;
+    line-height: 30px;
+}
+.shuoming a:hover{
+    text-decoration:underline;
+    color: #0b70fe;
+}
+.zhaosheng p{
+    padding: 5px 0;
+    color: #555;
+    font-size: 16px;
+}
+.layRight{
+    width:25%;
+    /*height:800px;*/
+    float:right;
+}
+.login{
+    background-color: #f0f0f0;
+    width: 100%;
+    min-width: 400px;
+    height:340px;
+}
+.form{
+    margin-top: 10px;
+}
+.itemfor{
+    margin-left: 32px;
+}
+.login ul{
+    background-color: #dbdbdb;
+    background: url("../../../Common/img/top1.png")  no-repeat ;
+    height: 50px;
+    width:100%;
+}
+.login ul li{
+    margin-top: 10px;
+    float: left;
+    padding: 3px 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    line-height: 28px;
+    font-size: 16px;
+    color: #767676;
+    cursor: pointer;
+}
+
+
+.login .btn{
+    background-color: #50b1c4 !important;
+    margin-left: 41px;
+    *margin-left: 80px;
+}
+.layui-label{
+    float: none !important;
+    margin-left: -13px;
+    *margin-left: 22px;
+}
+.lables{
+    margin-left: -26px;
+    *margin-left: 10px;
+}
+.box{
+    margin-left: 38px;
+    width:100% !important;
+    *width:70% !important;
+    margin-right: 107px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

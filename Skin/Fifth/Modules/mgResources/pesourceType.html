@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+        <link rel="stylesheet" href="css/persourceType.css">
+		<title>自定义资源类型</title>
+	</head>
+	<body>
+		<a href="javascript:;" id="addnigao" data-operation="SchoolResources.AddResType" class="layui-btn layui-btn-small yinc">添加类型</a>
+		<table class="layui-table">
+			<colgroup>
+				<col>
+				<col>
+				<col width="200">
+				<col width="300">
+                <col width="200">
+			</colgroup>
+			<thead>
+				<tr>
+                    <th>编号</th>
+					<th>资源类型名称</th>
+					<th>使用人</th>
+					<th>创建时间</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+			</tbody>
+		</table>
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<form class="layui-form" method="post" id="form0" role="form">
+				<input type="hidden" name="Id" id="Id" value="" />
+				<div class="modal-body">
+					<div class="layui-form-item">
+						<ul class="name_list">
+
+						</ul>
+					</div>
+					
+					<div class="layui-form-item">
+						<table class="layui-table">
+							<thead>
+								<tr>
+									<th>名称</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody class="mo_body">
+								<tr>
+									<td><span></span><input type="text" name="" class="names" data-id="id" /></td>
+									<td>
+										<a class="layui-btn layui-btn-small bc">保存</a>
+										<a class="layui-btn layui-btn-small qx">取消</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="layui-form-item">
+						<input type="button" class="layui-btn layui-btn-small" id="Add_td" value="添加" />
+					</div>
+				</div>
+			</form>
+		</div>
+		
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<form class="layui-form" method="post" id="form0" role="form">
+				<div class="layui-form-item item-lay">
+					<label class="layui-form-label kind-name">资源类型名称：</label>
+					<div class="layui-input-inline">
+						<input class="layui-input" type="text" id="name" name="name" value=""  />
+					</div>
+				</div>
+			</form>
+		</div>
+			<script src="/Web/Assets/layui/layui.js"></script>
+			<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+			<script>
+				var form = layui.form(),
+					layer = layui.layer,
+					laydate = layui.laydate,
+					$ = jQuery = layui.jquery,
+					element = layui.element(),
+					layedit = layui.layedit,
+					upload = layui.upload;
+			</script>
+			<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/pesourceType.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+     <title></title>
+     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="css/login.css">
+    <style type="text/css">
+    	/*#sava{
+    		    display: inline-block;
+    		    width: 80%;
+			    height: 38px;
+			    line-height: 38px;
+			    padding: 0 18px;
+			    background-color: #009688;
+			    color: #fff;
+			    white-space: nowrap;
+			    text-align: center;
+			    font-size: 14px;
+			    border: none;
+			    border-radius: 2px;
+			    cursor: pointer;
+			    opacity: .9;
+    	}*/
+    </style>
+</head>
+<body>
+    <!--顶部学校背景-->
+    <div class="header"></div>
+    <!--中间登录部分-->
+    <div class="con">
+    	<h2>乐清市职招生系统</h2>
+ 		<form class="layui-form form" action="">	
+ 			<div class="layui-form-item item">
+                <div class="layui-inline">
+                    <label class="layui-form-label layui-label">录取码：</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="lqm" id="lqm" lay-verify="lqm" autocomplete="off" class="layui-input" placeholder="请输入录取码">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">   
+                <label class="layui-form-label">考号：</label>
+                <div class="layui-input-block">
+                     <input class="layui-input" type="text" id="zhunkao" name="zhunkao" lay-verify="zkz" value="" placeholder="请输入准考证号">
+                </div>
+            </div>
+            <div class="layui-form-item">   
+                <label class="layui-form-label">姓名：</label>
+                <div class="layui-input-block">
+                     <input class="layui-input" type="text" id="username" name="username" lay-verify="username" placeholder="请输入姓名" value="">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                  <input id="sava" type="button" class="layui-btn btn green" lay-submit lay-filter="sava" value="登录">
+                   <!--	<a href="javascript:;" id="sava" claas="layui-btn btn green">登录</a>-->
+                 <!--  <div id="sava" claas="layui-btn btn green">登录</div>-->
+                </div>
+            </div>
+ 		</form>
+		<div class="miaoshu"></div>
+         
+    </div>
+
+
+</body>
+<script src="js/jquery-1.9.1/jquery.js"></script>
+<script src="layui/layui.js"></script>
+<script src="layui/lay/dest/layui.all.js"></script>
+<script src="js/common.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+</html>

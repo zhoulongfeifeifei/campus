@@ -1,0 +1,161 @@
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if lt IE 8]>
+    <script src="/Themes/Default/Content/admin/js/ie7-not-supported.js"></script>
+
+    <![endif]-->
+    <!--[if lte IE 9]>
+    <script src="/Themes/Default/Content/admin/js/respond.js"></script>
+
+    <script src="/Themes/Default/Content/admin/js/html5shiv.min.js"></script>
+
+    <![endif]-->
+    <link href="/Skin/3/Content/admin/css/reset.css" rel="stylesheet"/>
+
+    <link href="/Skin/3/Content/admin/css/main.css" rel="stylesheet"/>
+
+    <link href="/Assets/layui/css/layui.css" rel="stylesheet"/>
+
+    <link href="/Skin/3/css/ztr.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!--tab层-->
+
+    <!--tab层 End-->
+    <div class="vF-panel">
+        <!--包裹层-->
+        <!--标题层-->
+        <div class="bar-header clearfix">
+
+            <span class="text font-18 blue toptitle">查看详情</span>
+            <a href="AssetsInfo.html" class="text link">返回</a>
+            <!-- <a href="javascript:history.go(-1)" class="text link">返回</a>
+        -->
+    </div>
+    <!--标题层 End-->
+
+    <style>
+    input, select{
+        border-radius: 4px !important;
+    }
+</style>
+    <div class="form">
+        <div class="f1">
+            <label class="f-label span1 w-100">所属部门：</label>
+            <div class="f-input span8">
+                <span id="DeptCode"></span>
+            </div>
+        </div>
+        <div class="f1">
+            <label class="f-label span1 w-100">
+                <span class="red">*</span>
+                资产编号：
+            </label>
+            <div class="f-input span8">
+                <span id="AssCode"></span>
+            </div>
+        </div>
+        <div class="f1">
+            <label class="f-label span1 w-100">
+                <span class="red">*</span>
+                资产名称：
+            </label>
+            <div class="f-input span8">
+                <span id="AssName"></span>
+            </div>
+        </div>
+        <div class="f1">
+            <label class="f-label span1 w-100">折旧(率)：</label>
+            <div class="f-input span8">
+                <span id="DepreRate"></span>
+            </div>
+        </div>
+        <div class="f1">
+            <label class="f-label span1 w-100">折旧年限：</label>
+            <div class="f-input span8">
+                <span id="DepreYear"></span>
+            </div>
+        </div>
+        <div class="f1">
+            <label class="f-label span1 w-100">累计折旧：</label>
+            <div class="f-input span8">
+                <span id="AccumDepre"></span>
+            </div>
+        </div>
+        <div class="f1">
+            <label class="f-label span1 w-100">月折旧额：</label>
+            <div class="f-input span8">
+                <span id="DepreMonth"></span>
+            </div>
+        </div>
+        <div class="f1">
+            <label class="f-label span1 w-100">
+                <span class="red">*</span>
+                资产保管人：
+            </label>
+            <div class="f-input span8">
+                <span id="Keeper"></span>
+            </div>
+        </div>
+        <div class="f1">
+            <label class="f-label span1 w-100">资产原值：</label>
+            <div class="f-input span8">
+                <span id="AssOriginal"></span>
+            </div>
+        </div>
+        <div class="f1">
+            <label class="f-label span1 w-100">资产性质：</label>
+            <div class="f-input span8">
+                <span id="XinZhi"></span>
+            </div>
+        </div>
+        <div class="f1">
+            <label class="f-label span1 w-100">增加类型：</label>
+            <div class="f-input span8">
+                <span id="AddType"></span>
+            </div>
+        </div>
+        <div class="f1">
+            <label class="f-label span1 w-100">增加日期：</label>
+            <div class="f-input span8">
+                <span id="ReceiveDate"></span>
+            </div>
+        </div>
+        <div class="f1">
+            <label class="f-label span1 w-100">减少类型：</label>
+            <div class="f-input span8">
+                <span id="reduceType"></span>
+            </div>
+        </div>
+        <div class="f1">
+            <label class="f-label span1 w-100">减少日期：</label>
+            <div class="f-input span8">
+                <span id="reduceDate"></span>
+            </div>
+        </div>
+        <div class="f1">
+            <label class="f-label span1 w-100">资产照片</label>
+            <div class="f-input span8">
+                <img id="phone" src="" alt=""></div>
+        </div>
+
+    </div>
+    
+</div>
+    <script src="/Assets/jquery-1.9.1/jquery.js"></script>
+
+    <script src="/Assets/layui/layui.js"></script>
+    <script src="/Assets/layui/lay/dest/layui.all.js"></script>
+    <script src="/Skin/3/Modules/AssetsAdmin/js/viewdetail.js"></script>
+</body>
+</html>

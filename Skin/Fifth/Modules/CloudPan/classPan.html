@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="/Web/Assets/layui/css/layui.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../../Common/css/public.css">
+    <link rel="stylesheet" href="../../Common/css/listSearch.css">
+    <link href="css/clouddisk.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="content classPan">
+        <div class="layui-form selectClass">
+            <div class="layui-form-item">
+                <label class="layui-form-label">选择班级</label>
+                <div class="layui-input-inline">
+                    <select name="city" lay-filter="GradeS" lay-verify="required" id="GradeS">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="vF-panel">
+            <div class="cloud_top">
+                <div class="layui-tab layui-tab-brief">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this">班级云盘</li>
+                    </ul>  
+                </div>
+                <div class="progress">
+                    <span class="progressNum"></span>
+                    <span class="capacity">
+                        <span id="filenow"></span>
+                        /
+                        <span id="fileall"></span>
+                        G(共
+                        <span id="filenum"></span>
+                        个文件)
+                    </span>
+                </div>
+                <!--<a class="Expansion"><i class="cloudIcon">&#xe6ce;</i>扩容</a>-->
+            </div>
+            <div class="bar-header clearfix">
+                <div class="bar-header clearfix">
+                    <!-- <a class="btn btn-green upload" >上传文件</a> -->
+                    <a class="yinc" data-operation="AjaxCloudPan.ClassPanUploadFiles"><input class="layui-upload-file" lay-type="file" type="file" name="file"></a>
+
+                    <a class="layui-btn layui-btn-small layui-btn-green moveall yinc" data-operation="AjaxCloudPan.MoveOrCopy">批量转移</a>
+                    <a class="layui-btn layui-btn-small layui-btn-green copyall yinc" data-operation="AjaxCloudPan.MoveOrCopy">批量复制</a>
+                    <a class="layui-btn layui-btn-small layui-btn-danger removeall yinc" data-operation="AjaxCloudPan.Delete">批量删除</a>
+                    <a href="javascript:goDraft()" class="layui-btn layui-btn-small layui-btn-green yinc" data-operation="AjaxCloudPan.AddFolder">创建文件夹</a>
+                    <div class="fr">
+                        <input type="hidden" id="Pid"  name="Pid" value="0" />
+                        <input type="hidden" id="Classid"  name="Classid"/>
+                        <input type="text" class="layui-input" name="Title" placeholder="标题" />
+                        <input type="submit" class="layui-btn layui-btn-green search" value="搜索" />
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-mid layui-word-aux" style="font-size: 14px; width: 100%;">云盘只支持txt;jpg;png;gif;zip;rar;ppt;doc;docx;rtf;xls;xlsx;csv;pptx;pps;ppsx;pdf这些文件格式</div>
+        </div>
+        <div class="layui-table show" >
+            <table>
+                <thead id="nvfTable">
+                    <tr></tr>
+                </thead>
+            </table>
+            <table class="layui-table" >
+                <colgroup>
+                    <col width="50">
+                    <col>
+                    <col width="150">
+                    <col width="200">
+                    <col width="80">
+                    <col width="170">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <td>
+                            <!-- <input type="checkbox" class="w-40" value="" /> -->
+                        </td>
+                        <td align="left">名称</td>
+                        <td>大小</td>
+                        <td>上传时间</td>
+                        <td>上传人</td>
+                        <td>操作</td>
+                    </tr>
+                </thead>
+                <tbody  id="FileList"></tbody>
+            </table>
+        </div>
+        <div id="Draft" class="layui-form">
+            <div class="layui-form-item layui-form-text"></div>
+            <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label foladername">文件夹名称:</label>
+                <div class="layui-input-inline">
+                    <input class="layui-input" data-id="" name="folder" type="text" value="" />
+                </div>
+            </div>
+        </div>
+        <div id="Draftedit" class="layui-form">
+            <div class="layui-form-item layui-form-text"></div>
+            <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">老名称:</label>
+                <p class="oldfoldName" ></p>
+            </div>
+            <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">新名称:</label>
+                <div class="layui-input-inline">
+                    <input class="layui-input" data-id="" name="newfoldName" type="text" value="" />
+                </div>
+            </div>
+        </div>
+        <div id="Catalog">
+            <ul id="demo"></ul>
+            <p class="tocatalog"></p>
+        </div>
+        <div id="uploader">
+            <input type="file" multiple id="ssi-upload"/>
+
+        </div>
+    </div>
+
+    <script src="/Web/Assets/layui/layui.js"></script>
+    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+    <script>var $ = jQuery = layui.jquery</script>
+    <script src="/Web/Include/tby.js"></script>
+    
+    <script src="js/classPan.js"></script>
+</body>
+</html>

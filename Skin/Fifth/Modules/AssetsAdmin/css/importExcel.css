@@ -1,0 +1,38 @@
+ .page_title{
+    width: 100%;
+    border-bottom:1px solid #eaeaea;
+    height: 50px;
+    line-height: 50px;
+	}
+.page_title .span{
+    width: 100px;
+    display: block;
+    float: left;
+    border-bottom:2px solid green;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+.page_title{
+	margin: 5px 0;
+}
+.page_title select,.page_title input{
+	width: 150px;
+	height: 30px;
+}
+a:hover{
+	text-decoration: none;
+}
+ body{
+ 	padding: 20px;
+ }
+ #cont p{
+ 	line-height: 1.5em;
+ 	font-size: 1.3em; 
+ 	margin:20px 0 0 30px;
+ }
+.blue{
+	color: blue;
+}

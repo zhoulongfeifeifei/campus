@@ -1,0 +1,257 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Helvetica,STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial !important;
+	letter-spacing: 3px;
+}
+
+ul{
+	list-style: none;
+}
+.fl{
+	float: left;
+}
+.rt{
+	float: right;
+}
+.text_center{
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+html{
+	background: #F4F4F6;
+    width: 100%;
+    min-width: 980px;
+}
+/*顶部*/
+#header{
+	background: url(../img/topbg.jpg) no-repeat center center;
+	background-size: 100% 100%;
+	height: 200px;
+}
+#header>div{
+	width: 85%;
+	margin: 0 auto;
+
+}
+.logo{
+	height: 30px;
+	margin: 10px 0;
+	vertical-align: middle;
+}
+#header>div>a{
+	color: #028843;
+	margin-left: 30px;
+	letter-spacing: 4px;
+	font-size: 1.125em;
+	vertical-align: middle;
+}
+#header>div>a:hover{
+	font-family: bold !important;
+}
+.icon{
+	margin-top: 10px;
+	font-size: 0;
+}
+.icon img{
+	width: 18px;
+	height: 18px;
+	
+}
+
+.news,.settings,.signout{
+	position: relative;
+	display: inline-block;
+	margin-left: 30px;
+}
+.news i{
+	font-style: normal;
+	background: red;
+	color: #fff;
+	position: absolute;
+	top: -7px;
+	right: -7px;
+	border-radius: 50%;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	font-size: 0.75em;
+	line-height: 20px;
+	text-align: center;
+	letter-spacing: 0;
+}
+.news a i{
+	display: none;
+}
+.news_down{
+	position: absolute;
+	top:42px;
+	left:-80px;
+	width:130px;
+z-index:10000;
+background-color:#ECF8E2;
+
+border-radius:3px;
+}
+.sj{
+	width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+position: absolute;
+    top: 32px;
+    left: 5px;
+}
+.news_down a{
+	color:#fff;
+	display:block;
+	line-height:30px;
+	text-align: center;
+	font-size:14px;
+	font-weight:bold;
+}
+.news_down a span{
+	color:red;
+	font-size:12px;
+}
+.rt{
+	float: right;
+}
+.sj,.news_down{
+display:none;
+}
+/*头部*/
+.top{
+	width: 100%;
+	position: relative;
+	background: #028843;
+	height: 50px;
+}
+.user{
+	position: absolute;
+	top: -75%;
+	left: 8%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);;
+}
+.avatar img{
+	width: 120px;
+	height: 120px;
+	padding: 5px;
+	border: 1px solid #8EBB85;
+	background: #fff;
+}
+.avatar{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+}
+.user p{
+	letter-spacing: 5px;
+	font-size: 1.8em;
+	font-weight: bold;
+	color: #39882A;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+.userInfo{
+	display: inline-block;
+	vertical-align: middle;	
+}
+.userInfo img{
+	width: 25px;
+	height: 25px;
+}
+.userInfo img:first-child{
+	margin-right: 10px;
+}
+/*导航*/
+.nav li{
+	float: left;
+}
+.nav a{
+	display: block;
+	padding: 0 5px;
+	text-align: right;
+	font-size: 16px;
+	font-weight: normal;
+	color: #fff;
+}
+.nav a:hover{
+	font-weight: bold;
+	color: #fff;
+}
+.nav .hover a{
+	font-weight: bold;
+	color: #fff;
+}
+.nav{
+	position: absolute;
+	left: 20%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);;
+}
+/*内容*/
+section{
+	width: 85%;
+	margin: 15px auto;
+/*	height: 1000px;
+	min-height: 800px;*/
+}
+@media screen and (min-width: 1301px) {
+    section {
+        width: 95% !important;
+    }
+    .nav a{
+		font-size: 24px;
+		padding: 0 20px;
+    }
+}
+@media screen and (max-width: 1080px) and (min-width: 781px){
+    .nav a{
+		font-size: 18px;
+		padding: 0 15px;
+    }
+}
+@media screen and (max-width: 1300px) and (min-width: 1081px) {
+    section {
+        width: 95% !important;
+    }
+    .nav a{
+		font-size: 20px;
+		padding: 0 10px;
+    }
+}
+@media screen and (max-width: 780px) {
+    section {
+        width: 95% !important;
+    }
+    .nav a{
+		font-size: 16px;
+		padding: 0 5px;
+    }
+}
+iframe{
+	border: 0;
+	min-height: 500px;
+}
+footer{
+	background: #fff;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 0.75em;
+	border-top: 1px solid #eee;
+	/*margin-top: 15px;*/
+}

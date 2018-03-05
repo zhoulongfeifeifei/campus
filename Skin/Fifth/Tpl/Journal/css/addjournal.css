@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-12-05 18:00:32
+ * @version $Id$
+ */
+
+body{
+    padding: 5px 15px;
+    background: #fff;
+    border: 1px solid #eee;
+    min-height: 503px;
+    border-radius: 4px;
+}
+button.layui-btn.layui-btn-small.layui-btn-green.Sava {
+    width: 150px;
+}
+.layui-form-mid.layui-word-aux.addType {
+    cursor: pointer;
+}

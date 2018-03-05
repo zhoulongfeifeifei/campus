@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<link rel="stylesheet" type="text/css" href="css/ApplyDetail.css" />
+		<base target="_blank">
+	</head>
+
+	<body>
+			<div class="page_title">
+				<!-- <span class="span">审批详情</span> -->
+				<div class="layui-tab layui-tab-brief">
+			        <ul class="layui-tab-title">
+			            <li class="layui-this">审批详情</li>
+			        </ul>  
+			    </div>
+				<a href="javascript:history.back();" class="layui-btn layui-btn-small fanhui">返回</a>
+				<div class="fr">
+					<a class="layui-btn layui-btn-small yinc" data-id="f_yes" >同意</a>
+					<a class="layui-btn layui-btn-small yinc" data-id="f_no" >不同意</a>
+					<a class="layui-btn layui-btn-small yinc" data-id="f_zj" >转交</a>
+					<a class="layui-btn layui-btn-small yinc" data-id="f_sc" >删除</a>
+					<!--<a onclick="xiazai(this);" class="layui-btn layui-btn-green layui-btn-small">下载</a>-->
+					<a class="layui-btn layui-btn-green layui-btn-small" onclick="onprint()">打印</a>
+				</div>
+
+			</div>
+			<div id="form-data">
+				<!--<h1 style="text-align: center;" id="spTitle">标题</h1>-->
+
+				<div class="info">
+					<span>学校：</span><span id="SchoolName"></span> &nbsp;&nbsp;&nbsp;
+					<span>申请时间：</span><span id="InTime"></span>
+				</div>
+				<table class="layui-table">
+					 <colgroup>
+					    <col width="130">
+					    <col>
+					 </colgroup>
+					<tbody id="tbody">
+						<tr>
+							<td class="title">审批编号</td>
+							<td id="examNo"></td>
+						</tr>
+						<tr id="user">
+							<td class="title">申请人</td>
+							<td id="fromUserName"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+	<script src="/Web/Assets/layui/layui.js"></script>
+	<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	<script>
+	var form = layui.form(),
+		layer = layui.layer,
+		laydate = layui.laydate,
+		laypage = layui.laypage,
+		$ = jQuery = layui.jquery;
+    </script>
+    <script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/ApprovalDetail.js" ></script>
+
+	</body>
+
+</html>

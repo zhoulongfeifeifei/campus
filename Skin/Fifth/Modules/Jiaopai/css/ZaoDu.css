@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,p,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: 0;vertical-align: baseline;background: transparent;}
+table, caption, tbody, tfoot, thead, tr, th, td{ vertical-align:middle;}
+th{
+    text-align:center;
+}
+html{margin-top:0px !important;}
+
+body {background: #fff;  font-size:14px; color: #656565;font-family: 'microsoft yahei',osaka,sans-serif;min-width: 1200px;}
+
+li{list-style: none;}
+
+a{cursor: pointer;margin: 0;padding: 0;border: 0;vertical-align: baseline;text-decoration:none;color:#000;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000;cursor: help;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #cccccc;margin: 1em 0;padding: 0;}
+
+input, select {vertical-align: middle;}
+
+h1,h2,h3,h4,h5,h6{ color:#999; padding:10px 0;}
+img{border: 0}
+
+em,i,strong{font-style:normal;}
+
+/*清除浮动*/  
+.clearfix:before,.clearfix:after{content: '';display: table;}  
+.clearfix:after{clear: both;}
+/*==========重置样式=========*/
+.set-wrap {
+    position: relative;
+    margin-top: 15px;
+    min-width: 1100px;
+}
+.set-box {
+    max-width: 500px;
+    min-width: 200px;
+    width: 30%;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.vF-panel {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 5px 20px;
+}
+.bar-header {
+    line-height: 60px;
+    height: 60px;
+}
+.bar-header .text {
+    margin: 0 10px 0 0;
+    font-size: 12px;
+    color: #999;
+}
+.font-18 {
+    font-size: 18px!important;
+}
+.text {
+    color: #666;
+    font-weight: normal;
+}
+.blue {
+    color: #337ab7!important;
+}
+.form {
+    padding: 5px;
+    font-size: 14px;
+}
+.form .f1 {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    border-top: 1px dashed #ddd;
+}
+.form .f1 .f-label {
+    text-align: right;
+    line-height: 30px;
+    font-size: 14px;
+}
+.form .f1 label {
+    display: inline-block;
+}
+.form .f1 .f-input {
+    line-height: 30px;
+    text-align: center;
+}
+.form .f1 select {
+    padding: 5px;
+    height: 30px;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.dv {
+    display: inline-block;
+    width: 322px;
+    height: 200px;
+    border: 1px solid #ccc;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    float: left;
+    margin: 10px 0 10px 0;
+}
+input[type="checkbox"], input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+    outline: none;
+    margin: -3px 5px 0;
+}
+.check {
+    position: absolute;
+    left: 0;
+    z-index: 99;
+}
+.system .explorer {
+    background-color: #bff1e7;
+    position: relative;
+    margin-bottom: 15px;
+    height: 155px;
+}
+.system img {
+    width: 113px;
+    height: 112px;
+    position: relative;
+    display: inline;
+    margin-top: 22px;
+}
+.system .explorer span {
+    position: absolute;
+    right: 5%;
+    bottom: 2%;
+}
+.count {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    line-height: 20px;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+.radio {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    line-height: 20px;
+    right: -8px;
+    top: -8px;
+}
+.school img {
+    width: 113px;
+    height: 112px;
+    position: relative;
+    display: inline;
+    margin-top: 22px;
+}
+.plus {
+    padding: 10px;
+    margin: 26px 30px 24px 0;
+}
+.plus img {
+   width: 200px;
+    display: inline;
+}
+.form .f1.f-save .btn:first-child {
+    margin-left: 0;
+}
+.form .f1.f-save .btn {
+    min-width: 100px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.btn {
+    font-size: 12px;
+    display: inline-block;
+    margin: 3px 5px;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    min-width: 35px;
+    color: #fff;
+    background: #616161;
+    text-align: center;
+    border-radius: 1px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    transition: background-color .2s ease 0s;
+    border-radius: 1px;
+    vertical-align: middle;
+}
+.btn-blue {
+    background: #3276b1;
+}
+.muban-wrap {
+    width: 700px;
+    float: left;
+}
+.muban-wrap iframe {
+    width: 100%;
+    height: 100%;
+}
+.school .explorer {
+    background-color: #6ec9cb;
+    position: relative;
+    margin-bottom: 7px;
+    height: 155px;
+}
+.school .explorer span {
+    position: absolute;
+    right: 5%;
+    bottom: 2%;
+}

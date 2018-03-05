@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+    <link href="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../Common/css/public.css" />
+    <link rel="stylesheet" href="../../Common/css/main.css">
+    <!--<link rel="stylesheet" href="/Web/Assets/zTree_v3/css/zTreeStyle/zTreeStyle.css">-->
+    <link href="css/create.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="top">
+        <div class="top_l">在线编辑题目<img src="img/check.png" alt=""></div>
+        <div class="top_r">批量导入试题<img src="" alt=""></div>
+    </div>
+    <main id="main">
+        <div class="middle">
+            <p class="m4">
+                <b class="green">年&emsp;&emsp;级</b>
+            </p>
+            <p class="m1">
+                <b class="green">教学科目</b>
+            </p>
+            <p class="m5">
+                <b class="green">作业类型</b>
+                <span data-id="0">普通</span>
+                <span data-id="1">背诵</span>
+                <span data-id="2">听力</span>
+                <span data-id="3">默写</span>
+                <span data-id="4">阅读</span>
+            </p>
+            <p class="m2">
+                <b class="green">题目类型</b>
+            </p>
+            <p class="m3">
+                <b class="green">教&emsp;&emsp;材</b>
+            </p>
+        </div>
+        <div id="audio">
+            <input type="text" value="请选择听力文件">
+            <input type="file" name="file1" lay-type="audio" class="layui-upload-file" id="yin">
+        </div>
+        <script id="editor" type="text/plain" style="width: 100%; height: 300px;"></script>
+            
+        <div class="cont">   
+            <section class="s1">
+                <span>答案<i class="red">*</i></span>
+                <b><input type="radio" value="" name="dana">A</b>
+                <b><input type="radio" value="" name="dana">B</b>
+                <b><input type="radio" value="" name="dana">C</b>
+                <b><input type="radio" value="" name="dana">D</b>
+                <p>添加</p>
+                <div id="dddd"><script id="editor3" type="text/plain" style="width: 100%; height: 300px;"></script></div>
+            </section>
+            <section class="s2">
+                <span>解析<i class="red">*</i></span>
+                <!--<input type="text" placeholder="请输入解析内容">-->
+                <script id="editor2" type="text/plain" style="width: 100%; height: 300px;"></script>
+            </section>
+            <section class="s3">
+                <span>难度<i class="red">*</i></span>
+            </section>
+            <section class="s4">
+                <span>建议答题时间<i class="red">*</i></span>
+                <p>添加</p>
+            </section>
+            <section class="s5">
+                <span>知识点&nbsp;&nbsp;<a href="javascript:;">设置</a></span>
+                <p>请设置知识点</p>
+            </section>
+            <section class="s6">
+                <span>考点&nbsp;&nbsp;<a href="javascript:;">设置</a></span>
+                <p>请设置考点</p>
+            </section>
+            <section class="s7">
+                <!--<i class="red">*</i>-->
+                <span>同步信息&nbsp;&nbsp;<a href="javascript:;">设置</a></span>
+                <p>请设置同步信息</p>
+            </section>
+            <section class="s8">
+                <span>试题来源</span>
+                <input type="text" placeholder="请输入试题来源">
+            </section>
+        </div>
+        <div class="bottom">
+            <span class="yu">预览</span>
+            <span class="wan">完成</span>
+            <span class="xia">创建下一题</span>
+        </div>
+        <!--知识点 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<form id="form88" class="layui-form">
+			<input type="hidden" name="teacherid">
+			<input type="hidden" name="userid">
+				
+				<div class="layui-form-item">
+					<label for="Name" class="layui-form-label">知识点：</label>
+					<div class="layui-input-inline">
+						<ul class="ztree" id="demo1">
+						</ul>
+					</div>
+				</div>
+				<!--<div id="baocun" class="modal-footer">
+					<button type="button" lay-submit="" lay-filter="save1" id="save1" class="layui-btn layui-btn-green layui-btn-small">
+						保存
+					</button>
+				</div>-->
+			</form>
+		</div>
+        <!--考点 -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<form id="form99" class="layui-form">
+			<input type="hidden" name="teacherid">
+			<input type="hidden" name="userid">
+				
+				<div class="layui-form-item">
+					<label for="Name" class="layui-form-label">考点：</label>
+					<div class="layui-input-inline">
+						<ul class="ztree" id="demo2">
+						</ul>
+					</div>
+				</div>
+				<!--<div id="baocun" class="modal-footer">
+					<button type="button" lay-submit="" lay-filter="save2" id="save2" class="layui-btn layui-btn-green layui-btn-small">
+						保存
+					</button>
+				</div>-->
+			</form>
+		</div>
+        <!--同步信息 -->
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<form id="form00" class="layui-form">
+			<input type="hidden" name="teacherid">
+			<input type="hidden" name="userid">
+				
+				<div class="layui-form-item">
+					<label for="Name" class="layui-form-label">教材：</label>
+					<div class="layui-input-inline">
+						<ul class="ztree" id="demo3">
+						</ul>
+					</div>
+				</div>
+				
+			</form>
+		</div>
+        <div class="modal fade" id="upp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<form id="form45" class="layui-form">
+				<div class="layui-form-item">
+					上传成功！
+				</div>
+			</form>
+		</div>
+        <!--自定义时间 -->
+        <div class="modal fade" id="shijian" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<form id="forms" class="layui-form">
+			<input type="hidden" name="teacherid">
+			<input type="hidden" name="userid">
+				
+				<div class="layui-form-item">
+					<input type="number" placeholder="请输入时间">分钟
+				</div>
+				
+			</form>
+		</div>
+        
+    </main>
+    <div id="daoru">
+        <div class="con">
+            <p class="nianji">
+                <!--<span>一年级</span>
+                <span class="on">二年级</span>
+                <span>三年级</span>-->
+            </p>
+            <p class="kemu">
+                <!--<span>语文</span>
+                <span class="on">物理</span>
+                <span>政治</span>-->
+            </p>
+            <p class="jiaocai">
+
+            </p>
+            <div class="layui-input-inline">
+                <input type="text" placeholder="请添加试题文件(支持doc)">
+                <input type="file" name="file1" lay-type="file" class="layui-upload-file" id="up">
+                <input type="hidden" name="up" id="up_val" />
+            </div>
+        </div>
+        <p class="moban">请先使用试题标引模板处理，然后上传。下载<a>标引模板</a></p>
+    </div>
+
+<div class="yulan">
+   <a class="quxiao"><i class="layui-icon">&#x1007;</i></a> 
+   <div class="tigan"></div>
+</div>
+<input type="hidden" name="cre" id="cre" value="" />
+</body>
+<script src="/Web/Assets/jquery-1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="/Web/Assets/layui/layui.js"></script>
+<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+<script>
+	    	var form = layui.form(),
+				layer = layui.layer,
+				laydate = layui.laydate,
+				laypage = layui.laypage,
+				$ = jQuery = layui.jquery;
+			
+</script>
+
+<script type="text/javascript" charset="utf-8" src="/Web/Assets/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Web/Assets/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Web/Assets/ueditor/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Web/Assets/ueditor/kityformula-plugin/addKityFormulaDialog.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Web/Assets/ueditor/kityformula-plugin/getKfContent.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Web/Assets/ueditor/kityformula-plugin/defaultFilterFix.js"></script>
+
+<!--<script src='/Web/Assets/zTree_v3/js/jquery.ztree.core.js'></script>
+<script src='/Web/Assets/zTree_v3/js/jquery.ztree.excheck.js'></script>-->
+<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+<script src="/Web/Include/validate.js" type="text/javascript" charset="utf-8"></script>
+<script src="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/js/ligerui.all.js" type="text/javascript"></script>
+<script src="js/create.js"></script>
+<script>
+    // layui.use('upload', function () {
+    //     layui.upload({
+    //         url: 'http://60.190.202.49:1000/api/Common/ImportFile' //上传接口
+    //         , success: function (res) { //上传成功后的回调
+    //             console.log(res)
+    //         }
+    //     });
+
+        // layui.upload({
+        //     url: ''
+        //     , elem: '#up' //指定原始元素，默认直接查找class="layui-upload-file"
+        //     , method: 'get' //上传接口的http类型
+        //     , success: function (res) {
+        //         // LAY_demo_upload.src = res.url;
+        //     }
+        // });
+    // });
+</script>
+</html>

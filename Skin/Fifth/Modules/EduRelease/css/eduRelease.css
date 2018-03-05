@@ -1,0 +1,19 @@
+.contain{
+    padding: 20px;
+
+}
+.toptitle{
+    font-size: 1.67em;
+    color: #028843;
+    line-height: 2em;
+}
+.layui-anim{
+    max-height: 200px !important;
+    overflow: auto;
+}
+#ScoreTypeName{
+    display: none;
+}
+.path{
+	height: 35px;
+}

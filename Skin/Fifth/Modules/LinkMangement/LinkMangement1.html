@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<link rel="stylesheet" href="../../Common/css/public.css" />
+		<link href="css/LinkMangement1.css" rel="stylesheet">
+		<title></title>
+	</head>
+	<body>
+		<button type="button" class="layui-btn layui-btn-green layui-btn-small add" id="add_web">创建</button>
+		<table class="layui-table">
+			<thead>
+				<tr>
+					<th>序号</th>
+					<th>名称</th>
+					<th>网页链接</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+		<!--创建网页的弹窗-->
+		<div class="layer-web" style="display: none;">
+			<form class="layui-form" action="">
+			<div class="layui-form-item">
+				<label class="layui-form-label Title">名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称:<span style="color: red;">*</span></label>
+				<div class="layui-input-inline">
+					<input type="text" name="name" required lay-verify="required"  autocomplete="off" class="layui-input"  >
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">网址链接:<span style="color: red;">*</span></label>
+				<div class="layui-input-inline">
+					<input type="text" name="link" required lay-verify="required"  autocomplete="off" class="layui-input" >
+				</div>
+			</div>
+			</form>
+			<p class="text-left"><span style="color: red;">*</span>请正确输入网址例如"https://www.baidu.com/"</p>
+		</div>
+		<!--编辑按钮的弹窗-->
+		<div class="layer-web2" style="display: none;">
+				<form class="layui-form" action="">
+			<div class="layui-form-item">
+				<label class="layui-form-label">名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称<span style="color: red;">*</span></label>
+				<div class="layui-input-inline">
+					<input type="text" name="webName" required lay-verify="required"  autocomplete="off" class="layui-input">
+				</div>
+			</div>	
+			<div class="layui-form-item">
+				<label class="layui-form-label">网址链接<span style="color: red;">*</span></label>
+				<div class="layui-input-inline">
+					<input type="text" name="linkName" required lay-verify="required"  autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			</form>
+			<p class="text-left"><span style="color: red;">*</span>请正确输入网址例如"https://www.baidu.com/"</p>
+		</div>
+		<!--引入js文件-->
+		<script src="/Web/Assets/layui/layui.js"></script>
+		<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+		<script>var $ = jQuery = layui.jquery;</script>
+		<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/LinkMangement1.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

@@ -1,0 +1,365 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,p,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: 0;vertical-align: baseline;background: transparent;}
+table, caption, tbody, tfoot, thead, tr, th, td{ vertical-align:middle;}
+th{
+    text-align:center;
+}
+html{margin-top:0px !important;}
+
+body {background: #fff;  font-size:14px; color: #656565;font-family: 'microsoft yahei',osaka,sans-serif;min-width: 1200px;}
+
+li{list-style: none;}
+
+a{cursor: pointer;margin: 0;padding: 0;border: 0;vertical-align: baseline;text-decoration:none;color:#000;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000;cursor: help;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #cccccc;margin: 0em 0;padding: 0;}
+
+input, select {vertical-align: middle;}
+
+h1,h2,h3,h4,h5,h6{ color:#999; padding:10px 0;}
+img{border: 0}
+
+em,i,strong{font-style:normal;}
+
+/*清除浮动*/  
+.clearfix:before,.clearfix:after{content: '';display: table;}  
+.clearfix:after{clear: both;}
+/*==========重置样式=========*/
+.nav{
+	margin:10px 20px;
+}
+.piyue{
+	float: left;
+	padding: 5px 20px;
+	background: #0c8;
+	border-radius: 3px;
+	color:#FFF;
+	margin-bottom: 5px;
+}
+.fanhui{
+	float:right;
+	padding: 5px 20px;
+	background: #0c8;
+	border-radius: 3px;
+	color:#FFF;
+}
+.main{
+	margin:0 20px;
+}
+.weijiao{
+	margin-top: 10px;
+}
+.weijiao .span1{
+	font-weight: 900;
+}
+.weijiao .span2{
+	padding: 5px 10px;
+	background: #eee;
+	border:1px solid #ccc;
+	margin-left: 10px;
+	border-radius: 3px;
+}
+.weijiao p{
+   overflow: auto;
+}
+.ul li{
+	float: left;
+	padding: 5px 10px;
+}
+.ximing{
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc; 
+}
+.border{
+	    stroke-width: 8px;
+}
+.circle{
+	stroke: red;
+    stroke-width: 9px;
+}
+.xuanran span{
+	display: inline-block;
+}
+.yijiao {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.xwxk{
+	margin-top: 20px;
+	position: relative;
+	padding-bottom: 30px;
+}
+.xwxk span{
+	padding: 5px 10px;
+	border:1px solid #ccc;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+.xwxk .span1{
+	background: #0c8;
+	border:none;
+}
+.xwxk .span1 a{
+	color:#FFF;
+}
+.xwxk .span3{
+	position: absolute;
+	top:-6px;
+	right: 0%;
+}
+.timu{
+	float:left;
+	width: 100%;
+	border:1px solid #ccc;
+	margin-bottom: 10px;
+}
+.duicuo{
+	float: left;
+	margin-left: 5%;
+	width: 20%;
+	border:1px solid #ccc;
+	position: relative;
+	margin-bottom: 10px;
+}
+.duicuo img{
+	position: absolute;
+	top:10px;
+	left: -15px;
+}
+.biaozhu span{
+	margin-left: 6px;
+}
+.biaozhu .span1{
+	color:#27ae61;
+}
+.biaozhu .span1 span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #27ae61;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.biaozhu .span2{
+	color:#ffac68;
+}
+.biaozhu .span2 span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #ffac68;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.biaozhu .span3{
+	color:#fe6665;
+}
+.biaozhu .span3 span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #fe6665;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.biaozhu .span4{
+	color:#b1b1b1;
+}
+.biaozhu .span4 span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #b1b1b1;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.div{
+	margin:10px 0;
+}
+.div p{
+    margin-bottom: 5px;
+}
+.div span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	background: #ccc;
+	color:#FFF;
+}
+.timu p{
+	margin:10px 0px;
+	font-size: 18px;
+	font-weight: 900;
+	text-align: center;
+}
+.beijing{
+	margin:5px 20px;
+	background: #f5f5f5;
+	padding:20px 0px;
+}
+.beijing div{
+	margin: 0 20px;
+	padding: 10px 0px;
+}
+.daan{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+.fenshu{
+	display: inline-block;
+	padding: 2px 10px;
+	background: #ffac68;
+	border-radius: 3px;
+	color: #FFF;
+}
+.zqda{
+	display: inline-block;
+	padding: 2px 10px;
+	background: #27ae61;
+	border-radius: 3px;
+	color: #FFF;
+	margin-right: 10px;
+}
+.danti{
+	display: none;
+	position: relative;
+}
+.pigairenshu{
+	position: absolute;
+	top:0px;
+	right:50px;
+}
+.yipigai{
+	font-size: 25px;
+	color: #0c8;
+}
+.weipigai{
+	font-size: 18px;
+	color: #fe6665;
+}
+.beijing .dafen{
+	border-top: 1px solid #ccc;
+	padding: 30px 0px;
+}
+.dafen span{
+	margin-right: 10px;
+	padding: 5px 10px;
+	border-radius: 3px;
+	color: #FFF;
+}
+.dafen .span1{
+	background:  #27ae61;
+}
+.dafen .span2{
+	background:  #ffac68;
+}
+.dafen .span3{
+	background:  #fe6665;
+}
+.dafen .span4{
+	color: #000;
+	border:1px solid #ccc;
+}
+.zdydf{
+	display: none;
+}
+.xsda{
+	position: relative;	
+}
+.xsda span{
+	vertical-align: top;
+    display: inline-block;
+    margin-right: 10px;
+}
+.xsda img{
+   width: 200px;
+   height: 150px;
+}
+.zdyfs{	
+	display: none;
+	position: absolute;
+	top:50%;
+	right: 10%;
+	font-size: 20px;
+	color: #0c8;
+}
+.slider2{
+	position: relative;
+}
+.prev{
+	position: absolute;
+    top: 50%;
+    left: 2%;
+}
+.next{
+	position: absolute;
+    top: 50%;
+    right: 2%;
+}
+.haha{
+	border-top: 1px solid #ccc;
+}
+.tigan{
+	position: relative;
+}
+.tigan p{
+	word-wrap:break-word; word-break:normal
+}
+.img{	
+	position: absolute;
+	top:60%;
+	right: 5%;
+}
+.img img{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+}
+.class{
+	border:1px solid #ccc;
+}
+.class .zhushi{
+	color:#0c8;
+}
+#danti{
+	position: relative;
+}
+#tsxi{
+    display: none;
+    background: #000;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -50px;
+    filter: alpha(opacity:70);
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+}

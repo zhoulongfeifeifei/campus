@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link href="/Web/Assets/layui/css/layui.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="css/Album.css" />
+    </head>
+
+    <body>
+        <div class="content">
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">相册</li>
+                </ul>
+            </div>
+            <div>
+                <a class="layui-btn layui-btn-green layui-btn-small uploadAlbum" href="#">上传照片</a>
+                <a class="layui-btn layui-btn-warm layui-btn-small addAlbum" href="#">创建相册</a>
+                <a class="layui-btn layui-btn-green layui-btn-small removeAlbum" href="javascript:;">删除相册</a> 
+            </div>
+            <div id="addAlbum" class="layui-form">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">相册名称</label>
+                    <div class="layui-input-inline">
+                      <input type="text" name="AlbumName" required  lay-verify="required" placeholder="请输入相册名称" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">权限</label>
+                    <div class="layui-input-inline">
+                      <select id="AlbumPow" name="AlbumPow" lay-filter="aihao">
+                        <option value="1" selected="">全校可见</option>
+                        <option value="2">全班可见</option>
+                        <option value="3">自己可见</option>
+                      </select>
+                    </div>
+                </div>
+            </div>
+            <div id="uploadAlbum" class="layui-form">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">相册</label>
+                    <div class="layui-input-inline">
+                      <select name="sAlbumName" lay-filter="aihao">
+                            <option value>默认相册</option>
+                      </select>
+                    </div>
+                    <input type="file" class="layui-upload-file" name="file"  id="hello" />
+                </div>
+                 
+                <div class="previewimg">
+                    
+                </div>
+            </div>
+            <ul class="album_c">
+            </ul> 
+        </div>
+    </body>
+	<script src="/Web/Assets/layui/layui.js"></script>
+	<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	<script>var $ = jQuery = layui.jquery;</script>	
+	<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/Album.js"></script>
+    <script>
+        $('body,html').animate({scrollTop:0},1000); 
+    </script>
+    
+</html>

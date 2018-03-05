@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+	<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+</head>
+<body>
+    <div class="layui-form">
+        <div id="maintian">
+            <div class="layui-form-item">
+                <label class="layui-form-label">
+                    <span class="red">*</span>
+                    资产名称：
+                </label>
+                <div class="layui-input-inline ">
+                    <input class="layui-input" data-id="" name="mainName" type="text" value="" readonly="readonly" />
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">维护类型：</label>
+                <div class="layui-input-inline">
+                    <select class="layui-input"  name="dept" id="maindept">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">
+                    维护人员：
+                </label>
+                <div class="layui-input-inline">
+                    <input class="layui-input" data-id="" name="mainKeeper" type="text" value="" readonly="readonly" />
+                </div>
+                <div class="layui-input-inline">
+                    <input type="submit" class="xr layui-btn layui-btn-green layui-btn-small  choice" value="选择">
+                    <input type="submit" class="xr layui-btn layui-btn-default layui-btn-small " onclick="clearKeeper()" value="清空">
+                </div>
+            </div> 
+            <div class="layui-form-item">
+                <label class="layui-form-label">备注：</label>
+                <div class="layui-input-inline">
+                    <textarea class="layui-textarea" style="resize: none;" name="" id="Notes" cols="25" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">维护日期：</label>
+                <div class="layui-input-inline">
+                    <input class="layui-input" type="text" id="BeginTime" name="BeginTime" onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" value=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-form-item">
+				<label class="layui-form-label"></label>
+				<div class="layui-input-inline">
+					<input id="sava" type="submit" lay-submit style="margin-bottom:20px" class="xr layui-btn layui-btn-green layui-btn-small  sava" value="保存" />
+				</div>
+			</div>
+    <div id="renwu" style="display: none;">
+        <ul></ul>
+    </div>
+    <script src="/Web/Assets/layui/layui.js"></script>
+	<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	<script>var $ = jQuery = layui.jquery;</script>
+	<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/Maintain.js"></script>
+</body>
+</html>

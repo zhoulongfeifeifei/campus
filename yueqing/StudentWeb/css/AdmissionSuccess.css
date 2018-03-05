@@ -1,0 +1,22 @@
+.form-center{
+	width: 50%;
+	padding: 2% 25%;
+	background: #fff;
+}
+.title{
+	height: 105px;
+	background: url(../img/success.jpg) no-repeat center center;
+}
+.f-title{
+	height: 110px;
+	font-size: 18px;
+	color: #616161;
+	line-height: 110px;
+	text-align: center;
+}
+.btnBack{
+	margin:20px 0 0 33%;
+}
+.btnBack button{
+	width: 40%;
+}

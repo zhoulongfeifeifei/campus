@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width" />
+		<title>短信接收者层</title>
+		<link href="message/reset.css" rel="stylesheet" />
+		<link href="message/skin.css" rel="stylesheet" />
+		<link href="message/area.css" rel="stylesheet" />
+		<link href="receiver.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="msg-receiver">
+
+			<!--msg-receiver title-->
+			<div class="msg-hd">
+				<span>选择学校</span>
+				<blockquote>温馨提示：选了全校学生就不能选择班级学生了</blockquote>
+			</div>
+
+			<!--msg-receiver bd-->
+			<div id="content" class="msg-bd clear">
+				<div class="recelayer">
+					<div id="choose-list">
+						<ul id="Schools">
+							
+						</ul>
+					</div>
+				</div>
+				<div class="recelayer">
+					<div id="choosed-list">
+						<!-- <h2>已选择：<em id="amount">0</em> 人</h2> -->
+						<ul id="Peoples"></ul>
+					</div>
+						<input type="hidden"  id="SchoolId" value='' />
+				</div>
+			</div>
+		</div>
+		<div id="submit_cancel" class="global_tip_button">
+			<input type="button" id="btnClear" class="bt_tip_normal" value="清除" />
+			<!--<input type="submit" id="btnSelect" class="bt_tip_normal" value="确定"/>-->
+			<!--<a id="shishi" href="javascript:;">试试</a>-->
+		</div>
+		<script src="/Web/Assets/layui/layui.js"></script>
+		<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+		<script>
+			var	$ = jQuery = layui.jquery;
+		</script>
+		<script src="jquery.xml.js"></script>
+	    <script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="receiver.js"></script>
+	</body>
+</html>

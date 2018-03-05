@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>班牌管理</title>
+	<link rel="stylesheet" href="css/drjs.css">
+</head>
+<body>
+	<div class="vF-panel">
+	        <!--标题层-->
+	        <div class="bar-header clearfix">
+	            <span class="text font-18 blue">导入教室</span>
+	            <a class="btn btn-white" onclick="history.back();">返回</a>
+	        </div>
+	        <form id="form1">
+	            <div class="form">
+	                <div class="f1">
+	                    <label class="f-label span1 w-100">当前学校：</label>
+	                    <div class="f-input" style="position: relative;">
+	                        顺治科技
+	                &nbsp;
+	                <span class="text font-12 red">注：选择“新建”将按照班级名称（可修改）创建同名教室;</span>
+	                        <div class="fr">
+	                            <input type="button" id="save" class="data-box btn btn-blue" value="保存" style="">
+	                        </div>
+	                        <div id="html5_1ahe1lnpf1iefdd5k01evo16lv3_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: 3px; left: 267px; width: 68px; height: 30px; overflow: hidden; z-index: 0;">
+	                            <input id="html5_1ahe1lnpf1iefdd5k01evo16lv3" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" accept="application/vnd.ms-excel">
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="f1 data-box" style="">
+	                    <ul id="error-msg">
+	                    </ul>
+	                    <div class="table table-normal">
+	                        <table id="data-table">
+	                            <thead>
+	                                <tr>
+	                                    <th>序号</th>
+	                                    <th>班级名称</th>
+	                                    <th>关联教室</th>
+	                                </tr>
+	                            </thead>
+	                            <tbody>
+	                                
+	                                <tr>
+	                                    <td>1</td>
+	                                    <td>
+	                                        <input type="text" name="args[0].classname" value="测试班级">
+	                                        <input type="hidden" name="args[0].classid" value="7485">
+	                                    </td>
+	                                    <td>
+	                                        <select id="classid" name="args[0].roomid">
+	                                            <option value="0">新建</option>
+	                                            
+	                                            <option value="28">实验室</option>
+	                                            
+	                                            <option value="29">预备班</option>
+	                                            
+	                                        </select>
+	                                    </td>
+	                                </tr>	                                	                                
+	                            </tbody>
+	                        </table>
+	                    </div>
+	                    <input type="hidden" name="action" value="neweboard.importclassroom">
+	                </div>
+	            </div>
+	        </form>
+	    </div>
+</body>
+</html>

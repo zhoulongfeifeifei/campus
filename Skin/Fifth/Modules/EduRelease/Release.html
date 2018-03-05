@@ -1,0 +1,150 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<link rel="stylesheet" href="css/Release.css">
+	</head>
+
+	<body>
+		<div class="layui-form contain">
+			<div class="">
+
+				<span class="toptitle"></span>
+
+				<a href="javascript:history.go(-1)" class="">返回</a>
+
+			</div>
+			<!--标题层 End-->
+
+			<!-- <div class="left"> -->
+			<div class="layui-form-item admin">
+				<!-- <span>共2个班, 总人数99人</span> -->
+				<label class="layui-form-label">班级：</label>
+				<div class="layui-input-inline">
+					<select name="adminGrade" id="adminGrade" lay-filter="adminGrade" >
+						<option value="" ></option>
+					</select>
+				</div>
+				<div class="layui-form-mid layui-word-aux">共<span id="classnum">2</span>个班 , 总人数<span id="ernum"></span>人</div>
+			</div>
+			<div class="layui-form-item teacher">
+				<div class="layui-input-block">
+					<div class="layui-form-mid layui-word-aux">
+						<span id="whichclass"></span> <span id="examtype"></span> (<span id="examdate"></span>)
+					</div>
+					<div class="layui-form-mid layui-word-aux">
+						实考<span id="okexam"></span>人, 缺考<span id="noexam"></span>人
+					</div>
+				</div>
+			</div>
+			<table class="layui-table tableInfo" lay-skin="line" border="0" cellspacing="0" cellpadding="0">
+				<thead>
+					<tr>
+						<th>姓名</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+			<a class="layui-btn layui-btn-small layui-btn-normal Sava">批量修改</a>
+			<a class="layui-btn layui-btn-small Submit">发布成绩</a>
+			<div class="layui-form-mid layui-word-aux xianshide">已发布</div>
+		</div>
+		<!--右边发送消息内容-->
+		<div class="boxRight">
+			<form class="layui-form" action="">
+				<h3>消息发送</h3>
+				<hr />
+				<div class="layui-form-item layui-form-item-height" pane="">
+					<label class="layui-form-label">科目选择:</label>
+					<div class="layui-input-inline subChoose">
+						 					
+					</div>
+				</div>
+				<hr />
+				<!--<div class="layui-form-item">
+					<label class="layui-form-label">成绩类型:</label>
+					<div class="layui-input-block">
+						<input type="radio" name="ScoreType" value="发送分数" title=""发送分数" checked="">
+						<input type="radio" name="ScoreType" value="发送优良" title="发送优良">
+					</div>
+				</div>-->
+				<div class="layui-form-item layui-form-item-message" pane="">
+					<label class="layui-form-label">短信内容:</label>
+					<div class="layui-input-block">
+						<input type="checkbox" name="WithName" lay-skin="primary" title="加姓名" checked="" value="0" lay-filter="WithName" disabled="">
+						<input type="checkbox" name="WithType" lay-skin="primary" title="加考试分类" value="1" lay-filter="WithType">
+						<hr />
+						<div class="textarea">
+							<!--您的孩子 <span class="name">张三</span>在<span class="exaimTime"></span> <span class="exaimType">考试</span>
+                        中<span class="course"></span><span class="sender">——X老师</span>-->
+						</div>
+					</div>
+				</div>
+				<!--<div class="layui-form-item layui-form-text">
+					<div class="layui-input-block layui-input-textarea">
+						<textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+					</div>
+				</div>-->
+				<div class="layui-form-item" pane="">
+					<label class="layui-form-label">发送方式:</label>
+					<div class="layui-input-block pushType">
+						<input type="checkbox" class="sentype" name="station" lay-skin="primary" title="站内消息" value=0>
+						<input type="checkbox" class="sentype" name="app" lay-skin="primary" title="App消息" value=1 checked>
+						<input type="checkbox" class="sentype" name="shortmsg" lay-filter="shortmsg" lay-skin="primary" title="短信息" value=2>
+					</div>
+					<div class="layui-input-block msgExclusive none">
+                <input type="radio" class="sentype" name="duanxin" lay-filter="timedshortmsg" value=3 checked title="即时短信">
+                <input type="radio" class="sentype" name="duanxin" lay-filter="timedshortmsg" value=4 title="定时短信">
+                <input type="text" class="layui-input selectTime none" placeholder="请选择时间" onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM-DD hh:mm'})">
+                <input type="checkbox" name="ccself" value=5 title="自己(反馈短信)"> 
+            </div>
+
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">签名选择:</label>
+					<div class="layui-input-block">
+						<select name="interest" lay-filter="aihao"  name="Signature" id="Signature">
+							<option value=""></option>
+							 
+						</select>
+					</div>	
+					 <div class="layui-input-block">
+		                <input type="button" value="增加署名" class="layui-btn layui-btn-normal addSignature">
+		                <input type="button" value="删除" class="layui-btn layui-btn-danger removeSignature">
+		            </div>					 
+				</div>
+				 <div id="sig" class="layui-form-item" style="display: none;">
+		            <label class="layui-form-label" style="width:46px;">署名：</label>
+		            <div class="layui-input-block" style="margin-left:80px;">
+		              <input type="text" name="sign" style="width:90%;" placeholder="请输入署名"  class="layui-input">
+		            </div>
+		            <!-- <div class="layui-input-block">
+		              <button class="layui-btn" id="addsig">确定</button>
+		            </div> -->
+		        </div>
+
+				<div class="layui-form-item">
+					<div class="layui-input-inline">
+						<button class="layui-btn layui-btn-small btn-left Send" lay-submit lay-filter="demo1">发送消息</button>
+					</div>
+				</div>
+			</form>
+	
+		</div>
+		<script src="/Web/Assets/layui/layui.js"></script>
+		<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+		<script>
+			var $ = jQuery = layui.jquery;
+		</script>
+		<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Release.js"></script>
+	</body>
+
+</html>

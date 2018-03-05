@@ -1,0 +1,15 @@
+#AlerMsg{ display:none;}
+#AlerMsg .AlerMsgBg{z-index:99999998; position:fixed; left:0; top:0; width:100%; height:100%;  background:url(icon/bg-80.png);}
+#AlerMsg .AlerMsgBox{z-index:99999999; position:fixed; left:50%; top:20%; width:300px; min-height:150px; background:#fff; margin-left:-150px; text-align:center; }
+#AlerMsg .AlerMsgBox h3.t{ height:48px; line-height:48px;padding:0; color:#444; font-size:16px; position:relative; z-index:100;}
+#AlerMsg .AlerMsgBox .b{ min-height:54px; padding:0 16px; color:#666; line-height:22px;}
+#AlerMsg .AlerMsgBox .b textarea{ display:block; width:256px; height:52px; padding:5px; margin:10px 0 0 0;}
+#AlerMsg .AlerMsgBox .f{ height:48px; line-height:48px; padding-top:10px;}
+#AlerMsg .AlerMsgBox .f a{ display:inline-block; float:left; width:50%; color:#fff; cursor:pointer; -webkit-user-select:none; font-size:14px;}
+#AlerMsg .AlerMsgBox .f a.cancel{ background:#ccc;}
+#AlerMsg .AlerMsgBox .f a.ok{ background:#ff7167;}
+#AlerMsg .AlerMsgBox .f a:hover{ opacity:.9;}
+#AlerMsg .AlerMsgBox .f a:active{ opacity:.7;}
+#AlerMsg .AlerMsgBox .close{ position:absolute; right:0; top:0; height:48px; width:48px; z-index:110; line-height:48px; color:#ccc; cursor:pointer; -webkit-user-select:none;}
+#AlerMsg .AlerMsgBox .close:hover{color:#d1d1d1;}
+#AlerMsg .AlerMsgBox .close:active{ color:#ddd}

@@ -1,0 +1,127 @@
+body{
+	padding: 20px;
+}
+.error-msg {
+	margin-top: -14px;
+	text-align: left;
+	color: red;
+}
+
+.extend {
+	cursor: pointer;
+}
+
+th {
+	text-align: center;
+}
+
+#roleTable {
+	width: 100%;
+	overflow: hidden;
+}
+
+.table_title {
+	width: 100%;
+	overflow: hidden;
+}
+
+#roleTable div {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+
+.table_title li {
+	font-size: 16px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	width: 10%;
+	text-align: center;
+	float: left;
+	color: #449D44;
+}
+
+.table_title li:first-child {
+	padding-left: 30px;
+	box-sizing: border-box;
+	text-align: left !important;
+}
+
+#roleTable div span {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	width: 10%;
+	float: left;
+	text-align: center;
+}
+
+#roleTable div span:first-child {
+	padding-left: 10px;
+	box-sizing: border-box;
+	text-align: left !important;
+}
+
+#roleTable div span a {
+	margin: 0 5px;
+}
+
+.URL {
+	width: 28% !important;
+}
+
+#roleTable li ul {
+	display: none;
+}
+
+#roleTable li {
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+.name {
+	cursor: pointer;
+}
+.page_title {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.page_title .span {
+	width: 100px;
+	display: block;
+	float: left;
+	border-bottom: 2px solid green;
+	height: 50px;
+	line-height: 50px;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+}
+#stuName{
+	height: 30px;
+}
+#list{
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-left: 5px;
+	width:100% !important;
+	height: 418px;
+	overflow-x: hidden;
+	overflow: auto;
+}
+.leftTree {
+	width:15%;
+	margin-left: -100px;
+	float: left;
+}
+.tableR {
+	float: right;
+	width: 84%;
+}
+.tableR table{
+	width:100%;
+}

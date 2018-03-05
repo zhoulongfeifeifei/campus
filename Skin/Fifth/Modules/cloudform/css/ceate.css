@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-12-15 15:39:22
+ * @version $Id$
+ */
+body{
+    background: #fff;
+    height: 1000px !important;
+    overflow: auto;
+} 
+
+.cForm{height: 884px;}
+.mid-wrap{
+    height: 1600px;
+}
+.mid-wrap-bg{ top:100px; height: 1300px;}
+.right-wrap { top: 100px;overflow-y: hidden;}
+.left-wrap { top:100px;left: 0; height: 600px;overflow-y: hidden;}
+.mid-wrap ul.list{
+    height: 688px;
+    top: 205px;
+}
+.vF-panel{
+    background: #fff;
+    border: 0;
+    padding: 0;
+}

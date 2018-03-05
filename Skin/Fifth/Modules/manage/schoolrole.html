@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<link href="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/schoolrole.css" />
+	</head>
+
+	<body>
+	<fieldset class="layui-elem-field">
+	  	<legend>权限管理</legend>
+	  	<div class="layui-field-box">
+	    	<table id="roleTable" class="layui-table">
+				<thead>
+					<tr>
+						<th>编号</th>
+						<th>角色名称</th>
+						<th>描述</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+			<div id="page"></div>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-inline">
+						<input type="text" class="layui-input" placeholder="角色名称" name="jsName">
+					</div>
+					<div class="layui-input-inline">
+						<input type="text" class="layui-input" placeholder="描述"  name="jsDetail">
+					</div>
+					<div class="layui-input-inline">
+						<input type="button" class="layui-btn layui-btn-green adder" value="添加角色">
+					</div>
+				</div>
+			</div>
+	  	</div>
+	</fieldset>
+
+		<div id="setPower">
+			<!-- <div class="layui-form-item">
+				<div class="layui-input-block"><input type="checkbox" lay-filter="allCheckbox" lay-skin="primary" title="全选/全不选"/></div>
+			</div> -->
+			<ul id="Role_ul">
+			</ul>
+		</div>
+
+	<script src="/Web/Assets/layui/layui.js"></script>
+    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+    <script>var $ = jQuery =layui.jquery;</script>
+    <script src="/Web/Include/tby.js"></script>
+		<script src="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/js/ligerui.all.js" type="text/javascript"></script>
+		<script src="js/schoolrole.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

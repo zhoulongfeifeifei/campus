@@ -1,0 +1,44 @@
+.content{
+	width: 80%;
+	padding: 40px 10%;
+	background: #fff;		
+}
+.content-infor{
+	width: 90%;
+	*width: 100%;
+	height: 1000px;
+	*height: 1060px;
+	padding:0 5%;
+	font-size: 22px;
+	color: #010101;
+	background: url(../img/lusuccess.png) no-repeat;
+	background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	-webkit-background-size:100% 100%;
+	-o-background-size:100% 100%;
+	 filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/lusuccess.png',sizingMethod='scale');
+}	
+.content-infor h4{
+	padding-top: 100px;
+	font-size: 18px;
+	color: #010101;
+}
+.content-infor h2{
+	height: 90px;
+	line-height: 90px;
+}
+.diff{
+	font-size: 30px;
+	font-weight: 900;
+	color: #010101;
+}
+.content-infor p{
+	line-height: 40px;
+}
+.content-infor h3{
+	width: 100%;
+	margin-top: 20px;
+	text-align: right;
+	font-size: 22px;
+}
+p{text-indent:2em;}

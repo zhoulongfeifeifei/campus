@@ -1,0 +1,160 @@
+@charset "UTF-8";
+body{
+    background-color: #fff;
+    margin-top: 5px;
+    padding:0 20px;
+}
+.layui-input-inline.box {
+    width: 110px;
+}
+.layui-inline.selbox {
+    width: 100px;
+}
+.layui-input-inline {
+    margin-left: -27px;
+}
+.layui-input-inline.inputBox {
+    width: 150px !important;
+}
+.layui-input-inline.namep{
+    width: 147px!important;
+}
+.layui-inline.inline.zhunkao {
+    margin-left: -15px;
+}
+.layui-inline.inline.zhuanye {
+    margin-left: -13px;
+}
+a.btn.layui-btn.search {
+    float: right;
+}
+.forma{
+    margin-bottom: -9px;
+}
+.btn{
+    background-color:#5bb037 ;
+    padding: 0 13px;
+    border-radius: 3px !important;
+}
+.btn:hover{
+    background-color:#5bb037;
+}
+.item{
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 10px;
+}
+.layui-input-inline.inputBox.inputname {
+    margin-left: -45px !important;
+}
+/*表格数据渲染样式*/
+.layui-table td {
+    padding: 2px;
+}
+ .layui-table th{
+     padding: 5px 10px;
+
+ }
+
+.lable{
+    text-align: left !important;
+    padding: 9px 0 !important;
+}
+.layui-form-select {
+    width: 167px;
+}
+div.type{
+    width:100%;
+    display: inline-block;
+    border-bottom: 1px dashed #bcdbaf;
+    height: 36px;
+    padding-top: 10px;
+}
+.type{
+    /*margin-top: 15px;*/
+}
+.inputBox{
+    width: 211px !important;
+}
+.inputB{
+    margin-left: -27px;
+}
+.type ul li{
+    float: left;
+    padding: 3px 0px;
+}
+#message ul li{
+    padding: 3px 3px;
+}
+.type span {
+    display: inline-block;
+    float: left;
+    line-height: 32px;
+}
+.type ul li.first{
+    background-color: #7ec05e;
+    margin-left: 56px;
+    color: #fff;
+    cursor: pointer;
+}
+.type ul li.first a{
+    color: #fff;
+}
+.type ul li.pers{
+    padding: 7px 10px;
+    border-radius: 4px;
+    margin-left: 27px;
+    cursor: pointer;
+}
+.inline{
+    margin-right: 16px !important;
+}
+.select{
+    width: 0px !important;
+    margin-left: 50px
+}
+
+.shuju{
+    float: right;
+    background-color: #5bb136;
+    margin: 0 5px;
+}
+.layui-Btn{
+    background-color:#5cb037 ;
+}
+.layui-Btn a{
+    color: #fff;
+}
+.layui-Bt{
+    background-color:#af3738;
+}
+.tableBox{
+    margin-top: 5px;
+}
+.table th,tr{
+    text-align: center;
+}
+#interview{
+    display: none;
+}
+#interview{
+
+}
+.zhuanye p{
+    min-width: 110px;
+}
+.layui-input-inline.tiaoji{
+    width: 56%;
+    height: 21px;
+    min-width: 69px;
+    margin: auto;
+    float: none;
+}
+.laybox{
+    min-width: 131px; ;
+}
+.zhuanye{
+    text-align: left;
+}
+.layui-input-inline.inputBox {
+    width: 160px !important;
+}

@@ -1,0 +1,179 @@
+.oldfoldName{
+    line-height: 36px;
+}
+
+.progress {
+	display: inline-block;
+	width: 30%;
+	height: 20px;
+	background: #fff;
+    border: 1px solid #eee;
+	border-radius: 15px;
+    position: relative;
+}
+
+.layui-btn{
+    
+    margin-right: 10px;
+}
+.layui-btn+.layui-btn{
+    margin-left: 0;
+}
+
+
+.progressNum{
+    display:block;
+    width: 0;
+    height: 20px;
+    background: #028843;
+    border-radius: 15px;
+}
+.capacity{
+    position: absolute;
+    left: 45%;
+    top: 0;
+    color: #FB9939;
+}
+.Expansion{
+    font-size: 16px;
+    cursor: pointer;
+}
+.layui-upload-button{
+    line-height: 32px;
+    height: 32px;
+}
+
+.layui-form-label{
+    width: 7em;
+}
+.foladername{
+    width: 140px;
+}
+#Draft ,#Draftedit ,#Catalog  ,#uploader{
+    display: none;
+}
+#demo{
+    height: 189px;
+    overflow: auto;
+}
+.vF-panel{padding-left: 0;}
+.content{
+    width: 100%;
+}
+#left{
+    width: 10%;  
+    display: inline-block;
+    background: #ECF8E2;
+}
+
+#left li{   
+    font-size:medium; 
+    display: block;
+    width: 100%;
+    cursor: pointer;    
+    text-align:center;
+    line-height: 40px;        
+}
+#left li a{
+    display: block;
+    line-height: 40px;
+}
+#left li a:hover{
+    color: #000;
+}
+#right{
+    display: inline-block;
+    width: 89%;
+
+}
+ .table{
+    display: none;
+}
+.all-capacity{
+    margin: 10px 0;
+}
+.active{
+    background-color: #0A8F08;  
+    color:#fff;
+}
+.show{
+    display:block;
+}
+.tocatalog{
+    text-align: center;
+}
+
+
+.fr ,.fr .search{
+    float: right;
+}
+.layui-input{
+    width: auto;
+    display: inline-block;
+}
+
+
+
+/*班级盘*/
+.classPan{
+    position: relative;
+}
+.selectClass{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 120px;
+    z-index: 2;
+}
+
+
+
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 198907 */
+  src: url('//at.alicdn.com/t/font_u8ciufby6eeidx6r.eot');
+  src: url('//at.alicdn.com/t/font_u8ciufby6eeidx6r.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_u8ciufby6eeidx6r.woff') format('woff'),
+  url('//at.alicdn.com/t/font_u8ciufby6eeidx6r.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_u8ciufby6eeidx6r.svg#iconfont') format('svg');
+}
+.cloudIcon{
+    font-family: "iconfont";
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.floderIcon{
+    font-family: "optioning";
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+::-webkit-scrollbar  
+{  
+    width: 6px;  
+    height: 6px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+    border-radius: 10px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+    background-color: #028843;  
+} 

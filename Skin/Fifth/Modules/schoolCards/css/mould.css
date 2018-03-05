@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑";
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    border: none;
+}
+
+div {
+    width: 100%;
+}
+
+label {
+    display: inline-block;
+    width: 140px;
+}
+
+.contrain {
+    display: block;
+    width: 100%;
+}
+
+    .contrain img {
+        width: 112px;
+        height: 100%;
+        float: left;
+        margin-left: 20px;
+        box-shadow: 3px 3px 5px #ddd;
+    }
+
+    .contrain ul {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .contrain > li {
+        padding: 10px 4px;
+        height: 200px;
+        border-top: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+
+        .contrain > li:last-child {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .contrain > li:hover {
+            background: #eee;
+            border-left: 3px solid #477eba;
+            border-right: 3px solid #477eba;
+            width: calc(100% - 12px);
+        }
+
+    .contrain ul li {
+        line-height: 24px;
+        font-size: 14px;
+    }
+
+.eqinfo li:nth-last-child(1), .eqinfo li:nth-last-child(1) input {
+    font-weight: bold;
+}
+
+.rightUl {
+    float: right;
+    margin-right: 100px;
+}
+
+.pos {
+    float: right;
+    margin: 15px 50px 0 0;
+}
+
+.bg {
+    box-shadow: 3px 3px 5px #ddd;
+    background-color: #9EDEF7;
+}
+
+.sp {
+    color: #000;
+    font-size: 14px;
+    margin-right: 20px;
+}
+/*模板选择*/
+.clear {
+    clear: both;
+}
+
+.listContainer {
+    width: 100%;
+    margin-bottom: 240px;
+    border-top: 1px dashed #ddd;
+}
+
+.singleBox {
+    width: 130px;
+    height: 200px;
+    position: relative;
+    float: left;
+    margin: 20px 10px 0 15px;
+}
+
+    .singleBox img {
+        width: 112px;
+        height: 200px;
+        margin: 0 9px;
+    }
+
+.textbom {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    font-size: 14px;
+}
+
+    .textbom p {
+        color: #fff;
+        line-height: 30px;
+    }
+
+@media \0screen\,screen\9 { /* 只支持IE6、7、8 */
+    .textbom {
+        background-color: #000000;
+        filter: Alpha(opacity=80);
+        position: static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+        *zoom: 1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+    }
+
+        .textbom p {
+            position: relative; /* 设置子元素为相对定位，可让子元素不继承Alpha值 */
+        }
+}
+

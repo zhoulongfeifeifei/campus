@@ -1,0 +1,72 @@
+ .dropzone,.dropzone *,.dropzone-previews,.dropzone-previews * {  -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  box-sizing: border-box;}
+        .dropzone {  position: relative;  border: 1px solid rgba(0,0,0,0.08);  background: rgba(0,0,0,0.02);  padding: 1em;}
+        .dropzone {  border: 1px solid rgba(0,0,0,0.03);  min-height: 360px;  -webkit-border-radius: 3px;  border-radius: 3px;  background: rgba(0,0,0,0.03);  padding: 23px;}
+        .dropzone {  border-radius: 0;  border: 1px solid rgba(0, 0, 0, 0.06);}
+        .dropzone .dz-preview, .dropzone-previews .dz-preview {  background: rgba(255,255,255,0.8);  position: relative;  display: inline-block;  margin: 17px;  vertical-align: top;  border: 1px solid #acacac;  padding: 6px 6px 6px 6px;}
+        .dropzone .dz-preview, .dropzone-previews .dz-preview {  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.16);  box-shadow: 1px 1px 4px rgba(0,0,0,0.16);  font-size: 14px;}
+        .dropzone .dz-preview.dz-image-preview:hover .dz-details img, .dropzone-previews .dz-preview.dz-image-preview:hover .dz-details img {  display: block;  opacity: 0.1;  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";  filter: alpha(opacity=10);}
+        .dropzone .dz-preview .dz-details, .dropzone-previews .dz-preview .dz-details {  width: 140px;  height: 140px;  position: relative;  background: #ebebeb;  padding: 5px;  margin-bottom: 22px;}
+        .dropzone .dz-preview .dz-details .dz-filename, .dropzone-previews .dz-preview .dz-details .dz-filename {  overflow: hidden;  height: 100%;}
+        .dropzone .dz-preview .dz-details .dz-size, .dropzone-previews .dz-preview .dz-details .dz-size {  position: absolute;  bottom: -28px;  left: 3px;  height: 28px;  line-height: 28px;}
+        .dropzone .dz-preview .dz-details img, .dropzone-previews .dz-preview .dz-details img {  position: absolute;  top: 0;  left: 0;  width: 140px;  height: 140px;}
+
+        .progress {  overflow: hidden;  height: 20px;  margin-bottom: 20px;  background-color: #f5f5f5;  border-radius: 4px;  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);}
+        .progress {  border-radius: 0;  -webkit-box-shadow: none;  box-shadow: none;  background: #e9e9e9;  height: 18px;}
+        .progress.progress-small {  height: 12px;}
+        .dropzone .progress, .dropzone-previews .progress {  margin-bottom: 0;}
+        .progress-bar {  float: left;  width: 0%;  height: 100%;  font-size: 12px;  line-height: 20px;  color: #ffffff;  text-align: center;  background-color: #428bca;  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);  -webkit-transition: width 0.6s ease;  -o-transition: width 0.6s ease;  transition: width 0.6s ease;}
+        .progress-bar-success {  background-color: #59a84b;}
+        .progress-striped .progress-bar-success {
+            background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+            background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+        }
+        .progress-striped .progress-bar, .progress-bar-striped {
+            background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+            background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+            background-size: 40px 40px;
+        }
+        .progress .progress-bar {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            line-height: 18px;
+        }
+        .progress-striped .progress-bar {
+            background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+            background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+        }
+        .progress-striped .progress-bar-success {
+            background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+            background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+        }
+        .progress.active .progress-bar, .progress-bar.active {
+            -webkit-animation: progress-bar-stripes 2s linear infinite;
+            -o-animation: progress-bar-stripes 2s linear infinite;
+            animation: progress-bar-stripes 2s linear infinite;
+        }
+        .progress.progress-small .progress-bar {
+            line-height: 10px;
+            font-size: 11px;
+        }
+        .dz-title{ padding-top: 5px;}
+        .dz-title-input{width: 140px;  border-radius: 0 !important;  color: #858585;  background-color: #ffffff;  border: 1px solid #b5b5b5;  padding: 5px 4px 6px;  font-size: 14px;  font-family: inherit;  -webkit-box-shadow: none !important;  box-shadow: none !important;  -webkit-transition-duration: 0.1s;  transition-duration: 0.1s;}
+        .dropzone a.dz-remove, .dropzone-previews a.dz-remove {  background-image: -webkit-linear-gradient(top, #fafafa, #eee);  background-image: -moz-linear-gradient(top, #fafafa, #eee);  background-image: -o-linear-gradient(top, #fafafa, #eee);  background-image: -ms-linear-gradient(top, #fafafa, #eee);  background-image: linear-gradient(to bottom, #fafafa, #eee);  -webkit-border-radius: 2px;  border-radius: 2px;  border: 1px solid #eee;  text-decoration: none;  display: block;  padding: 4px 5px;  text-align: center;  color: #aaa;  margin-top: 6px;}
+        .dropzone a.dz-remove, .dropzone-previews a.dz-remove {  border: none;  border-radius: 0;  color: #FFF;  background: #D15B47;  cursor: pointer;}
+        .dropzone a.dz-remove:hover, .dropzone-previews a.dz-remove:hover {  color: #FFF;  background: #B74635;}
+        .dropzone .dz-preview .dz-success-mark, .dropzone-previews .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark, .dropzone-previews .dz-preview .dz-error-mark {  display: none;  position: absolute;  width: 40px;  height: 40px;  font-size: 30px;  text-align: center;  right: -10px;  top: -10px;}
+        .dropzone .dz-preview .dz-success-mark, .dropzone-previews .dz-preview .dz-success-mark {  color: #8cc657;}
+        .dropzone .dz-preview .dz-success-mark, .dropzone-previews .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark, .dropzone-previews .dz-preview .dz-error-mark {  display: block;  opacity: 0;  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";  filter: alpha(opacity=0);  -webkit-transition: opacity 0.4s ease-in-out;  -moz-transition: opacity 0.4s ease-in-out;  -o-transition: opacity 0.4s ease-in-out;  -ms-transition: opacity 0.4s ease-in-out;  transition: opacity 0.4s ease-in-out;  background-image: url("/album/admin/images/spritemap.png");  background-repeat: no-repeat;}
+        .dropzone .dz-preview .dz-success-mark, .dropzone-previews .dz-preview .dz-success-mark {  background-position: -268px -163px;}
+        .dropzone .dz-preview .dz-error-mark, .dropzone-previews .dz-preview .dz-error-mark {  background-position: -268px -123px;}
+        .dropzone .dz-preview .dz-error-mark, .dropzone-previews .dz-preview .dz-error-mark, .dropzone .dz-preview .dz-success-mark, .dropzone-previews .dz-preview .dz-success-mark {  background-color: rgba(255, 255, 255, 0.8);  border-radius: 100%;  text-align: center;  line-height: 35px;}
+        .dropzone .dz-preview .dz-error-mark span, .dropzone-previews .dz-preview .dz-error-mark span, .dropzone .dz-preview .dz-success-mark span, .dropzone-previews .dz-preview .dz-success-mark span {  display: none;}
+        .dropzone .dz-preview .dz-error-message, .dropzone-previews .dz-preview .dz-error-message {  display: block;  opacity: 0;  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";  filter: alpha(opacity=0);  -webkit-transition: opacity 0.3s ease-in-out; -moz-transition: opacity 0.3s ease-in-out; -o-transition: opacity 0.3s ease-in-out;  -ms-transition: opacity 0.3s ease-in-out;  transition: opacity 0.3s ease-in-out;}
+        .dropzone .dz-preview .dz-error-message, .dropzone-previews .dz-preview .dz-error-message {  display: none;  position: absolute;  top: -5px;  left: -20px;  background: rgba(245,245,245,0.8);  padding: 8px 10px;  color: #800;  min-width: 140px;  max-width: 500px;  z-index: 500;}
+        .dropzone .dz-preview.dz-success .dz-success-mark, .dropzone-previews .dz-preview.dz-success .dz-success-mark {  display: block;}
+        .dropzone .dz-preview.dz-success .dz-success-mark, .dropzone-previews .dz-preview.dz-success .dz-success-mark {  opacity: 1;  -ms-filter: none;  filter: none;}
+        .dropzone .dz-preview.dz-error .dz-error-mark, .dropzone-previews .dz-preview.dz-error .dz-error-mark {  display: block;}
+        .dropzone .dz-preview.dz-error .dz-error-mark, .dropzone-previews .dz-preview.dz-error .dz-error-mark {  opacity: 1;  -ms-filter: none;  filter: none;}
+        .dropzone .dz-preview:hover.dz-error .dz-error-message, .dropzone-previews .dz-preview:hover.dz-error .dz-error-message { display: block;  opacity: 1;  -ms-filter: none;  filter: none;}

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-11-26 18:41:12
+ * @version $Id$
+ */
+.layui-tab-title{
+    border-bottom: 1px solid #028843;
+    color: #333;
+}
+.layui-tab-title .layui-this:after{
+    border:1px solid #028843;
+    border-bottom-color: #c1dcb1;
+}
+.layui-tab-title .layui-this{
+    color: #028843;
+    font-weight: bold;
+}

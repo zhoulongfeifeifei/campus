@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+    <p id="text"></p>
+    <p id="text2"></p>
+
+</body>
+<script src="../jquery.js"></script>
+<script src="commonFn.js"></script>
+
+<script>
+
+var obj ={
+    url:'http://60.190.202.49:1000/api/Values',
+    data: {id:1}
+},
+Token = "KqrxplT4kJloRAsw7VI2d94NsEP0v8GMu5xJqZ_uyAOEcOsx9AZQGHKd4UpUJ2HU0QJqZ9ZhRaz178BOx4FL8VvkpqOoiyCuU_FaCviH5jOxlL6KoFxANzuDVq4u5VVohtcfFHCFkUhbqlJ9nBSC-KvY4DIsUm6MaWwmzu-Kdsj3Y6mzSS4SfClsY2tXsB6dxjbduP3CLn5WPqd2QcQQXgqWJIH9FF6rZUYCzxyF-2RXSc8Uaot-mQ_i7k9FIK1p1hb6QB1MJlcc5-BOgrZlng";
+commonFn(obj, $('#text') ,function(data){
+    console.log(1, data); 
+} , Token);
+
+
+var obj2 ={
+    url :'http://60.190.202.49:1000/api/Values'
+},
+Token2 = "KqrxplT4kJloRAsw7VI2d94NsEP0v8GMu5xJqZ_uyAOEcOsx9AZQGHKd4UpUJ2HU0QJqZ9ZhRaz178BOx4FL8VvkpqOoiyCuU_FaCviH5jOxlL6KoFxANzuDVq4u5VVohtcfFHCFkUhbqlJ9nBSC-KvY4DIsUm6MaWwmzu-Kdsj3Y6mzSS4SfClsY2tXsB6dxjbduP3CLn5WPqd2QcQQXgqWJIH9FF6rZUYCzxyF-2RXSc8Uaot-mQ_i7k9FIK1p1hb6QB1MJlcc5-BOgrZlng";
+commonFn(obj2, $('#text2') ,function(data){
+    console.log(data); 
+} ,Token2);
+
+</script>
+</html>

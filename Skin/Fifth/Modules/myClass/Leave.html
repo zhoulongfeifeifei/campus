@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>请假</title>
+    <link href="/Web/Assets/layui/css/layui.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/myClass.css">
+</head>
+    <style>
+        .right{
+        float:right;
+    }
+    </style>
+<body>
+    <div class="l-con Leave">
+        <a href="/Web/Skin/Fifth//Modules/Approval/LaunchApproval.html?ModelId=1" class="layui-btn layui-btn-small addNotice">发起审批</a>
+        <ul id="Leave">
+
+        </ul>
+        <div id="page"></div>
+    </div>
+    <div id="LeaveModal" class="layui-form">
+        <div class="layui-form-item">
+            <label class="layui-form-label">请假人</label>
+            <div class="layui-input-block">
+              <input type="text" name="leaver" readonly="readonly"  lay-verify="required" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">请假原因</label>
+            <div class="layui-input-block">
+              <input type="text" name="leaveReason" required  lay-verify="required" placeholder="请输入请假原因" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">类型</label>
+            <div class="layui-input-block">
+              <input type="checkbox" name="laveType" title="生病">
+              <input type="checkbox" name="laveType" title="其他">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">请假日期</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" placeholder="开始日" id="LAY_demorange_s">
+            </div>
+            <div class="layui-input-inline">
+                <input class="layui-input" placeholder="结束日" id="LAY_demorange_e">
+            </div>
+        </div>
+    </div>
+    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+    <script>var $ = jQuery =layui.jquery</script>
+    <script src="/Web/Include/tby.js"></script>
+    <script src="js/Leave.js"></script>
+</body>
+</html>

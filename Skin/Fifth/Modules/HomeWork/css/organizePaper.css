@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+body{
+    background-color: #fff;
+    /*font-size: 16px;*/
+}
+#yulan{
+    display: none;
+}
+#yulan .top{
+    height: 60px;
+    width: 100%;
+    position: relative;
+    border-bottom: solid 1px #bfbfbf;
+}
+#yulan .top p{
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    text-align: center;
+}
+#yulan .top p .shi{
+    margin-left: 40px;
+}
+#yulan .top img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#yulan .main{
+    padding: 30px;
+}
+#yulan .main .sec{
+    margin-bottom: 30px;
+}
+#yulan .main .sec .title{
+    color: #00cc87;
+    margin-bottom: 20px;
+}
+#yulan .main .sec div{
+    height: 90px;
+    line-height: 90px;
+    border: solid 1px #bfbfbf;
+    margin-bottom: 20px;
+    position: relative;
+}
+#yulan .main .sec div .tit{
+    margin-left: 20px;
+    display: inline-block;
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#yulan .main .sec div span{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    color: #00cc87;
+    border: solid 1px #00cc87;
+    border-radius: 4px;
+    text-align: center;
+}
+#yulan .main .sec div .del{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+#yulan .main .sec div .down{
+    position: absolute;
+    top: 25px;
+    right: 140px;
+}
+#yulan .main .sec div .up{
+    position: absolute;
+    top: 25px;
+    right: 260px;
+}
+#yulan .que{
+    height: 60px;
+    line-height: 60px;
+    width: 300px;
+    text-align: center;
+    background-color: #00cc87;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 28px;
+    margin-left: calc(50% - 150px);
+    margin-bottom: 40px;
+}
+#yulan .xia{
+    height: 60px;
+    line-height: 60px;
+    width: 300px;
+    text-align: center;
+    background-color: #00cc87;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 28px;
+    margin-left: calc(50% - 150px);
+    margin-bottom: 40px;
+}
+#yulan .middle{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+#yulan .middle input{
+    height: 14px;
+    width: 14px;
+}
+
+#yulan .middle input[type="text"]{
+    height: 30px;
+    line-height: 30px;
+    width: 200px;
+    padding: 0 10px;
+    font-size: 18px;
+    margin: 20px;
+}

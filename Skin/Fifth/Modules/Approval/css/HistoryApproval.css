@@ -1,0 +1,15 @@
+#iframe {
+	width: 100%;
+	height: 450px;
+}
+
+body {
+	position: relative;
+}
+
+#iframe2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}

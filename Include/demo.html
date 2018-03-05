@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+   <script type="text/javascript" src="sincere.js"></script>
+ </head>
+ <body>
+
+  <script type="text/javascript">
+  
+	setCookie("a","12","1");
+	console.log(getCookie("a"));
+
+	getToken("15305755683","755683");//这里表示登录
+
+	var url ={url:window.apihost+"/SaveSchool",type:"post"};
+	commonFn(url,function(){
+	 	alert(1);
+	});
+  </script>
+ </body>
+</html>

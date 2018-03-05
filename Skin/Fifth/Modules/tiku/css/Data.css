@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,p,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: 0;vertical-align: baseline;background: transparent;}
+table, caption, tbody, tfoot, thead, tr, th, td{ vertical-align:middle;}
+th{
+    text-align:center;
+}
+html{margin-top:0px !important;}
+
+body {background: #fff;  font-size:14px; color: #656565;font-family: 'microsoft yahei',osaka,sans-serif;min-width: 1200px;}
+
+li{list-style: none;}
+
+a{cursor: pointer;margin: 0;padding: 0;border: 0;vertical-align: baseline;text-decoration:none;color:#000;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000;cursor: help;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #cccccc;margin: 0em 0;padding: 0;}
+
+input, select {vertical-align: middle;}
+
+h1,h2,h3,h4,h5,h6{ color:#999; padding:10px 0;}
+img{border: 0}
+
+em,i,strong{font-style:normal;}
+
+/*清除浮动*/  
+.clearfix:before,.clearfix:after{content: '';display: table;}  
+.clearfix:after{clear: both;}
+/*==========重置样式=========*/
+.header{
+	margin:20px 20px 20px 20px;
+}
+.left1 div{
+	float: left;
+	width: 48%;
+    height: 100px;
+    margin: 20px 0px;
+    text-align: center;
+
+}
+.left1{
+	background: #a5dbf7;
+	float: left;
+	width: 73%;
+	margin-right: 20px;
+}
+.right1{
+	background: #f6bba6;
+	float: left;
+	width: 25%;
+
+}
+.right1 div{
+	float: left;
+	width: 100%;
+    height: 100px;
+    margin: 20px 0px;  
+    text-align: center;
+
+}
+.header .cent{
+	border-left:1px solid #8aabbc;
+    margin-right: 20px;
+}
+.header span{
+	font-size: 30px;
+	color: #FFF;
+	display: block;
+	margin-top: 15px;
+}
+.header .span{
+    margin-top: 0px;
+    font-size: 20px;
+}
+/*头部结束*/
+.mian{
+	margin:0 20px;
+}
+#m_h_left{
+	float: left;
+	height: 600px;
+	width: 48%;
+}
+.shuXian{
+	float: left;
+	width: 1px;
+	height: 470px;
+	border-left:1px solid #ccc;
+	margin-top: 90px;
+}
+.m_h_right{
+	float: left;
+	height: 600px;
+	width: 43%;
+	margin:0 50px;
+}
+.m_h_right h3{
+	margin-top: 60px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.fxlb{
+   height: 130px;
+   border-bottom:1px solid #ccc;
+   position: relative;
+}
+.fxlb i{
+	display: inline-block;
+	width: 50px;
+	height: 40px;
+}
+.fxlb img{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50px;
+}
+.fxmc{
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    display: inline-block;
+    font-size: 35px;
+    color: #27ae61;
+}
+.fxtb{
+	background: url(../img/fxtp.png) no-repeat 10px 7px;
+}
+.fxsf{
+	display: inline-block;
+	position: absolute;
+    top: 55px;
+    left: 230px;
+}
+.jsmz{
+	font-size: 18px;
+	font-weight: 700;
+}
+.fxb{
+	display: inline-block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.fxxk{
+	display: block;
+	color: #999;
+}
+.fxts{
+	display: block;
+    color: #000;
+}
+.main_cent{
+	background: #f2f2f2;
+	border:1px solid #e3e3e3;
+}
+.main_cent ul{
+	padding: 30px 0px 30px 20px ;
+}
+.main_cent li{
+   float: left;
+   width: 80px;
+   height: 30px;
+   line-height: 30px;
+   text-align: center;
+   border:1px solid #d9d9d9;
+   background: #f8f8f8;
+   margin-right:20px;
+}
+.main_cent .green{
+	background:#27ae61;
+}
+.green a{
+	color: #FFF;
+}
+#mian_food{
+	height: 560px;
+	/*margin-top: 20px;*/
+}
+.fxphb_p{
+	font-size: 18px;
+	text-align: center;
+	margin-top: 10px;
+	color: red;
+}

@@ -1,0 +1,30 @@
+.content{
+	width: 90%;
+	padding: 0 5%;
+	background: #ccc;		
+}
+.content-infor{
+	width: 90%;
+	padding:0 5%;
+	font-size: 3.2vw;
+	color: #333333;
+	padding-bottom: 1.67vw;
+	background: #fff;
+}
+.content-infor h2{
+		height: 16.67vw;
+		font-size: 3.2vw;
+		line-height: 16.67vw;
+		color: #333333;
+}
+.content-infor p{
+	line-height: 7.33vw;
+}
+.content-infor h3{
+	width: 100%;
+	margin-top: 6.67vw;
+	text-align: right;
+	font-size: 3.2vw;
+	color: #333333;
+}
+p{text-indent:2em;}

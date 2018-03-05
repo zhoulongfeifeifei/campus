@@ -1,0 +1,72 @@
+.mubanlist {
+	padding: 10px;
+}
+
+.mubanlist .mubanlist-item {
+	display: inline-block;
+	width: 190px;
+	background: #fff;
+	height: 60px;
+	position: relative;
+	border: 1px solid #ddd;
+	padding-right: 4px;
+	border-radius: 2px;
+	margin: 0 10px 10px 0;
+}
+
+.mubanlist .mubanlist-item img.icon {
+	display: block;
+	width: 72px;
+	height: 60px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.mubanlist .mubanlist-item .mid {
+	margin-left: 78px;
+}
+
+.mubanlist .mubanlist-item .p1 {
+	font-size: 16px;
+	height: 40px;
+	margin-top: 4px;
+	line-height: 40px;
+	color: #333;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.mubanlist .mubanlist-item .p2 {
+	font-size: 12px;
+	height: 16px;
+	line-height: 16px;
+	color: #999;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#roleTable a:first-child {
+	display: none;
+}
+
+.page_title {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #CCCCCC;
+}
+
+.page_title .span {
+	width: 100px;
+	display: block;
+	float: left;
+	border-bottom: 2px solid green;
+	height: 50px;
+	line-height: 50px;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+}

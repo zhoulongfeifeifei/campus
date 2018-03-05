@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<link rel="stylesheet" href="../../Common/css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/jgAuditer.css"/>
+	</head>
+
+	<body>
+		<div class="layui-tab layui-tab-brief">
+			<ul class="layui-tab-title">
+				<!-- <li class="layui-this">审核人员列表</li> -->
+			</ul>
+		</div>
+		<div class="form">
+			<div class="f1">
+				<div id="teacherAdmin" class="f-input span12">
+
+				</div>
+			</div>
+		</div>
+		<div class="layui-tab layui-tab-brief">
+			<ul class="layui-tab-title">
+				<!-- <li class="layui-this">添加审核人员</li> -->
+			</ul>
+		</div>
+		<div class="form">
+			<div class="f1">
+				<form class="layui-form">
+					<div class="layui-form-item">
+		                <div class="layui-input-inline">
+							<select id="idselect" name="id" lay-search>
+								<option value=""></option>
+							</select>
+						</div>
+						<input type="submit" lay-submit lay-filter="Sava" class="layui-btn" id="add" value="添加">
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="/Web/Assets/layui/layui.js"></script>
+		<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+		<script>
+			var form = layui.form(),
+				layer = layui.layer,
+				laydate = layui.laydate,
+				$ = jQuery = layui.jquery;
+		</script>
+		<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jgAuditer.js"></script>
+	</body>
+
+</html>

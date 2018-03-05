@@ -1,0 +1,61 @@
+﻿#receiverlist .receiverlist {position: relative; width: 100%; min-height: 22px; padding: 0px 0px 5px 5px; overflow: hidden; zoom: 1; clear: both; }
+#receiverlist .receiverlist a {float: left;color: black;white-space: nowrap; padding: 0 5px;background: #EFF2F7;border: 1px solid #CCD5E4;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;behavior: url(iecss3.htc);margin-right: 5px; margin-bottom: 5px;}
+/*#receiverlist .receiverlist a {cursor: default;padding: 0px;float: left;margin-right: 5px;background: url("../images/token.gif") no-repeat left top;background-position: background-repeat:no-repeat;color: black;white-space: nowrap;}
+#receiverlist .receiverlist a span {background: url("../images/token.gif") no-repeat right top;display: inline-block;_display: block;font-size: 12px;}*/
+/*#EFF2F7*/
+/*#CCD5E4*/
+
+.receiver {
+    float: left;
+}
+        #selectLabel
+        {
+            float: left;
+            line-height: 36px;
+            padding-left: 10px;
+        }
+        .NowSelect
+        {
+            float: left;
+            line-height: 30px;
+            padding-left: 10px;
+            width: 450px;
+            overflow: hidden;
+        }
+        .NowSelect a
+        {
+            cursor: default;
+            padding: 0px;
+            float: left;
+            margin-right: 5px;
+            background: url("../images/token.gif") no-repeat left top;
+            background-position: background-repeat:no-repeat;
+            color: black;
+            white-space: nowrap;
+        }
+        .NowSelect span
+        {
+            background: url("../images/token.gif") no-repeat right top;
+            display: inline-block;
+            _display: block;
+            font-size: 12px;
+        }
+        .NowSelect span span
+        {
+            background-position: right bottom;
+        }
+        .NowSelect span span span
+        {
+            background-position: left bottom;
+        }
+        .NowSelect span span span span
+        {
+            background-image: none;
+            padding: 2px 5px 2px 5px;
+        }
+        .NowSelect span span span span span.x
+        {
+            background: url("../images/token_x.gif") no-repeat 2px 2px;
+            height: 7px;
+            width: 4px;
+        }

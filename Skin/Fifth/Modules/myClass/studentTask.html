@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生作业</title>
+    <link href="/Web/Assets/layui/css/layui.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/myClass.css">
+    <style>
+        @media screen and (max-width: 750px)
+        .layui-form-item .layui-input-inline {
+            display: inline-block;
+            float: none;
+            left: -1px ;
+            width: auto;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="l-con task">
+        <a href="taskPush.html" class="layui-btn layui-btn-small addNotice">发布作业</a>
+        <div class="layui-form taskSelect">
+            <div class="layui-form-item">
+                <div class="layui-input-inline">
+                    <select name="city" class="subject" lay-filter="subject" lay-verify="required">
+                        <option class="first" value=0>全部学科</option>
+                    </select>
+                </div>
+                <div class="layui-input-inline">
+                    <select name="city" class="selectClass"  lay-filter="selectClass" lay-verify="required">
+                        <option class="first" value=0>全部班级</option>
+                    </select>
+                </div>
+            </div>  
+        </div>  
+        <div class="clear"></div>
+        <ul id="taskList">
+
+        </ul>
+    </div>
+    <script src="/Web/Assets/layui/lay/dest/layui.js"></script>
+    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+    <script>var $ = jQuery =layui.jquery</script>
+    <script src="/Web/Include/tby.js"></script>
+    <script src="js/studentTask.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="css/cloudClassRoom.css">
+<title></title>
+</head>
+<body>
+<object class id="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="782" height="482">
+  <param name="movie" value="../../Common/flvplayer.swf" />
+  <param name="quality" value="high" />
+  <param name="allowFullScreen" value="true" />
+  <param name="FlashVars" id="flash" value="" />
+  <embed src="../../Common/flvplayer.swf" allowfullscreen="true" flashvars quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" width="782" height="482"></embed>
+</object>
+
+<script src="/Web/Assets/jquery-1.9.1/jquery.js"></script>'
+<script>
+    function getUrlParam(name)
+{
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+    var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+    if (r!=null) return (r[2]); return null; //返回参数值
+}
+var src =getUrlParam('src');
+$('#flash').attr('value','vcastr_file='+src);
+$('embed').attr('flashvars','vcastr_file='+src);
+</script>
+</body>
+</html>

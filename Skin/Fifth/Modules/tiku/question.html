@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>题库</title>
+	<link rel="stylesheet" href="/web/Assets/layui/css/layui.css">
+	<link rel="stylesheet" href="css/question.css">
+	<link rel="stylesheet" href="/web/Assets/jQuery-LigerUI/Source/lib/ligerUI/skins/Aqua/css/ligerui-all.css">
+	<link rel="stylesheet" href="../../Common/font-awesome/css/font-awesome.css" />
+</head>
+<body>
+	<div class="head clearfix">
+         <div class="left green"><a href="javascript:;">已分享题库</a></div>
+         <div class="right"><a href="question2.html">未分享题库</a></div>
+	</div>
+	<div class="nav clearfix">
+        <ul class="zt clearfix">
+           <li>状态</li>
+           <li class="gren"><a>全部</a></li>
+           <li><a>审核中</a></li>
+           <li><a>审核通过</a></li>
+           <li><a>审核失败</a></li>
+        </ul>
+        <ul class="ztc clearfix">
+           <li>年级</li>      
+        </ul>
+        <ul class="zta clearfix">
+           <li>科目</li>
+           <div class="div"></div>                   
+        </ul>
+        <ul class="ztb clearfix">
+           <li>教材</li>
+           <div class="box"></div>        
+        </ul>
+	</div>
+	<div class="main clearfix">
+        <div class="main_left ">
+            <div class="left_lfet gren"><a>知识点</a></div>
+            <div class="left_right"><a>考点</a></div>
+            <div class="sxxl1">
+                <div style="display: inline-block; width: 190px; height: 300px; padding: 6px; border: 1px solid #ddd; overflow: auto;">
+                  <ul id="demo1">
+                  </ul>
+                </div>
+            </div>
+            <div class="sxxl2">
+                 <div style="display: inline-block; width: 190px; height: 300px; padding: 6px; border: 1px solid #ddd; overflow: auto;">
+                   <ul id="demo2">
+                   </ul>
+                 </div>
+            </div>
+        </div>
+        <div class="main_right">
+            <div class="main_head">
+               <ul class="zylx clearfix">
+                 <li>作业类型</li>
+                 <div class="zydiv">
+                    <li class="gren"><a data-id="0">普通</a></li>
+                    <li><a data-id="1">背诵</a></li>
+                    <li><a data-id="2">听力</a></li>
+                    <li><a data-id="3">默写</a></li>
+                    <li><a data-id="4">阅读</a></li>
+                 </div>
+               </ul>
+               <ul class="stlx clearfix">
+                  <li>试题类型</li>
+                  <li class="gren"><a>全部</a></li>
+                  <div class="DIV">
+
+                  </div>                 
+               </ul>
+               <ul class="stnd clearfix">
+                  <li>试题难度</li>
+                  <li class="gren"><a>全部</a></li>
+                  <div class="BOX">
+
+                  </div>
+               </ul>
+            </div>
+            <div class="xqy">
+
+            </div>
+        </div>
+	</div>
+	<div id="page"></div>
+</body>
+<script src='/web/Assets/jquery-1.9.1/jquery.js'></script>
+<script src="/web/Assets/layui/layui.js"></script>
+<script src="/web/Assets/layui/lay/dest/layui.all.js"></script>
+<script src="/web/Include/tby.js"></script>
+<script src="/web/Assets/jQuery-LigerUI/Source/lib/ligerUI/js/ligerui.all.js"></script>
+
+<script src="js/question.js"></script>
+</html>

@@ -1,0 +1,49 @@
+@charset "utf-8";
+body {
+	background-color: #fff;
+}
+
+h4 {
+	padding: 10px 0;
+	background-color: #F1F1F1;
+	color: #449D44;
+}
+
+form {
+	background-color: white;
+}
+
+.addone{
+	color: blue;
+}
+.dele{
+	color: red;
+}
+.form-control{
+	width: 95% ;
+	display: inline;
+}
+.diqu{
+	width: 103px;
+	display: inline-block;
+}
+#type_t{
+	display: none;
+}
+
+.layui-form-label{
+	width: 160px !important;
+}
+.layui-form-item .layui-input-inline{
+	width: 315px !important;
+}
+.addbox{
+	display: inline-block;
+	height: 38px;
+	line-height: 38px;
+}
+.r_box{
+	width: 50%;
+	float: left;
+	overflow: hidden;
+}

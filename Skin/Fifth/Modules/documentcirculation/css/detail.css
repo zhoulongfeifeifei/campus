@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-12-09 19:23:30
+ * @version $Id$
+ */
+.shenhe div , .chaosong div{
+    display:inline-block;
+    margin-right: 10px;
+}
+.shenhe div input{
+    margin-left: 5px;
+}
+.fujian a{
+    display: block;
+    color: blue;
+    line-height: 36px;
+}
+/*.btn1 ,btn2 ,.btn3{
+    display: none;
+}*/
+.layui-form{
+	padding-bottom: 50px;
+}
+input.layui-btn{
+    float: right;
+}

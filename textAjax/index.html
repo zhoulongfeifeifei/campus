@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- <meta http-equiv="Access-Control-Allow-Origin" content="*"> -->
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
+<title>s</title>
+</head>
+<body>
+    <div>token <p id="token"></p></div><p></p>
+
+    <div>无token <p id="notoken"></p></div><p></p>
+    <p id="text"></p>
+</body>
+<script src="jquery.js"></script>
+<script src="base64.js"></script>  
+<script src="CommonFn/commonFn.js"></script>  
+
+<script>
+  
+    var b = new Base64();  
+    var str = b.encode("admin:admin");  
+
+    // $.ajax({
+    //     url: 'http://60.190.202.49:8081/api/Account/ApiAgent',
+    //     type: 'POST',
+    //     data:{
+    //         apiType: "POST",
+    //         apiUrl: "http://60.190.202.49:8081/oaUth/token",
+    //         apiPar: "{grant_type:'password',username:'15336858506',password:'123456' }",
+    //         apiToken: "",
+    //         ParName :'login'
+    //     },
+    //     success:function(res){
+    //         console.log(res);
+    //     }
+    // })
+
+    // $.ajax({
+    //     url: 'http://60.190.202.49:8081/api/Account/ApiAgent',
+    //     type: 'POST',
+    //     data: {
+    //         apiType: "POST",
+    //         apiUrl: "http://60.190.202.49:8081/api/Account/CurrentInfo",
+    //         apiPar: "",
+    //         apiToken: "d3RY3c9k0UkNgv998er7GE16dT2J4YE_biJeGw-b5Yfmni8Soo1_zliUZPPh2hmz1ERqlHUmY14j78J2ZLUJQv7H2fP1Nx6E_3V-AkWuq1e15x7YJwWhQVeKv2HO8EakZHfSxkLFH8QFlRfZoQCL1dNKFyn2aPJ8QpciaQ5qYUjGTqjYw2kPHKh9trB-S40FTBqVo9SRnK022u4q-2i_CTr_mn-xgjZyMFjC6RHl8JEK9XV6nErHNpQo2MUxiUdq7pW7gIjOiKWacyfnIUbJUDHbB3L6bHpU9czLs9m1fzY"
+    //     },
+    //     success:function(res){
+    //         console.log(res);
+    //     }
+    // })
+    // $.ajax({
+    //     url: 'http://60.190.202.49:8081/api/Account/CurrentInfo',
+    //     type: 'POST',     
+    //     beforeSend: function (xhr) {
+    //         xhr.setRequestHeader("Authorization", "Bearer "+"W0g5nDj3NRJCqTBMtQkD2nnkdk_vYj6T6uGlaV-a2Ez5beeB_t13_SN_8_PvWOPrP_OQ1oWMDxqVLE6h4caLgOEEa8710NsJZko5h9J31fEOL93eiuIRCKaDzqkJBuBq9e5bXzaFQ6OCJPMnrK_NOldNg8SCm1EuOuJY9Gnubas2nidZvG8Vk3zaRTrmdpsV3ojGT07LRYjDQwCgBbooZCjH0MzQkHVjYEH64KshdT9KEmZejI7AWg2ebYdBJpiyY5a-A6VMsJv18uwpi0kfhoLpmCPI-PRReIpBrODTI38");
+    //     },
+    //     success:function(res){
+    //         console.log(res);
+    //     }
+    // })
+    // jQuery.support.cors = true; 
+    // $.ajax({
+    //     url:'http://60.190.202.49:1000/Token',
+    //     type:'POST',
+    //     beforeSend: function (xhr) {
+    //         xhr.setRequestHeader("Authorization", "Basic "+str);
+    //     },
+    //     data:{grant_type:'password',username:'15336858506',password:'123456' },
+    //     success:function(res){
+    //         console.log(res);
+    //         $('#token').text(JSON.stringify(res));
+    //         alert("请求token成功")
+    //     }
+        
+
+    // })
+    
+    // $.ajax({
+    //     url: 'http://60.190.202.49:1000/api/Default',
+    //     type: 'GET',   
+
+    //     beforeSend: function (xhr) {
+    //         xhr.setRequestHeader("Authorization", "Bearer KqrxplT4kJloRAsw7VI2d94NsEP0v8GMu5xJqZ_uyAOEcOsx9AZQGHKd4UpUJ2HU0QJqZ9ZhRaz178BOx4FL8VvkpqOoiyCuU_FaCviH5jOxlL6KoFxANzuDVq4u5VVohtcfFHCFkUhbqlJ9nBSC-KvY4DIsUm6MaWwmzu-Kdsj3Y6mzSS4SfClsY2tXsB6dxjbduP3CLn5WPqd2QcQQXgqWJIH9FF6rZUYCzxyF-2RXSc8Uaot-mQ_i7k9FIK1p1hb6QB1MJlcc5-BOgrZlng");
+    //         xhr.setRequestHeader("Accept",'application/json')
+    //     },
+    //     success:function(res){
+    //         // console.log(res);
+    //     }
+    // })
+    // $.ajax({
+    //     url: 'http://60.190.202.49:1000/api/Values',
+    //     type: 'GET',   
+
+    //     beforeSend: function (xhr) {
+    //         xhr.setRequestHeader("Authorization", "Bearer KqrxplT4kJloRAsw7VI2d94NsEP0v8GMu5xJqZ_uyAOEcOsx9AZQGHKd4UpUJ2HU0QJqZ9ZhRaz178BOx4FL8VvkpqOoiyCuU_FaCviH5jOxlL6KoFxANzuDVq4u5VVohtcfFHCFkUhbqlJ9nBSC-KvY4DIsUm6MaWwmzu-Kdsj3Y6mzSS4SfClsY2tXsB6dxjbduP3CLn5WPqd2QcQQXgqWJIH9FF6rZUYCzxyF-2RXSc8Uaot-mQ_i7k9FIK1p1hb6QB1MJlcc5-BOgrZlng");
+    //         xhr.setRequestHeader("Accept", "application/json");
+    //     },
+    //     success:function(res){
+    //         // console.log(res);
+    //         $('#notoken').text(JSON.stringify(res));
+    //     }
+    // })
+    
+</script>
+</html>

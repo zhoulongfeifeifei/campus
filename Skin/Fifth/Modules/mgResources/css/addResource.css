@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-12-10 11:22:11
+ * @version $Id$
+ */
+html{min-width: 980px;}
+.layui-form{
+    position: relative;
+}
+input, select{
+    border-radius: 4px !important;
+}
+.chapter{
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 260px;
+    height: 550px;
+    padding: 10px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    background: #fff;
+    z-index: 9;
+}
+.chapter h3 {
+    font-size: 16px;
+    display: inline-block;
+    color: #0b0b0b;
+}
+#uploadTree{
+    float: right;
+    cursor: pointer;
+}
+
+
+        /*滚动条*/
+::-webkit-scrollbar  
+{  
+    width: 6px !important;  
+    height: 6px !important; 
+    background-color: #F5F5F5 !important;
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
+    border-radius: 10px !important;
+    background-color: #F5F5F5 !important;
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px !important;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3) !important; 
+    background-color: #028843 !important; 
+} 

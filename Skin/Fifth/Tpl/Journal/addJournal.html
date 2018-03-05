@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link href="/Web/Assets/layui/css/layui.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="../../Common/css/public.css">
+        <link rel="stylesheet" type="text/css" href="css/addJournal.css" />
+
+    </head>
+
+    <body>
+        <div class="layui-form">
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this" id="title"></li>
+                </ul>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">分类</label>
+                <div class="layui-input-inline">
+                    <select name="city"  lay-verify="required">
+                        <option id="journalTypeSelect" value="0">个人日记</option>
+                    </select>
+                </div>
+                <div class="layui-form-mid layui-word-aux addType">添加分类</div>
+                <label class="layui-form-label">权限</label>
+                <div class="layui-input-inline">
+                    <select name="city"  id="powerSelect" lay-filter="power" lay-verify="required">
+                        <option value="1">全校可见</option>
+                        <option value="2">全班可见</option>
+                        <option value="3">自己可见</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item" style="margin-top:30px;">
+                <label class="layui-form-label">日志标题</label>
+                <div class="layui-input-block">
+                    <input type="text" name="journalName" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item" style="margin-top:30px;">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block">
+                    <textarea class="layui-textarea" id="writeJournal" style="display: none"></textarea>
+                </div>
+            </div>
+
+
+            <div class="layui-form-item">
+                <label class="layui-form-label"></label>
+                <div class="layui-input-block">
+                    <!--<input type="text" class="layui-btn layui-btn-small layui-btn-green Sava"  data-type="content" value="确认">-->
+                    <button class="layui-btn layui-btn-small layui-btn-green Sava" data-type="content">确认</button>
+                </div>
+
+            </div>
+        </div>
+    </body>
+    <script src="/Web/Assets/layui/layui.js"></script>
+    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+    <script>
+        var $ = jQuery = layui.jquery;
+    </script>
+    <script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="js/addJournal.js"></script>
+</html>

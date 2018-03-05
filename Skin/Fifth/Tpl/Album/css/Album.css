@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-11-08 09:32:26
+ * @version $Id$
+ */
+ p{
+    color: #2e6b0f;
+ }
+.content{
+    background: #fff;
+    padding: 5px 15px;
+    border-radius: 6px;  
+    margin-bottom: 20px;
+    min-height: 600px;
+    border: 1px solid #eee;
+}
+.content >div{
+    margin-top: 10px;
+    color: #028843;
+}
+.content >div a:hover{
+    color: #fff;
+}
+.content>p{
+    padding: 0 0 15px 5px;
+    border-bottom: 1px solid #2e6b0f;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content .album_c{
+    width: 100%;
+    padding-top: 30px;
+    overflow: hidden;
+}
+.content .album_c li{
+    width: 12.5%;
+    float: left;
+    margin-right: 0.2%;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #efefef;
+    position: relative;
+}
+.content .album_c li:nth-child(6n){
+    margin-right: 0;
+}
+.content .album_c li a{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.content .album_c li a img{
+    background: #fff;
+    width: 100%;
+    height: 80%;
+    z-index: 99;
+}
+.content .album_c li img.removeimg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    display: none;
+    background: none;
+    z-index: 999;
+}
+.content .album_c li a p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.previewimg{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px groove #CCC;
+}
+.previewimg img{
+    width: 100px;
+    margin: 10px 0 0 10px;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1101px) {
+    .content .album_c li a{
+        height: 120px;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1468) {
+    .content .album_c li a{
+        height: 90px;
+    }
+}
+@media screen and (min-width: 1469px){
+    .content .album_c li a{
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .content .album_c li a{
+        height: 90px;
+    }
+    .content .album_c li a img{
+        height: 70%;
+    }
+}
+
+
+#addAlbum , #uploadAlbum{
+    display: none;
+}
+#addAlbum .layui-form-label{
+    width: 7em;
+    padding: 9px;
+}
+.block{
+    display: block !important;
+}
+

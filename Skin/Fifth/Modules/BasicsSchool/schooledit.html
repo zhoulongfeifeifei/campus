@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+   	  <meta charset="UTF-8"/>
+      <title>学校设置</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+     <link rel="stylesheet" type="text/css" href="css/schooledit.css"/>
+   </head>
+   <body>
+		<div class="container" style="overflow: hidden;">
+			<div class="row">
+				<div class="r_box">
+					<form class="layui-form" id="form0" role="form">
+						<input type="hidden" name="school_id" class="school_id" value="" />
+						<h4>
+						学校基本信息设置	
+						</h4>
+						<div class="layui-form-item">
+							<label class="layui-form-label">校名<span style="color:red">*</span>：</label>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" lay-verify="required"  id="school_name" name="school_name"
+									   placeholder="请输入校名"  datatype="*">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">英文名：</label>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="englishname" name="englishname"
+									   placeholder="请输入英文名" lay-verify="english">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label  class="layui-form-label">学校LOGO：</label>
+							<div class="layui-input-inline">
+								<img src="/Web/Skin/Fifth/Common/img/7.png" id="logo_img" alt="" style="width: 100px;height: 100px;"/>
+								<input type="file" name="file" class="layui-upload-file" id="logo_file">
+								<input type="hidden" name="logo" id="logo_val" />
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label  class="layui-form-label">地区：</label>
+							<div class="diqu">
+								<select  id="sheng"  lay-filter="sheng">
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="diqu" >
+								<select  id="shi" lay-filter="shi" >
+									<option value=""></option>
+								</select>
+							</div>
+							<div class="diqu" lay-filter="sheng" >
+								<select  id="qu" name="area">
+									<option value=""></option>
+								</select>
+							</div>
+						</div>
+						<div class="allxz">
+							<div class="layui-form-item">
+								<label class="layui-form-label">校址：</label>
+								<div class="layui-input-inline">
+									<input type="text" class="layui-input" id="school_address" name="school_address"
+										   placeholder="请输入校址">
+								</div>
+								<div class="addbox">
+									<a class="addone addxz" data-type='xz' href="JavaScript:;">添加</a>
+								</div>
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">邮编：</label>
+							<div class="layui-input-inline">
+								<input type="text" max="6" class="layui-input " id="school_area" name="school_area"
+									   placeholder="请输入邮编"  lay-verify="code">
+							</div>
+						</div>
+						<div class="alltel">
+							<div class="layui-form-item">
+								<label class="layui-form-label">电话：</label>
+								<div class="layui-input-inline">
+									<input type="text"  class="layui-input" id="school_tel" name="school_tel"
+										   placeholder="请输入电话" lay-verify="tel" >
+								</div>
+								<div class="addbox">
+									<a class="addone addtel" data-type='tel' href="JavaScript:;">添加</a>
+								</div>
+							</div>
+						</div>
+						<div class="allcz">
+							<div class="layui-form-item">
+								<label class="layui-form-label">传真：</label>
+								<div class="layui-input-inline">
+									<input type="text"  class="layui-input" id="fax" name="fax"
+										   placeholder="请输入传真" lay-verify="fax" >
+								</div>
+								<div class="addbox">
+									<a class="addone addcz" data-type='cz' href="JavaScript:;">添加</a>
+								</div>
+							</div>
+						</div>
+						<div class="allyx">
+							<div class="layui-form-item">
+								<label class="layui-form-label">邮箱：</label>
+								<div class="layui-input-inline">
+									<input type="text" class="layui-input" id="email" name="email"
+										   placeholder="请输入邮箱"  lay-verify="email">
+								</div>
+								<div class="addbox">
+									<a class="addone addyx" data-type='yx' href="JavaScript:;">添加</a>
+								</div>
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label  class="layui-form-label">网址：</label>
+							<div class="layui-input-inline">
+								<input type="text" class="layui-input" id="homepage" name="homepage"
+									   placeholder="请输入网址"  lay-verify="web">
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label  class="layui-form-label">发送方式：</label>
+							<div class="layui-input-inline" style="position: absolute;width: 630px !important;">
+								<input type="checkbox" value="0" title="站内消息"  lay-skin="primary"/>
+								<input type="checkbox" value="1" title="app消息"  lay-skin="primary"/>
+								<input type="checkbox" value="2" title="短信消息"  lay-skin="primary"/>
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<a id="save" class="layui-btn" lay-submit="" lay-filter="save">保存</a>
+						</div>
+					</form>
+				</div>
+				<div class="r_box">
+					<form class="layui-form" id="form1" role="form">
+						<input type="hidden" name="school_id" class="school_id" value="" />
+						<h4>
+						学校类型设置	
+						</h4>
+						<div class="layui-form-item">
+							<label  class="layui-form-label">学校类型：</label>
+							<div class="layui-input-inline">
+								<select  lay-filter="leixing" id="type" name="type">
+									<option value=""></option>
+								</select>
+							</div>
+							<div style="padding: 0;width: 125px;display: inline-block;">
+								<input type="text" id="type_t" class="layui-input" value="" />
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label  class="layui-form-label">学制：</label>
+							<div class="layui-input-inline">
+								<input type="number" name="yearlength" id="yearlength" class="layui-input" value="" />
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<a id="save1" class="layui-btn" lay-submit="" lay-filter="save1">保存</a>
+						</div>
+					</form>
+					<form class="layui-form" id="form2" role="form">
+						<input type="hidden" name="school_id" class="school_id" value="" />
+						<h4>
+						学期起始时间设置	
+						</h4>
+					    <div class="layui-form-item">
+					        <label class="layui-form-label" >第一学期起始时间：</label>
+					        <div class="layui-input-inline">
+					            <input type="text" class="layui-input" id="term1" name="term1"
+					                   placeholder="请输入起始时间" onclick="layui.laydate({ elem: this, festival: true })">
+					        </div>
+					    </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label" >第一学期结束时间：</label>
+                            <div class="layui-input-inline">
+                                <input type="text" class="layui-input" id="term1end" name="term1end"
+                                       placeholder="请输入结束时间" onclick="layui.laydate({elem: this, festival: true})">
+                            </div>
+                        </div>
+					    <div class="layui-form-item">
+					        <label class="layui-form-label">第二学期起始时间：</label>
+					        <div class="layui-input-inline">
+					            <input type="text" class="layui-input" id="term2" name="term2"
+					                   placeholder="请输入起始时间" onclick="layui.laydate({ elem: this, festival: true })">
+					        </div>
+					    </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label" >第二学期结束时间：</label>
+                            <div class="layui-input-inline">
+                                <input type="text" class="layui-input" id="term2end" name="term2end"
+                                       placeholder="请输入结束时间" onclick="layui.laydate({elem: this, festival: true})">
+                            </div>
+                        </div>
+						<div class="layui-form-item">
+							<a id="save2" class="layui-btn"  lay-submit="" lay-filter="save2">保存</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>	
+	    <script src="/Web/Assets/layui/layui.js"></script>
+	    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	    <script>
+	    	var form = layui.form(),
+				layer = layui.layer,
+				laydate = layui.laydate,
+				 $ = jQuery = layui.jquery;
+			
+	    </script>
+	    <script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="/Web/Include/validate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/schooledit.js" type="text/javascript" charset="utf-8"></script>
+   </body>
+</html>

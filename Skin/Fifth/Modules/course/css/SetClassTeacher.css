@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-12-14 19:54:56
+ * @version $Id$
+ */
+a.teacher {cursor: pointer;color: #23527c;margin-right: 5px;border-bottom: dashed 1px #0088cc;}
+a.teacher:hover {color: #DD1144;border-bottom: dashed 1px #DD1144;}
+.select2{ text-align: left;}
+table td.teachers { position: relative; }
+table td.teachers a.add { display: none;}
+table td.teachers:hover a.add { display: inline-block;}
+table td.teachers a.keep { display: inline-block;}
+#divTeacher {position: absolute;border: 1px solid #3276b1;padding: 8px;left: 0;top: 0;background: #fff;display: none; }
+#divTeacher .before {content: "";position: absolute;width: 1px; top: -16px;border: 8px solid transparent;border-bottom-color: #3276b1;}
+#divTeacher ul { /*width:65px;*/float: left;}
+#divTeacher li { padding: 4px 0; }
+#divTeacher li.hide { display: none; }
+#divTeacher .btn {-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;-o-user-select: none;}
+.table table th, .table table td {border: 1px solid #ddd;padding: 6px 5px;}
+.height{
+        height: 100px;
+}
+.alIcon{
+    color: #332258;
+    font-size: 14px;
+}

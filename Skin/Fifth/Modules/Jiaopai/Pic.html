@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>班牌管理</title>
+  <link rel="stylesheet" href="/web/Assets/layui/css/layui.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/wapreset.css">
+  <link rel="stylesheet" href="css/wapmain.css">
+</head>
+</head>
+<body>
+  <div class="set-box">
+    <div class="bar-header clearfix">
+      <span class="text font-18 blue" id="scene"></span>
+  </div>
+  <form id="form1">
+    <div class="form">
+        <div class="f1 f-image">
+            <label class="f-label span3">上传图片：</label>
+            <div class="f-input span9">
+              <div id="container" class="upload">
+                <a class="btn btn-orange" id="reset">恢复默认</a>
+                    <input class="path w-100" id="filename" placeholder="" readonly="" />
+                    <input type="hidden" name="filename" id="hiddeninput" value="" />
+                    <input class="layui-upload-file local" lay-type="file" type="file" name="file" lay-title="上传"/>
+                    <div class="clr"></div>
+                    <div class="text">（注意：图片大小最大不超过3M，请升级到IE8及以上。）</div>
+                </div>
+                <br />
+                <div id="filelist" class="upload-preview">
+                    <img src="" style="width: 250px" />
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+
+        <div class="f1 f-save">
+           <label class="f-label span3"></label>
+             <div class="f-input span9">
+              <a id="save" class="btn btn-blue" style="min-width:50px;">立即发布</a>
+                <a class="btn" style="min-width:50px;" id="return">返回</a>
+            </div>
+        </div>
+    </div>
+        <input type="hidden" name="action" value="neweboard.pictemp"/>
+    </form>
+  </div>
+  <div class="main-wrap noon-1">
+      <img class="bg-main" src="img/bg-main.jpg"/>
+      <header class="topbar">
+          <h3 class="classname" id="classname"></h3>
+            <img class="weather fr" src="img/topbar-fr.png"/>
+        </header>
+        <img src="img/logo-xst.png" class="logo-xst"/>
+        
+        <div class="fullbox">
+          <img class="fullbox-bg" src="" id="previewImg"/>
+          <img class="fullbox-over" src="img/noon-1.png"/>
+        </div>
+    </div>
+</body>
+<script src='/web/Assets/jquery-1.9.1/jquery.js'></script>
+<script src="/web/Assets/layui/layui.js"></script>
+<script src="/web/Include/tby.js"></script>
+<script src="/web/Assets/layui/lay/dest/layui.all.js"></script>
+
+<script src ="js/Pic.js"></script>
+</html>

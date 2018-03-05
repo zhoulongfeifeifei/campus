@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>班牌管理</title>
+	<link rel="stylesheet" href="css/tjtp.css">
+</head>
+<body>
+	<div class="vF-panel">
+        <!--标题层-->
+        <div class="bar-header clearfix">
+            <span class="text font-18 blue">霸屏图片</span>
+        </div>
+        <!--标题层 End-->
+        <div class="form">
+            <form method="post" action="./AllScreenDesign.aspx" id="form1">
+			<div class="aspNetHidden">
+			<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="g+xOesuEqBRLHrUH2mqyZ+lehGgBoLljazE14BP2Ib636O5Lk835meWpuqss1qF8U4f06m5Ct1sWPFAVxfD2z8pL+ZfZnsUQKH2K6ajtx5FWtB2Ywaz2bZEp4Dz2PQoOCnzog4x4etwTZTpuf9WBJYr7sk0Imc3vdJb/oCDzs9U=">
+			</div>
+
+			<div class="aspNetHidden">
+				<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="12099385">
+			</div>
+            <div class="f1 clearfix">
+                <label class="f-label span1">图片集：</label>
+                <div class="f-input span11">
+				<div class="span12">
+				    <!--工具栏-->
+				    <div class="bar-tool">
+				       <a class="btn w_60 " onselectstart="event.returnValue=false" href="">上传照片</a>
+				        <span class="text h14">建议尺寸：1080px:608px;注:一个设备最多只能上传7张图片 </span>
+				        <div class="clear"></div>
+				    </div>
+				    <!--/工具栏-->
+				    <!--列表-->
+				    <div class="row">
+				        <div class="col-xs-12">
+				            <!-- PAGE CONTENT BEGINS -->
+				            <div>
+				                <ul class="ace-thumbnails clearfix">
+				                    
+				                </ul>
+				            </div>
+				            <!-- PAGE CONTENT ENDS -->
+				        </div>
+				        <!-- /.col -->
+				    </div>
+				    <!-- /.row -->
+				    <div class="page">
+				    </div>
+				    <!--/列表-->
+				</div>                 
+			    <div class="clr"></div>
+			    </div>	
+	        </div>
+            <div class="f1 clearfix" style="padding: 16px 10px;">
+                <label class="f-label span1">电子屏：</label>
+                <div class="f-input span8">
+                    <span class="text">选择您本次编辑的电子屏设备位置</span>
+                    <a id="AllCheck" class="btn w-60" href="javascript:;">全选设备</a>
+                    <br>
+                    
+                    <span style="margin-right: 24px; white-space: nowrap;">
+                        <input type="checkbox" name="device" class="device" value="333FD15890C9D2B1">&nbsp;333FD15890C9D2B1(初中三年级（04）班)
+                    </span>
+                    
+                    <span style="margin-right: 24px; white-space: nowrap;">
+                        <input type="checkbox" name="device" class="device" value="327B7E16D3631859">&nbsp;327B7E16D3631859(初中一年级（02）班)
+                    </span>
+                    
+                    <span style="margin-right: 24px; white-space: nowrap;">
+                        <input type="checkbox" name="device" class="device" value="2DD479774AE36B4E">&nbsp;2DD479774AE36B4E(初中一年级（03）班)
+                    </span>
+                    
+                    <span style="margin-right: 24px; white-space: nowrap;">
+                        <input type="checkbox" name="device" class="device" value="0BFC8690DB84F51E">&nbsp;0BFC8690DB84F51E(初中一年级（01）班)
+                    </span>
+                    
+                    <span style="margin-right: 24px; white-space: nowrap;">
+                        <input type="checkbox" name="device" class="device" value="C7B64BBF831FA05D">&nbsp;C7B64BBF831FA05D(初中一年级（01）班)
+                    </span>
+                    
+                    <span style="margin-right: 24px; white-space: nowrap;">
+                        <input type="checkbox" name="device" class="device" value="1F47F7F4FAF4E84A">&nbsp;1F47F7F4FAF4E84A(中班(04)班)
+                    </span>
+                    
+                    <br>
+                </div>
+            </div>
+            <div class="f1 clearfix">
+                <label class="f-label span1 w-100">发布状态：</label>
+                <div class="f-input span4">
+                    <label class="red"><i class="fa fa-minus-circle"></i> 未发布</label>
+                    <br>
+                    <label class="text"></label>
+                    <div class="clr"></div>
+                </div>
+            </div>
+            <div class="f1 f-save clearfix">
+                <div class="f-input span4">
+                    <input type="hidden" id="first">
+                </div>
+            </div>
+	     </form>
+	   </div>
+    </div>
+</body>
+</html>

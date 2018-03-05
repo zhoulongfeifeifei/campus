@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,p,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: 0;vertical-align: baseline;background: transparent;}
+table, caption, tbody, tfoot, thead, tr, th, td{ vertical-align:middle;}
+th{
+    text-align:center;
+}
+html{margin-top:0px !important;}
+
+body {background: #fff;  font-size:14px; color: #656565;font-family: 'microsoft yahei',osaka,sans-serif;}
+
+li{list-style: none;}
+
+a{cursor: pointer;margin: 0;padding: 0;border: 0;vertical-align: baseline;text-decoration:none;color:#000;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000;cursor: help;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #cccccc;margin: 1em 0;padding: 0;}
+
+input, select {vertical-align: middle;}
+
+h1,h2,h3,h4,h5,h6{ color:#999;}
+img{border: 0}
+
+em,i,strong{font-style:normal;}
+
+/*清除浮动*/  
+.clearfix:before,.clearfix:after{content: '';display: table;}  
+.clearfix:after{clear: both;}
+/*==========重置样式=========*/
+.main-wrap {
+    width: 1280px;
+    height: 720px;
+    margin: 0 auto;
+    position: relative;
+}
+.main-wrap .bg-main {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.main-wrap .topbar {
+    position: absolute;
+    top: 13.58%;
+    left: 2.65%;
+    right: 2.65%;
+    bottom: 80.5%;
+}
+.main-wrap .topbar h3.classname {
+    font-family: fzxk;
+    font-size: 24px;
+    color: #171717;
+    font-weight: normal;
+    display: inline-block;
+}
+.main-wrap .topbar img {
+    display: block;
+    height: 100%;
+}
+.fr {
+    float: right!important;
+}
+.main-wrap img.bottom {
+    bottom: 2.5%;
+}
+.main-wrap img.logo-xst {
+    position: absolute;
+    left: 46.52%;
+    bottom: 9.49%;
+    width: 6.95%;
+}
+.index-1 .box-left {
+    position: absolute;
+    top: 21.49%;
+    left: 2.65%;
+    bottom: 15.35%;
+    right: 33.21%;
+}
+.index-1 .box-left .box-left-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.index-1 .box-left .text-box {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    bottom: 10%;
+    right: 20%;
+    text-align: center;
+    font-family: fzxk;
+    color: #433426;
+    font-size: 20px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.index-1 .box-left .text-box h3 {
+    color: #433426;
+    font-size: 24px;
+    font-weight: normal;
+    padding-bottom: 16px;
+}
+.index-1 .box-right-1 {
+    position: absolute;
+    top: 21.49%;
+    right: 2.65%;
+    left: 67.75%;
+    bottom: 40.55%;
+}
+.index-1 .box-right-2 {
+    position: absolute;
+    top: 61.88%;
+    right: 2.65%;
+    left: 67.75%;
+    bottom: 15.35%;
+}
+.hidden {
+    display: none;
+}

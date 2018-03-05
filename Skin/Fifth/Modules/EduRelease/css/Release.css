@@ -1,0 +1,153 @@
+body,html{
+    /*padding: 20px;*/
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+}
+.toptitle{
+    font-size: 1.67em;
+    color: #028843;
+    line-height: 2em;
+}
+.contain{
+    width: 73%;
+    margin-left: 0.5%;
+    height: auto;
+    overflow: auto;
+    float: left;
+}
+.left{
+    float: left;
+    width: 68%;
+}
+.right{
+    width: 28%;
+    float: right; 
+}
+.right,.left{
+    padding: 1% 0.9%;
+    background: #ecf8e2;
+}
+.addsign{
+    margin-top: 10px;
+}
+.newscore{
+    width: 1.8em;
+}
+.tableInfo{
+	width: 98%;
+    /*display: block;*/
+    overflow-x: auto;
+}
+.layui-form-checkbox {
+    height: 37px;
+}
+.newsign{
+    margin-bottom: 10px;
+}
+
+hr{
+    margin: 10px 0;
+}
+.admin , .teacher{
+    display: none;
+}
+
+a.noscore {
+            /*display: none;*/
+        }
+
+        .showlink .noscore {
+            display: inline-block;
+        }
+
+        td.noscore .noscore {
+            display: inline-block;
+        }
+
+        td.noscore .newscore {
+            display: none;
+        }
+        .scorebox {
+            position: relative;
+        }
+
+        .scorebox .detail {
+            bottom: -30px;
+            position: absolute;
+            margin-left: -70px;
+            padding: 3px 8px;
+            background: #FFF;
+            border: 1px solid #3276b1;
+            display: none;
+        }
+
+        .scorebox .detail:before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: -16px;
+            border: 8px solid transparent;
+            border-bottom-color: #3276b1;
+        }
+
+        .showlink .detail {
+            display: inline-block;
+            z-index: 999;
+        }
+
+        td.noscore .detail,.Sava ,.Submit{
+            display: none;
+        }
+.boxRight{
+	width: 25%;
+    float: right;
+    height: 100px;
+    margin-right: 1%;
+}  
+.boxRight h3{
+	color: #009688;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+.layui-form-item-height{
+	height: 35px !important;
+} 
+.layui-form-item-message{
+}  
+.layui-input-textarea{
+	margin-left: 20px !important;
+	    margin-right: 5%;
+}
+.layui-unselect.layui-form-checkbox.layui-form-checked {
+    height: 25px !important;
+}
+.layui-unselect.layui-form-checkbox {
+    height: 25px !important;
+}
+.btn-left{
+	margin-left: 20%;
+    margin-top: 5%;
+}
+.layui-input-line{
+	float: right;
+}
+input.layui-btn.layui-btn-small.addSignature {
+    margin: 10px 0;
+}
+span.layui-word-aux {
+    display: inline-block;
+}
+.msgExclusive{
+   padding-left: 10px;
+}
+.selectTime{
+    /*width: 190px;*/
+    display: inline-block;
+}
+.none{
+    display: none;
+}
+.has{
+	display: block;
+}

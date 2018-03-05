@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<title>资产类型</title>
+		<link rel="stylesheet" type="text/css" href="css/AssetsType.css"/>
+		<link rel="stylesheet" type="text/css" href="css/importExcel.css"/>
+		<link rel="stylesheet" href="../../Common/css/public.css">
+	</head>
+	<body>
+		<a href="javascript:;" class="layui-btn layui-btn-small add" data-toggle="modal" data-target="#myModal" style="display: none;">导入资产</a>
+			<table class="layui-table">
+			  <thead>
+			    <tr>
+			      <th>排序号</th>
+			      <th>类型名称</th>
+			      <th>操作</th>
+			    </tr>
+			  </thead>
+			  <tbody id="tbody">
+			   
+			  </tbody>
+			</table>		
+		<!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <form class="layui-form" id="form0" method="post" role="form">
+            	<input type="hidden" name="Id" id="Id" value="" />
+	            <div class="layui-form-item">
+					<label class="layui-form-label">资产类型<span class="text-danger">*</span></label>
+					<div class="layui-input-inline">
+					    <input type="text" class="layui-input" id="TypeName" name="TypeName" />
+					</div>
+				 </div>	
+				<div class="layui-form-item">
+				    <label class="layui-form-label">排序号<span class="text-danger">*</span></label>
+				    <div class="layui-input-inline">
+				    	<input type="text" class="layui-input" id="Sort" name="Sort" />
+				    </div>
+				</div>	            
+			</form>
+		</div>
+		<div class="layer-box layui-tab layui-tab-content" style="display: none;" >
+			<div>
+				<sapn calss='font-14'>下载：</sapn><a class=" text font-14 link blue">资产导入模板</a>
+			</div>
+			<p>1、请导入.xls文件。<br />2、资产类别为：固定资产、增长资产、消耗资产、随机资产。<br />3、资产性质为：资产、费用 <br />4、增加类型为：购入需安装已完工的固定资产、其他单位转入的固定资产(新设备)、其他单位转入的固定资产(旧设备)、捐赠的固定资产、融资租赁的固定资产、固定资产盘盈 
+导入资产<br />
+			</p>
+			<!--<input type="submit" id='pickfiles' class="layui-btn layui-btn-small" value="导入资产" style='z-index: 1;'/>
+			<div id='html5_1befitkpge2rucv17n6n8313qv3_container' class="moxie-shim moxie-shim-html5" style="position: absolute; top: 201px; left: 0px; width: 68px; height: 30px; overflow: hidden; z-index: 0;">
+				<input type="file" id='html5_1befitkpge2rucv17n6n8313qv3' style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" accept="application/vnd.ms-excel"/>
+			</div>-->
+			<div class="f-input uploadfile">
+                <input type="file" name="file" class="layui-upload-file" lay-title="选择文件"> 
+                <input id="txtfiles" class="path" name="path" placeholder="" readonly="">
+            </div>
+		</div>
+	<script src="/Web/Assets/layui/layui.js"></script>
+	<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	<script>var $ = jQuery = layui.jquery;</script>	
+	<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/AssetsType.js"></script>
+	</body>
+</html>

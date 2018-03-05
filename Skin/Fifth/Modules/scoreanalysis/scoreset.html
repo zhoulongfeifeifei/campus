@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>成绩发布</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+    <link href="../../Common/css/reset.css" rel="stylesheet" />
+    <link href="../../Common/css/main.css" rel="stylesheet" />
+    <link href="css/EduScore.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="vF-panel">
+        <!--包裹层-->
+        <!--标题层-->
+        <div class="bar-header clearfix">
+            <span class="text font-18 blue toptitle">成绩发布</span>
+        </div>
+        <!--标题层 End-->
+        <div class="page page1 showpage">
+            <!-- <form role="form" way-data="myFormData" way-persistent="true">
+                -->
+            <!--标题层 End-->
+            <div class="leve-name" id="subjctlist">
+                <div class="info-title form-title">考试科目</div>
+            </div>
+            <div class="leve-name">
+                <div class="info-title">等级名称</div>
+                <div id="ParameterType">
+                    <label class="fail parameterType">
+                        <input type="text" value="不及格" readonly="readonly" autocomplete="off">分</label>
+                </div>
+                <div class="btn" id="addType">自定义增加</div>
+            </div>
+            <div class="leve-name parametricform">
+                <div class="info-title">评定形式</div>
+                <label id="fraction">
+                    <input type="radio" name="radio1" class="level-type" checked value="0" /> 按分数评定
+                </label>
+                <label id="proprotion">
+                    <input type="radio" name="radio1" class="level-type" value="1" /> 按占比评定
+                </label>
+                <label id="rank">
+                    <input type="radio" name="radio1" class="level-type" value="2" /> 按排名评定
+                </label>
+            </div>
+            <div class="leve-name">
+                <div class="info-title">计算规则</div>
+                <label class="isetRange i1">
+                    <input type="radio" name="radio2" class="level-type" checked value="0" /> 统一设置
+                </label>
+                <label class="i2">
+                    <input type="radio" name="radio2" class="level-type" value="1" /> 单科设置
+                </label>
+                <div id="d1" class="setRange displayblcok ParValue">
+                    <label>
+                        <span class="noFail">不及格</span> 分:
+                        <span class="nofailval">总分*（1-</span>
+                        <input type="text" value="">)</label>
+                </div>
+                <div id="d2" class="setRange">
+                    <ul></ul>
+                </div>
+            </div>
+            <div class="leve-name" id="examobj">
+                <div class="info-title">考试对象</div>
+            </div>
+            <div class="leve-name big">
+                <div class="info-title ">“三率一分”综合分</div>
+                <div class="form form-general">
+                    <div class="item item-general" id="allsetran">
+                        综合分 =
+                        <label class="CompValue">
+                            平均分 *
+                            <input type="text" value="0.2" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input type="button" class="layui-btn submit" id="savaset" value="下一步" />
+                <span>*下一步自动保存</span>
+            </div>
+        </div>
+        <div class="page page2 ">
+            <div class="form">
+                <div class="bar-header clearfix">
+                    <span class="text font-18 blue toptitle">导入教务考试</span>
+                </div>
+                <div class="f1">
+                    <label class="f-label span1  font-18">学期：</label>
+                    <div class="f-input">
+                        <select name="" id="select1">
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                        </select>
+                        <select name="" id="select2" class="select2">
+                            <option value="1">下学期</option>
+                            <option value="2">上学期</option>
+                            <option value="zdy">自定义</option>
+                        </select>
+                        <input id="zdy" type="text" />
+                    </div>
+                </div>
+                <div class="f1">
+                    <label class="f-label span1 font-18" style="width:5em;">考试名称：</label>
+                    <div class="f-input ">
+                        <input type="text" name="" id="ScoreTypeName" value="期中考试" />
+                        <span>*不能为空</span>
+                    </div>
+                </div>
+                <div class="f1">
+                    <label class="f-label span1  font-18" style="width:5em;">考试科目：</label>
+                    <div class="f-input" id="subjctDom"></div>
+                </div>
+                <div class="f1">
+                    <label class="f-label span1  font-18" style="width:5em;">考试时间：</label>
+                    <div class="f-input">
+                        <input class="laydate-icon" id="demo" onclick="layui.laydate({elem:this ,istime: true,format: 'YYYY-MM-DD hh:mm:ss'})" value="2016-10-01">
+                    </div>
+                </div>
+                <div class="f1">
+                    <label class="f-label span1 font-18">年级：</label>
+                    <div class="f-input">
+                        <label id="gradeDom"></label>
+                        <input type="button" class="layui-btn layui-btn-small" id="downexcel" value="模板下载">
+                        <span style="color:red;margin-right:20px;">*缺考人员分数不用填写且不记入统计数据</span>
+                    </div>
+                </div>
+                <div class="f1">
+                    <label class="f-label span1  font-18" style="width:5em;">上传文件：</label>
+                    <div class="f-input uploadfile">
+                        <input type="file" name="file" class="layui-upload-file" lay-title="选择文件"> 
+                        <p id="txtfiles"></p>
+                        <input type="hidden" name="path"/>
+                    </div>
+                </div>
+                <div class="f1 f-save">
+                    <input type="button" class="layui-btn submit" id="old" value="上一步" />
+                    <input type="button" class="layui-btn" id="uploadfiles" value="提交发布">
+                    <span>*成功则跳转下一步</span>
+                </div>
+            </div>
+        </div>
+        <div class="page page3 ">
+            <div class="form">
+                <div class="bar-header clearfix">
+                    <span class="text font-18 blue toptitle">选择导出字段</span>
+                </div>
+                <div class="f1">
+                    <label class="f-label t-title span1  font-18">基础字段：</label>
+                    <div class="f-input" id="Basicsaa">
+                        <label class="w-120">
+                            <input type="checkbox" name="Name" value="考试人数" /> 考试人数
+                        </label>
+                        <label class="w-120">
+                            <input type="checkbox" name="Name" value="最高分" /> 最高分
+                        </label>
+                        <label class="w-120">
+                            <input type="checkbox" name="Name" value="最低分" /> 最低分
+                        </label>
+                        <label class="w-120">
+                            <input type="checkbox" name="Name" value="平均分" /> 平均分
+                        </label>
+                        <label class="w-120">
+                            <input type="checkbox" name="Name" value="综合分" /> 综合分
+                        </label>
+                        <label class="w-120">
+                            <input type="checkbox" name="Name" value="排名" /> 排名
+                        </label>
+                    </div>
+                </div>
+                <div class="f1">
+                    <label class="f-label t-title span1 font-18">参数字段：</label>
+                    <div class="f-input ">
+                        <ul id="threechecked">
+                            <li>
+                                <label class="w-120">
+                                    <input type="checkbox" value="不及格人数" name="Name" /> 不及格人数
+                                </label>
+                                <label class="w-120">
+                                    <input type="checkbox" value="不及格率" name="Name" /> 不及格率
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="f1">
+                    <label class="f-label t-title span1  font-18">年段前X名：</label>
+                    <div class="f-input" id="firstFew">
+                        <label class="w-120">
+                            <input type="checkbox" name="Name" value="50" /> 前50
+                        </label>
+                        <label class="w-120">
+                            <input type="checkbox" name="Name" value="100" /> 前100
+                        </label>
+                        <label class="w-120">
+                            <input type="checkbox" name="Name" value="150" /> 前150
+                        </label>
+                        <label class="w-120">
+                            <input type="checkbox" name="Name" value="200" /> 前200
+                        </label>
+                        <label class="w-120">
+                            <input type="checkbox" name="Name" value="250" /> 前250
+                        </label>
+                        <label class="w-120">
+                            <input type="checkbox" name="Name" value="300" /> 前300
+                        </label>
+                        <label class="w-120">
+                            <input type="checkbox" name="Name" value="350" /> 前350
+                        </label>
+                        <label class="w-120">
+                            <input type="checkbox" name="Name" value="400" /> 前400
+                        </label>
+                        <label class="w-120">
+                            <input type="checkbox" name="Name" value="450" /> 前450
+                        </label>
+                        <label class="w-120">
+                            <input type="checkbox" name="Name" value="500" /> 前500
+                        </label>
+                    </div>
+                </div>
+                <div class="f1 f-save">
+                    <div class="f-input">
+                        <input type="button" class="layui-btn" id="Preservation" value="保存">
+                        <span>*保存之后才可导出</span>
+                        <input type="button" class="layui-btn none" id="page3downexcel" value="导出">
+                        <!-- <a class="layui-btn" href="/School/EduScore/History">进入历史成绩</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Web/Assets/layui/layui.js"></script>
+    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+    <script>var $ = jQuery = layui.jquery;</script>
+    <script src="/Web/Include/tby.js"></script>
+    <script src="js/EduScore.js"></script>
+</body>
+
+</html>

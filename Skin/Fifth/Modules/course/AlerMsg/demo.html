@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>求师问学</title>
+<!--for-mobile-app-->
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no,email=no" name="format-detection">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<!--common-->
+<script src="http://apps.bdimg.com/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+
+<body class="bg-white">
+
+
+	<link href="AlerMsg.css" rel="stylesheet"/>
+    <script src="AlerMsg.js"></script>
+    <script>
+    	$.AlerMsg({
+			type:'textarea',
+			title:'批量不合格',
+			msg:null,
+			placeholder:'请填写批量不合格的理由',
+			cancel:function(){
+			},
+			ok:function(textarea_val){
+				
+			}
+		})
+    </script>
+</body>
+</html>

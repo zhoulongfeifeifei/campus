@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业管理</title>
+	<link rel="stylesheet" href="/web/Assets/layui/css/layui.css">
+	<link rel="stylesheet" href="css/task.css">
+</head>
+<body>
+	<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+	  <ul class="layui-tab-title subjectlist">
+	    <li class="layui-this">待批改</li>
+	    <li>已批改</li>  
+	    <li>历史作业</li>	
+	  </ul>
+	  <div class="tiaozhuan">
+	     <a href="assign.html?type=0"><span>去布置</span></a>
+         <a href="assign.html?type=1"><span>去组卷</span></a>
+	  </div>
+	  <div class="layui-tab-content content">
+         <div class="nav">
+		     <div class="header">                
+                <ul class="kemu clearfix">
+                   <li>科目：</li> 
+                   <div class="kemu2 clearfix">
+                      <li data-id="0"><a>全部</a></li>
+                   </div>                  
+                </ul>
+	            <ul class="banji clearfix">
+	               <li>班级：</li>                  
+                   <div class="banji2 clearfix">
+                      
+                   </div>	          
+	            </ul>
+	            
+		     </div>		     
+         </div>
+	     <div class="layui-tab-item layui-show zuoye dpzy">
+           
+	     </div>
+	     <div class="layui-tab-item zuoye ypzy">
+	        
+         </div>
+         <div class="layui-tab-item zuoye lszy">
+            
+         </div>
+	  </div>
+	</div> 
+</body>
+<script src='/web/Assets/jquery-1.9.1/jquery.js'></script>
+<script src="/web/Assets/layui/layui.js"></script>
+<script src="/web/Assets/layui/lay/dest/layui.all.js"></script>
+<script src="/web/Include/tby.js"></script>
+
+<script src="js/task.js"></script>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>发起公告</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+    <link rel="stylesheet" href="css/goNotice.css">
+    
+</head>
+<body>
+    <div class=" layui-form">
+        <div class="layui-form-item">
+            <label class="layui-form-label">收件人：</label>
+            <div class="layui-input-inline">
+                <input class="layui-input"  lay-verify="required" data-id="" name="openObject" type="text" value="" readonly="readonly" />
+            </div>
+            <div class="layui-input-inline">
+                <input type="submit" class="layui-btn layui-btn-small choice" value="选择收件人">
+                <input type="submit" class="layui-btn layui-btn-small layui-btn-danger" onclick="clearKeeper()" value="清空">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">公告内容：</label>
+            <div class="layui-input-block">
+                <textarea name="" id="Notes" style="width: 80%;" maxlength="500" lay-verify="required" placeholder="请输入,最多五百字" class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">发送方式：</label>
+            <div class="layui-input-block pushType">
+                <input type="checkbox" class="sentype" name="station" value=0 checked title="站内消息">
+                <input type="checkbox" class="sentype" name="app" value=1 title="App消息">
+                <!--<input type="checkbox" class="sentype" name="shortmsg" lay-filter="shortmsg" value=2 title="短信息">-->
+                
+            </div>
+            <!--<div class="layui-input-block msgExclusive none">
+                <input type="radio" class="sentype" name="duanxin" lay-filter="timedshortmsg" value=3 checked title="即时短信">
+                <input type="radio" class="sentype" name="duanxin" lay-filter="timedshortmsg" value=4 title="定时短信">
+                <input type="text" class="layui-input selectTime none" placeholder="请选择时间" onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM-DD hh:mm'})">
+                <input type="checkbox" name="ccself" value=5 title="自己(反馈短信)"> 
+            </div>-->
+        </div>
+        
+        <div class="layui-form-item selfUpload">
+            <label class="layui-form-label">附件上传：</label>
+            <div class="layui-input-inline">
+                <input class="layui-upload-file local" lay-type="file" type="file" name="file" />
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">云盘上传：</label>
+            <div class="layui-input-inline">
+                <input class="layui-btn layui-btn-primary cloudDisk" value="云盘上传" />
+            </div>
+            <div class="layui-form-mid layui-word-aux reSelect none">如果重新选择,已选择的将会全部清空</div>
+        </div>
+        <div class="layui-form-item none">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-block cloudList">
+                
+            </div>
+        </div>
+        <div class="layui-form-item uploadimg">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-inline">
+                <img src="" id="uploadimg">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">署名：</label>
+            <div class="layui-input-inline">
+                <select id="Signature">
+                    <option value></option>
+                </select>
+            </div>
+            <div class="layui-input-inline" style="width:320px;">
+                <input type="button" value="增加署名" class="layui-btn layui-btn-small layui-btn-normal addSignature">
+                <input type="button" value="删除" class="layui-btn layui-btn-small layui-btn-danger removeSignature">
+                <span class="layui-word-aux">删除的是左侧选择的署名</span>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-block">
+                <input id="Sava" lay-submit lay-filter="Sava" class="layui-btn" value="发送"/>
+                <!-- <input id="cancel" type="submit" class="btn" value="取消"/> -->
+            </div>
+        </div>
+        <div id="sig" class="layui-form-item">
+            <label class="layui-form-label" style="width:46px;">署名：</label>
+            <div class="layui-input-block" style="margin-left:80px;">
+              <input type="text" name="sign" style="width:90%;" placeholder="请输入署名"  class="layui-input">
+            </div>
+        </div>
+        <div id="Tree" class="layui-form-item none">
+            <div class="layui-input-inline">
+                <label class="layui-form-label">个人云盘：</label>
+                <div class="layui-input-inline">
+                    <ul id="Personal"></ul>
+                </div>
+            </div>
+            <div class="layui-input-inline">
+                <label class="layui-form-label">班级云盘：</label>
+                <div class="layui-input-inline">
+                    <ul id="Public"></ul>
+                </div>
+            </div>
+            <div class="layui-input-inline">
+                <label class="layui-form-label">已选文件：</label>
+                <div class="layui-input-inline">
+                    <ul id="OK">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+    <script>
+    var $ = jQuery = layui.jquery
+    </script>
+    <script src="/Web/Include/tby.js"></script>
+    <script src="js/goNotice.js"></script>
+</body>
+</html>

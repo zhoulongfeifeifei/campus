@@ -1,0 +1,113 @@
+@charset "UTF-8";
+body{
+    background-color: #fff;
+    padding: 0px 10px;
+}
+.erweima{
+    display: none;
+    width:100%;
+    height:auto;
+}
+#code{
+    margin-top: 5%;
+    height:auto;
+    text-align: -webkit-center;
+}
+#erweima p{
+    padding:10px 0;
+}
+.curbtn{
+    margin:auto;
+    width: 200px;
+    margin-top: 10%;
+}
+.btn{
+    background-color: #5bae38;
+    margin-left: 1px;
+    border-radius: 3px;
+}
+.btn:hover{
+    background-color: #5bae38;
+}
+.layui-Bt1,.layui-cha,.layui-Btn1{
+    background-color: #7dc05f;
+}
+.layui-caozuo{
+    background-color: #5baf36;
+}
+.layui-Ti{
+    background-color: #ffa800;
+}
+.layui-dan{
+    background-color: #fe0000;
+}
+.table td .chakan{
+    color: #0b70fe;
+}
+.table td{
+    padding: 9px 14px !important;
+}
+.table th,tr{
+    text-align: center;
+}
+.table div{
+    margin: 5px 0;
+}
+.box a{
+    color: #fff;
+    width: 95px;
+    margin-left: 4px;
+    margin-top: 5px;
+}
+/*按钮*/
+.box button{
+    margin: 5px 5px;
+    width: 92px;
+}
+.box .layui-cha,.layui-Bt1,.layui-Ti{
+    float: left;
+}
+.box .layui-Btn1,.layui-caozuo,.layui-dan{
+    float: right;
+}
+/*专业数据表的css*/
+.biaoju .thead{
+    background-color: #fff;
+    letter-spacing: 2px;
+}
+.biaoju .thead:hover{
+    background-color: #fff;
+}
+.btn-green{
+    background-color:#7dc05f !important;
+}
+.layui-form.formbox {
+    width: 92%;
+    float: right;
+}
+.layui-input-inline.chuanshuju {
+    margin-left: 30px;
+    width: 120px;
+}
+.layui-box.layui-upload-button {
+    width: 105px;
+    height: 32px;
+    background-color: #5bae38;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0px !important;
+    line-height: 31px;
+}
+.layui-upload-icon{
+    width: 100px;
+    margin-left: 0 !important;
+    padding:0 !important;
+}
+.layui-upload-icon i{
+    display: none;
+}
+.tishi a{
+    color: #ff0000;
+}

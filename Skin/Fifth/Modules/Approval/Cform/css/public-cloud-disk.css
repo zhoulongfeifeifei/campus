@@ -1,0 +1,57 @@
+.vF-panel{padding-left: 0;}
+.content{
+	position: relative;
+	width: 100%;
+}
+#left{
+	position: absolute;
+	top: 10%;
+	left: 0;
+	width: 15%;
+}
+#left li{
+	display: block;
+	width: 100%;
+	min-width: 200px;
+	cursor: pointer;
+	padding: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+#right {
+    left: 19%;
+    width: 80% !important;
+    }
+}
+@media screen and (max-width: 1350px) {
+#right {
+    left: 22%;
+    width: 76% !important;
+    }
+}
+@media screen and (max-width: 1200px) {
+#right {
+    left: 26%;
+    width: 70% !important;
+    }
+}
+#right{
+	position: absolute;
+	top: 10%;
+	right: 0;
+	width: 82%;
+}
+ .table{
+	display: none;
+}
+.all-capacity{
+	margin: 10px 0;
+}
+.active{
+	background-color: #F0EFF4;	
+}
+.show{
+	display:block;
+}
+
+

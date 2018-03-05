@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,p,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: 0;vertical-align: baseline;background: transparent;}
+table, caption, tbody, tfoot, thead, tr, th, td{ vertical-align:middle;}
+th{
+    text-align:center;
+}
+html{margin-top:0px !important;}
+
+body {background: #fff;  font-size:14px; color: #656565;font-family: 'microsoft yahei',osaka,sans-serif;}
+
+li{list-style: none;}
+
+a{cursor: pointer;margin: 0;padding: 0;border: 0;vertical-align: baseline;text-decoration:none;color:#000;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000;cursor: help;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #cccccc;margin: 0em 0;padding: 0;}
+
+input, select {vertical-align: middle;}
+
+h1,h2,h3,h4,h5,h6{ color:#999; padding:10px 0;}
+img{border: 0}
+
+em,i,strong{font-style:normal;}
+
+/*清除浮动*/  
+.clearfix:before,.clearfix:after{content: '';display: table;}  
+.clearfix:after{clear: both;}
+/*==========重置样式=========*/
+.subjectlist{
+	margin: 0 10px;
+}
+.tiaozhuan{
+	position: absolute;
+	right: 50px;
+	top: 10px;
+}
+.tiaozhuan span{
+   display: inline-block;
+   width: 80px;
+   height: 30px;
+   margin-left: 10px;
+   text-align: center;
+   line-height: 30px;
+   color: #FFF;
+   background: #0c8;
+   border-radius: 5px;
+}
+.niaji li{
+    float: left;
+    padding:5px 10px;
+}
+.banji li{
+   float: left;
+   padding:5px 9px;
+}
+.kemu li{
+	padding:5px 10px;
+	float:left;
+}
+.header ul{
+	margin: 20px 0;
+}
+.header{
+	border-bottom: 1px solid #ccc;
+}
+.shijian span{
+	/*display: inline-block;*/
+	margin:10px;
+}
+.layui-icon{
+	font-size: 30px;
+}
+.quspan{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 100px;
+	width: 23%;
+}
+.span1{
+	font-weight: 900;
+	color: #000;
+	display: block;
+}
+.span2{
+   display: block;
+}
+.span3{
+	color:red;
+}
+.zyxq .span4{
+	color: #0c8;
+	padding: 0px;
+}
+.zyxq .span5{
+	margin-right:10px;
+	padding: 0px;
+}
+.span6{
+   margin-right:200px;
+}
+.zyxq .span7{
+	padding: 0px;
+}
+.zyxq .span8{
+	padding: 0px;
+}
+.zyxq .span9{
+	display: inline-block;
+    padding: 5px 10px;
+	border:1px solid #0c8;
+	color: #0c8;
+	border-radius:5px;
+	position: absolute;
+	right: 150px;
+	top:20px;
+}
+.zyxq .span10{
+	display: inline-block;
+    padding: 5px 10px;
+	border:1px solid #0c8;
+	color: #0c8;
+	border-radius:5px;
+	position: absolute;
+	right: 50px;
+	top:20px;
+}
+.zyxq .span11{
+	display: inline-block;
+    padding: 5px 10px;
+	border:1px solid #0c8;
+	color: #0c8;
+	border-radius:5px;
+	position: absolute;
+	right: 100px;
+	top:20px;
+}
+.zyxq .span12{
+	padding: 0;
+	display: inline-block;
+}
+.zyxq .span13{
+	padding: 0;
+	color: red;
+	
+}
+.zyxq span{
+	padding: 5px;
+}
+.zyxq{
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+.zuoye{
+	border:1px solid #ccc;
+}
+.gren{
+	background: #0c8;
+	border-radius: 5px;
+}
+.gren a{
+	color:#FFF;
+}
+.banji2 {
+	margin-left: 5%;
+}
+.kemu2 {
+	margin-left: 5%;
+}
+.html{
+	font-size: 20px;
+	text-align: center;
+	padding: 10px 0px;
+}
+#page{
+	text-align: center;
+}
+#page1{
+	text-align: center;
+}
+#page2{
+	text-align: center;
+}

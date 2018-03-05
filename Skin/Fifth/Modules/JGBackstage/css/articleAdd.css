@@ -1,0 +1,76 @@
+input,
+select {
+	border-radius: 4px !important;
+}
+
+.searchable-select-dropdown {
+	background: #fff;
+	z-index: 2;
+}
+
+.searchable-select-item {
+	color: #666;
+}
+
+.ad {
+	position: relative;
+	margin-right: 20px;
+	display: inline-block;
+}
+
+.removeAdmin {
+	cursor: pointer;
+	position: absolute;
+	top: -10px;
+	right: -4px;
+	font-size: 14px;
+	color: red;
+}
+
+.removeAdmin:active {
+	opacity: .7;
+}
+.ke-container{
+	width: 98% !important;
+}
+#adimg {
+	max-height: 300px;
+	max-width: 600px;
+}
+
+#Albums li {
+	float: left;
+	margin: 0 5px;
+	position: relative;
+}
+
+#Albums li .guan {
+	display: block;
+	background-color: white;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 20px;
+	line-height: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.album {
+	display: none;
+}
+#lm_box{
+	position: relative;
+}
+#idselect {
+	position: absolute;
+	top: 40px;
+	left: 110px;
+	float: left;
+	height: 200px;
+	overflow: auto;
+	z-index: 10000;
+	display: none;
+}

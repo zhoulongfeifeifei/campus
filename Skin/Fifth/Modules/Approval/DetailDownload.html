@@ -1,0 +1,42 @@
+﻿<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/ApplyDetail.css" />
+		<base target="_blank"/>
+	</head>
+	<body>
+		<div id="form-data">
+			<h1 style="text-align: center;" id="spTitle">标题</h1>
+			<div class="info">
+				<span>学校：</span><span id="SchoolName"></span> &nbsp;&nbsp;&nbsp;
+				<span>申请时间：</span><span id="InTime"></span>
+			</div>
+			<table class="" style="width: 100%;margin: 10px 0;background-color: #fff;border-collapse: collapse;border-spacing: 0;">
+				<tbody id="tbody">
+					<tr>
+						<td class="title" style="padding: 9px 15px;min-height: 20px;line-height: 20px;border: 1px solid #e2e2e2;font-size: 14px;">审批编号</td>
+						<td id="examNo" style="padding: 9px 15px;min-height: 20px;line-height: 20px;border: 1px solid #e2e2e2;font-size: 14px;"></td>
+					</tr>
+					<tr id="user">
+						<td class="title" style="padding: 9px 15px;min-height: 20px;line-height: 20px;border: 1px solid #e2e2e2;font-size: 14px;">申请人</td>
+						<td id="fromUserName" style="padding: 9px 15px;min-height: 20px;line-height: 20px;border: 1px solid #e2e2e2;font-size: 14px;"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+		<script>
+			var form = layui.form(),
+				layer = layui.layer,
+				laydate = layui.laydate,
+				laypage = layui.laypage,
+				$ = jQuery = layui.jquery;
+		</script>
+		<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/DetailDownload.js"></script>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+.form-center{
+	width: 50%;
+	padding: 4% 25%;
+	background: #fff;
+}
+.title{
+	font-size: 38px;
+	color: #616161;
+	text-align: center;
+}
+.f-title{
+	height: 124px;
+	font-size: 18px;
+	color: #616161;
+	line-height: 124px;
+	text-align: center;
+}
+.form-content{
+	width: 50%;
+	padding: 0 25%;
+	background: #f4f4f4;	
+}
+.form h3{
+	height: 84px;
+	font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    line-height: 84px;
+}
+.layui-form-label{
+	width: 130px;
+	text-align: left;
+}
+.layui-input-inline{
+	width: 220px;
+}
+.layui-form-item .btn1{
+	width: 200px;
+}
+.layui-form-item .btn1 input{
+	width: 200px;
+} 
+.btn-div{
+	margin:20px 0 0 25%;
+}
+.layui-input, .layui-textarea{
+	width: 158%;
+}

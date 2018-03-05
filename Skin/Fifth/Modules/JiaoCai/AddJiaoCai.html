@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<link href="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/AddJiaoCai.css" />
+	</head>
+
+	<body style="min-height: 600px;">
+		<form  class="layui-form" action="" id="form88" method="post">
+				<div class="layui-form-item">
+					<label class="layui-form-label">教材名称：</label>
+					<div class="layui-input-inline">
+						<select class="form-control" id="JiaoCaiId">
+						<option ></option>
+						</select>
+
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">年级名称：</label>
+					<div class="layui-input-inline">
+						<select class="form-control" id="GradeId">
+						<option ></option>
+						</select>
+
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label">学科名称：</label>
+					<div class="layui-input-inline">
+						<select class="form-control" id="SubjectId">
+							<option ></option>
+						</select>
+
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label class="layui-form-label"></label>
+					<div class="layui-input-inline">
+						<input class="layui-btn layui-btn-green layui-btn-small" id="sd" type="button" value="锁定" /><br/><span class=" red">
+							<input type="hidden" name="sd" value="0">
+							注：添加章节前请先锁定，锁定后以上信息将无法修改</span>
+					</div>
+				</div>
+				<div class="layui-form-item">
+
+					<label class="layui-form-label"></label>
+					<div class="layui-input-inline">
+							<a class="layui-btn layui-btn-green layui-btn-small" id="addzj">添加顶级章节</a>
+					</div>
+				</div>
+			<!--标题层 End-->
+			<ul id="navigation"></ul>
+		</form>
+		<div class="layer-box" style="display: none;">
+			<form class="layui-form" action="" id="form99">
+				  <div class="layui-form-item top-line">
+				    	<label class="layui-form-label">章节名称</label>
+					    <div class="layui-input-inline">
+					      <input type="hidden" name="id" value=""/>		
+					      <input type="text" name="Name" required  lay-verify="required" autocomplete="off" class="layui-input">
+					    </div>
+				  </div>
+				  <div class="layui-form-item">
+				    	<label class="layui-form-label top-line">父级章节</label>
+					    <div class="layui-input-inline">
+					      	<input type="text" class="layui-input fujie" id="pid" disabled="disabled" autocomplete="off" required lay-verify="required"><br />
+					      	<span class="ts" style="font-size: 12px; color: red;">注：顶级章节时此处为空</span>
+					      	<input type="hidden" name="pid" value="0">
+					    </div>
+				  </div> 
+			</form>
+		</div>
+		<!--新增章节 模态框（Modal） -->
+		<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title" id="myModalLabel">
+							新增章节
+						</h4>
+					</div>
+					<form id="form99" class="modal-body">
+						<input type="hidden" name="JiaoCaiId" />
+						<input type="hidden" name="GradeId" />
+						<input type="hidden" name="SubjectId" />
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="Name" class="col-sm-3 control-label">章节名称：</label>
+									<div class="col-sm-5">
+										<input type="hidden" name="id" value="" />
+										<input type="text" class="form-control" name="Name">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="Name" class="col-sm-3 control-label">父级章节</label>
+									<div class="col-sm-5">
+										<input type="text" class="form-control" id="pid" disabled="disabled"><span class="ts" style="font-size: 12px; color: red;">注：顶级章节时此处为空</span>
+										<input type="hidden" name="Pid" value="0">
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div id="baocun" class="modal-footer">
+							<button type="button" id="save1" class="layui-btn layui-btn-green layui-btn-small">
+								保存
+							</button>
+							<button type="button" class="layui-btn layui-btn-default layui-btn-small" data-dismiss="modal">关闭
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>-->
+		<script src="/Web/Assets/layui/layui.js"></script>
+		<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	    <script>
+	    	var form = layui.form(),
+				layer = layui.layer,
+				laydate = layui.laydate,
+				laypage = layui.laypage;
+	    </script>
+		<script>var $ = jQuery = layui.jquery;</script>
+		<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/AddJiaoCai.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

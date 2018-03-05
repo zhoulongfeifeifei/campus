@@ -1,0 +1,25 @@
+
+.info {
+	margin: 10px 0;
+	font-size: 14px;
+}
+
+h1{
+    font-size: 22px;
+}
+.page_title{
+    position: relative;
+}
+.page_title .fanhui{
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+.page_title .fr{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.yinc{
+	display: none;
+}

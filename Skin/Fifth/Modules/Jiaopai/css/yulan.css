@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,p,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: 0;vertical-align: baseline;background: transparent;list-style: none;}
+table, caption, tbody, tfoot, thead, tr, th, td{ vertical-align:middle;text-align: center;}
+html{margin-top:0px !important;}
+
+body {background: #fff;  font-size:14px; color: #656565;font-family: 'microsoft yahei',osaka,sans-serif;min-width: 1200px;}
+
+li{list-style: none;};
+
+a {cursor: pointer;margin: 0;padding: 0;border: 0;vertical-align: baseline;text-decoration:none;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000;cursor: help;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #cccccc;margin: 1em 0;padding: 0;}
+
+input, select {vertical-align: middle;}
+
+h1,h2,h3,h4,h5,h6{ color:#999; padding:10px 0;}
+img{border: 0}
+
+em,i,strong{font-style:normal;}
+
+/*清除浮动*/  
+.clearfix:before,.clearfix:after{content: '';display: table;}  
+.clearfix:after{clear: both;}
+/*==========重置样式=========*/
+.pre-box {
+    width: 823px;
+    height: 844px;
+    position: relative;
+    margin: 0 auto;
+}
+.pre-box .pre-bg {
+    display: block;
+    width: 100%;
+}
+.lunbo-box {
+    position: absolute;
+    left: 7.47%;
+    top: 7.52%;
+    width: 700px;
+    height: 393.75px;
+    overflow: hidden;
+}
+.lunbo-box ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.progress {
+    position: absolute;
+    left: 7.47%;
+    top: 7.52%;
+    margin-top: 400px;
+    width: 700px;
+    height: 2px;
+    background: #eee;
+}
+.form {
+    position: absolute;
+    top: 54%;
+    left: 7.47%;
+    padding: 5px;
+    font-size: 14px;
+}
+.form .f1 {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    border-top: 1px dashed #ddd;
+}
+.btn-red {
+    background: #d9534f;
+}
+.btn {
+    font-size: 12px;
+    display: inline-block;
+    margin: 3px 5px;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    min-width: 35px;
+    color: #fff;
+    background: #616161;
+    text-align: center;
+    border-radius: 1px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    transition: background-color .2s ease 0s;
+    border-radius: 1px;
+    vertical-align: middle;
+}
+.form #ui_slider {
+    display: inline-block;
+    width: 100px;
+    margin: 0 8px 0 16px;
+    vertical-align: middle;
+}
+.btn-blue {
+    background: #3276b1;
+}
+.form .f1 select {
+    padding: 5px;
+    height: 30px;
+    vertical-align: middle;
+}

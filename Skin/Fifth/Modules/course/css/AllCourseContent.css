@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-12-14 19:17:24
+ * @version $Id$
+ */
+
+        sub {
+            vertical-align: sub;
+        }
+
+        sup {
+            vertical-align: super;
+        }
+
+        .table tr td input {
+            width: 60px;
+        }
+
+        .table-normal table th {
+            background: #eee;
+        }
+
+        .table td, table th {
+            border-left: 1px solid #ddd;
+        }
+
+        .table table {
+            border-left: 0;
+            position: relative;
+            z-index: 20;
+        }
+
+            .table table tbody {
+                height: 300px;
+                width: 100%;
+                overflow: auto;
+            }
+
+        #demoGrid {
+            height: 400px;
+            width: 100%;
+        }
+
+            #demoGrid .g_Cl {
+                border-left: 1px solid #ddd;
+            }
+
+            #demoGrid .g_HR {
+                border-width: 0 0 1px 0;
+            }
+
+            #demoGrid .g_RS {
+                margin-bottom: -54px !important;
+                height: 54px !important;
+            }
+
+            #demoGrid .g_BodyFixed {
+                top: 54px !important;
+                bottom: 17px !important;
+            }
+
+            #demoGrid .g_HeadStatic .g_Cl {
+                border-left: 1px solid #eee !important;
+            }
+
+            #demoGrid .g_HeadStatic .g_Cl1 {
+                border-left: 0 !important;
+            }
+
+            #demoGrid .g_HeadStatic .g_R0 {
+                border-left: 1px solid #ccc;
+            }
+
+            #demoGrid .g_BodyStatic {
+                padding-top: 54px !important;
+            }
+
+            #demoGrid .g_Body {
+                overflow-y: auto;
+            }
+
+            #demoGrid .g_Head .g_Cl {
+                max-width: 121px;
+            }
+
+            #demoGrid .g_BodyStatic .g_Cl {
+                max-width: 121px;
+            }
+
+            #demoGrid .g_BodyStatic .g_C label {
+                max-width: 120px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: inline-block;
+            }
+
+
+
+
+
+
+    #AlerMsg .AlerMsgBox .b textarea {
+        height: 80px;
+    }

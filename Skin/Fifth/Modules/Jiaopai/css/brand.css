@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,p,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;outline: 0;vertical-align: baseline;background: transparent;}
+table, caption, tbody, tfoot, thead, tr, th, td{ vertical-align:middle;}
+html{margin-top:0px !important;}
+
+
+
+body {background: #fff;  font-size:14px; color: #656565;font-family: 'microsoft yahei',osaka,sans-serif;min-width: 1200px;}
+
+li{list-style: none;};
+
+a {cursor: pointer;margin: 0;padding: 0;border: 0;vertical-align: baseline;text-decoration:none;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000;cursor: help;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #cccccc;margin: 1em 0;padding: 0;}
+
+input, select {vertical-align: middle;}
+
+h1,h2,h3,h4,h5,h6{ color:#999; padding:10px 0;}
+img{border: 0}
+
+em,i,strong{font-style:normal;}
+
+/*清除浮动*/  
+.clearfix:before,.clearfix:after{content: '';display: table;}  
+.clearfix:after{clear: both;}
+/*==========重置样式=========*/
+.left{
+	float: left;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+.right{
+	float: left;
+}
+.green{
+	color:#5fb878;
+}
+.red{
+	color:red;
+}
+td a{
+	display: inline-block;
+	margin: 0 10px 5px 0;
+    border-radius: 2px;
+    padding: 0px 5px;
+	color:#FFF;
+	font-size: 12px
+}
+.update{
+	background: #5fb878;
+}
+.restart{
+	background: red;
+}
+.log{
+	background:#501aff;
+}
+.screencut{
+	background: #ff9c1a;
+}
+.templatecut{
+	background: #693796;
+}
+.contentset{
+	background: #353232;
+}
+.layui-table th{
+  text-align: center
+}
+.layui-table td{
+   text-align: center;
+}
+#tsxi{
+    display: none;
+    background: #000;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -50px;
+    filter: alpha(opacity:70);
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+}

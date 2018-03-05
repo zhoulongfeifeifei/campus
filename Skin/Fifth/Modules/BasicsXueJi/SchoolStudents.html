@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>学生管理</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<link href="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/SchoolStudents.css" />
+	</head>
+
+	<body>
+		<div class="body_box" style="overflow: hidden;">
+			<div class=" nav_main">
+				<div data-id="zybj" class="nav_title">在用班级</div>
+				<ul class="nav_list" id="nav_top">
+
+				</ul>
+				<div data-id="ybybj" class="nav_title">已毕业班级</div>
+				<ul class="nav_ybys" id="nav_bottom">
+
+				</ul>
+			</div>
+			<div class="main">
+				<!--<div class="text-title">
+					<span class="">学生信息</span>
+				</div>-->
+				<div class="layui-tab layui-tab-brief">
+					<ul class="layui-tab-title" id="nav_tab">
+						<li data-id="1" data-toggle="ok" class="active layui-this">
+							<a href="javascript:;">有效</a>
+						</li>
+						<li data-id="0" data-toggle="no">
+							<a href="javascript:;">已停用</a>
+						</li>
+					</ul>
+				</div>
+				<div style="width: 100%;">
+					<div class="zybj active" style="padding: 10px 0;width: 100%;">
+						<div class=" cz active ok" style="width: 100%;">
+							<a href="javascript:;" data-operation="AjaxStudent.NewAddStudent"  id="addstu" data-num="" class="layui-btn layui-btn-green layui-btn-small yinc">新增</a>
+							<a href="javascript:;" data-operation="AjaxStudent.NewAddStudent"  id="xg" class="layui-btn layui-btn-green layui-btn-small yinc">批量修改</a>
+							<a href="javascript:;" data-operation="AjaxStudent.DeleteNewStudent" id="plstop" class="layui-btn layui-btn-green layui-btn-small  yinc">批量停用</a>
+							<a href="JavaScript:;" id="drstu" data-operation="AjaxStudent.StudentTemplateImport" class="layui-btn layui-btn-green layui-btn-small yinc">批量导入</a>
+							<a href="javascript:;" data-operation="AjaxStudent.StudentTemplateImport" class="layui-btn layui-btn-green layui-btn-small pldc yinc">批量导出</a>
+							<a href="javascript:;" data-operation="AjaxStudent.StudentTemplateImport" id="scphoto" class="layui-btn layui-btn-green layui-btn-small yinc">批量导入学籍照片</a>
+							<form action="" class="pull-right">
+								<input type="text" class="inpt" name="Name" id="" value="" placeholder="学生姓名"/>
+								<a href="javascript:;" class="layui-btn layui-btn-green layui-btn-small search ">搜索</a>
+
+							</form>
+						</div>
+						<div class=" no" style="width: 100%;">
+							<a href="javascript:;" data-operation="AjaxStudent.NewBackStudent" class="layui-btn layui-btn-green layui-btn-small plhy yinc">批量还原</a>
+							<a href="javascript:;" data-operation="AjaxStudent.DeleteStudent" class="layui-btn layui-btn-green layui-btn-small yplsc yinc">批量删除</a>
+							<form action="" class="pull-right">
+								<input type="text" class="inpt" name="Name" id="" value="" placeholder="学生姓名"/>
+								<a href="javascript:;" class="layui-btn layui-btn-green layui-btn-small search">搜索</a>
+							</form>
+						</div>
+					</div>
+					<div class="ybybj" style="padding: 10px 0;width: 100%;">
+						<div class=" cz active ok" style="width: 100%;">
+							<a href="javascript:;" data-operation="AjaxStudent.StudentTemplateImport" class="layui-btn layui-btn-green layui-btn-small pldc yinc">导出</a>
+							<a href="javascript:;" data-operation="AjaxStudent.DeleteNewStudent" class="layui-btn layui-btn-green layui-btn-small plsc  yinc">批量停用</a>
+							<form action="" class="pull-right">
+								<input type="text" class="inpt" name="Name" id="" value="" placeholder="学生姓名"/>
+								<a href="javascript:;" class="layui-btn layui-btn-green layui-btn-small search">搜索</a>
+
+							</form>
+						</div>
+						<div class="no" style="width: 100%;">
+							<a href="javascript:;" class="layui-btn layui-btn-green layui-btn-small plhy yinc">还原</a>
+							<a href="javascript:;" data-operation="AjaxStudent.DeleteStudent" class="layui-btn layui-btn-green layui-btn-small yplsc yinc">批量删除</a>
+							<form action="" class="pull-right">
+								<input type="text" class="inpt" name="Name" id="" value="" placeholder="学生姓名"/>
+								<a href="javascript:;" class="layui-btn layui-btn-green layui-btn-small  search">搜索</a>
+							</form>
+						</div>
+					</div>
+				</div>
+				<table class="layui-table">
+					<thead>
+
+					</thead>
+					<tbody id="tbody">
+
+					</tbody>
+				</table>
+				<div id="page">
+
+				</div>
+			</div>
+		</div>
+		<!--新增学生 模态框（Modal） -->
+		<div class="modal" id="myModal" >
+			<form class="layui-form " id="form0" role="form">
+				<h4>
+					学生信息
+					<span class="small text-danger">提示：校内基本信息</span>
+				</h4>
+				<div class="col-md-6">
+					<div class="layui-form-item">
+						<label for="" class="layui-form-label">姓名<span style="color:red">*</span>：</label>
+						<div class="layui-input-inline">
+							<input type="text" class="layui-input" name="name" id="name"  lay-verify="required">
+							<input type="hidden" name="id" id="id" value="0" />
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label for=" " class="layui-form-label">学籍号<span style="color:red">*</span>：</label>
+						<div class="layui-input-inline">
+							<input type="text" class="layui-input" name="studentCode" id="studentCode" lay-verify="required">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label for="GradeId " class="layui-form-label">所在年级：</label>
+						<div class="layui-input-inline">
+							<select class="Grade" id="gradeId" name="gradeId" lay-filter="Grade">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+					<!--<div class="layui-form-item">
+						<label for=" " class="layui-form-label">教育ID号：</label>
+						<div class="layui-input-inline">
+							<input type="number" class="layui-input" name="eduId">
+						</div>
+					</div>-->
+					<div class="layui-form-item">
+						<label for="PhoneNum "  class="layui-form-label">出生日期：</label>
+						<div class="layui-input-inline">
+							<input type="text" id="Birthday" lay-verify="required" onclick="layui.laydate({elem: this, festival: true})" class="layui-input laydate-icon" name="birthday" placeholder="请输入">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label for=" " class="layui-form-label">会考号：</label>
+						<div class="layui-input-inline">
+							<input type="number" class="layui-input" name="examId">
+						</div>
+					</div>
+					
+					<div class="layui-form-item">
+						<label for=" " class="layui-form-label">学生类别：</label>
+						<div class="layui-input-inline">
+							<select  name="studentType">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="layui-form-item">
+						<label for=" " class="layui-form-label">性别<span style="color:red">*</span>：</label>
+						<div class="layui-input-inline">
+							<select  name="gender">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label for=" " class="layui-form-label">入学年份<span style="color:red" class="text-danger">*</span>：</label>
+						<div class="layui-input-inline">
+							<select  id="SchoolYear" name="schoolYear">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label for=" " class="layui-form-label">所在班级<span style="color:red" class="text-danger">*</span>：</label>
+						<div class="layui-input-inline">
+							<input type="hidden" class="layui-input">
+							<select class=" Class" id="ClassId" name="classId">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+
+					<div class="layui-form-item">
+						<label for=" " class="layui-form-label">学号：</label>
+						<div class="layui-input-inline">
+							<input type="number" name="stuNumber" class="layui-input">
+						</div>
+					</div>
+					<!--<div class="layui-form-item">
+						<label for=" " class="layui-form-label">全国学籍号：</label>
+						<div class="layui-input-inline">
+							<input type="text" class="layui-input" name="nStudentCode">
+						</div>
+					</div>-->
+					<div class="layui-form-item">
+						<label for=" " class="layui-form-label">家庭地址：</label>
+						<div class="layui-input-inline">
+							<input type="text" class="layui-input" name="nStudentCode">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label for=" " class="layui-form-label">就读方式：</label>
+						<div class="layui-input-inline">
+							<select  name="studyType">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+					<!--<div class="layui-form-item">
+						<label for=" " class="layui-form-label">所属届次：</label>
+						<div class="layui-input-inline">
+							<select  name="period">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>-->
+
+				</div>
+				<div style="clear: both;"></div>
+				<h4>
+				家长家庭信息
+				</h4>
+				<div class="col-md-6">
+					<div class="layui-form-item">
+						<label for="Name" class="layui-form-label">家长姓名：</label>
+						<div class="layui-input-inline">
+							<input type="text" class="layui-input" name="pName">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label for="StuNumber " class="layui-form-label">家长手机号：</label>
+						<div class="layui-input-inline">
+							<input type="number" class="layui-input" name="mobile" lay-verify="phone">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label for="PhoneNum " class="layui-form-label">是否监护人：</label>
+						<div class="layui-input-inline">
+							<select  name="isGuardian">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="layui-form-item">
+						<label for=" " class="layui-form-label">家长性别：</label>
+						<div class="layui-input-inline">
+							<select name="pGender">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label for=" " class="layui-form-label">成员关系：</label>
+						<div class="layui-input-inline">
+							<select  name="relation">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label for=" " class="layui-form-label">是否生活在一起：</label>
+						<div class="layui-input-inline">
+							<select  name="islive">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+				<div id="baocun" class="modal-footer" style="text-align: right;padding-right: 20px;margin: 20px; 0 20px 0">
+					<a id="save1" lay-submit="" lay-filter="save1" class="layui-btn layui-btn-green layui-btn-small">
+						保存
+					</a>
+				</div>
+			</form>
+		</div>
+		<!--批量修改 模态框（Modal） -->
+		<div class="modal" id="plxg" >
+			<form class="layui-form " id="form8" role="form">
+				<input type="hidden" name="id" value="0" />
+				<div class="layui-form-item">
+					<label for="Gender " class="layui-form-label">所在年级：</label>
+					<div class="layui-input-inline">
+						<select class="Grade" name="gradeid" lay-filter="Grade2">
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+				<div class="layui-form-item">
+					<label for="Gender " class="layui-form-label">所在班级：</label>
+					<div class="layui-input-inline">
+						<select class=" Class" name="classid">
+							<option value=""></option>
+						</select>
+					</div>
+				</div>
+				<div id="baocun" class="modal-footer" style="text-align: right;padding-right: 20px;margin: 20px; 0 20px 0">
+					<button type="button" lay-submit="" lay-filter="plxg_save" id="plxg_save" class="layui-btn layui-btn-green layui-btn-small">
+						保存
+					</button>
+				</div>
+			</form>
+		</div>
+		<!--批量上传照片 模态框（Modal） -->
+		<div class="modal" id="plzp" >
+			<form class="layui-form " id="form999" role="form">
+				<div class="layui-form-item">
+					<p style="background-color: #FCF8E3;line-height: 25px;"><span class="glyphicon glyphicon-exclamation-sign text-primary"></span>&nbsp;&nbsp;&nbsp;<span class="text-primary">学籍照片导入照片命名规范："学籍号.jpg"或者"学籍号.jpeg"。请将需要上传的照片打包成压缩文件，压缩文件zip格式</span></p>
+				</div>
+				<div class="layui-form-item">
+					<label for="Gender " class="layui-form-label">请导入压缩包：</label>
+					<div class="layui-input-inline">
+						<!--<a href="javascript:;" >导入学生</a>-->
+						<input type="file" id="scwj" name="file1" lay-type="file" class="layui-upload-file"> 
+					</div>
+					<input type="hidden" name="photo" id="zip" value="" />
+				</div>
+				<div class="layui-form-item" style="text-align: right;padding-right: 20px;">
+					<a lay-submit="" lay-filter="plzp_save" id="plzp_save" class="layui-btn layui-btn-green layui-btn-small">
+						保存
+					</a>
+				</div>
+			</form>
+		</div>
+		<!--//导入学生模态框-->
+		<div id="drxs" class="modal">
+			<div class="row" style="margin: 20px 0;">
+				<div class="col-md-12 " style="padding-left: 33px;box-sizing: border-box;">
+					<span>当前学校：</span><span></span>
+					<a href="JavaScript:;"id="xzmb" class="layui-btn layui-btn-green ">下载模板</a>
+					<input type="file" name="file" class="layui-upload-file" id="file_stu">
+				</div>
+			</div>
+		</div>
+	    <script src="/Web/Assets/layui/layui.js"></script>
+	    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	    <script>
+	    	var form = layui.form(),
+				layer = layui.layer,
+				laydate = layui.laydate,
+				laypage = layui.laypage,
+				 $ = jQuery = layui.jquery;
+			
+	    </script>
+	    <script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="/Web/Include/validate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/js/ligerui.all.js" type="text/javascript"></script>
+		<script src="js/SchoolStudents.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

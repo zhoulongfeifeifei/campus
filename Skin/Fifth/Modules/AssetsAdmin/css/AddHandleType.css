@@ -1,0 +1,42 @@
+.textarea {
+	width: 250px !important;
+	min-height: 100px;
+}
+ body{
+ 	padding: 20px;
+ }
+ tbody tr td .link {
+ 	display: inline-block;
+ 	width: 3em;
+ 	margin-right: 5px;
+ }
+ thead tr th, tbody tr td {
+ 	text-align: center !important;
+ }
+ .page_title{
+    width: 100%;
+    border-bottom:1px solid #eaeaea;
+    height: 50px;
+    line-height: 50px;
+	}
+.page_title .span{
+    width: 100px;
+    display: block;
+    float: left;
+    border-bottom:2px solid green;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+.page_title{
+	margin: 5px 0;
+}
+.page_title select,.page_title input{
+	width: 150px;
+	height: 30px;
+}
+a:hover{
+	text-decoration: none;
+}

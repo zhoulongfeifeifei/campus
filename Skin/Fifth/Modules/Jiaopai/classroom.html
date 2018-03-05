@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>班牌管理</title>
+	<link rel="stylesheet" href="css/classroom.css">
+</head>
+<body>
+	<div class="vF-panel">
+	        <!--标题层-->
+	        <div class="bar-header clearfix">
+	            <span class="text font-18 blue">编辑教室</span>
+	        </div>
+	        <!--标题层 End-->
+	        <div class="form">
+	            <form id="form1">
+	                <input type="hidden" name="id" value="0">
+	                <div class="f1 clearfix">
+	                    <label class="f-label span1 w-100">教室名称：</label>
+	                    <div class="f-input span4">
+	                        <input class="w-300" name="roomname" value="">
+	                    </div>
+	                </div>
+	                <div class="f1 clearfix">
+	                    <label class="f-label span1 w-100">对应的班级名称：</label>
+	                    <div class="f-input span4">
+	                        <select id="classid" name="classid">
+	                            <!-- <option value="0">无</option>
+	                            
+	                            <option value="7485">测试班级</option>
+	                            
+	                            <option value="12441">建功演示二</option>
+	                            
+	                            <option value="12592">智慧校园培训班</option>
+	                            
+	                            <option value="13819">智慧校园班</option>
+	                            
+	                            <option value="15165">机器人</option> -->
+	                            
+	                        </select>
+	                    </div>
+	                </div>
+	                <div class="f1 clearfix">
+	                    <label class="f-label span1 w-100"></label>
+	                    <div class="f-input">
+	                        <input type="button" id="save" class="btn btn-blue" value="保存">
+	                    </div>
+	                </div>
+	                <input type="hidden" name="action" value="neweboard.roomedit">
+	            </form>
+	        </div>
+	    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<link rel="stylesheet" type="text/css" href="css/UserList.css" />
+	</head>
+	<body>
+		<fieldset class="layui-elem-field">
+		  	<legend>教师管理</legend>
+		  	<div class="layui-field-box">
+		    	<form class="layui-form" id="form0">
+					<div class="layui-form-item" style="width: 310px;display: inline-block;">
+						<label class="layui-form-label">学校：</label>
+						<div class="layui-input-inline">
+							<select class="school" lay-filter="school">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item" style="width: 310px;display: inline-block;">
+						<label class="layui-form-label">组织架构：</label>
+						<div class="layui-input-inline">
+							<select name="" class="organization" lay-filter="organization">
+								<option value=""></option>
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item" style="float: right; width: 310px;display: inline-block;">
+						<div class="layui-input-inline">
+							<input type="text" class="layui-input"  id="seach"/>
+						</div>
+						<a href="JavaScript:;"  class="layui-btn layui-btn-green ss">搜索</a>
+					</div>
+				</form>
+				<table class="layui-table">
+					<thead>
+						<tr>
+							<th>账号</th>
+							<th>姓名</th>
+							<th>性别</th>
+	                        <th>手机</th>
+							<th>角色</th>
+							<th>状态</th>
+							<th>时间</th>
+							<!--<th>操作</th>-->
+						</tr>
+					</thead>
+					<tbody id="roleTable">
+		
+					</tbody>
+				</table>
+				<div id="page"></div>
+		  	</div>
+		</fieldset>
+    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+    <script>var $ = jQuery =layui.jquery;</script>
+    <script src="/Web/Include/tby.js"></script>
+	<script src="js/userlist.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

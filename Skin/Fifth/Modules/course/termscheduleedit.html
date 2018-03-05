@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>课表编辑</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+</head>
+<body>
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class="layui-this">课表管理</li>
+        </ul>  
+    </div>
+    <form id="form1" class="layui-form">
+        <input type="hidden" name="id" id="id" value=""/>
+        <div class="layui-form-item">
+            <label class="layui-form-label">课表名称：</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" value="" id="tablename" name="tablename" lay-verify="required" />  
+            </div>
+            <label class="text"></label>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">开始时间：</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" value="" id="starttime" onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" name="starttime"/>
+            </div>
+            <label class="text"></label>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">周数：</label>
+            <div class="layui-input-inline">
+                <input value="" class="layui-input" id="weeknums" name="Weeks"/>
+                <label class="text"></label>
+                
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否单双周：</label>
+            <div class="layui-input-inline">
+                <select id="weektype" name="weektype">
+                    <option value="0">全周</option>
+                    <option value="1">单周</option>
+                    <option value="2">双周</option>
+                </select>
+                
+            </div>
+            <label class="text"></label>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <div class="layui-input-block">
+                <input type="button" lay-submit lay-filter="sava" id="save" class="layui-btn layui-btn-green" value="保存"/>
+            </div>
+        </div>
+    </form>
+
+	<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	<script>var $ = jQuery = layui.jquery</script>
+    <script src="/Web/Include/tby.js"></script>
+    <script src="js/TableDesign.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+	body {
+		background: #fff;
+	}
+	
+	.form .f-input .ad {
+		position: relative;
+		margin-right: 20px;
+		display: inline-block;
+	}
+	
+	.form .f-input .removeAdmin {
+		cursor: pointer;
+		position: absolute;
+		top: -10px;
+		right: -4px;
+		font-size: 20px;
+	}
+	
+	.form .f-input .removeAdmin:active {
+		opacity: .7;
+	}
+	
+	.Icon {
+		font-family: optioning;
+	}

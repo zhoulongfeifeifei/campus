@@ -1,0 +1,135 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<link rel="stylesheet" href="../../Common/css/public.css">
+    	<link rel="stylesheet" href="../../Common/css/listSearch.css">
+		<title>维护记录</title>
+		<link rel="stylesheet" type="text/css" href="css/MaintainRecord.css" />
+	</head>
+	<body>
+	<div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <!-- <li class="layui-this">维护记录</li> -->
+        </ul>  
+    </div>
+    <a href="javascript:;" class="layui-btn layui-btn-small add addnigao" data-toggle="modal" data-target="#myModal">添加维护申请</a>
+    <div class="right" style="margin-top: 5px;">
+        <input class="layui-input" type="text" name="Title" id="ss" placeholder="资产名称"/>
+        <a href="javascript:;" class="layui-btn layui-btn-small layui-btn-green search" id="search">搜索</a>
+    </div>
+	<table class="layui-table">
+		<colgroup>
+		    <col>
+		    <col>
+		    <col>
+		    <col width="200px;">
+		    <col>
+		    <col width="190px;">
+		 </colgroup>
+		<thead>
+			<tr>
+				<th>资产名称</th>
+				<th>维护类型</th>
+				<th>维护人员</th>
+				<th>维护日期</th>
+				<th>维护结果</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody id="tbody">
+		</tbody>
+	</table>
+	<div id="page"></div>
+	<!-- 模态框（Modal） -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form class="layui-form" id="form0" role="form">
+					<input type="hidden" name="Id" value="0" />
+					<div class="modal-body">
+						<div class="layui-form-item">
+							<label class="layui-form-label">资产名称<span class="text-danger"> *</span></label>
+							<div class="layui-input-inline">
+								<select name="Name" id="Name">
+									<option value=""></option>
+								</select>
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">维护类型<span class="text-danger"> *</span></label>
+							<div class="layui-input-inline">
+								<select name="MaintainType" id="MaintainType">
+									<option value=""></option>
+								</select>
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label"></label>
+							<div class="layui-input-block">
+								(可在系统管理>系统代码管理里设置)
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">维护日期<span class="text-danger"> *</span></label>
+							<div class="layui-input-inline" style="padding: 0 0 0 16px;">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+								<input class="Time layui-input" type="text" onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" id="InTime" name="AddTime" value="" />
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">备注</label>
+							<div class="layui-input-inline ">
+								<textarea class="layui-textarea textarea" name="Remark" id="Remark" rows="5"></textarea>
+							</div>
+						</div>
+						<div class="layui-form-item">
+							<label class="layui-form-label">维护人员<span class="text-danger"> *</span></label>
+							<div class="layui-input-inline">
+								<select name="UserId" id="UserId">
+									<option value=""></option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<!--<div class="modal-footer">
+						<button type="button" id="save1" class="layui-btn layui-btn-green layui-btn-small">保存</button>
+						<button type="button" class="layui-btn layui-btn-default layui-btn-small" data-dismiss="modal">关闭</button>
+					</div>-->
+				</form>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal -->
+	</div>
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form class="layui-form" id="form1" role="form">
+					<input type="hidden" id="jgId" name="Id" value="" />
+						<div class="layui-form-item">
+							<label class="layui-form-label">维护结果<span class="text-danger"> *</span></label>
+							<div class="layui-input-block" style="margin-left: 150px;">
+								<textarea class="layui-textarea textarea" name="MaintainResult" id="Result" rows="5"></textarea>
+							</div>
+						</div>
+					<!--<div class="modal-footer">
+						<button type="button" id="save2" class="layui-btn layui-btn-green layui-btn-small">保存</button>
+						<button type="button" class="layui-btn layui-btn-default layui-btn-small" data-dismiss="modal">关闭</button>
+					</div>-->
+				</form>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal -->
+	</div>
+	<script src="/Web/Assets/layui/layui.js"></script>
+	<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	<script>var $ = jQuery = layui.jquery;</script>	
+	<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/MaintainRecord.js"></script>
+</body>
+
+</html>

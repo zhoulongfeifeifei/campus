@@ -1,0 +1,101 @@
+@charset "UTF-8";
+body{
+    background-color: #fff;
+    width:100%;
+    padding: 34px 3px;
+}
+td.zhuanye{
+    padding:0;
+    /*display: table-caption;*/
+    width: 270px;
+    padding: 2px 0;
+    text-align: left;
+}
+p.zhuangtai1 {
+    color: #ff0000 !important;
+}
+input.layui-btn.layui-btn.layui-btn-small.fabu {
+    width: 90px !important;
+}
+td.zhuanye p {
+    width: 270px;
+}
+.layui-table td{
+    padding: 0px 0px;
+}
+.layui-table th {
+    padding: 11px 9px!important;
+}
+#tree1{
+    padding-bottom: 25px;
+}
+/*查看录取情况的页面的css*/
+.linkBtn{
+    float: right;
+    margin-right: 25px;
+    margin-top: -21px;
+}
+/*.xin,.fabu{
+    background-color: #5bb039;
+}*/
+/*树结构*/
+.shuMenu{
+    border-top: 1px solid #f2f2f2;
+    width:100%;
+    min-height: 500px;
+    margin-top: 25px;
+}
+.shuMenu .shujiegou{
+    width:20%;
+    height: 400px;
+    overflow-y: scroll;
+    float: left;
+}
+.shuMenu .biaoju{
+    float: right;
+    height: 500px;
+    padding: 0 3px;
+    width:79%;
+    /*background-color: #c0a830;*/
+}
+.tableBox{
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+}
+.layui-table th,.layui-table  tr{
+    text-align: center;
+}
+.shujiegou .tit{
+    width:95%;
+    height: 35px;
+    line-height: 35px;
+    color: #FFF;
+    text-align: center;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color:#7dc05f ;
+}
+.table span{
+    display: inline-block;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.table span.layred{
+    color: #ff0000;
+}
+.lay-green{
+    background-color:#7dc05f ;
+}
+.linkB{
+    float: right;
+    margin-right: 1px;
+    margin-top: -37px;
+}
+.l-tree{
+    width:100% !important;
+}
+.layui-btn-gray{
+    background-color: #757575 !important;
+}

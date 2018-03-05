@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-12-11 10:24:45
+ * @version $Id$
+ */
+        body,html{
+            height: 100%;width: 100%;
+        }
+        .pic{
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+        img{
+            width: 100%; height: 100%;
+        }
+        .comment{
+            width: 20%;
+            height: 100%;
+            background:red;
+            float: left;
+        }

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-12-14 19:24:13
+ * @version $Id$
+ */
+.bar-header textarea {
+    vertical-align: middle;
+}
+
+sub {
+    vertical-align: sub;
+}
+
+sup {
+    vertical-align: super;
+}
+
+.coursename{
+    width: 90%;
+    margin: 0 auto;
+    border:none;
+    border-bottom: 1px solid #ccc;
+}
+td,th{
+    text-align: center !important;
+}
+.form, .form .f-save {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#AlerMsg .AlerMsgBox .b textarea {
+    height: 80px;
+}

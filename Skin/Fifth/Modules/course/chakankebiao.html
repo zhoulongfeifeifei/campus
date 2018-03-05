@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link href="../../Common/css/reset.css" rel="stylesheet" />
+		<link href="../../Common/css/main.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		
+		<link href="Grid/Grid.css" rel="stylesheet" />
+		<style>
+			.g_Base{
+				overflow: auto;
+			}
+			.g_Body {
+				margin-top: 28px;
+				/*overflow: auto !important;*/
+			}
+			#demoGrid .g_BodyFixed{
+				    top: 55px  !important;;
+			}
+			.vF-panel {
+			    border: none;
+			    background: #fff;
+			    padding: 0;
+			    margin: 0;
+			}
+			.bar-header {
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="vF-panel">
+			<form id="form1">
+				<!--标题层-->
+				<div class="bar-header clearfix">
+					<span class="text font-18 green"></span>
+				</div>
+				<!--标题层 End-->
+				<div class="table table-normal">
+					<div id="demoDiv">
+						<div id="demoGrid">
+							<table id="demoTable">
+								<thead>
+									<tr>
+
+									</tr>
+
+								</thead>
+								<tbody>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+
+
+		<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+		<script>var $ = jQuery = layui.jquery;</script>
+		<script src="/Web/Include/tby.js"></script>
+		<script  src="Grid/Grid.js"></script>
+		<script src="js/chakankebiao.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="/Web/Assets/jQuery-searchableSelect/css/jquery.searchableSelect.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<link rel="stylesheet" type="text/css" href="css/importExcel.css" />
+	</head>
+
+	<body>
+		<div id="cont" class="layui-tab layui-tab-content">
+			<span class="font-14">下载：</span>
+			<a class=" text font-14 link blue">资产导入模板</a>
+			<p >
+				1、请导入.xls文件。<br/> 2、资产类别为：固定资产、增长资产、消耗资产、随机资产。
+				<br/> 3、资产性质为：资产、费用
+				<br/> 4、增加类型为：购入需安装已完工的固定资产、其他单位转入的固定资产(新设备)、其他单位转入的固定资产(旧设备)、捐赠的固定资产、融资租赁的固定资产、固定资产盘盈
+				<br/>
+			</p>
+			<!--<input id="pickfiles" type="submit" class="layui-btn layui-btn-green layui-btn-small" value="导入资产" style="position: relative;z-index: 1;"/>-->
+			<!--<div  class="layui-form-item">
+                <div class="upload layui-input-block">
+                        <a class="layui-btn layui-btn-primary layui-input-inline" href="javascript:;" id="pickfiles">导入资产</a>
+                    <div class="layui-input-inline">
+                        <input id="txtfiles" class="path layui-input" placeholder="" readonly="">
+                    </div>
+                    
+                </div>
+            </div>-->
+			<div class="f-input uploadfile">
+                <input type="file" name="file" class="layui-upload-file" lay-title="选择文件" value="选择文件"> 
+                <input id="txtfiles" class="path" name="path" placeholder="" readonly="">
+            </div>
+
+		</div>
+	</body>
+	<!--<script src="/Web/Include/constant.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="/Web/Assets/layui/layui.js"></script>
+	<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+	<script>var $ = jQuery = layui.jquery;</script>	
+	<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/importExcel.js"></script>
+</html>

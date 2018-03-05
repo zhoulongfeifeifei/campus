@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-12-06 14:37:18
+ * @version $Id$
+ */
+
+.shijian,.fasongren,.neirong,.fujian,.yunpan{
+    line-height: 38px;
+}
+
+
+.content{
+    width: 80%;
+    margin: 0 auto;
+    font-family: "黑体";
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.content h3{
+    text-align: center;
+    font-size: 40px;
+    color: #028843;
+    line-height: 80px;
+}
+.author{
+    text-align: right;
+    font-size:24px;
+    color: #ccc;
+}
+.demiddle{
+    margin: 20px 0;
+}
+.demiddle p{
+    font-size: 24px;
+    line-height: 40px;
+}
+.readnum{
+    display: inline-block;
+    width: 100px;
+    float: left;
+}
+.defoot ul{
+    display: inline-block;
+    float: right;
+}
+.defoot ul li{
+    line-height: 2em;
+}
+.defoot ul li a{
+    color: #111;
+
+}
+.defoot span{
+    color: red;
+    font-size: 1.36em;
+}
+.fileDown{
+    margin-left: 20px;
+    color: blue;
+}
+.date{
+    text-align: right;
+    font-size:24px;
+}

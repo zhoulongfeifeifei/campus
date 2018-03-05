@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="">
+		<title>学生报名</title>
+		<link rel="stylesheet" href="layui/css/layui.css">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/SignUp.css" />
+	</head>
+	<style>
+		::-webkit-scrollbar {
+			width: 0em;
+			}
+			::-webkit-scrollbar:horizontal {
+			height: 0em;
+			}
+	</style>
+	<body>
+		<div id="wrapper">
+			<div class="scroll" style="width: 100%;">
+			<!--顶部学校背景-->
+			<div class="header"></div>
+			<!--	中间各个模块-->
+			<form action="" class="layui-form form">
+			<!--中考成绩	-->
+			<div class="form-top">
+	    		<div class="zy"><h2>中考成绩<span style="color: #f00;">*</span></h2></div>
+	    		<div class="form-center">
+		    		<div class="layui-form-item">
+		                <label class="layui-form-label">总分一：<span style="color: #f00;">*</span></label>
+		                <div class="layui-input-block">
+		                     <input class="layui-input" type="tel" name="zf" lay-verify="fen" value="">		
+		                </div>   
+		            </div>   
+		            <div class="layui-form-item">          	
+		                <label class="layui-form-label layui-label">语文：<span style="color: #f00;">*</span></label><br />
+		                <div class="layui-input-block">
+		                    <input class="layui-input" type="tel" name="yw" lay-verify="fen" value="">
+		                </div>
+		            </div>    
+		            <div class="layui-form-item">   
+		                <label class="layui-form-label">数学：<span style="color: #f00;">*</span></label><br />
+		                <div class="layui-input-block">
+		                     <input class="layui-input" type="tel" name="sx" lay-verify="fen" value="">
+		                </div>
+		            </div>
+		            <div class="layui-form-item">  
+		                <label class="layui-form-label">英语：<span style="color: #f00;">*</span></label><br />
+		                <div class="layui-input-block">
+		                     <input class="layui-input" type="tel" name="english" lay-verify="fen" value="">
+		               	</div>
+		            </div>
+		            <div class="layui-form-item">  
+		                <label class="layui-form-label">科学：<span style="color: #f00;">*</span></label><br />
+		                <div class="layui-input-block">
+		                    <input class="layui-input" type="tel" name="kx" lay-verify="fen" value="">					 
+		                </div>
+		            </div>
+		            <div class="layui-form-item">  
+		                <label class="layui-form-label">社会：<span style="color: #f00;">*</span></label><br />
+		                <div class="layui-input-block">
+		                    <input class="layui-input" type="tel" name="sh" lay-verify="fen" value="">					 
+		                </div>
+		            </div>
+		            <div class="layui-form-item">  
+		                <label class="layui-form-label">体育：<span style="color: #f00;">*</span></label><br />
+		                <div class="layui-input-block">
+		                    <input class="layui-input" type="tel" name="ty" lay-verify="fen" value="">					 
+		                </div>
+		            </div>
+	            </div>
+	    	</div>	
+	    	<!--志愿报名-->
+			<div class="form-top">
+	    		<div class="zy"><h2>专业填报<span style="color: #f00;">*</span></h2></div>
+	    		<div class="form-center">
+	    			<div class="zhiyuan ">
+	    				<!-- <div class="layui-form-item">
+			                <label class="layui-form-label">第一志愿：</label><br />
+			                <div class="layui-input-block">
+			                    <select name="" id="select1" lay-filter="zhiyuan1">
+			                    	<option value="1">我是第一志愿</option>
+			                    </select>
+			                </div>   
+			            </div>   
+			            <div class="layui-form-item">          	
+			                <label class="layui-form-label">第二志愿：</label><br />
+			                <div class="layui-input-blobk">
+			                    <select name="" id="select2" lay-filter="zhiyuan2">
+			                    	<option value="1">我是第二志愿</option>
+			                    </select>
+			                </div>
+			            </div>    
+			            <div class="layui-form-item">   
+			                <label class="layui-form-label">第三志愿：</label><br />
+			                <div class="layui-input-blobk">
+			                    <select name="" id="select3" lay-filter="zhiyuan3">
+			                    	<option value="1">我是第三志愿</option>
+			                    </select>
+			                </div>
+			            </div> -->
+	    			</div>
+		            <div class="layui-form-item" style="display: none;">  
+		                <label class="layui-form-label" style="width: 26.7vw;">是否服从调剂：</label>
+		                <div class="layui-input-inline">
+		                    <input type="radio" name="tiao" lay-filter="tiao" value="1" title="是">
+							<input type="radio" name="tiao" lay-filter="tiao" value="2" title="否">
+		               	</div>
+		            </div>
+		            <div class="layui-form-item">  
+		                <label class="layui-form-label">录取码：<span style="color: #f00;">*</span></label><br />
+		                <div class="layui-input-block">
+		                    <input class="layui-input" type="text" name="lqm" lay-verify="lqm" value="">					 
+		                </div>
+		            </div>
+		            <div class="layui-form-item">  
+		                <label class="layui-form-label">录取通知手机号：<span style="color: #f00;">*</span></label><br />
+		                <div class="layui-input-block">
+		                    <input class="layui-input" type="tel" name="lqphone" lay-verify="phone" value="">					 
+		                </div>
+		            </div>
+		            <div class="layui-form-item">  
+		                <label class="layui-form-label" for="sleep" style="width: 26.0vw;">是否住校：</label>
+		                <div class="layui-input-inline">
+		                    <input type="radio" id="sleep" name="sleep" value="1" lay-filter="sleep" title="是" checked="">
+							<input type="radio" id="sleep1" name="sleep" value="2" lay-filter="sleep" title="否">
+		               </div>
+		            </div>   
+	            </div>
+	             <div class="content-bottom"></div>
+	    	</div>
+	    	<!--个人信息-->
+			<div class="form-top">
+	    		<div class="zy"><h2>个人信息<span style="color: #f00;">*</span></h2></div>
+	    		<div class="form-center">
+		    		<div class="layui-form-item">
+		                <label class="layui-form-label left">准考证号：<span style="color: #f00;">*</span></label><br />
+		                <div class="layui-input-block">
+		                     <input class="layui-input" type="text" name="zhunKaoZheng" lay-verify="zkz" value="">		
+		                </div>   
+		            </div>   
+		            <div class="layui-form-item">          	
+		                <label class="layui-form-label layui-label">姓名：<span style="color: #f00;">*</span></label><br />
+		                <div class="layui-input-block">
+		                    <input class="layui-input" type="text" name="username" lay-verify="username" value="">
+		                </div>
+		            </div>    
+		            <div class="layui-form-item">   
+		                <label class="layui-form-label" style="width: 26.0vw;">性别：</label>
+		                <div class="layui-input-inline" id="xingbie">
+		                     <input type="radio" id="xb" name="xb" value="1" lay-filter="xb" title="男" checked="">
+							<input type="radio" id="xb1" name="xb" value="2" lay-filter="xb" title="女">
+		                </div>
+		            </div>
+		            <div class="layui-form-item">  
+		                <label class="layui-form-label">毕业学校：<span style="color: #f00;">*</span></label><br />
+		                <div class="layui-input-block">
+		                     <input class="layui-input" type="text" name="schoolName" lay-verify="username" value="">
+		               	</div>
+		            </div>
+		            <div class="layui-form-item">  
+		                <label class="layui-form-label">家庭住址：<span style="color: #f00;">*</span></label><br />
+		                <div class="layui-input-block">
+		                    <input class="layui-input" type="text" name="jtzz" lay-verify="username" value="" placeholder="乐清市*街道*村*小区*幢*楼*室">					 
+		                </div>
+		            </div>
+		            <div class="layui-form-item">  
+		                <label class="layui-form-label">监护人手机：<span style="color: #f00;">*</span></label><br />
+		                <div class="layui-input-block">
+		                    <input class="layui-input" type="tel" name="jhp" lay-verify="phone" value="">					 
+		                </div>
+		            </div>
+	            </div>
+	            <!--<div class="content-bottom"></div>-->
+	    	</div>	    	 
+	    	<!-- <div class="layui-form-item">
+				<div class="layui-input-block">
+					<input id="Sava" class="layui-btn green" style="margin-bottom:20px" lay-submit lay-filter="Sava" value="保存" />
+				</div>
+			</div> -->
+			<div class="layui-form-item">
+				<div class="layui-input-block btn-div">
+					<div class="layui-input-inline btn1">
+						<input id="save" type="button" class="layui-btn green" lay-submit lay-filter="save" value="提交"/>
+					</div>	
+					<div class="layui-input-inline btn1">
+						<input type="button" id="save1" class="layui-btn green" lay-submit lay-filter="sava1" value="查看录取"/>
+					</div>
+				</div>
+			</div>
+	
+	    </form>
+	    </div>
+	</div>    
+	</body>
+	<script src="js/iscroll.js"></script>
+	<script src="js/jquery-1.9.1/jquery.js"></script>
+	<script src="layui/layui.js"></script>
+	<script src="layui/lay/dest/layui.all.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/SignUp.js"></script>
+</html>

@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>管理员</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if lt IE 8]>
+	<script src="/html/assets/ie7-not-supported.js"></script>
+	<![endif]-->
+	<!--[if lte IE 9]>
+	<script src="/html/assets/respond.js"></script>
+	<script src="/html/assets/html5shiv.min.js"></script>
+	<![endif]-->
+    <link rel="stylesheet" href="../../Common/css/public.css">
+    <link rel="stylesheet" href="../../Common/css/main.css">
+    <link rel="stylesheet" href="../../Common/font-awesome/css/font-awesome.css" />
+    <script src="/Web/Assets/jquery-1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../../Common/function.js" type="text/javascript" charset="utf-8"></script>
+
+    <!--用于适配IE的placeholder-->
+    <script src="../../Common/placeholder.min.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+		.form .f-input .ad{ position:relative;margin-right:20px; display:inline-block;}
+    	.form .f-input .removeAdmin{  cursor:pointer; position:absolute; top:-10px; right:-4px; font-size:20px;}
+		.form .f-input .removeAdmin:active{ opacity:.7;}
+        .bar-header .blue{
+            color: #337ab7;
+        }
+        .bar-header .font-18{
+            font-size: 18px;
+        }  
+        .red{
+            color: #f00;
+        }
+        .green{
+            color: #47a447;
+        }
+    </style>
+</head>
+
+<body style="background: #fff;">
+    <div class="vF-panel">
+    	<!--标题层-->
+        <div class="bar-header clearfix">
+            <span class="text font-18 blue">已有管理员</span>
+        </div>
+        <!--标题层 End-->
+    	<div class="form">
+        	<div class="f1">
+                <div class="f-input span12">
+                    
+                	<span class="ad">
+                		<span class="btn btn-blue">郑冬青</span><i data-val="100401375" class="fa fa-minus-circle red removeAdmin"></i>
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vF-panel">
+    	<!--标题层-->
+        <div class="bar-header clearfix">
+            <span class="text font-18 blue">添加管理员</span>
+        </div>
+        <!--标题层 End-->
+    	<div class="form">
+            <div class="f1">
+                <div class="f-input span12">
+                	<select id="adduser">
+	                    
+                    	<option value="100154081">罗世伟</option>
+                        
+                    	<option value="100353486">周龙飞</option>
+                        
+                    	<option value="100354107">葛建军</option>
+                        
+                    	<option value="100401375">郑冬青</option>
+                        
+                    	<option value="100424287">黄咏育</option>
+                        
+                    	<option value="100424617">骆绯鸿</option>
+                        
+                    	<option value="100561858">张小燕</option>
+                        
+                    	<option value="100562477">陈佩</option>
+                        
+                    	<option value="100850676">邓萌</option>
+                        
+                    	<option value="100951616">桑嘉莉</option>
+                        
+                    	<option value="1122407n">大通王佳</option>
+                        
+                    	<option value="1145779n">方思乃</option>
+                        
+                    	<option value="119620">吴锋</option>
+                        
+                    	<option value="119979">彭宏</option>
+                        
+                    	<option value="120364">沈祥花</option>
+                        
+                    	<option value="1212743n">46546</option>
+                        
+                    	<option value="1217571n">唐恒强</option>
+                        
+                    	<option value="121845">周业杰</option>
+                        
+                    	<option value="122328">王坤昆</option>
+                        
+                    	<option value="1234130n">王萍~</option>
+                        
+                    	<option value="1306012n">尉浴强</option>
+                        
+                    	<option value="1347542n">鲁贻泓</option>
+                        
+                    	<option value="1372339n">冯建技</option>
+                        
+                    	<option value="1386999n">沈春静</option>
+                        
+                    	<option value="1395029n">冯建技</option>
+                        
+                    	<option value="1408251n">秦胜威</option>
+                        
+                    	<option value="1432578">华小燕</option>
+                        
+                    	<option value="1432816">张建功</option>
+                        
+                    	<option value="1443300n">冯驹盛</option>
+                        
+                    	<option value="1446328n">朱豪琴</option>
+                        
+                    	<option value="1594290n">陶汉栋</option>
+                        
+                    	<option value="1642258n">常玉龙</option>
+                        
+                    	<option value="1657187n">裘佳梁</option>
+                        
+                    	<option value="1699505n">钱源</option>
+                        
+                    	<option value="1720961n">陈彩娟</option>
+                        
+                    	<option value="1731536n">俞嘉斌</option>
+                        
+                    	<option value="1786777n">段坤利</option>
+                        
+                    	<option value="1823526n">肖茜</option>
+                        
+                    	<option value="1825611n">飞利浦</option>
+                        
+                    	<option value="1868748n">楼瑶</option>
+                        
+                    	<option value="1896760n">adas</option>
+                        
+                    	<option value="1950010n">王萍萍</option>
+                        
+                    	<option value="1953604n">周晓健</option>
+                        
+                    	<option value="211388">钟芳</option>
+                        
+                    	<option value="268905">胡华珍</option>
+                        
+                    	<option value="269337">张红</option>
+                        
+                    	<option value="269514">柯枫</option>
+                        
+                    	<option value="269638">张茂盛</option>
+                        
+                    	<option value="269978">徐杭程</option>
+                        
+                    	<option value="271238">宋晓妍</option>
+                        
+                    	<option value="271385">杨建兰</option>
+                        
+                    	<option value="286011">小葛</option>
+                        
+                    	<option value="345863">马纲</option>
+                        
+                    	<option value="345931">盛红俊</option>
+                        
+                    	<option value="346410">王春霞</option>
+                        
+                    	<option value="386917">赵燕萍</option>
+                        
+                    	<option value="386983">金超青</option>
+                        
+                    	<option value="387528">陈丹妮</option>
+                        
+                    	<option value="403995">黄国余</option>
+                        
+                    	<option value="407049">金梅芳</option>
+                        
+                    	<option value="427781">王栋</option>
+                        
+                    	<option value="427797">丁玲丽</option>
+                        
+                    	<option value="428074">葛水仙</option>
+                        
+                    	<option value="428152">沈川</option>
+                        
+                    	<option value="452222">许峰</option>
+                        
+                    	<option value="462402">测试</option>
+                        
+                    	<option value="468946">徐晓杰</option>
+                        
+                    	<option value="469017">杨建军</option>
+                        
+                    	<option value="469169">丁洁琼</option>
+                        
+                    	<option value="469286">张丹</option>
+                        
+                    	<option value="509766">陈勇伟</option>
+                        
+                    	<option value="509989">校管理员</option>
+                        
+                    	<option value="510092">王金森</option>
+                        
+                    	<option value="510135">袁龙</option>
+                        
+                    	<option value="531549">盛晓青</option>
+                        
+                    	<option value="543132">吴登奎</option>
+                        
+                    	<option value="550989">戴华荣</option>
+                        
+                    	<option value="551170">范益超</option>
+                        
+                    	<option value="552527">龚涤铭 家长</option>
+                        
+                    	<option value="591570">殷芳芳</option>
+                        
+                    	<option value="653959">张道锋</option>
+                        
+                    	<option value="655333">董智明</option>
+                        
+                    	<option value="656013">金颖</option>
+                        
+                    	<option value="656314">陈</option>
+                        
+                    	<option value="656365">冯燕</option>
+                        
+                    	<option value="685503">王坤富</option>
+                        
+                    	<option value="694469">谢勇</option>
+                        
+                    	<option value="695723">樊双荣</option>
+                        
+                    	<option value="731134">宋浩伟</option>
+                        
+                    	<option value="733294">冯董鑫</option>
+                        
+                    	<option value="733736">林笑</option>
+                        
+                    	<option value="734625">何飞婷</option>
+                        
+                    	<option value="734932">陈笑燕</option>
+                        
+                    	<option value="736383">金丹丹</option>
+                        
+                    	<option value="775584">李汉民</option>
+                        
+                    	<option value="814009">段合江</option>
+                        
+                    	<option value="815419">平贤烽</option>
+                        
+                    	<option value="835715">王元祝</option>
+                        
+                    	<option value="836677">孙竟津</option>
+                        
+                    	<option value="875129">左丞</option>
+                        
+                    	<option value="876429">孔丹丹</option>
+                        
+                    	<option value="876709">李海龙</option>
+                        
+                    	<option value="877217">潘森军</option>
+                        
+                    	<option value="877320">诸佳波</option>
+                        
+                    	<option value="877456">冯萍</option>
+                        
+                    	<option value="912230">梁勇明</option>
+                        
+                    	<option value="915123">戴凌洁</option>
+                        
+                    	<option value="952509">郭闫利</option>
+                        
+                    	<option value="954153">龚涤铭</option>
+                        
+                    </select>
+                    <span class="text">最多添加4人</span>
+                </div>
+            </div>
+            <div class="f1 f-save">
+                <div class="f-input span4">
+                	<input type="button" id="addAdmin" class="btn btn-blue" value="添加"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.removeAdmin').click(function () {
+            var $this = $(this);
+            var userid = $this.attr('data-val');
+            if (confirm('确定删除该管理员？')) {
+                $.post("/common/Ajax.aspx", { action: 'delShouquan', userid: userid, addtype: 1 }, function(json) {
+                    if (json.status) {
+                        top.parent.showTips(json.message, 4);
+                        $this.parent().remove();
+                    } else top.parent.showTips(json.message, 5);
+                }, 'json');
+            }
+        });
+
+        $('#addAdmin').click(function() {
+            $.post("/common/Ajax.aspx", { action: "shouquan", userid: $('#adduser').val(), addtype: 1 }, function(json) {
+                if (json.status) {
+                    location.href = "ShouQuan.aspx";
+                } else top.parent.showTips(json.message, 5);
+            }, 'json');
+        });
+    </script>
+</body>
+</html>

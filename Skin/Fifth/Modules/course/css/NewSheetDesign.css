@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-12-14 19:35:56
+ * @version $Id$
+ */
+
+table .fa-toggle-on {
+    color: #47a447;
+}
+
+table .fa-toggle-off {
+    color: #aaa;
+}
+
+table a.link {
+    color: #666;
+}
+
+table .td-status .fa {
+    margin-left: 8px;
+    visibility: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+
+table .td-status {
+    position: relative;
+}
+
+table .td-status .ulbox {}
+
+table .tr-off {
+    background: #f1f1f1;
+    color: #ccc;
+}
+
+table .tr-off input {
+    color: #ccc;
+    border-color: #ccc;
+}
+
+table .tr-off .edit a {
+    color: #ccc;
+}
+
+table .tr-off .td-status .fa {
+    visibility: hidden !important;
+    cursor: default;
+}
+
+table .tr-off .td-status a {
+    cursor: default;
+}
+
+table .tr-statusEdit-on {
+    background: #c5e5f4 !important;
+}
+
+table .tr-statusEdit-on .td-status .fa {
+    visibility: visible;
+}
+
+table .tr-statusEdit-on td {
+    border-top-color: #c5e5f4 !important;
+}
+
+table .tr-statusEdit-on + tr td {
+    border-top-color: #c5e5f4 !important;
+}
+
+table tr:hover td:first-child {
+    border-left: 3px solid #477eba;
+    border-left: 0\9;
+}
+
+table tr:hover .fa {
+    visibility: visible;
+    color: #fff;
+}
+
+.table {}
+
+.statusEndit-box {
+    position: absolute;
+    border: 1px solid #3276b1;
+    padding: 8px;
+    left: 0;
+    top: 0;
+    background: #fff;
+    display: none;
+}
+
+.statusEndit-box:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: -16px;
+    border: 8px solid transparent;
+    border-bottom-color: #3276b1;
+}
+
+.statusEndit-box ul {
+    width: 65px;
+    float: left;
+}
+
+.statusEndit-box li {
+    padding: 4px 0;
+}
+
+.statusEndit-box li.hide {
+    display: none;
+}
+
+.statusEndit-box .btn {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+
+.tr-start-error input.start-time,
+.tr-end-error input.end-time,
+.tr-end-error input.start-time {
+    border-color: red;
+}
+
+.tr-only-end-error input.end-time {
+    border-color: red;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 203725 */
+    src: url('//at.alicdn.com/t/font_kwhn9t9zamsiqkt9.eot');
+    src: url('//at.alicdn.com/t/font_kwhn9t9zamsiqkt9.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_kwhn9t9zamsiqkt9.woff') format('woff'), url('//at.alicdn.com/t/font_kwhn9t9zamsiqkt9.ttf') format('truetype'), url('//at.alicdn.com/t/font_kwhn9t9zamsiqkt9.svg#iconfont') format('svg');
+}
+
+.fa {
+    font-family: iconfont;
+    color: #666;
+    font-size: 16px;
+}
+
+.fa.icon-on {
+    font-size: 22px;
+    background: #ccc;
+    color: #fff;
+}
+.table table tbody tr:hover{
+    background: #ccc;
+    border-left: 3px solid #eee;
+    border-right: 3px solid #eee;
+}
+.fa.icon-off {
+    font-size: 22px;
+}
+
+body {
+    background: #fff;
+    padding: 0;
+}
+
+.vF-panel {
+    background: #fff;
+    padding: 5px 15px;
+    margin: 0;
+    border: 0;
+    height: 100%;
+    overflow: auto;
+}

@@ -1,0 +1,54 @@
+body{
+	min-width: 980px;
+}
+.clearfix{
+	position: relative;
+}
+.toptitle{
+	position: absolute;
+	top: 1%;
+	left: 1%;
+}
+.yunpan{
+	position: absolute;
+	top: 35%;
+	left: 7%;
+	height: 22px;
+	width: 380px;
+	position: relative;
+}
+@media screen and (max-width: 1500px) {
+.yunpan {
+    left: 9%;
+}
+}
+.all-capacity{
+	display: block;
+	white-space: normal;
+	width: 200px;
+	height: 20px;
+	border-radius: 2px;
+	border: 1px solid #999;
+	position: relative;
+}
+.over-capacity{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 20px;
+	width: 0;
+	background-color: cornflowerblue;
+}
+.yunpantext{
+	position: absolute;
+	top: 0;
+	/*right: 0;*/
+    left: 210px;
+	top: -80%;
+}
+.top-search{
+	position: absolute;
+	right: 0%;
+	top: 0;
+}
+

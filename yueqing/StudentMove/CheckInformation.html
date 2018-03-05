@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="description" content="">
+	<title>信息核对</title>
+	<link rel="stylesheet" href="layui/css/layui.css">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/CheckInformation.css" />
+</head>
+<body>
+	<div id="wrapper">
+		<div class="scroll" style="width: 100%;">
+	<!--顶部学校背景-->
+	<div class="header"></div>
+	<!--	中间各个模块-->
+	<div class="form-center">
+		<h1 class="title">报名信息确认</h1>
+		<form action="" class="layui-form form">
+			<div class="form-content">
+				<h3>志愿填报<span style="color: #f00;">*</span></h3>
+				<div class="zhiyuan">
+					<!-- <div class="layui-form-item">   
+		                <label class="layui-form-label">第一志愿：</label><br />
+		                <div class="layui-input-block">
+		                     <input class="layui-input" type="text" name="zy1" value="电子商务(500及500以上)" disabled>
+		                </div>
+		            </div>	
+		            <div class="layui-form-item">   
+		                <label class="layui-form-label">第二志愿：</label><br />
+		                <div class="layui-input-block">
+		                     <input class="layui-input" type="text" name="zy2" value="会计(需面试)" disabled>
+		                </div>
+		            </div>	
+		            <div class="layui-form-item">   
+		                <label class="layui-form-label">第三志愿：</label><br />
+		                <div class="layui-input-block">
+		                     <input class="layui-input" type="text" name="zy3" value="财务管理" disabled>
+		                </div>
+		            </div>	 -->
+		        </div>  
+	            <div class="layui-form-item" style="display: none;">  
+	                <label class="layui-form-label" style="width: 29.33vw;">是否服从调剂：</label>
+	                <div class="layui-input-inline">
+	                    <input type="radio" name="tiao" value="1" title="是" checked>
+						<input type="radio" name="tiao1" value="2" title="否">
+	               	</div>
+	            </div>
+	            <div class="layui-form-item">  
+	                <label class="layui-form-label">录取码：</label><br />
+	                <div class="layui-input-block">
+	                    <input class="layui-input" type="text" name="lqm1" value="" disabled>					 
+	                </div>
+	            </div>
+	            <div class="layui-form-item">  
+	                <label class="layui-form-label">录取通知手机号：</label><br />
+	                <div class="layui-input-block">
+	                    <input class="layui-input" type="tel" name="phone" value="" disabled>					 
+	                </div>
+	            </div>
+	            <div class="layui-form-item">  
+	                <label class="layui-form-label" style="width: 29.33vw;">是否住校：</label>
+	                <div class="layui-input-inline zhuxiao">
+	                    <input type="radio" name="sleep" lay-filter="sleep" value="1" title="是">
+						<input type="radio" name="sleep1" lay-filter="sleep1" value="2" title="否">
+	               </div>
+	            </div> 
+			</div>	
+			<div class="layui-form-item">
+				<div class="layui-input-block btn-div">
+					<div class="layui-input-inline btn1">
+						<input id="edit" type="button" class="layui-btn green" lay-submit lay-filter="edit" value="返回修改"/>
+					</div>	
+					<div class="layui-input-inline btn1">
+						<input id="save1" type="button" class="layui-btn green" lay-submit lay-filter="sava" value="确定提交"/>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	</div>
+	</div>    
+</body>
+<script src="js/iscroll.js"></script>
+<script src="js/jquery-1.9.1/jquery.js"></script>
+<script src="layui/layui.js"></script>
+<script src="layui/lay/dest/layui.all.js"></script>
+<script src="js/common.js"></script>
+<script src="js/CheckInformation.js"></script>
+</html>

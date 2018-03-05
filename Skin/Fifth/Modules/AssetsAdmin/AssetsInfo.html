@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+	   	<link rel="stylesheet" href="../../Common/css/public.css">
+    	<link rel="stylesheet" href="../../Common/css/listSearch.css">
+	</head>
+	<body>
+    <div class="layui-tab layui-tab-brief nav-head">
+        <ul class="layui-tab-title">
+            <!-- <li class="layui-this">资产信息</li> -->
+        </ul>  
+    </div>
+    <a href="addAssets.html" class="layui-btn layui-btn-small addnigao">增加资产</a>
+    <a href="importExcel.html" class="layui-btn layui-btn-small addnigao a1" style="left:75px;display: none;">导入资产</a>
+    <div class="layui-form right" style="margin-top: 5px;">
+	    <div class="layui-input-inline">
+	    	<select name="" id="select2" lay-filter="type">
+				<option value="-1">全部类型</option>
+			</select>
+	    </div>
+		<div class="layui-input-inline">
+	        <input class="layui-input" type="text" name="Title"  placeholder="资产名称"/>
+	        <a href="javascript:;" class="layui-btn layui-btn-small layui-btn-green search">搜索</a>
+        </div>
+        <div id="reduce" style="display: none;">
+			<div class="layui-form-item" style="margin-top: 30px;">
+				<label class="layui-form-label">减少类型：</label>
+				<div class="layui-input-inline">
+					<select name="" id="reduceselect">
+						<option value=""></option>
+					</select>
+				</div>
+			</div>
+		</div>
+    </div>
+	<table class="layui-table">
+		<thead>
+			<tr>
+				<th>所属班级</th>
+				<th>资产编号</th>
+				<th>资产名称</th>
+				<th>资产保管人</th>
+				<th>资产原值</th>
+				<th>资产性质</th>
+				<th>资产类别</th>
+				<th>增加日期</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+
+		</tbody>
+	</table>
+	<div id="page11">
+	</div>
+		<!-- 维护 -->
+		<!-- 减少 -->
+		<div id="renwu" style="display: none;">
+			<!-- <label><input id="alled" type="checkbox">全选/不选</label> -->
+			<ul></ul>
+		</div>
+		<script src="/Web/Assets/layui/layui.js"></script>
+		<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+		<script>var $ = jQuery = layui.jquery;</script>
+		<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/AssetsInfo.js"></script>
+	</body>
+</html>

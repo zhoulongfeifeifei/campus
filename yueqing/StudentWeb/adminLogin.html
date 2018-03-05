@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/login.css">
+    <title>乐清登录系统</title>
+</head>
+<body>
+<!--顶部学校背景-->
+<div class="header"></div>
+<!--中间登录部分-->
+<div class="con">
+    <div class="layLeft">
+        <div class="zhaosheng">
+            <h2>招生录取声明</h2>
+            <div class="shuoming">
+                
+            </div>
+
+        </div>
+        <div class="layT">
+            <div class="hr"></div>
+            <div class="SchName">
+                乐清市职业中等专业学校 招生办公室
+            </div>
+        </div>
+    </div>
+    <div class="layRight">
+        <div class="login">
+            <ul id="bar">
+                <li>管理员登录</li>
+            </ul>
+            <form class="layui-form form" action="">            	
+                <div class="layui-form-item item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label layui-label">账号：</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="name" lay-verify="name" autocomplete="off" class="layui-input" placeholder="请输入用户名">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label layui-label">密码：</label>
+                        <div class="layui-input-block">
+                            <input type="password" name="password"  lay-verify="name" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label layui-label">项目选择：</label>
+                        <div class="layui-input-block">
+                            <select name="" id="xiangmu" lay-filter="xiangmu">
+		                    	<option value="0">请选择</option>                    
+		                    </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-inline">
+                        <input type="button" id="sava" class="layui-btn btn" lay-submit lay-filter="sava" value="登录">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/jquery-1.9.1/jquery.js"></script>
+<script type="text/javascript" src="js/placeholder.min.js"></script>
+<script src="layui/layui.js"></script>
+<script src="layui/lay/dest/layui.all.js"></script>
+<script src="js/common.js"></script>
+<script src="js/adminLogin.js"></script>
+</html>

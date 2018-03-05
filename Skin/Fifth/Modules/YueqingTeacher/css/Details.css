@@ -1,0 +1,80 @@
+@charset "UTF-8";
+body{
+    padding: 0 15px;
+    margin-top: 7px !important;
+}
+.dayin,.daochu{
+    background-color:#5bb037;
+    width: 70px;
+    margin-right: 5px;
+}
+.zhiyuan{
+    width:100%;
+   height: auto;
+   padding: 25px 0;
+}
+.zhiyuan .bj{
+    color: red;
+}
+.zhiyuan .title{
+    width:100%;
+    display: block;
+    min-width: 800px;
+    height: 50px;
+    background-color:#e6e6e6;
+}
+.zhiyuan .title h2{
+    width:50%;
+    font-size: 26px;
+    line-height: 30px;
+    margin:auto;
+    color: #000;
+    *margin:3px 24%;
+}
+.formbox{
+    margin-top: 25px !important;
+    width:50%;
+    min-width: 800px;
+    margin:auto;
+}
+.layui-form-item .layui-input-inline{
+    width: 290px !important;
+}
+.layui-form-label{
+    text-align: left !important;
+}
+.layui-form-label{
+    font-size: 16px;
+    width: 150px !important;
+}
+a#save {
+    width: 155px;
+}
+
+/*ie7下的type=radio的兼容处理*/
+/*.layui-form-radio{*/
+    /**width: 60px;*/
+    /**float: left;*/
+/*}*/
+.layui-form-radio span{
+    float: right;
+}
+.layui-form-radio i:hover, .layui-form-radioed i{
+    float: left;
+}
+.greenBtn{
+    background-color: #5bb037;
+    float: right;
+    margin-right: 25%;
+    padding: 0 30px;
+    letter-spacing: 3px;
+
+}
+.layui-form-radio span {
+    line-height: 25px;
+}
+.zyk{
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+}

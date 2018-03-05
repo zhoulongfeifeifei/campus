@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Maunsell (982431279@qq.com)
+ * @date    2016-09-14 11:00:59
+ * @version $Id$
+ */
+ body{
+    background-color: #fff;
+    padding: 0;
+ }
+ .vF-panel{
+    background: #fff;
+    border: 0;
+    padding: 0;
+    margin: 0;
+ }
+ .page{display: none;
+    padding: 0 !important;
+    margin-top: -10px !important;
+    }
+ .showpage{display: block !important;}
+.error-msg {margin-top: -14px;text-align: left;color: red;}
+
+.info-title {font-size: 1.1em; width: 6em; height: 35px;line-height: 35px;margin-top: 10px; padding-left: 10px; border-left: 2px solid #337ab7;display: inline-block;}
+.form { margin-bottom: 10px;}
+.form .item {padding: 8px 0;}
+.form-level .item label{vertical-align: middle;}
+.form-level .item label input[type="radio"]{vertical-align: middle;}
+.form-level .item ul, .leve-name ul{ display: inline-block; vertical-align: middle;}
+.form-level .item ul li, .leve-name ul li{ line-height: 24px; float: left; margin-right: 20px;}
+.item-general{text-align: center;font-size: 16px;}
+.leve-name{ font-size: 14px;border-bottom:1px dashed #ccc; padding-bottom: 10px;}
+.leve-name input[type='text']{ height: 24px;
+    font-size: 0.965em; 
+    line-height: 24px;
+    padding: 0;color:#666; 
+    margin-left: 5px;width: 5em;
+    /*outline: none; 
+    border: 0;*/ 
+    text-align: center;}
+.leve-name input[type='chechbox']{ height: 24px; line-height: 24px; margin-left: 5px; width: 60px;}
+.big .info-title{display: block;width: 100%;}
+.clearfix {clear: both;}
+.item-general input[type='text']{width: 2em;margin: 0 5px 0 0;text-align: center;}
+.removeself{padding: 0 5px; cursor: pointer;}
+.fail{margin-left: 10px;background: #fff;}
+.setRange{margin: 20px 0 15px 10px; display: none;}
+.setRange input[type='text']{text-align: center;border: 1px solid #999;width: 2.5em; margin-right: 30px;}
+.setRange li{display: block;width: 100%; margin-top: 10px;}
+.displayblcok{display: block;}
+.isetRange{padding: 5px 10px;border-radius: 4px; border: 1px solid #666;background: #fff;}
+#ParameterType{display: inline;}
+
+
+#subjctlist .form-title{
+    margin-top: 0 !important;
+    display: block !important;
+    float: left !important;
+    line-height: 35px !important; 
+}
+#subjctlist label{
+    line-height: 34px !important;
+}
+.f-input {
+    width: 100%;
+}
+
+.f-input span {
+    display: inline-block;
+    text-align: center;
+}
+
+.f-label {
+    height: 40px;
+}
+
+.select2 {
+    margin-left: 20px;
+}
+
+#zdy {
+    display: none;
+}
+
+
+h2 {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+pre {
+    font-family: '微软雅黑'
+}
+
+.box {
+    width: 970px;
+    padding: 10px 20px;
+    background-color: #fff;
+    margin: 10px auto;
+}
+
+.box a {
+    padding-right: 20px;
+}
+.uploadfile{
+    position: relative;
+}
+.choice{
+    position: absolute;
+    left: 17%;
+    width: 73px;
+    z-index: 1
+}
+#file{
+    position: absolute;
+    z-index: 2;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    opacity:0; 
+    height: 35px;
+    width: 73px;
+}
+#sumsub{
+    position: absolute;
+    left: 34%;
+}
+#tishi{
+    position: absolute;
+    left: 50%;
+}
+
+
+
+#threechecked{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#threechecked li{
+    display: inline-block;
+    width: 121px;
+}
+.t-title{
+    min-width: 6em;
+}
+
+
+.none{
+    display: none
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+    <link rel="stylesheet" href="css/manageLog.css">
+</head>
+<body>
+    <fieldset class="layui-elem-field">
+            <legend>网站设置</legend>
+        <div class="layui-form">
+            <div class="layui-form-item left">
+                <div class="layui-input-inline">
+                    <select name="Subject" lay-filter="app"  lay-verify="required">
+                        <option value='-1' id="App">全部应用</option>
+
+                    </select>
+                </div>
+                <div class="layui-input-inline">
+                    <select name="Class" lay-filter="modular"  lay-verify="required">
+                        <option value="-1" id="Modular">全部子模块</option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+        <table class="layui-table" >
+            <thead>
+               <tr>
+                    <th>编号</th>
+                    <th>操作记录</th>
+                    <th>应用</th>
+                    <th>子应用</th>
+                    <th>日期</th>
+                    <th>操作人员</th>
+                </tr> 
+            </thead>
+            
+            <tbody>
+                <!-- <tr>
+                    <td>1</td>
+                    <td>2016/10/9 17:36:58</td>
+                    <td>丁</td>
+                    <td>英语</td>
+                    <td>一年级一班、一年级二班</td>
+                    <td><a class="layui-btn layui-btn-mini viewDetail">查看详情</a></td>
+                </tr> -->
+            </tbody>
+        </table>
+        <p class="taskContent"></p>
+        <div id="page"></div>
+    </fieldset>
+    <script src="/Web/Assets/layui/layui.js"></script>
+    <script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+    <script>var $ = jQuery =layui.jquery;</script>
+    <script src="/Web/Include/tby.js"></script>
+    <script src="js/manageLog.js"></script>
+</body>
+</html>

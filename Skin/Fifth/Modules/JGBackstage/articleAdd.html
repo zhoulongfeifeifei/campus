@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+
+
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/Web/Assets/layui/css/layui.css">
+		<link rel="stylesheet" href="../../Common/css/public.css">
+		<link rel="stylesheet" href="../../Common/css/listSearch.css">
+		<link rel="stylesheet" href="/Web/Assets/kindeditor/themes/default/default.css" />
+		<link href="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/articleAdd.css" />
+
+	</head>
+
+	<body>
+		<div class="layui-tab layui-tab-brief">
+			<ul class="layui-tab-title">
+				<li class="layui-this toptitle"></li>
+			</ul>
+		</div>
+
+		<div class="layui-form">
+			<div class="layui-form-item">
+				<label class="layui-form-label">文章标题：</label>
+				<div class="layui-input-inline">
+					<input class="layui-input" type="text" name="artname" value="" />
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">副标题：</label>
+				<div class="layui-input-inline">
+					<input class="layui-input" type="text" name="artnametwo" value="" />
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">已选栏目：</label>
+				<div id="column">
+
+				</div>
+			</div>
+		</div>
+
+		<div class="layui-form-item" id="lm_box">
+			<label class="layui-form-label">选择栏目：</label>
+			<div class="layui-input-inline">
+				<input class="layui-input" name="lm_name" value="" />
+			</div>
+			<ul id="idselect" name="id">
+			</ul>
+			<input type="submit" class="layui-btn layui-btn-small layui-btn-green" id="add" value="添加">
+			<span class="red">*必有一个栏目</span>
+		</div>
+		<div class="layui-form">
+			<div class="layui-form-item">
+				<label class="layui-form-label">简介：</label>
+				<div class="layui-input-block">
+					<textarea class="layui-textarea" name="abstract"></textarea>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">封面图片：</label>
+				<div class="layui-input-inline">
+					<input class="layui-upload-file fileimg" type="file" name="fileimg" />
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">图片预览：</label>
+				<div class="layui-input-inline">
+					<img src="" id="adimg" alt="">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">正文：</label>
+				<div class="layui-input-block">
+					<textarea name="" id="Notes" style="height:500px;"></textarea> 如果添加了视频，编辑的时候会看不见视频，是一个空的链接。
+				</div>
+			</div>
+
+			<div class="layui-form-item down">
+				<label class="layui-form-label">文件上传：</label>
+				<div class="layui-input-inline">
+					<input class="layui-upload-file filetext" lay-type="file" lay-title="上传文件" type="file" name="filetext" />
+				</div>
+			</div>
+			<div class="layui-form-item down">
+				<label class="layui-form-label">文件下载路径：</label>
+				<div class="layui-input-inline">
+					<input class="layui-input" id="downUrl" value type="text" />
+				</div>
+			</div>
+
+			<div class="layui-form-item album">
+				<label class="layui-form-label">相册：</label>
+				<div class="layui-input-inline">
+					<input class="layui-upload-file Albums" type="file" name="fileimg" />
+				</div>
+			</div>
+			<div class="layui-form-item album">
+				<label class="layui-form-label">相册图片预览：</label>
+				<ul id="Albums" class="layui-input-inline">
+				</ul>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label"></label>
+				<div class="layui-input-block">
+					<input type="checkbox" name="isNotify" id="IsNotify" value="0" title="是否通知" />
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label"></label>
+				<div class="layui-input-block">
+					<input type="checkbox" name="isTop" id="IsTop" value="0" title="是否置顶" />
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label"></label>
+				<div class="layui-input-block">
+					<input type="checkbox" name="hasTime" id="HasTime" value="0" title="开启定时" />
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">发布时间：</label>
+				<div class="layui-input-inline">
+					<input class="layui-input" lay-verify="required" onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" type="text" name="addTime" value="" />
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label"></label>
+				<div class="layui-input-block">
+					<input id="Sava" type="submit" data-type="content" style="margin-bottom:20px;" class="layui-btn layui-btn-small layui-btn-green" value="保存" />
+				</div>
+			</div>
+		</div>
+		<script src="/Web/Assets/layui/lay/dest/layui.all.js"></script>
+		<script>
+			var form = layui.form(),
+				layer = layui.layer,
+				laydate = layui.laydate,
+				$ = jQuery = layui.jquery,
+				element = layui.element(),
+				layedit = layui.layedit,
+				upload = layui.upload;
+		</script>
+		<script src="/Web/Include/tby.js" type="text/javascript" charset="utf-8"></script>
+		<script charset="utf-8" src="/Web/Assets/kindeditor/kindeditor.js"></script>
+		<!--<script charset="utf-8" src="/Web/Assets/kindeditor/zh_CN.js"></script>-->
+		<script src="/Web/Assets/jQuery-LigerUI/Source/lib/ligerUI/js/ligerui.all.js" type="text/javascript"></script>
+		<script src="js/articleAdd.js"></script>
+	</body>
+
+</html>
